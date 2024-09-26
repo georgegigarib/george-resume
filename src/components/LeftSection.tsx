@@ -12,7 +12,7 @@ const LeftSection = () => {
     ];    
 
     return (
-        <div className="grid grid-cols-100 grid-rows-100 gap-4">
+        <div className="grid grid-cols-100 grid-rows-100 gap-4 md:grid-cols-50 sm:grid-cols-20">
             {boxes.map((box, index) => (
                 <Box 
                     key={index}

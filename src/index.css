@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #4f4d4d;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,10 +49,10 @@ html {
   transform: translateX(-50%) scaleY(0.8); /* Ajusta el escalado para el efecto más circular */
   width: 120%;
   height: 190px; /* Ajusta la altura para un efecto más circular */
-  background: rgb(140, 140, 140); /* Color del fondo del nav, asegúrate de que coincida */
+  background: rgba(126, 126, 126, 0.496); /* Color del fondo del nav, asegúrate de que coincida */
   border-radius: 50%; /* Asegura una forma más circular */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ajusta el sombreado según sea necesario */
-  z-index: -1; /* Asegúrate de que esté detrás del contenido del nav */
+  box-shadow: 0px 0px 25px 10px rgba(30, 30, 30, 0.372); /* Ajusta el sombreado según sea necesario */
+  z-index: -10; /* Asegúrate de que esté detrás del contenido del nav */
 }
 
 
