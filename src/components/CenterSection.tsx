@@ -1,9 +1,14 @@
 import React from 'react';
 import Box from "./Box";
+import { useTranslation } from 'react-i18next';
+
 
 const CenterSection = () => {
+const { t } = useTranslation()
+
+
     const boxes = [
-        { startRow: 28, spanRow: 28, startColumn: 12, spanColumn: 22, content: "Box 7" },
+        { startRow: 28, spanRow: 28, startColumn: 12, spanColumn: 22, content: t('hello') },
         { startRow: 56, spanRow: 9, startColumn: 25, spanColumn: 9, content: "Box 8" },
         { startRow: 51, spanRow: 16, startColumn: 34, spanColumn: 22, content: "Box 9" },
         { startRow: 33, spanRow: 18, startColumn: 34, spanColumn: 57, content: "Box 10" },

@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
+import LanguageSwitcher from '../components/Settings/DropdownMenu';
+
 
 const Navbar = () => {
   const [activeHash, setActiveHash] = useState('');
@@ -7,6 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [automaticScroll, setAutomaticScroll] = useState(true);
+  const { t } = useTranslation()
 
   function moveNavBar(hash: string): void {
     const getTranslateXForHash = (hash: string) => {
@@ -82,6 +86,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent border-transparent fixed w-full z-20 top-0 start-0 border-b nav-bottom-oval h-20">
+      <LanguageSwitcher />
+
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-8">
         <div
           className={`justify-between flex mt-2 h-16 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform ${translateClass} animated-transform`}
