@@ -8,39 +8,41 @@ const BlurredImage: React.FC<BlurredImageProps> = ({ imagePath }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [dimensions, setDimensions] = useState({
     height: '600px',
-    boxShadow: `inset 0px 0px 30px 40px black`, // Default to dark mode
+    boxShadow: `inset 0px 0px 30px 40px black`,
   });
 
   const updateDimensions = () => {
     const isDarkMode = document.documentElement.classList.contains('dark');
-    const blurColor = isDarkMode ? 'black' : 'white'; // Use black for dark mode, white for light mode
+    const blurColor = isDarkMode ? 'black' : 'white';
 
-    if (window.innerWidth < 768) {
-      setDimensions({ height: '240px', boxShadow: `inset 0px 0px 18px 20px ${blurColor}` });
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile) {
+      setDimensions({ height: '260px', boxShadow: `inset 0px 0px 18px 20px ${blurColor}` });
     } else {
       setDimensions({ height: '600px', boxShadow: `inset 0px 0px 30px 40px ${blurColor}` });
     }
   };
 
   useEffect(() => {
-    // Update dimensions when the window is resized
-    window.addEventListener('resize', updateDimensions);
+    updateDimensions();
+    const handleResize = () => {
+      updateDimensions();
+    };
 
-    // Watch for class changes on the document element (to detect theme change)
+    window.addEventListener('resize', handleResize);
+
     const observer = new MutationObserver(() => {
       updateDimensions();
     });
 
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ['class'], // Only watch for class changes
+      attributeFilter: ['class'],
     });
 
-    // Initial dimension calculation
-    updateDimensions();
-
     return () => {
-      window.removeEventListener('resize', updateDimensions);
+      window.removeEventListener('resize', handleResize);
       observer.disconnect();
     };
   }, []);
@@ -60,7 +62,7 @@ const BlurredImage: React.FC<BlurredImageProps> = ({ imagePath }) => {
       >
         <img
           src={imagePath}
-          alt="Blurred"
+          alt=""
           style={{
             height: dimensions.height,
             aspectRatio: '16:9',

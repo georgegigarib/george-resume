@@ -1,17 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ThemeSwitcher from './ThemeSwitcher';
 import LanguageSwitcher from './LanguageSwitcher';
-import { setTheme } from '../../utils/setTheme';
 
 const DropdownMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-
-  useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true';
-    setTheme(isDark);
-  }, []);
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -29,7 +23,7 @@ const DropdownMenu = () => {
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
         <MenuItem disableRipple className='gap-2'>
           <ThemeSwitcher />
-          <LanguageSwitcher onClose={handleMenuClose} />
+          <LanguageSwitcher  />
         </MenuItem>
       </Menu>
     </div>

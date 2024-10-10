@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import LanguageSwitcher from '../components/Settings/DropdownMenu';
-
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [activeHash, setActiveHash] = useState('');
@@ -9,6 +9,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [automaticScroll, setAutomaticScroll] = useState(true);
+  const { t } = useTranslation();
 
   function moveNavBar(hash: string): void {
     const getTranslateXForHash = (hash: string) => {
@@ -23,7 +24,7 @@ const Navbar = () => {
           return 'translate-x-0';
       }
     };
-  
+
     setTranslateClass(getTranslateXForHash(hash));
   }
 
@@ -38,9 +39,12 @@ const Navbar = () => {
         behavior: 'smooth',
       });
 
-      setTimeout(() => {
-        setAutomaticScroll(false);
-      }, called ? 0 : 500)
+      setTimeout(
+        () => {
+          setAutomaticScroll(false);
+        },
+        called ? 0 : 500,
+      );
     }
   };
 
@@ -53,7 +57,7 @@ const Navbar = () => {
       scrollToSection(hash);
       return;
     }
-  }, [location.hash]);
+  }, [location.hash, automaticScroll]);
 
   useEffect(() => {
     if (automaticScroll) {
@@ -88,27 +92,36 @@ const Navbar = () => {
 
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-8">
         <div
-          className={`justify-between flex mt-0 md:mt-2 h-16 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform ${translateClass} animated-transform`}
+          className={`justify-between flex mt-0 md:mt-2 h-16 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform ${translateClass} animated-transform`}
           id="navbar-sticky"
         >
           <a
-            onClick={() => scrollToSection('#dev', true)}
+            onClick={() => {
+              scrollToSection('#dev', true);
+              navigate('#dev');
+              setAutomaticScroll(false);
+            }}
             className={`block rounded md:p-0 ${
               activeHash === '#dev'
                 ? 'text-white font-bold animated-transform translate-y-[15%] md:translate-y-[45%] scale-130'
-                : activeHash === '#music' ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform' :
-                'text-gray-900 animated-transform rotate-[18deg] -translate-y-[20%] sm:rotate-12 md:translate-y-[0%] xl:rotate-3 opacity-40 font-bold 2xl:translate-y-[20%]'
+                : activeHash === '#music'
+                ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform'
+                : 'text-gray-900 animated-transform rotate-[18deg] -translate-y-[20%] sm:rotate-12 md:translate-y-[0%] xl:rotate-3 opacity-40 font-bold 2xl:translate-y-[20%]'
             }`}
             aria-current={activeHash === '#dev' ? 'page' : undefined}
           >
-            Dev
+            {t('navbar.dev')}
           </a>
           <a
-            onClick={() => scrollToSection('#me', true)}
+            onClick={() => {
+              scrollToSection('#me', true);
+              navigate('#me');
+              setAutomaticScroll(false);
+            }}
             className={`block pt-8 rounded md:p-0 ${
               activeHash === '#me'
                 ? 'text-white font-bold animated-transform -translate-y-[50%] md:translate-y-[50%] scale-130'
-                : 'text-gray-900 -translate-y-[70%] sm:-translate-y-[70%] animated-transform md:dark:hover:bg-transparent opacity-40 font-bold'
+                : 'text-gray-900 -translate-y-[75%] sm:-translate-y-[70%] animated-transform md:dark:hover:bg-transparent opacity-40 font-bold'
             } ${
               activeHash === '#music'
                 ? 'rotate-[18deg] sm:rotate-6 md:-translate-y-[10%] 2xl:translate-y-[15%] lg:rotate-3'
@@ -117,17 +130,23 @@ const Navbar = () => {
                 : ''
             }`}
           >
-            Me
+            {t('navbar.me')}
           </a>
           <a
-            onClick={() => scrollToSection('#music', true)}
+            onClick={() => {
+              scrollToSection('#music', true);
+              navigate('#music');
+              setAutomaticScroll(false);
+            }}
             className={`block rounded md:p-0 ${
               activeHash === '#music'
                 ? 'text-white font-bold animated-transform translate-y-[15%] md:translate-y-[45%] scale-130 -rotate-5'
-                : activeHash === '#dev' ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform' : 'text-gray-900 -rotate-[10deg] -translate-y-[20%] sm:-rotate-12 md:translate-y-[0%] xl:-rotate-3 animated-transform opacity-40 font-bold 2xl:translate-y-[20%]'
+                : activeHash === '#dev'
+                ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform'
+                : 'text-gray-900 -rotate-[17deg] -translate-y-[20%] sm:-rotate-12 md:translate-y-[0%] xl:-rotate-3 animated-transform opacity-40 font-bold 2xl:translate-y-[20%]'
             }`}
           >
-            Music
+            {t('navbar.music')}
           </a>
         </div>
       </div>

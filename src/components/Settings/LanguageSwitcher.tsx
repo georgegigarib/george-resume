@@ -1,28 +1,23 @@
 import { Menu, MenuItem, Button } from '@mui/material';
-import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import ChangeLanguageIcon from '@mui/icons-material/Language'; // Cambia esto si usas otro ícono
-import ArrowDropDown from '@mui/icons-material/ArrowDropDown'; // Puedes usar ArrowDropUp si prefieres
+import ChangeLanguageIcon from '@mui/icons-material/Language';
+import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
+import { useLanguage } from '../../hooks/useLanguage';
+import i18n from '../../../i18n.config';
 
 interface LanguageOption {
   code: string;
   name: string;
 }
 
-const LanguageSwitcher = ({ onClose }: { onClose: () => void }) => {
-  const { i18n } = useTranslation();
+const LanguageSwitcher = () => {
+  const { changeLanguage } = useLanguage();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const languageOptions: LanguageOption[] = [
     { code: 'en', name: 'English' },
     { code: 'es', name: 'Español' },
   ];
-
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    onClose();
-    setAnchorEl(null);
-  };
 
   return (
     <>
@@ -31,14 +26,14 @@ const LanguageSwitcher = ({ onClose }: { onClose: () => void }) => {
           variant="contained"
           onClick={(event) => setAnchorEl(event.currentTarget)}
           style={{
-            borderRadius: '20px', // Para hacerlo redondeado
+            borderRadius: '20px',
             display: 'flex',
             alignItems: 'center',
           }}
           size='small'
         >
           <ChangeLanguageIcon style={{ marginRight: '8px' }} />
-          {i18n.language === 'en' ? 'English' : 'Español'}
+          {languageOptions.find((lang) => lang.code === i18n.language)?.name || 'English'}
           <ArrowDropDown style={{ marginLeft: 'auto', transform: anchorEl ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
         </Button>
 
@@ -55,7 +50,13 @@ const LanguageSwitcher = ({ onClose }: { onClose: () => void }) => {
           }}
         >
           {languageOptions.map((lang) => (
-            <MenuItem key={lang.code} onClick={() => changeLanguage(lang.code)}>
+            <MenuItem 
+              key={lang.code} 
+              onClick={() => {
+                changeLanguage(lang.code);
+                setAnchorEl(null); // Cierra el menú después de seleccionar
+              }}
+            >
               {lang.name}
             </MenuItem>
           ))}
