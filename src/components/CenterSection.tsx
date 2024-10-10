@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Box from "./Box";
 import { useTranslation } from 'react-i18next';
 
@@ -15,20 +15,48 @@ const { t } = useTranslation()
         { startRow: 18, spanRow: 15, startColumn: 48, spanColumn: 16, content: "Box 11" },
     ];
 
-    return (
-    <div className="grid grid-cols-100 grid-rows-100 gap-4 md:grid-cols-50 sm:grid-cols-20 w-full">
-            {boxes.map((box, index) => (
-                <Box 
-                    key={index}
-                    startRow={box.startRow}
-                    startColumn={box.startColumn}
-                    spanRow={box.spanRow}
-                    spanColumn={box.spanColumn}
-                    content={box.content} 
-                />
-            ))}
+    const smBoxes = [
+        { startRow: 14, spanRow: 18, startColumn: 1, spanColumn: 6, content: "Small Box 7" },
+        { startRow: 10, spanRow: 7, startColumn: 7, spanColumn: 13, content: "Small Box 8" },
+        { startRow: 17, spanRow: 20, startColumn: 7, spanColumn: 10, content: "Small Box 9" },
+        { startRow: 17, spanRow: 3, startColumn: 17, spanColumn: 13, content: "Small Box 10" },
+        { startRow: 20, spanRow: 4, startColumn: 17, spanColumn: 6, content: "sBox 11" },
+        { startRow: 7, spanRow: 10, startColumn: 20, spanColumn: 15, content: "Small Box 12" },
+      ];
+    
+      const [activeBoxes, setActiveBoxes] = useState(boxes);
+      const updateBoxes = () => {
+        const width = window.innerWidth;
+        if (width <= 768) {
+          setActiveBoxes(smBoxes);
+        } else {
+          setActiveBoxes(boxes);
+        }
+      };
+    
+      useEffect(() => {
+        updateBoxes();
+    
+        window.addEventListener('resize', updateBoxes);
+        return () => {
+          window.removeEventListener('resize', updateBoxes);
+        };
+      }, []);
+    
+      return (
+        <div className="grid  grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4">
+          {activeBoxes.map((box, index) => (
+            <Box 
+              key={index}
+              startRow={box.startRow}
+              startColumn={box.startColumn}
+              spanRow={box.spanRow}
+              spanColumn={box.spanColumn}
+              content={box.content} 
+            />
+          ))}
         </div>
-    );
-}
+      );
+    }
 
 export default CenterSection;

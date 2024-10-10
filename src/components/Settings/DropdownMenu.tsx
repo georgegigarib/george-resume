@@ -24,7 +24,7 @@ const DropdownMenu = () => {
   return (
     <div className="absolute right-0">
       <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMenuOpen}>
-        <MenuIcon />
+        <MenuIcon fontSize='small'/>
       </IconButton>
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
         <MenuItem disableRipple className='gap-2'>

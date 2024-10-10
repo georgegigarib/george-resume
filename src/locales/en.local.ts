@@ -1,5 +1,5 @@
 export const en = {
-    hello: 'Hi love, had a good sleep?',
+    hello: 'Hey buddy, whats upp?',
     welcome: "Hello friend",
     description: "This is a description in English",
 };
