@@ -6,5 +6,6 @@ export const es = {
         me: 'yo',
         music: 'música',
         dev: 'dev'
-    }
+      },
+      yes: 'si'
   };

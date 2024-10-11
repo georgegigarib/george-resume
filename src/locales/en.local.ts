@@ -6,5 +6,6 @@ export const en = {
         me: 'me',
         music: 'music',
         dev: 'dev'
-    }
+    },
+    yes: 'yes'
 };

@@ -5,7 +5,7 @@ interface BoxProps {
   startRow?: number;
   spanColumn?: number;
   spanRow?: number;
-  content?: string;
+  content: React.ReactNode;
 }
 
 const Box = ({

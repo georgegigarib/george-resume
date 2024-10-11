@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react';
 import Box from "./Box";
 import { useTranslation } from 'react-i18next';
-import { boxType } from '../utils/navbarTypes';
+import ExampleComponent from './ExampleComponente';
+import SpotifyPlaylist from './SpotifyPlaylist';
+import SpotifyLatestSong from './SpotfyLatestSong';
 
 const RightSection = () => {
   const { t, i18n } = useTranslation();
 
-  const [activeBoxes, setActiveBoxes] = useState<boxType[]>([]);
+  // Definir que el content puede ser un ReactNode (componente)
+  const [activeBoxes, setActiveBoxes] = useState<
+    { startRow: number, spanRow: number, startColumn: number, spanColumn: number, content: React.ReactNode }[]
+  >([]);
 
   useEffect(() => {
     const updateBoxes = () => {
@@ -14,21 +19,21 @@ const RightSection = () => {
 
       if (isMobile) {
         setActiveBoxes([
-          { startRow: 11, spanRow: 20, startColumn: 3, spanColumn: 15, content: t('hello') },
-          { startRow: 8, spanRow: 3, startColumn: 8, spanColumn: 5, content: 'smallBox17' },
-          { startRow: 9, spanRow: 2, startColumn: 13, spanColumn: 5, content: 'smallBox18' },
-          { startRow: 9, spanRow: 15, startColumn: 18, spanColumn: 3, content: 'smallBox14' },
-          { startRow: 5, spanRow: 4, startColumn: 13, spanColumn: 8, content: 'smallBox15' },
+          { startRow: 16, spanRow: 20, startColumn: 3, spanColumn: 15, content: <SpotifyPlaylist /> },
+          { startRow: 10, spanRow: 5, startColumn: 8, spanColumn: 5, content: <ExampleComponent /> },
+          { startRow: 11, spanRow: 4, startColumn: 13, spanColumn: 5, content: <ExampleComponent /> },
+          { startRow: 11, spanRow: 15, startColumn: 18, spanColumn: 3, content: <ExampleComponent /> },
+          { startRow: 7, spanRow: 4, startColumn: 10, spanColumn: 10, content: <ExampleComponent /> },
         ]);
       } else {
         setActiveBoxes([
-          { startRow: 13, spanRow: 20, startColumn: 1, spanColumn: 13, content: t('hello') },
-          { startRow: 21, spanRow: 12, startColumn: 14, spanColumn: 36, content: 'box13' },
-          { startRow: 33, spanRow: 35, startColumn: 22, spanColumn: 22, content: 'box14' },
-          { startRow: 51, spanRow: 8, startColumn: 14, spanColumn: 8, content: 'box15' },
-          { startRow: 33, spanRow: 10, startColumn: 44, spanColumn: 30, content: 'box16' },
-          { startRow: 43, spanRow: 18, startColumn: 44, spanColumn: 18, content: 'box17' },
-          { startRow: 43, spanRow: 40, startColumn: 62, spanColumn: 12, content: 'box18' },
+          { startRow: 13, spanRow: 20, startColumn: 1, spanColumn: 13, content: <ExampleComponent /> },
+          { startRow: 21, spanRow: 12, startColumn: 14, spanColumn: 36, content: <ExampleComponent /> },
+          { startRow: 33, spanRow: 35, startColumn: 22, spanColumn: 22, content: <SpotifyPlaylist /> },
+          { startRow: 51, spanRow: 8, startColumn: 14, spanColumn: 8, content: <ExampleComponent /> },
+          { startRow: 33, spanRow: 10, startColumn: 44, spanColumn: 30, content: <SpotifyLatestSong /> },
+          { startRow: 43, spanRow: 18, startColumn: 44, spanColumn: 18, content: <ExampleComponent /> },
+          { startRow: 43, spanRow: 40, startColumn: 62, spanColumn: 12, content: <ExampleComponent /> },
         ]);
       }
     };
@@ -50,7 +55,7 @@ const RightSection = () => {
           startColumn={box.startColumn}
           spanRow={box.spanRow}
           spanColumn={box.spanColumn}
-          content={box.content} 
+          content={box.content} // Aquí pasamos el componente directamente
         />
       ))}
     </div>
