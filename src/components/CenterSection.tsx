@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Box from "./Box";
 import { useTranslation } from 'react-i18next';
 import ExampleComponent from './ExampleComponente';
-import SpotifyLatestSong from './SpotfyLatestSong';
 
 const CenterSection = () => {
   const { t, i18n } = useTranslation();
@@ -22,7 +21,7 @@ const CenterSection = () => {
           { startRow: 17, spanRow: 20, startColumn: 8, spanColumn: 10, content: <ExampleComponent /> },
           { startRow: 17, spanRow: 3, startColumn: 18, spanColumn: 13, content: <ExampleComponent /> },
           { startRow: 20, spanRow: 4, startColumn: 18, spanColumn: 6, content: <ExampleComponent /> },
-          { startRow: 7, spanRow: 10, startColumn: 21, spanColumn: 20, content: <SpotifyLatestSong /> },
+          { startRow: 7, spanRow: 10, startColumn: 21, spanColumn: 20, content: <ExampleComponent /> },
         ]);
       } else {
         setActiveBoxes([
