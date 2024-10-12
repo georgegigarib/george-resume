@@ -3,6 +3,12 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import LanguageSwitcher from '../components/Settings/DropdownMenu';
 import { useTranslation } from 'react-i18next';
 
+enum Sections {
+  Dev = '#dev',
+  Me = '#me',
+  Music = '#music',
+}
+
 const Navbar = () => {
   const [activeHash, setActiveHash] = useState('');
   const [translateClass, setTranslateClass] = useState('');
@@ -14,11 +20,11 @@ const Navbar = () => {
   function moveNavBar(hash: string): void {
     const getTranslateXForHash = (hash: string) => {
       switch (hash) {
-        case '#dev':
+        case Sections.Dev:
           return 'translate-x-[48%] xl:translate-x-[52%]';
-        case '#me':
+        case Sections.Me:
           return '-translate-x-0';
-        case '#music':
+        case Sections.Music:
           return '-translate-x-[44%] sm:-translate-x-[45%] md:-translate-x-[45%] xl:-translate-x-[50%]';
         default:
           return 'translate-x-0';
@@ -49,7 +55,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const hash = location.hash || '#me';
+    const hash = location.hash || Sections.Me;
     setActiveHash(hash);
     moveNavBar(hash);
 
@@ -72,11 +78,14 @@ const Navbar = () => {
       const scrollPercentage = (scrollX / (documentHeight - windowHeight)) * 100;
 
       if (scrollPercentage > 66) {
-        navigate('/#music');
+        moveNavBar(Sections.Music);
+        setActiveHash(Sections.Music);
       } else if (scrollPercentage < 33) {
-        navigate('/#dev');
+        moveNavBar(Sections.Dev);
+        setActiveHash(Sections.Dev);
       } else {
-        navigate('/#me');
+        moveNavBar(Sections.Me);
+        setActiveHash(Sections.Me);
       }
     };
 
@@ -97,35 +106,35 @@ const Navbar = () => {
         >
           <a
             onClick={() => {
-              scrollToSection('#dev', true);
-              navigate('#dev');
+              scrollToSection(Sections.Dev, true);
+              navigate(Sections.Dev);
               setAutomaticScroll(false);
             }}
             className={`block rounded md:p-0 ${
-              activeHash === '#dev'
+              activeHash === Sections.Dev
                 ? 'text-white font-bold animated-transform translate-y-[15%] md:translate-y-[45%] scale-130'
-                : activeHash === '#music'
+                : activeHash === Sections.Music
                 ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform'
                 : 'text-gray-900 animated-transform rotate-[18deg] -translate-y-[20%] sm:rotate-12 md:translate-y-[0%] xl:rotate-3 opacity-40 font-bold 2xl:translate-y-[20%]'
             }`}
-            aria-current={activeHash === '#dev' ? 'page' : undefined}
+            aria-current={activeHash === Sections.Dev ? 'page' : undefined}
           >
             {t('navbar.dev')}
           </a>
           <a
             onClick={() => {
-              scrollToSection('#me', true);
-              navigate('#me');
+              scrollToSection(Sections.Me, true);
+              navigate(Sections.Me);
               setAutomaticScroll(false);
             }}
             className={`block pt-8 rounded md:p-0 ${
-              activeHash === '#me'
+              activeHash === Sections.Me
                 ? 'text-white font-bold animated-transform -translate-y-[50%] md:translate-y-[50%] scale-130'
                 : 'text-gray-900 -translate-y-[75%] sm:-translate-y-[70%] animated-transform md:dark:hover:bg-transparent opacity-40 font-bold'
             } ${
-              activeHash === '#music'
+              activeHash === Sections.Music
                 ? 'rotate-[18deg] sm:rotate-6 md:-translate-y-[10%] 2xl:translate-y-[15%] lg:rotate-3'
-                : activeHash === '#dev'
+                : activeHash === Sections.Dev
                 ? '-rotate-[18deg] sm:-rotate-6  md:translate-y-[0%]  2xl:translate-y-[15%] lg:-rotate-3'
                 : ''
             }`}
@@ -134,14 +143,14 @@ const Navbar = () => {
           </a>
           <a
             onClick={() => {
-              scrollToSection('#music', true);
-              navigate('#music');
+              scrollToSection(Sections.Music, true);
+              navigate(Sections.Music);
               setAutomaticScroll(false);
             }}
             className={`block rounded md:p-0 ${
-              activeHash === '#music'
+              activeHash === Sections.Music
                 ? 'text-white font-bold animated-transform translate-y-[15%] md:translate-y-[45%] scale-130 -rotate-5'
-                : activeHash === '#dev'
+                : activeHash === Sections.Dev
                 ? '-translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform'
                 : 'text-gray-900 -rotate-[17deg] -translate-y-[20%] sm:-rotate-12 md:translate-y-[0%] xl:-rotate-3 animated-transform opacity-40 font-bold 2xl:translate-y-[20%]'
             }`}

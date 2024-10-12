@@ -21,7 +21,7 @@ const Me = () => {
 
   return (
     <div className="w-[1300px] md:w-[3300px] mx-2 bg-white dark:bg-black">
-      <div className="flex justify-between w-full mt-6">
+      <div className="flex justify-between w-full mt-0">
         <div className="flex-1 flex justify-center" id="dev">
           <ImageContainer imagePath={devImage} />
         </div>
