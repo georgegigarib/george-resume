@@ -1,19 +1,17 @@
-import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setActiveHash } from '../store';
 import LanguageSwitcher from '../components/Settings/DropdownMenu';
 import { useTranslation } from 'react-i18next';
-
-enum Sections {
-  Dev = '#dev',
-  Me = '#me',
-  Music = '#music',
-}
+import { Sections } from '../utils/navbarTypes';
+import { RootState } from '../store/types';
 
 const Navbar = () => {
-  const [activeHash, setActiveHash] = useState('');
-  const [translateClass, setTranslateClass] = useState('');
+  const dispatch = useDispatch();
+  const activeHash = useSelector((state: RootState) => state.hash.activeHash);
   const location = useLocation();
-  const navigate = useNavigate();
+  const [translateClass, setTranslateClass] = useState('');
   const [automaticScroll, setAutomaticScroll] = useState(true);
   const { t } = useTranslation();
 
@@ -56,7 +54,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const hash = location.hash || Sections.Me;
-    setActiveHash(hash);
+    dispatch(setActiveHash(hash));
     moveNavBar(hash);
 
     if (automaticScroll) {
@@ -79,13 +77,16 @@ const Navbar = () => {
 
       if (scrollPercentage > 66) {
         moveNavBar(Sections.Music);
-        setActiveHash(Sections.Music);
+        dispatch(setActiveHash(Sections.Music));
+        history.pushState(null, '', Sections.Music);
       } else if (scrollPercentage < 33) {
         moveNavBar(Sections.Dev);
-        setActiveHash(Sections.Dev);
+        dispatch(setActiveHash(Sections.Dev));
+        history.pushState(null, '', Sections.Dev);
       } else {
         moveNavBar(Sections.Me);
-        setActiveHash(Sections.Me);
+        dispatch(setActiveHash(Sections.Me));
+        history.pushState(null, '', Sections.Me);
       }
     };
 
@@ -107,7 +108,6 @@ const Navbar = () => {
           <a
             onClick={() => {
               scrollToSection(Sections.Dev, true);
-              navigate(Sections.Dev);
               setAutomaticScroll(false);
             }}
             className={`block rounded md:p-0 ${
@@ -124,7 +124,6 @@ const Navbar = () => {
           <a
             onClick={() => {
               scrollToSection(Sections.Me, true);
-              navigate(Sections.Me);
               setAutomaticScroll(false);
             }}
             className={`block pt-8 rounded md:p-0 ${
@@ -144,7 +143,6 @@ const Navbar = () => {
           <a
             onClick={() => {
               scrollToSection(Sections.Music, true);
-              navigate(Sections.Music);
               setAutomaticScroll(false);
             }}
             className={`block rounded md:p-0 ${

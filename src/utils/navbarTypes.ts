@@ -5,3 +5,9 @@ export interface boxType {
     spanColumn: number,
     content: string
 }
+
+export enum Sections {
+    Dev = '#dev',
+    Me = '#me',
+    Music = '#music',
+  }

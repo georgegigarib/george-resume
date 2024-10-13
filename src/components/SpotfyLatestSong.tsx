@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export default function SpotifyLatestSong(): React.ReactElement {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
+  const isMobile = useIsMobile();
+  const iframeWidth = isMobile ? 320 : 365;
   const iframes: string[] = [
-    "https://open.spotify.com/embed/track/6FL1hImx4QGr7m8xs31uvW?utm_source=generator",
-    "https://embed.music.apple.com/do/album/un-a%C3%B1o/1760344218?i=1760344579"
+    "https://open.spotify.com/embed/album/6H73t0Wok8dsEEGqRhgOsV?utm_source=generator",
+    "https://embed.music.apple.com/do/album/un-a%C3%B1o-single/1760344218"
   ];
 
   const totalIframes: number = iframes.length;
@@ -43,38 +46,12 @@ export default function SpotifyLatestSong(): React.ReactElement {
     window.addEventListener('touchmove', handleTouchMove);
   };
 
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>): void => {
-    e.preventDefault();
-    const startY = e.clientY;
-
-    const handleMouseMove = (event: MouseEvent): void => {
-      const endY = event.clientY;
-
-      if (startY - endY > 50) {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % totalIframes);
-        cleanup();
-      } else if (endY - startY > 50) {
-        setCurrentIndex(prevIndex => (prevIndex - 1 + totalIframes) % totalIframes);
-        cleanup();
-      }
-    };
-
-    const cleanup = (): void => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', cleanup);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', cleanup);
-  };
-
   return (
     <div
       className="overflow-hidden relative"
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
       onTouchStart={handleTouchStart}
-      onMouseDown={handleMouseDown}
     >
       <div
         className="transition-transform duration-500"
@@ -86,9 +63,9 @@ export default function SpotifyLatestSong(): React.ReactElement {
         {iframes.map((src, index) => (
           <div key={index} style={{ pointerEvents: 'none' }}>
             <iframe
-              className="rounded-xl w-full"
+              className="rounded-xl"
               src={src}
-              width="100%"
+              width={iframeWidth}
               height="152"
               allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture"
               loading="lazy"
