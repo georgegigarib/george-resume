@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import ExampleComponent from './ExampleComponente';
 import SpotifyLatestSong from './SpotfyLatestSong';
 import { useIsMobile } from '../hooks/useIsMobile';
+import Presentation from './Presentation';
+import Jokes from './Jokes';
 
 const CenterSection = () => {
   const { t, i18n } = useTranslation();
@@ -14,20 +16,19 @@ const CenterSection = () => {
 
   useEffect(() => {
     const mobileBoxes = [
-      { startRow: 14, spanRow: 18, startColumn: 2, spanColumn: 6, content: <ExampleComponent /> },
-      { startRow: 10, spanRow: 7, startColumn: 8, spanColumn: 13, content: <ExampleComponent /> },
-      { startRow: 17, spanRow: 20, startColumn: 8, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 17, spanRow: 3, startColumn: 18, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 20, spanRow: 4, startColumn: 18, spanColumn: 6, content: <ExampleComponent /> },
-      { startRow: 7, spanRow: 10, startColumn: 21, spanColumn: 21, content: <SpotifyLatestSong /> },
+      { startRow: 6, spanRow: 7, startColumn: 4, spanColumn: 16, content: <Presentation /> },
+      { startRow: 13, spanRow: 14, startColumn: 1, spanColumn: 13, content: <Jokes /> },
+      { startRow: 13, spanRow: 17, startColumn: 14, spanColumn: 6, content: <ExampleComponent /> },
+      { startRow: 12, spanRow: 8, startColumn: 20, spanColumn: 8, content: <ExampleComponent /> },
+      { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <SpotifyLatestSong /> },
     ];
 
     const desktopBoxes = [
       { startRow: 28, spanRow: 28, startColumn: 12, spanColumn: 22, content: <ExampleComponent /> },
       { startRow: 56, spanRow: 9, startColumn: 25, spanColumn: 9, content: <ExampleComponent /> },
-      { startRow: 51, spanRow: 16, startColumn: 34, spanColumn: 22, content: <ExampleComponent /> },
-      { startRow: 33, spanRow: 18, startColumn: 34, spanColumn: 57, content: <ExampleComponent /> },
-      { startRow: 18, spanRow: 15, startColumn: 48, spanColumn: 16, content: <ExampleComponent /> },
+      { startRow: 50, spanRow: 10, startColumn: 34, spanColumn: 22, content: <Jokes /> },
+      { startRow: 32, spanRow: 18, startColumn: 34, spanColumn: 57, content: <ExampleComponent /> },
+      { startRow: 23, spanRow: 9, startColumn: 36, spanColumn: 22, content: <Presentation /> },
     ];
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes);

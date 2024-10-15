@@ -1,4 +1,4 @@
-import Card from "./card";
+import Card from './card';
 
 interface BoxProps {
   startColumn?: number;
@@ -18,8 +18,8 @@ const Box = ({
   const gridArea = `${startRow} / ${startColumn} / span ${spanRow} / span ${spanColumn}`;
 
   return (
-    <div className={`rounded-3xl`} style={{ gridArea }}>
-      <Card content={content}/>
+    <div className="rounded-xl" style={{ gridArea }}>
+      <Card content={content} />
     </div>
   );
 };

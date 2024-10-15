@@ -15,10 +15,10 @@ const LeftSection = () => {
     const mobileBoxes = [
       { startRow: 14, spanRow: 15, startColumn: 1, spanColumn: 12, content: <ExampleComponent /> },
       { startRow: 29, spanRow: 1, startColumn: 1, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 23, spanRow: 2, startColumn: 13, spanColumn: 3, content: <ExampleComponent /> },
-      { startRow: 14, spanRow: 9, startColumn: 13, spanColumn: 13, content: <ExampleComponent /> },
-      { startRow: 23, spanRow: 6, startColumn: 16, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 6, spanRow: 8, startColumn: 9, spanColumn: 23, content: <ExampleComponent /> },
+      { startRow: 20, spanRow: 2, startColumn: 13, spanColumn: 3, content: <ExampleComponent /> },
+      { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 16, content: <ExampleComponent /> },
+      { startRow: 20, spanRow: 6, startColumn: 16, spanColumn: 10, content: <ExampleComponent /> },
+      { startRow: 8, spanRow: 6, startColumn: 9, spanColumn: 15, content: <ExampleComponent /> },
     ];
     
     const desktopBoxes = [

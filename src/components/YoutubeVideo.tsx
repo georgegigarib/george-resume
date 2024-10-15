@@ -3,7 +3,7 @@ import { useIsMobile } from '../hooks/useIsMobile';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VideoSrc from './../assets/final.mp4';
-import { Tooltip } from '@mui/material';
+import { Tooltip, CircularProgress } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Sections } from '../utils/navbarTypes';
 import { useSelector } from 'react-redux';
@@ -14,6 +14,7 @@ export default function LocalVideoWithTooltip(): React.ReactElement {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
   const [showTooltip, setShowTooltip] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const activeHash = useSelector((state: RootState) => state.hash.activeHash);
   const { t } = useTranslation();
 
@@ -37,16 +38,28 @@ export default function LocalVideoWithTooltip(): React.ReactElement {
     window.open('https://www.youtube.com/watch?v=Mfxv1jmkWlk', '_blank');
   };
 
+  // Cuando el video se carga completamente, ocultamos el loader
+  const handleVideoLoaded = (): void => {
+    setIsLoading(false);
+  };
+
   return (
-    <div className="relative flex flex-col justify-between rounded-xl bg-gray-700">
+    <div className="relative flex flex-col justify-between rounded-xl h-full bg-gray-700">
+      {isLoading && (
+        <div className="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10">
+          <CircularProgress className="text-white" />
+        </div>
+      )}
+
       <video
         ref={videoRef}
-        className="rounded-xl cursor-pointer"
+        className={`rounded-xl cursor-pointer ${isLoading ? 'opacity-0' : 'opacity-100'}`}
         width={isMobile ? '110px' : '200px'}
         autoPlay
         loop
         muted={isMuted}
         onClick={handleVideoClick}
+        onLoadedData={handleVideoLoaded}
         title="Click to mute/unmute"
         playsInline
       >

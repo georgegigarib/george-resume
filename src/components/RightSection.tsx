@@ -16,20 +16,20 @@ const RightSection = () => {
 
   useEffect(() => {
     const mobileBoxes = [
-      { startRow: 18, spanRow: 21, startColumn: 9, spanColumn: 17, content: <SpotifyPlaylist /> },
-      { startRow: 18, spanRow: 13, startColumn: 1, spanColumn: 8, content: <YoutubeVideo /> },
-      { startRow: 7, spanRow: 11, startColumn: 12, spanColumn: 7, content: <ExampleComponent /> },
-      { startRow: 3, spanRow: 15, startColumn: 19, spanColumn: 7, content: <ExampleComponent /> },
+      { startRow: 19, spanRow: 21, startColumn: 9, spanColumn: 17, content: <SpotifyPlaylist /> },
+      { startRow: 19, spanRow: 13, startColumn: 1, spanColumn: 8, content: <YoutubeVideo /> },
+      { startRow: 11, spanRow: 8, startColumn: 11, spanColumn: 8, content: <ExampleComponent /> },
+      { startRow: 3, spanRow: 16, startColumn: 19, spanColumn: 7, content: <ExampleComponent /> },
     ];
         
     const desktopBoxes = [
       { startRow: 13, spanRow: 20, startColumn: 1, spanColumn: 13, content: <ExampleComponent /> },
       { startRow: 21, spanRow: 12, startColumn: 14, spanColumn: 36, content: <ExampleComponent /> },
-      { startRow: 33, spanRow: 26, startColumn: 22, spanColumn: 22, content: <SpotifyPlaylist /> },
-      { startRow: 51, spanRow: 8, startColumn: 14, spanColumn: 8, content: <ExampleComponent /> },
-      { startRow: 33, spanRow: 10, startColumn: 44, spanColumn: 20, content: <SpotifyLatestSong /> },
-      { startRow: 43, spanRow: 10, startColumn: 44, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 43, spanRow: 18, startColumn: 54, spanColumn: 10, content: <YoutubeVideo /> },
+      { startRow: 33, spanRow: 22, startColumn: 22, spanColumn: 22, content: <SpotifyPlaylist /> },
+      { startRow: 48, spanRow: 6, startColumn: 14, spanColumn: 8, content: <ExampleComponent /> },
+      { startRow: 33, spanRow: 7, startColumn: 44, spanColumn: 20, content: <SpotifyLatestSong /> },
+      { startRow: 40, spanRow: 10, startColumn: 44, spanColumn: 10, content: <ExampleComponent /> },
+      { startRow: 41, spanRow: 14, startColumn: 54, spanColumn: 10, content: <YoutubeVideo /> },
     ];
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes);
