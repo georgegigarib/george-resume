@@ -13,5 +13,7 @@ export const useLanguage = () => {
     i18n.changeLanguage(savedLanguage);
   };
 
-  return { changeLanguage, loadLanguageFromStorage };
+  const currentLanguage = localStorage.getItem('language') || 'en';
+
+  return { changeLanguage, loadLanguageFromStorage, currentLanguage };
 };

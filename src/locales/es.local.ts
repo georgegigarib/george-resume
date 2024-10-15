@@ -32,4 +32,9 @@ export const es = {
       joke4: "Algunos hacen presentaciones para impresionar, yo la hice para evitar hablar... aunque tampoco lo conseguí del todo."
     },
   },
+  dev: {
+    resume: {
+      seeResume: 'Ver CV'
+    }
+  }
 };

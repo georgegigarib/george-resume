@@ -1,4 +1,3 @@
-// store.ts
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
 const initialState = {

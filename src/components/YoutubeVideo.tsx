@@ -38,7 +38,6 @@ export default function LocalVideoWithTooltip(): React.ReactElement {
     window.open('https://www.youtube.com/watch?v=Mfxv1jmkWlk', '_blank');
   };
 
-  // Cuando el video se carga completamente, ocultamos el loader
   const handleVideoLoaded = (): void => {
     setIsLoading(false);
   };

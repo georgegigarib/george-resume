@@ -3,6 +3,7 @@ import Box from "./Box";
 import { useTranslation } from 'react-i18next';
 import ExampleComponent from './ExampleComponente';
 import { useIsMobile } from '../hooks/useIsMobile';
+import SeeResume from './SeeResume';
 
 const LeftSection = () => {
   const { t, i18n } = useTranslation();
@@ -13,12 +14,12 @@ const LeftSection = () => {
 
   useEffect(() => {
     const mobileBoxes = [
-      { startRow: 14, spanRow: 15, startColumn: 1, spanColumn: 12, content: <ExampleComponent /> },
-      { startRow: 29, spanRow: 1, startColumn: 1, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 20, spanRow: 2, startColumn: 13, spanColumn: 3, content: <ExampleComponent /> },
-      { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 16, content: <ExampleComponent /> },
-      { startRow: 20, spanRow: 6, startColumn: 16, spanColumn: 10, content: <ExampleComponent /> },
-      { startRow: 8, spanRow: 6, startColumn: 9, spanColumn: 15, content: <ExampleComponent /> },
+      { startRow: 14, spanRow: 20, startColumn: 1, spanColumn: 12, content: <ExampleComponent /> },
+      { startRow: 34, spanRow: 1, startColumn: 1, spanColumn: 10, content: <ExampleComponent /> },
+      { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 18, content: <ExampleComponent /> },
+      { startRow: 20, spanRow: 9, startColumn: 13, spanColumn: 9, content: <ExampleComponent /> },
+      { startRow: 20, spanRow: 6, startColumn: 22, spanColumn: 6, content: <SeeResume /> },
+      { startRow: 7, spanRow: 7, startColumn: 8, spanColumn: 17, content: <ExampleComponent /> },
     ];
     
     const desktopBoxes = [
@@ -26,6 +27,7 @@ const LeftSection = () => {
       { startRow: 27, spanRow: 13, startColumn: 20, spanColumn: 25, content: <ExampleComponent /> },
       { startRow: 40, spanRow: 18, startColumn: 29, spanColumn: 16, content: <ExampleComponent /> },
       { startRow: 45, spanRow: 17, startColumn: 45, spanColumn: 13, content: <ExampleComponent /> },
+      { startRow: 45, spanRow: 10, startColumn: 71, spanColumn: 10, content: <SeeResume /> },
       { startRow: 21, spanRow: 24, startColumn: 45, spanColumn: 36, content: <ExampleComponent /> },
       { startRow: 10, spanRow: 11, startColumn: 55, spanColumn: 20, content: <ExampleComponent /> },
     ];

@@ -30,5 +30,10 @@ export const en = {
         joke3: "In theory, I’m an expert... but since I’m better at doing than explaining, I figured it’s best to just show you.",
         joke4: "Some people make presentations to impress, I made mine to avoid talking... (didn't work anyway)."        
     }
-},
+    },
+    dev: {
+        resume: {
+            seeResume: 'See resume'
+        }
+    }
 };

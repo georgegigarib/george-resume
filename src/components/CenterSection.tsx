@@ -26,9 +26,9 @@ const CenterSection = () => {
     const desktopBoxes = [
       { startRow: 28, spanRow: 28, startColumn: 12, spanColumn: 22, content: <ExampleComponent /> },
       { startRow: 56, spanRow: 9, startColumn: 25, spanColumn: 9, content: <ExampleComponent /> },
-      { startRow: 50, spanRow: 10, startColumn: 34, spanColumn: 22, content: <Jokes /> },
-      { startRow: 32, spanRow: 18, startColumn: 34, spanColumn: 57, content: <ExampleComponent /> },
-      { startRow: 23, spanRow: 9, startColumn: 36, spanColumn: 22, content: <Presentation /> },
+      { startRow: 49, spanRow: 10, startColumn: 34, spanColumn: 22, content: <Jokes /> },
+      { startRow: 31, spanRow: 18, startColumn: 34, spanColumn: 57, content: <ExampleComponent /> },
+      { startRow: 22, spanRow: 9, startColumn: 43, spanColumn: 22, content: <Presentation /> },
     ];
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes);
