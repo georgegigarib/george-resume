@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIsMobile } from '../hooks/useIsMobile';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import { useTranslation } from 'react-i18next';
 
 export default function SpotifyPlaylist(): React.ReactElement {

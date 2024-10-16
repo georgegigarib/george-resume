@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { setTheme } from '../../utils/setTheme';
-import ThemeSwitch from './Themeswitch';
+import ThemeSwitch from '../Settings/Themeswitch';
 
 const ThemeSwitcher = () => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {

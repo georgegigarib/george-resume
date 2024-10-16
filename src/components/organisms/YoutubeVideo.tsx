@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { useIsMobile } from '../hooks/useIsMobile';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import VideoSrc from './../assets/final.mp4';
+import VideoSrc from '../../assets/videos/final.mp4'
 import { Tooltip, CircularProgress } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { Sections } from '../utils/navbarTypes';
+import { Sections } from '../../types/navbarTypes';
 import { useSelector } from 'react-redux';
-import { RootState } from '../store/types';
+import { RootState } from '../../store/hash/types';
 
 export default function LocalVideoWithTooltip(): React.ReactElement {
   const isMobile = useIsMobile();

@@ -1,6 +1,7 @@
 'use client';
 
-import { CardBody, CardContainer } from './d-card';
+import { CardBody } from '../atoms/CardBody';
+import { CardContainer } from '../atoms/CardContainer';
 
 interface Props {
   content: React.ReactNode;
