@@ -1,5 +1,5 @@
 import { useRef, useState, createContext } from "react";
-import { cn } from "../../utils/utils";
+import { cn } from '@/utils/utils';
 
 
 const MouseEnterContext = createContext<[boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined>(undefined);

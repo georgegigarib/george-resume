@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { useMouseEnter } from './MouseEnterContext';
-import { cn } from '../../utils/utils';
+import { cn } from '@/utils/utils';
+import { useMouseEnter } from '@/components/atoms/MouseEnterContext';
 
 export const CardItem = ({
   as: Tag = 'div',
