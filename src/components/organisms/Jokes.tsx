@@ -39,7 +39,6 @@ export default function Jokes(): React.ReactElement {
   return (
     <div
       className="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl bg-gray-200 dark:bg-blue-900"
-      onClick={handleChangeJoke}
     >
       <div className={`transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'} h-full`}>
         <p className="text-gray-700 dark:text-gray-100 h-full">

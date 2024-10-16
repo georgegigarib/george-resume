@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveHash } from '../store';
-import LanguageSwitcher from '../components/Settings/DropdownMenu';
+import LanguageSwitcher from '../components/organisms/NavBarDropdownMenu';
 import { useTranslation } from 'react-i18next';
-import { Sections } from '../utils/navbarTypes';
-import { RootState } from '../store/types';
+import { Sections } from '../types/navbarTypes';
+import { RootState } from '../store/hash/types';
 
 const Navbar = () => {
   const dispatch = useDispatch();

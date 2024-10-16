@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import Box from "./Box";
+import Box from "../organisms/Box";
 import { useTranslation } from 'react-i18next';
-import ExampleComponent from './ExampleComponente';
-import SpotifyLatestSong from './SpotfyLatestSong';
-import { useIsMobile } from '../hooks/useIsMobile';
-import Presentation from './Presentation';
-import Jokes from './Jokes';
+import ExampleComponent from '../organisms/ExampleComponente';
+import SpotifyLatestSong from '../organisms/SpotfyLatestSong';
+import { useIsMobile } from '../../hooks/useIsMobile';
+import Presentation from '../organisms/Presentation';
+import Jokes from '../organisms/Jokes';
 
 const CenterSection = () => {
   const { t, i18n } = useTranslation();

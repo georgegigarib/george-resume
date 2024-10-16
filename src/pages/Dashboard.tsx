@@ -1,15 +1,15 @@
-import CenterSection from '../components/CenterSection';
-import ImageContainer from '../components/ImageContainer';
-import LeftSection from '../components/LeftSection';
-import RightSection from '../components/RightSection';
-import devImage from '../assets/dev.webp';
-import meImage from '../assets/me.webp';
-import musicImage from '../assets/music.webp';
+import CenterSection from '../components/sections/CenterSection';
+import ImageContainer from '../components/organisms/DashboardImageContainer';
+import LeftSection from '../components/sections/LeftSection';
+import RightSection from '../components/sections/RightSection';
+import devImage from '../assets/images/dev.webp';
+import meImage from '../assets/images/me.webp';
+import musicImage from '../assets/images/music.webp';
 import { useLanguage } from '../hooks/useLanguage';
 import { useEffect } from 'react';
 import { setTheme } from '../utils/setTheme';
 
-const Me = () => {
+export default function Dashboard() {
 
   const { loadLanguageFromStorage } = useLanguage();
 
@@ -49,5 +49,3 @@ const Me = () => {
     </div>
   );
 };
-
-export default Me;

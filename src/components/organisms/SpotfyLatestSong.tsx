@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useIsMobile } from '../hooks/useIsMobile';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 export default function SpotifyLatestSong(): React.ReactElement {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -28,30 +28,11 @@ export default function SpotifyLatestSong(): React.ReactElement {
     };
   }, [isMouseOver, totalIframes]);
 
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>): void => {
-    const touchStartY = e.touches[0].clientY;
-
-    const handleTouchMove = (event: TouchEvent): void => {
-      const touchEndY = event.touches[0].clientY;
-
-      if (touchStartY - touchEndY > 50) {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % totalIframes);
-        window.removeEventListener('touchmove', handleTouchMove);
-      } else if (touchEndY - touchStartY > 50) {
-        setCurrentIndex(prevIndex => (prevIndex - 1 + totalIframes) % totalIframes);
-        window.removeEventListener('touchmove', handleTouchMove);
-      }
-    };
-
-    window.addEventListener('touchmove', handleTouchMove);
-  };
-
   return (
     <div
       className="overflow-hidden relative"
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
-      onTouchStart={handleTouchStart}
     >
       <div
         className="transition-transform duration-500"

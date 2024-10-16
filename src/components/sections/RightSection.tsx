@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import Box from "./Box";
+import Box from "../organisms/Box";
 import { useTranslation } from 'react-i18next';
-import ExampleComponent from './ExampleComponente';
-import SpotifyPlaylist from './SpotifyPlaylist';
-import SpotifyLatestSong from './SpotfyLatestSong';
-import { useIsMobile } from '../hooks/useIsMobile';
-import YoutubeVideo from './YoutubeVideo';
+import ExampleComponent from '../organisms/ExampleComponente';
+import SpotifyPlaylist from '../organisms/SpotifyPlaylist';
+import SpotifyLatestSong from '../organisms/SpotfyLatestSong';
+import { useIsMobile } from '../../hooks/useIsMobile';
+import YoutubeVideo from '../organisms/YoutubeVideo';
 
 const RightSection = () => {
   const { t, i18n } = useTranslation();

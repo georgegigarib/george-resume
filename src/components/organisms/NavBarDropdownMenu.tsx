@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import ThemeSwitcher from './ThemeSwitcher';
-import LanguageSwitcher from './LanguageSwitcher';
+import ThemeSwitcher from '../molecules/ThemeSwitcher';
+import LanguageSwitcher from '../Settings/LanguageSwitcher';
 
 const DropdownMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
