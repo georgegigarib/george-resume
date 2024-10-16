@@ -1,5 +1,5 @@
+import { cn } from '@/utils/utils';
 import React from 'react';
-import { cn } from '../../utils/utils';
 
 export const CardBody = ({ children, className }: { children: React.ReactNode; className?: string }) => {
   return (

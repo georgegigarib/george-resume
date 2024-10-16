@@ -1,4 +1,4 @@
-import Card from "../molecules/Card";
+import Card from "@/components/molecules/Card";
 
 interface BoxProps {
   startColumn?: number;

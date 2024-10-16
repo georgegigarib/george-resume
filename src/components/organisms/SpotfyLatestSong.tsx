@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useIsMobile } from '../../hooks/useIsMobile';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 export default function SpotifyLatestSong(): React.ReactElement {
   const [currentIndex, setCurrentIndex] = useState<number>(0);

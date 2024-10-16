@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Box from "../organisms/Box";
+import Box from "@/components/organisms/Box";
 import { useTranslation } from 'react-i18next';
-import ExampleComponent from '../organisms/ExampleComponente';
-import { useIsMobile } from '../../hooks/useIsMobile';
-import SeeResume from '../organisms/SeeResume';
+import ExampleComponent from '@/components/organisms/ExampleComponente';
+import { useIsMobile } from '@/hooks/useIsMobile';
+import SeeResume from '@/components/organisms/SeeResume';
 
 const LeftSection = () => {
   const { t, i18n } = useTranslation();

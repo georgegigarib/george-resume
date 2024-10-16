@@ -2,8 +2,8 @@ import { Menu, MenuItem, Button } from '@mui/material';
 import { useState } from 'react';
 import ChangeLanguageIcon from '@mui/icons-material/Language';
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
-import { useLanguage } from '../../hooks/useLanguage';
-import i18n from '../../../i18n.config';
+import { useLanguage } from '@/hooks/useLanguage';
+import i18n from '@/shared/i18n.config'
 
 interface LanguageOption {
   code: string;

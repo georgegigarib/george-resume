@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useIsMobile } from '../../hooks/useIsMobile';
-import ResumePDF from '../../assets/documents/George Gil Garib Resume.pdf'
-import CVPDF from '../../assets/documents/George Gil Garib CV.pdf';
-import resumeIcon from '../../assets/icons/resume-icon.svg';
-import { useLanguage } from '../../hooks/useLanguage';
+import ResumePDF from '@/assets/documents/George Gil Garib Resume.pdf'
+import CVPDF from '@/assets/documents/George Gil Garib CV.pdf';
+import resumeIcon from '@/assets/icons/resume-icon.svg';
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/hooks/useLanguage';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 export default function SeeResume(): React.ReactElement {
   const isMobile = useIsMobile();
