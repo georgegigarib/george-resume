@@ -1,0 +1,41 @@
+name: CI/CD
+permissions:
+  contents: read
+  pull-requests: write
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use bun 1.0.11
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.0.11
+
+      - name: Install dependencies
+        run: bun install
+
+      # 1) Lint check
+      - name: Lint check
+        run: |
+          bun lint
+
+      # 2) test check
+      - name: Run tests
+        run: |
+          bun test-report
+
+      - name: Upload coverage to comment
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          json-summary-path: './coverage/coverage-summary.json'
+          json-final-path: './coverage/coverage-final.json'
+
+      # Add your deployment steps here
+      - name: Deploy
+        run: |
+          bun build
