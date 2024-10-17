@@ -3,31 +3,34 @@ permissions:
   contents: read
   pull-requests: write
 
-on: [push]
+on: [pull_request]
 
 jobs:
-  build:
+  check-code:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Use bun 1.0.11
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use latest version of bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.0.11
+          bun-version: latest
 
+         # 1) intall dependencies
       - name: Install dependencies
-        run: bun install
+        run: bun install --frozen-lockfile
 
-      # 1) Lint check
+         # 2) Lint check
       - name: Lint check
-        run: |
-          bun lint
+        run: bun lint
 
-      # 2) test check
+        # 3) test check
       - name: Run tests
-        run: |
-          bun test-report
+        run: bun test-report
 
+        # 4) Coverage upload
       - name: Upload coverage to comment
         if: always()
         uses: davelosert/vitest-coverage-report-action@v2
@@ -35,7 +38,6 @@ jobs:
           json-summary-path: './coverage/coverage-summary.json'
           json-final-path: './coverage/coverage-final.json'
 
-      # Add your deployment steps here
-      - name: Deploy
-        run: |
-          bun build
+        # 5) Build app
+      - name: Build
+        run: bun run build
