@@ -61,9 +61,6 @@ html {
   z-index: -10; /* Asegúrate de que esté detrás del contenido del nav */
 }
 
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
