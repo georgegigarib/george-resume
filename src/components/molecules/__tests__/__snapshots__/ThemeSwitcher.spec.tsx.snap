@@ -1,13 +1,12 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`DarkModeSwitch component > matches snapshot 1`] = `
+exports[`ThemeSwitcher component > matches snapshot 1`] = `
 <DocumentFragment>
   <label
     class="theme-switch"
-    style="--toggle-size: 50px;"
+    style="--toggle-size: 12px;"
   >
     <input
-      checked=""
       class="theme-switch__checkbox"
       data-testid="theme-switch-checkbox"
       id="theme-switch"

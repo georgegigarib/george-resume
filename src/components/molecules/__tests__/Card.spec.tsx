@@ -1,22 +1,26 @@
 import { render } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
-import Card from '@/components/molecules/Card' // Asegúrate de que la ruta sea correcta
+import Card from '@/components/molecules/Card'
 
 describe('Card component', () => {
-  it('renders the content passed as props', () => {
-    const { getByText } = render(<Card content="Test Content" />)
+  const renderComponent = () => render(<Card content="Test Content" />)
 
-    // Verifica que el contenido específico esté presente en el documento
+  it('matches snapshot', () => {
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('renders the content passed as props', () => {
+    const { getByText } = renderComponent()
+
     const contentElement = getByText('Test Content')
 
-    // Verifica que el elemento existe
-    expect(contentElement).toBeTruthy() // O podrías usar cualquier otro matcher según tu preferencia
+    expect(contentElement).toBeTruthy()
   })
 
   it('renders with the correct classes', () => {
-    const { container } = render(<Card content="Test Content" />)
+    const { container } = renderComponent()
 
-    // Verifica que las clases se apliquen correctamente
-    expect(container.querySelector('.bg-gray-50')).toBeTruthy() // Verifica si una clase específica está presente
+    expect(container.querySelector('.bg-gray-50')).toBeTruthy()
   })
 })

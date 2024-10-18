@@ -2,21 +2,24 @@ import { render, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
 import DarkModeSwitch from '../DarkModeSwitch'
 
-describe('ThemeSwitch component', () => {
+describe('DarkModeSwitch component', () => {
+  const renderComponent = (checked = false, onChange = () => {}, size?: number) =>
+    render(<DarkModeSwitch checked={checked} onChange={onChange} size={size} />)
+
   it('matches snapshot', () => {
-    const { asFragment } = render(<DarkModeSwitch checked={true} onChange={() => {}} />)
+    const { asFragment } = renderComponent(true)
     expect(asFragment()).toMatchSnapshot()
   })
 
   it('renders with the correct initial checked state', () => {
-    const { getByTestId } = render(<DarkModeSwitch checked={true} onChange={() => {}} />)
+    const { getByTestId } = renderComponent(true)
     const checkbox = getByTestId('theme-switch-checkbox') as HTMLInputElement
     expect(checkbox.checked).toBe(true)
   })
 
   it('calls onChange when the checkbox is clicked', () => {
     const handleChange = vi.fn()
-    const { getByTestId } = render(<DarkModeSwitch checked={false} onChange={handleChange} />)
+    const { getByTestId } = renderComponent(false, handleChange)
     const checkbox = getByTestId('theme-switch-checkbox') as HTMLInputElement
 
     fireEvent.click(checkbox)
@@ -26,14 +29,14 @@ describe('ThemeSwitch component', () => {
 
   it('applies the correct size based on the size prop', () => {
     const size = 60
-    const { container } = render(<DarkModeSwitch checked={false} onChange={() => {}} size={size} />)
+    const { container } = renderComponent(false, () => {}, size)
     const labelElement = container.querySelector('.theme-switch') as HTMLElement
 
     expect(labelElement.style.getPropertyValue('--toggle-size')).toBe(`${size}px`)
   })
 
   it('applies the default size when size prop is not provided', () => {
-    const { container } = render(<DarkModeSwitch checked={false} onChange={() => {}} />)
+    const { container } = renderComponent()
     const labelElement = container.querySelector('.theme-switch') as HTMLElement
 
     expect(labelElement.style.getPropertyValue('--toggle-size')).toBe('50px')
@@ -41,9 +44,7 @@ describe('ThemeSwitch component', () => {
 
   it('toggles the checked state correctly when clicked', () => {
     const handleChange = vi.fn()
-    const { getByTestId, rerender } = render(
-      <DarkModeSwitch checked={false} onChange={handleChange} />
-    )
+    const { getByTestId, rerender } = renderComponent(false, handleChange)
     const checkbox = getByTestId('theme-switch-checkbox') as HTMLInputElement
 
     fireEvent.click(checkbox)
@@ -56,7 +57,7 @@ describe('ThemeSwitch component', () => {
   })
 
   it('renders the correct structure for child elements', () => {
-    const { container } = render(<DarkModeSwitch checked={true} onChange={() => {}} />)
+    const { container } = renderComponent(true)
 
     expect(container.querySelector('.theme-switch__clouds')).toBeInTheDocument()
     expect(container.querySelector('.theme-switch__stars-container')).toBeInTheDocument()
@@ -65,7 +66,7 @@ describe('ThemeSwitch component', () => {
   })
 
   it('applies the correct styles based on the checked state', () => {
-    const { getByTestId, rerender } = render(<DarkModeSwitch checked={false} onChange={() => {}} />)
+    const { getByTestId, rerender } = renderComponent(false)
     const checkbox = getByTestId('theme-switch-checkbox') as HTMLInputElement
 
     expect(checkbox.checked).toBe(false)

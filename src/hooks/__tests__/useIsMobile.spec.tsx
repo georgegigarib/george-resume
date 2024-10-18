@@ -32,7 +32,6 @@ describe('useIsMobile', () => {
   it('should update the view when the window is resized', () => {
     window.innerWidth = 800
 
-    // Usar act para envolver la renderización inicial
     render(<TestComponent breakpoint={768} />)
 
     expect(screen.getByTestId('mobile-status').textContent).toContain('Desktop View')
