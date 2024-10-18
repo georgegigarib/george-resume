@@ -1,13 +1,13 @@
-import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
-import AppTestProvider from '@/AppTestProvider/AppTestProvider';
-import Dashboard from '@/app/pages/Dashboard';
+import { render } from '@testing-library/react'
+import { describe, expect, it, vi } from 'vitest'
+import AppTestProvider from '@/AppTestProvider/AppTestProvider'
+import Dashboard from '@/app/pages/Dashboard'
 
-const isMobileMock = vi.fn();
+const isMobileMock = vi.fn()
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: () => isMobileMock(),
-}));
+  useIsMobile: () => isMobileMock()
+}))
 
 describe('Dashboard component', () => {
   const renderComponent = () =>
@@ -15,12 +15,12 @@ describe('Dashboard component', () => {
       <AppTestProvider>
         <Dashboard />
       </AppTestProvider>
-    );
+    )
 
   it('renders correctly on desktop', () => {
-    isMobileMock.mockReturnValue(false);
+    isMobileMock.mockReturnValue(false)
 
-    const { asFragment } = renderComponent();
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
+})

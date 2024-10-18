@@ -18,7 +18,9 @@ body {
   overflow-x: scroll;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -45,9 +47,8 @@ html {
   transition: transform 0.5s ease; /* Ajusta la duración y el tipo de transición según sea necesario */
 }
 
-
 .nav-bottom-oval::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -35px; /* Ajusta según sea necesario */

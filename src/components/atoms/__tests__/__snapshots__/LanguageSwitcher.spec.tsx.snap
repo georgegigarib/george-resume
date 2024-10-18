@@ -7,7 +7,7 @@ exports[`LanguageSwitcher component > matches the snapshot 1`] = `
     data-testid="language-switcher"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary css-6wsdc3-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary css-1gj9aim-MuiButtonBase-root-MuiButton-root"
       data-testid="language-switcher-button"
       style="border-radius: 20px; display: flex; align-items: center;"
       tabindex="0"
@@ -15,7 +15,7 @@ exports[`LanguageSwitcher component > matches the snapshot 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
         data-testid="LanguageIcon"
         focusable="false"
         style="margin-right: 8px;"
@@ -28,7 +28,7 @@ exports[`LanguageSwitcher component > matches the snapshot 1`] = `
       English
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
         data-testid="ArrowDropDownIcon"
         focusable="false"
         style="margin-left: auto; transform: rotate(0deg); transition: transform 0.3s ease;"

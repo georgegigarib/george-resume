@@ -1,9 +1,8 @@
-import { CardBody } from "@/components/atoms/CardBody";
-import { CardContainer } from "@/components/atoms/CardContainer";
-
+import { CardBody } from '@/components/atoms/CardBody'
+import { CardContainer } from '@/components/atoms/CardContainer'
 
 interface Props {
-  content: React.ReactNode;
+  content: React.ReactNode
 }
 
 export default function Card({ content = '' }: Props) {
@@ -13,5 +12,5 @@ export default function Card({ content = '' }: Props) {
         {content}
       </CardBody>
     </CardContainer>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
-import AppTestProvider from '@/AppTestProvider/AppTestProvider';
-import LeftSection from '../LeftSection';
+import { render } from '@testing-library/react'
+import { describe, expect, it, vi } from 'vitest'
+import AppTestProvider from '@/AppTestProvider/AppTestProvider'
+import LeftSection from '../LeftSection'
 
-const isMobileMock = vi.fn();
+const isMobileMock = vi.fn()
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: () => isMobileMock(),
-}));
+  useIsMobile: () => isMobileMock()
+}))
 
 describe('LeftSection component', () => {
   const renderComponent = () =>
@@ -15,12 +15,12 @@ describe('LeftSection component', () => {
       <AppTestProvider>
         <LeftSection />
       </AppTestProvider>
-    );
+    )
 
   it('renders correctly on desktop', () => {
-    isMobileMock.mockReturnValue(false);
+    isMobileMock.mockReturnValue(false)
 
-    const { asFragment } = renderComponent();
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
+})

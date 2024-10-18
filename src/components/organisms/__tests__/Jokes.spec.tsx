@@ -1,7 +1,7 @@
-import { render, screen, fireEvent, act } from '@testing-library/react';
-import Jokes from '@/components/organisms/Jokes';
-import { vi, describe, afterEach, it, expect, beforeEach } from 'vitest';
-import AppTestProvider from '@/AppTestProvider/AppTestProvider';
+import { render, screen, fireEvent, act } from '@testing-library/react'
+import Jokes from '@/components/organisms/Jokes'
+import { vi, describe, afterEach, it, expect, beforeEach } from 'vitest'
+import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 
 describe('Jokes Component', () => {
   const renderComponent = () =>
@@ -9,55 +9,55 @@ describe('Jokes Component', () => {
       <AppTestProvider>
         <Jokes />
       </AppTestProvider>
-    );
+    )
 
   beforeEach(() => {
-    vi.useFakeTimers();
-  });
+    vi.useFakeTimers()
+  })
 
   afterEach(() => {
-    vi.clearAllTimers();
-  });
+    vi.clearAllTimers()
+  })
 
   it('matches the snapshot', () => {
-    const { asFragment } = renderComponent();
-    expect(asFragment()).toMatchSnapshot();
-  });
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
 
   it('changes the joke after the interval', () => {
-    renderComponent();
+    renderComponent()
 
-    const jokeElement = screen.getByTestId('current-joke');
-    const firstJoke = jokeElement.textContent;
+    const jokeElement = screen.getByTestId('current-joke')
+    const firstJoke = jokeElement.textContent
 
-    expect(firstJoke).toBeTruthy();
+    expect(firstJoke).toBeTruthy()
 
     act(() => {
-      vi.advanceTimersByTime(10000); // Simulate 10 seconds passing
-    });
+      vi.advanceTimersByTime(10000) // Simulate 10 seconds passing
+    })
 
-    const updatedJokeElement = screen.getByTestId('current-joke');
-    const newJoke = updatedJokeElement.textContent;
-    expect(newJoke).not.toBe(firstJoke);
-  });
+    const updatedJokeElement = screen.getByTestId('current-joke')
+    const newJoke = updatedJokeElement.textContent
+    expect(newJoke).not.toBe(firstJoke)
+  })
 
   it('changes the joke when refresh button is clicked', () => {
-    renderComponent();
+    renderComponent()
 
-    const jokeElement = screen.getByTestId('current-joke');
-    const firstJoke = jokeElement.textContent;
+    const jokeElement = screen.getByTestId('current-joke')
+    const firstJoke = jokeElement.textContent
 
-    expect(firstJoke).toBeTruthy();
+    expect(firstJoke).toBeTruthy()
 
-    const refreshButton = screen.getByTestId('refresh-joke-button');
-    fireEvent.click(refreshButton);
+    const refreshButton = screen.getByTestId('refresh-joke-button')
+    fireEvent.click(refreshButton)
 
     act(() => {
-      vi.advanceTimersByTime(2000); // Simulate time for transition
-    });
+      vi.advanceTimersByTime(2000) // Simulate time for transition
+    })
 
-    const updatedJokeElement = screen.getByTestId('current-joke');
-    const newJoke = updatedJokeElement.textContent;
-    expect(newJoke).not.toBe(firstJoke);
-  });
-});
+    const updatedJokeElement = screen.getByTestId('current-joke')
+    const newJoke = updatedJokeElement.textContent
+    expect(newJoke).not.toBe(firstJoke)
+  })
+})

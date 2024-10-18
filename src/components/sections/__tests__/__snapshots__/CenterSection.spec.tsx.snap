@@ -87,14 +87,14 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
               </div>
               <button
                 aria-label="refresh joke"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1b6427a-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-5fjsz0-MuiButtonBase-root-MuiIconButton-root"
                 data-testid="refresh-joke-button"
                 tabindex="0"
                 type="button"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
                   data-testid="CachedIcon"
                   focusable="false"
                   viewBox="0 0 24 24"

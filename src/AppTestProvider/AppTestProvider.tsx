@@ -1,9 +1,9 @@
-import React from 'react';
-import { I18nextProvider } from 'react-i18next';
-import i18n from '@/locales/i18n.config';
-import store from '@/store';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { I18nextProvider } from 'react-i18next'
+import i18n from '@/locales/i18n.config'
+import store from '@/store'
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const AppTestProvider = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -16,7 +16,7 @@ const AppTestProvider = ({ children }: { children: React.ReactNode }) => {
         </Router>
       </Provider>
     </I18nextProvider>
-  );
-};
+  )
+}
 
-export default AppTestProvider;
+export default AppTestProvider

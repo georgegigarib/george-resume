@@ -10,7 +10,11 @@ export default mergeConfig(
       globals: true,
       environment: 'jsdom',
       setupFiles: ['./setupTests.ts'],
-      exclude: [...configDefaults.exclude, 'e2e/**'],
+      exclude: [
+        ...configDefaults.exclude,
+        'e2e/**',
+        '__tests__/**',
+      ],
       include: ['./src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
       update: true,
       outputFile: {
@@ -20,7 +24,18 @@ export default mergeConfig(
       coverage: {
         all: true,
         reporter: ['text', 'text-summary', 'json-summary', 'json'],
-        exclude: ['eslint.config.js', 'postcss.config.js', 'tailwind.config.js', 'vite.config.ts', 'vitest.config.ts', './dist/assets/*', './src/main.tsx', './src/vite-env.d.ts', './src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+        exclude: [
+          'eslint.config.js',
+          'postcss.config.js',
+          'tailwind.config.js',
+          'vite.config.ts',
+          'vitest.config.ts',
+          './dist/assets/*',
+          './src/main.tsx',
+          './src/vite-env.d.ts',
+          './src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+          '__tests__/**',
+        ],
         reportOnFailure: true,
         reportsDirectory: './coverage',
         thresholds: {

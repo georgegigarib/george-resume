@@ -1,43 +1,46 @@
-import React, { useRef, useState, useEffect } from 'react';
-import VolumeOffIcon from '@mui/icons-material/VolumeOff';
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import React, { useRef, useState, useEffect } from 'react'
+import VolumeOffIcon from '@mui/icons-material/VolumeOff'
+import VolumeUpIcon from '@mui/icons-material/VolumeUp'
 import VideoSrc from '@/assets/videos/final.mp4'
-import { Tooltip, CircularProgress } from '@mui/material';
-import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
-import { Sections } from '@/app/layout/navbarTypes';
-import { useIsMobile } from '@/hooks/useIsMobile';
-import { RootState } from "@/store/hash/activeHashSlice";
+import { Tooltip, CircularProgress } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+import { useSelector } from 'react-redux'
+import { Sections } from '@/app/layout/navbarTypes'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import { RootState } from '@/store/hash/activeHashSlice'
 
 export default function YoutubeVideo(): React.ReactElement {
-  const videoUrl = "https://www.youtube.com/watch?v=Mfxv1jmkWlk"
-  const isMobile = useIsMobile();
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isMuted, setIsMuted] = useState(true);
-  const [showTooltip, setShowTooltip] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const activeHash = useSelector((state: RootState) => state.hash.activeHash);
-  const { t } = useTranslation();
+  const videoUrl = 'https://www.youtube.com/watch?v=Mfxv1jmkWlk'
+  const isMobile = useIsMobile()
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [isMuted, setIsMuted] = useState(true)
+  const [showTooltip, setShowTooltip] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const activeHash = useSelector((state: RootState) => state.hash.activeHash)
+  const { t } = useTranslation()
 
   const handleVideoClick = (): void => {
     if (videoRef.current) {
-      const mutedState = !isMuted;
-      videoRef.current.muted = mutedState;
-      setIsMuted(mutedState);
+      const mutedState = !isMuted
+      videoRef.current.muted = mutedState
+      setIsMuted(mutedState)
     }
-  };
+  }
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowTooltip(activeHash === Sections.Music);
-    }, activeHash === Sections.Music ? 3500 : 1500);
+    const timer = setTimeout(
+      () => {
+        setShowTooltip(activeHash === Sections.Music)
+      },
+      activeHash === Sections.Music ? 3500 : 1500
+    )
 
-    return () => clearTimeout(timer);
-  }, [activeHash]);
+    return () => clearTimeout(timer)
+  }, [activeHash])
 
   const handleVideoLoaded = (): void => {
-    setIsLoading(false);
-  };
+    setIsLoading(false)
+  }
 
   return (
     <div className="relative flex flex-col justify-between rounded-xl h-full bg-gray-700">
@@ -63,7 +66,11 @@ export default function YoutubeVideo(): React.ReactElement {
       </video>
 
       <div className="absolute bottom-3 left-2">
-        {isMuted ? <VolumeOffIcon className="text-white text-2xl" /> : <VolumeUpIcon className="text-white text-2xl" />}
+        {isMuted ? (
+          <VolumeOffIcon className="text-white text-2xl" />
+        ) : (
+          <VolumeUpIcon className="text-white text-2xl" />
+        )}
       </div>
 
       <div
@@ -72,13 +79,17 @@ export default function YoutubeVideo(): React.ReactElement {
         }`}
       >
         <Tooltip title={t('music.video.seeFullVideo')}>
-          <span className="cursor-pointer w-full"> 
-            <a href={videoUrl} target='_blank' className="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center">
+          <span className="cursor-pointer w-full">
+            <a
+              href={videoUrl}
+              target="_blank"
+              className="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center"
+            >
               {t('music.video.clickMe')}
             </a>
           </span>
         </Tooltip>
       </div>
     </div>
-  );
+  )
 }

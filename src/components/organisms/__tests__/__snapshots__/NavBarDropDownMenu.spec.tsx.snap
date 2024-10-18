@@ -7,13 +7,13 @@ exports[`DropdownMenu Component > closes the menu when clicked outside 1`] = `
   >
     <button
       aria-label="menu"
-      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-l4e842-MuiButtonBase-root-MuiIconButton-root"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-efpxe5-MuiButtonBase-root-MuiIconButton-root"
       tabindex="0"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
         data-testid="MenuIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -34,13 +34,13 @@ exports[`DropdownMenu Component > matches snapshot 1`] = `
   >
     <button
       aria-label="menu"
-      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-l4e842-MuiButtonBase-root-MuiIconButton-root"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-efpxe5-MuiButtonBase-root-MuiIconButton-root"
       tabindex="0"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
         data-testid="MenuIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -61,13 +61,13 @@ exports[`DropdownMenu Component > opens the menu when the button is clicked 1`] 
   >
     <button
       aria-label="menu"
-      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-l4e842-MuiButtonBase-root-MuiIconButton-root"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-efpxe5-MuiButtonBase-root-MuiIconButton-root"
       tabindex="0"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
         data-testid="MenuIcon"
         focusable="false"
         viewBox="0 0 24 24"

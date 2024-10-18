@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
-import { CardBody } from '@/components/atoms/CardBody';
+import { render } from '@testing-library/react'
+import { describe, expect, it } from 'vitest'
+import { CardBody } from '@/components/atoms/CardBody'
 
 describe('CardBody component', () => {
   it('matches the snapshot', () => {
@@ -8,7 +8,7 @@ describe('CardBody component', () => {
       <CardBody className="custom-class">
         <p>Test content</p>
       </CardBody>
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-});
+    )
+    expect(asFragment()).toMatchSnapshot()
+  })
+})
