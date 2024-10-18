@@ -1,16 +1,22 @@
-import { useEffect, useState } from 'react';
-import Box from "@/components/organisms/Box";
-import { useTranslation } from 'react-i18next';
-import ExampleComponent from '@/components/organisms/ExampleComponente';
-import { useIsMobile } from '@/hooks/useIsMobile';
-import SeeResume from '@/components/organisms/SeeResume';
+import { useEffect, useState } from 'react'
+import Box from '@/components/organisms/Box'
+import { useTranslation } from 'react-i18next'
+import ExampleComponent from '@/components/organisms/ExampleComponente'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import SeeResume from '@/components/organisms/SeeResume'
 
 const LeftSection = () => {
-  const { t, i18n } = useTranslation();
-  const isMobile = useIsMobile();
+  const { t, i18n } = useTranslation()
+  const isMobile = useIsMobile()
   const [activeBoxes, setActiveBoxes] = useState<
-    { startRow: number; spanRow: number; startColumn: number; spanColumn: number; content: React.ReactNode }[]
-  >([]);
+    {
+      startRow: number
+      spanRow: number
+      startColumn: number
+      spanColumn: number
+      content: React.ReactNode
+    }[]
+  >([])
 
   useEffect(() => {
     const mobileBoxes = [
@@ -19,9 +25,9 @@ const LeftSection = () => {
       { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 18, content: <ExampleComponent /> },
       { startRow: 20, spanRow: 9, startColumn: 13, spanColumn: 9, content: <ExampleComponent /> },
       { startRow: 20, spanRow: 6, startColumn: 22, spanColumn: 6, content: <SeeResume /> },
-      { startRow: 7, spanRow: 7, startColumn: 8, spanColumn: 17, content: <ExampleComponent /> },
-    ];
-    
+      { startRow: 7, spanRow: 7, startColumn: 8, spanColumn: 17, content: <ExampleComponent /> }
+    ]
+
     const desktopBoxes = [
       { startRow: 40, spanRow: 48, startColumn: 1, spanColumn: 28, content: <ExampleComponent /> },
       { startRow: 27, spanRow: 13, startColumn: 20, spanColumn: 25, content: <ExampleComponent /> },
@@ -29,11 +35,11 @@ const LeftSection = () => {
       { startRow: 45, spanRow: 17, startColumn: 45, spanColumn: 13, content: <ExampleComponent /> },
       { startRow: 45, spanRow: 10, startColumn: 71, spanColumn: 10, content: <SeeResume /> },
       { startRow: 21, spanRow: 24, startColumn: 45, spanColumn: 36, content: <ExampleComponent /> },
-      { startRow: 10, spanRow: 11, startColumn: 55, spanColumn: 20, content: <ExampleComponent /> },
-    ];
+      { startRow: 10, spanRow: 11, startColumn: 55, spanColumn: 20, content: <ExampleComponent /> }
+    ]
 
-    setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes);
-  }, [isMobile, i18n.language, t]);
+    setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes)
+  }, [isMobile, i18n.language, t])
 
   return (
     <div className="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4">
@@ -48,7 +54,7 @@ const LeftSection = () => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default LeftSection;
+export default LeftSection

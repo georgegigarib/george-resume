@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MusicLink component > matches the snapshot when activeHash is Sections.Dev 1`] = `
+<DocumentFragment>
+  <a
+    class="block rounded md:p-0 -translate-y-[60%] md:-translate-y-[80%] 2xl:-translate-y-[50%] animated-transform"
+  >
+    music
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MusicLink component > matches the snapshot when activeHash is Sections.Me 1`] = `
+<DocumentFragment>
+  <a
+    class="block rounded md:p-0 text-gray-900 -rotate-[17deg] -translate-y-[20%] sm:-rotate-12 md:translate-y-[0%] xl:-rotate-3 animated-transform opacity-40 font-bold 2xl:translate-y-[20%]"
+  >
+    music
+  </a>
+</DocumentFragment>
+`;
+
+exports[`MusicLink component > matches the snapshot when activeHash is Sections.Music 1`] = `
+<DocumentFragment>
+  <a
+    class="block rounded md:p-0 text-white font-bold animated-transform translate-y-[15%] md:translate-y-[45%] scale-130 -rotate-5"
+  >
+    music
+  </a>
+</DocumentFragment>
+`;

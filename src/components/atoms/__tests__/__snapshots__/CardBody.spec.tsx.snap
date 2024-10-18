@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CardBody component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="h-96 w-96 [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] custom-class"
+  >
+    <p>
+      Test content
+    </p>
+  </div>
+</DocumentFragment>
+`;

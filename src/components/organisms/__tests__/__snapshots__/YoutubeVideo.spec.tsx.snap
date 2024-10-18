@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LocalVideoWithTooltip Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="relative flex flex-col justify-between rounded-xl h-full bg-gray-700"
+  >
+    <div
+      class="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10"
+    >
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary text-white css-1yonwsg-MuiCircularProgress-root"
+        role="progressbar"
+        style="width: 40px; height: 40px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </span>
+    </div>
+    <video
+      autoplay=""
+      class="rounded-xl cursor-pointer opacity-0"
+      loop=""
+      playsinline=""
+      title="Click to mute/unmute"
+      width="200px"
+    >
+      <source
+        src="/src/assets/videos/final.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div
+      class="absolute bottom-3 left-2"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-white text-2xl css-20bmp1-MuiSvgIcon-root"
+        data-testid="VolumeOffIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63m2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71M4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9zM12 4 9.91 6.09 12 8.18z"
+        />
+      </svg>
+    </div>
+    <div
+      class="absolute -bottom-7 left-0 right-0 -z-10 transition-transform duration-1000 ease-in-out transform -translate-y-10 opacity-0"
+    >
+      <span
+        aria-label="See full video"
+        class="cursor-pointer w-full"
+        data-mui-internal-clone-element="true"
+      >
+        <a
+          class="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center"
+          href="https://www.youtube.com/watch?v=Mfxv1jmkWlk"
+          target="_blank"
+        >
+          Click me!
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BlurredImage Component > renders with mobile dimensions 1`] = `
+<DocumentFragment>
+  <div
+    class="z-[4]"
+  >
+    <div
+      style="height: 260px; box-shadow: inset 0px 0px 18px 20px white; position: relative;"
+    >
+      <img
+        alt=""
+        data-testid="image-test-id"
+        src="test-image.jpg"
+        style="height: 260px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

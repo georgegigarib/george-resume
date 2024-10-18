@@ -1,18 +1,17 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import '@/index.css';
-import '@/styles/themeswitch.css';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Dashboard from '@/app/pages/Dashboard';
-import { Provider } from 'react-redux';
-import '@/shared/i18n.config.ts'
-import store from '@/store';
-import NavBar from '@/app/layout/NavBar';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import '@/index.css'
+import '@/styles/themeswitch.css'
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom'
+import Dashboard from '@/app/pages/Dashboard'
+import { Provider } from 'react-redux'
+import store from '@/store'
+import NavBar from '@/app/layout/NavBar'
 
-function App() {
-  const location = useLocation();
+export function App() {
+  const location = useLocation()
 
-  const hiddenPaths = [''];
+  const hiddenPaths = ['']
 
   return (
     <>
@@ -20,9 +19,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
-  );
+  )
 }
 
 createRoot(document.getElementById('root')!).render(
@@ -32,5 +32,5 @@ createRoot(document.getElementById('root')!).render(
         <App />
       </Router>
     </Provider>
-  </StrictMode>,
-);
+  </StrictMode>
+)

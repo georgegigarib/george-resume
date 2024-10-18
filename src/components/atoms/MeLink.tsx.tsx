@@ -1,23 +1,23 @@
-import { Sections } from '@/types/navbarTypes';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Sections } from '@/app/layout/navbarTypes'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const MeLink = ({
   scrollToSection,
   setAutomaticScroll,
-  activeHash,
+  activeHash
 }: {
-  scrollToSection: (id: string, called?: boolean) => void;
-  setAutomaticScroll: React.Dispatch<React.SetStateAction<boolean>>;
-  activeHash: string;
+  scrollToSection: (id: string, called?: boolean) => void
+  setAutomaticScroll: React.Dispatch<React.SetStateAction<boolean>>
+  activeHash: string
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <a
       onClick={() => {
-        scrollToSection(Sections.Me, true);
-        setAutomaticScroll(false);
+        scrollToSection(Sections.Me, true)
+        setAutomaticScroll(false)
       }}
       className={`block pt-8 rounded md:p-0 ${
         activeHash === Sections.Me
@@ -27,13 +27,13 @@ const MeLink = ({
         activeHash === Sections.Music
           ? 'rotate-[18deg] sm:rotate-6 md:-translate-y-[10%] 2xl:translate-y-[15%] lg:rotate-3'
           : activeHash === Sections.Dev
-          ? '-rotate-[18deg] sm:-rotate-6  md:translate-y-[0%]  2xl:translate-y-[15%] lg:-rotate-3'
-          : ''
+            ? '-rotate-[18deg] sm:-rotate-6  md:translate-y-[0%]  2xl:translate-y-[15%] lg:-rotate-3'
+            : ''
       }`}
     >
       {t('navbar.me')}
     </a>
-  );
-};
+  )
+}
 
-export default MeLink;
+export default MeLink
