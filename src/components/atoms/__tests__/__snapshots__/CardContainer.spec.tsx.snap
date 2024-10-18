@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CardContainer component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex w-full h-full container-class"
+    style="perspective: 1000px;"
+  >
+    <div
+      class="w-full relative transition-all duration-200 ease-linear custom-class"
+      style="transform-style: preserve-3d;"
+    >
+      <p>
+        Test content
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

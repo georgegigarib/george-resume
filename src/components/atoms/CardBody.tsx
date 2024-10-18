@@ -1,4 +1,4 @@
-import { cn } from '@/utils/utils';
+import { cn } from '@/utils/classMerge';
 import React from 'react';
 
 export const CardBody = ({ children, className }: { children: React.ReactNode; className?: string }) => {

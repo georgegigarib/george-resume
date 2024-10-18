@@ -25,6 +25,7 @@ export default function SpotifyPlaylist(): React.ReactElement {
           height={isMobile ? "152px" : "379px"}
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
+          data-testid="spotify-playlist-iframe"
         ></iframe>
       </div>
     </div>

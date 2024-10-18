@@ -1,25 +1,15 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import activeHashReducer, { ActiveHashState } from '@/store/hash/activeHashSlice';
 
-const initialState = {
-  activeHash: '',
-};
-
-const hashSlice = createSlice({
-  name: 'hash',
-  initialState,
-  reducers: {
-    setActiveHash: (state, action) => {
-      state.activeHash = action.payload;
-    },
-  },
-});
-
-export const { setActiveHash } = hashSlice.actions;
+export interface RootState {
+  hash: ActiveHashState;
+}
 
 const store = configureStore({
   reducer: {
-    hash: hashSlice.reducer,
+    hash: activeHashReducer,
   },
 });
 
+export type AppDispatch = typeof store.dispatch;
 export default store;

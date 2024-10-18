@@ -1,0 +1,770 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Dashboard component > renders correctly on desktop 1`] = `
+<DocumentFragment>
+  <div
+    class="w-[1300px] md:w-[3300px] bg-white dark:bg-black"
+  >
+    <div
+      class="flex justify-between w-full mt-0"
+    >
+      <div
+        class="flex-1 flex justify-center"
+        id="dev"
+      >
+        <div
+          class="z-[4]"
+        >
+          <div
+            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
+          >
+            <img
+              alt=""
+              data-testid="image-test-id"
+              src="/src/assets/images/dev.webp"
+              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 flex justify-center"
+        id="me"
+      >
+        <div
+          class="z-[4]"
+        >
+          <div
+            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
+          >
+            <img
+              alt=""
+              data-testid="image-test-id"
+              src="/src/assets/images/me.webp"
+              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 flex justify-center"
+        id="music"
+      >
+        <div
+          class="z-[4]"
+        >
+          <div
+            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
+          >
+            <img
+              alt=""
+              data-testid="image-test-id"
+              src="/src/assets/images/music.webp"
+              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full -top-32 md:-top-96 relative z-[5]"
+    >
+      <div
+        class="flex"
+      >
+        <div
+          class="w-[33.33%]"
+        >
+          <div
+            class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
+          >
+            <div
+              class="rounded-xl"
+              style="grid-area: 40 / 1 / span 48 / span 28;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 27 / 20 / span 13 / span 25;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 40 / 29 / span 18 / span 16;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 45 / 45 / span 17 / span 13;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 45 / 71 / span 10 / span 10;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <a
+                      class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+                      href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
+                      style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Resume Icon"
+                        class=""
+                        data-testid="resume-icon"
+                        height="80"
+                        src="/src/assets/icons/resume-icon.svg"
+                        width="80"
+                      />
+                      <p
+                        class="font-bold text-[1.0em]"
+                        data-testid="resume-button-text"
+                      >
+                        See resume
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 21 / 45 / span 24 / span 36;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 10 / 55 / span 11 / span 20;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[33.33%]"
+        >
+          <div
+            class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
+          >
+            <div
+              class="rounded-xl"
+              style="grid-area: 28 / 12 / span 28 / span 22;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 56 / 25 / span 9 / span 9;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 49 / 34 / span 10 / span 22;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl bg-gray-200 dark:bg-blue-900"
+                    >
+                      <div
+                        class="transition-opacity duration-500 opacity-100 h-full"
+                      >
+                        <p
+                          class="text-gray-700 dark:text-gray-100 h-full"
+                          data-testid="current-joke"
+                        >
+                          I decided to create this presentation because, let's face it, my jokes aren’t as good as my code... but here we are.
+                        </p>
+                      </div>
+                      <button
+                        aria-label="refresh joke"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1b6427a-MuiButtonBase-root-MuiIconButton-root"
+                        data-testid="refresh-joke-button"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="CachedIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m19 8-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 31 / 34 / span 18 / span 57;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 22 / 43 / span 9 / span 22;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="flex relative flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+                    >
+                      <div
+                        class="mb-4"
+                      >
+                        <h2
+                          class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                        >
+                          Hi! I'm George Gil
+                        </h2>
+                        <p
+                          class="text-gray-700 dark:text-gray-300"
+                        >
+                          I'm a curious software engineer who also plays guitar, not always at the same time though.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[33.33%]"
+        >
+          <div
+            class="grid grid-cols-100 grid-rows-100 gap-4"
+          >
+            <div
+              class="rounded-xl"
+              style="grid-area: 13 / 1 / span 20 / span 13;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 21 / 14 / span 12 / span 36;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 33 / 22 / span 22 / span 22;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="flex flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+                    >
+                      <div
+                        class="mb-4"
+                      >
+                        <h2
+                          class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                        >
+                          My Favorite Playlist
+                        </h2>
+                        <p
+                          class="text-gray-700 dark:text-gray-300"
+                        >
+                          Enjoy my personal selection of songs in this playlist. Listen to it and let yourself be carried away by the rhythm!
+                        </p>
+                      </div>
+                      <div
+                        class="mt-auto"
+                      >
+                        <iframe
+                          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                          class="rounded-xl"
+                          data-testid="spotify-playlist-iframe"
+                          height="379px"
+                          loading="lazy"
+                          src="https://open.spotify.com/embed/playlist/2Z8vIZcBXeeCfcmkffrTlR?utm_source=generator"
+                          width="100%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 48 / 14 / span 6 / span 8;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 33 / 44 / span 7 / span 20;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="overflow-hidden relative"
+                      data-testid="frame-container"
+                    >
+                      <div
+                        class="transition-transform duration-500"
+                        style="transform: translateY(-0%); height: 152px;"
+                      >
+                        <div
+                          style="pointer-events: none;"
+                        >
+                          <iframe
+                            allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture"
+                            class="rounded-xl"
+                            data-testid="song-test-id-0"
+                            height="152"
+                            loading="lazy"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                            src="https://open.spotify.com/embed/album/6H73t0Wok8dsEEGqRhgOsV?utm_source=generator"
+                            style="pointer-events: auto; overflow: hidden; background: transparent;"
+                            width="365"
+                          />
+                        </div>
+                        <div
+                          style="pointer-events: none;"
+                        >
+                          <iframe
+                            allow="autoplay; clipboard-write; encrypted-media *; fullscreen; picture-in-picture"
+                            class="rounded-xl"
+                            data-testid="song-test-id-1"
+                            height="152"
+                            loading="lazy"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                            src="https://embed.music.apple.com/do/album/un-a%C3%B1o-single/1760344218"
+                            style="pointer-events: auto; overflow: hidden; background: transparent;"
+                            width="365"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 40 / 44 / span 10 / span 10;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="p-4 text-blue-900 rounded"
+                    >
+                      <h4>
+                        yes
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl"
+              style="grid-area: 41 / 54 / span 14 / span 10;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="relative flex flex-col justify-between rounded-xl h-full bg-gray-700"
+                    >
+                      <div
+                        class="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary text-white css-1wxecgq-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-960umw-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <video
+                        autoplay=""
+                        class="rounded-xl cursor-pointer opacity-0"
+                        loop=""
+                        playsinline=""
+                        title="Click to mute/unmute"
+                        width="200px"
+                      >
+                        <source
+                          src="/src/assets/videos/final.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                      <div
+                        class="absolute bottom-3 left-2"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-white text-2xl css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="VolumeOffIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63m2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71M4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9zM12 4 9.91 6.09 12 8.18z"
+                          />
+                        </svg>
+                      </div>
+                      <div
+                        class="absolute -bottom-7 left-0 right-0 -z-10 transition-transform duration-1000 ease-in-out transform -translate-y-10 opacity-0"
+                      >
+                        <span
+                          aria-label="See full video"
+                          class="cursor-pointer w-full"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <a
+                            class="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center"
+                            href="https://www.youtube.com/watch?v=Mfxv1jmkWlk"
+                            target="_blank"
+                          >
+                            Click me!
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

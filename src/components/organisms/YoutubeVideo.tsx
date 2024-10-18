@@ -5,11 +5,12 @@ import VideoSrc from '@/assets/videos/final.mp4'
 import { Tooltip, CircularProgress } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { Sections } from '@/types/navbarTypes';
+import { Sections } from '@/app/layout/navbarTypes';
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { RootState } from '@/store/hash/types';
+import { RootState } from "@/store/hash/activeHashSlice";
 
-export default function LocalVideoWithTooltip(): React.ReactElement {
+export default function YoutubeVideo(): React.ReactElement {
+  const videoUrl = "https://www.youtube.com/watch?v=Mfxv1jmkWlk"
   const isMobile = useIsMobile();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -33,10 +34,6 @@ export default function LocalVideoWithTooltip(): React.ReactElement {
 
     return () => clearTimeout(timer);
   }, [activeHash]);
-
-  const handleTooltipClick = (): void => {
-    window.open('https://www.youtube.com/watch?v=Mfxv1jmkWlk', '_blank');
-  };
 
   const handleVideoLoaded = (): void => {
     setIsLoading(false);
@@ -75,8 +72,8 @@ export default function LocalVideoWithTooltip(): React.ReactElement {
         }`}
       >
         <Tooltip title={t('music.video.seeFullVideo')}>
-          <span onClick={handleTooltipClick} className="cursor-pointer w-full"> 
-            <a className="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center">
+          <span className="cursor-pointer w-full"> 
+            <a href={videoUrl} target='_blank' className="bg-gray-700 text-white w-full pt-4 pb-1 text-sm font-bold rounded-b-lg opacity-75 hover:opacity-80 transition-opacity block text-center">
               {t('music.video.clickMe')}
             </a>
           </span>

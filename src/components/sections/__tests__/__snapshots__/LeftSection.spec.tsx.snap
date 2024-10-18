@@ -1,0 +1,206 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LeftSection component > renders correctly on desktop 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
+  >
+    <div
+      class="rounded-xl"
+      style="grid-area: 40 / 1 / span 48 / span 28;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 27 / 20 / span 13 / span 25;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 40 / 29 / span 18 / span 16;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 45 / 45 / span 17 / span 13;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 45 / 71 / span 10 / span 10;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <a
+              class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+              href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
+              style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+              target="_blank"
+            >
+              <img
+                alt="Resume Icon"
+                class=""
+                data-testid="resume-icon"
+                height="80"
+                src="/src/assets/icons/resume-icon.svg"
+                width="80"
+              />
+              <p
+                class="font-bold text-[1.0em]"
+                data-testid="resume-button-text"
+              >
+                See resume
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 21 / 45 / span 24 / span 36;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-xl"
+      style="grid-area: 10 / 55 / span 11 / span 20;"
+    >
+      <div
+        class="flex w-full h-full"
+        style="perspective: 1000px;"
+      >
+        <div
+          class="w-full relative transition-all duration-200 ease-linear inter-var"
+          style="transform-style: preserve-3d;"
+        >
+          <div
+            class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+          >
+            <div
+              class="p-4 text-blue-900 rounded"
+            >
+              <h4>
+                yes
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

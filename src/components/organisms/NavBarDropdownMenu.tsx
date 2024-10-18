@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ThemeSwitcher from '@/components/molecules/ThemeSwitcher';
 import LanguageSwitcher from '@/components/atoms/LanguageSwitcher';
 
-const DropdownMenu = () => {
+const NavBarDropdownMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
@@ -22,12 +22,12 @@ const DropdownMenu = () => {
       </IconButton>
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
         <MenuItem disableRipple className='gap-2'>
-          <ThemeSwitcher />
-          <LanguageSwitcher  />
+          <ThemeSwitcher/>
+          <LanguageSwitcher/>
         </MenuItem>
       </Menu>
     </div>
   );
 };
 
-export default DropdownMenu;
+export default NavBarDropdownMenu;

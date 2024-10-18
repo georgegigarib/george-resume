@@ -15,6 +15,7 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ checked, onChange, size = 50 
         className="theme-switch__checkbox"
         checked={checked}
         onChange={onChange}
+        data-testid="theme-switch-checkbox"
       />
       <div className="theme-switch__container">
         <div className="theme-switch__clouds"></div>

@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { setActiveHash } from '@/store/index.ts';
-import LanguageSwitcher from '@/components/organisms/NavBarDropdownMenu.tsx';
-import { Sections } from '@/types/navbarTypes.ts';
-import { RootState } from '@/store/hash/types.ts';
-import DevLink from '@/components/atoms/DevLink.tsx';
-import MeLink from '@/components/atoms/MeLink.tsx.tsx';
-import MusicLink from '@/components/atoms/MusicLink.tsx';
+import { setActiveHash } from '@/store/hash/activeHashSlice';
+import LanguageSwitcher from '@/components/organisms/NavBarDropdownMenu';
+import { Sections } from '@/app/layout/navbarTypes';
+import { RootState } from "@/store/hash/activeHashSlice";
+
+import DevLink from '@/components/atoms/DevLink';
+import MeLink from '@/components/atoms/MeLink.tsx';
+import MusicLink from '@/components/atoms/MusicLink';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -52,24 +53,24 @@ const Navbar = () => {
 
   useEffect(() => {
     const hash = location.hash || Sections.Me;
-    dispatch(setActiveHash(hash));
+    dispatch(setActiveHash(hash)); // Despacha la acción para establecer el hash activo
     moveNavBar(hash);
 
     if (automaticScroll) {
       scrollToSection(hash);
       return;
     }
-  }, [location.hash, automaticScroll]);
+  }, [location.hash, automaticScroll, dispatch]); // Asegúrate de incluir dispatch como dependencia
 
   useEffect(() => {
     if (automaticScroll) return;
 
     const handleScroll = () => {
       const scrollX = window.scrollX;
-      const windowHeight = window.innerWidth;
-      const documentHeight = document.body.scrollWidth;
+      const windowWidth = window.innerWidth;
+      const documentWidth = document.body.scrollWidth;
 
-      const scrollPercentage = (scrollX / (documentHeight - windowHeight)) * 100;
+      const scrollPercentage = (scrollX / (documentWidth - windowWidth)) * 100;
 
       if (scrollPercentage > 66) {
         moveNavBar(Sections.Music);
@@ -90,7 +91,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [automaticScroll]);
+  }, [automaticScroll, dispatch]);
 
   return (
     <nav className="bg-transparent border-transparent fixed w-full z-20 top-0 start-0 border-b nav-bottom-oval h-12 md:h-20">

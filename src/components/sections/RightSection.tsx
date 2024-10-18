@@ -3,7 +3,7 @@ import Box from "@/components/organisms/Box";
 import { useTranslation } from 'react-i18next';
 import ExampleComponent from '@/components/organisms/ExampleComponente';
 import SpotifyPlaylist from '@/components/organisms/SpotifyPlaylist';
-import SpotifyLatestSong from '@/components/organisms/SpotfyLatestSong';
+import LatestSong from '@/components/organisms/LatestSong';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import YoutubeVideo from '@/components/organisms/YoutubeVideo';
 
@@ -27,7 +27,7 @@ const RightSection = () => {
       { startRow: 21, spanRow: 12, startColumn: 14, spanColumn: 36, content: <ExampleComponent /> },
       { startRow: 33, spanRow: 22, startColumn: 22, spanColumn: 22, content: <SpotifyPlaylist /> },
       { startRow: 48, spanRow: 6, startColumn: 14, spanColumn: 8, content: <ExampleComponent /> },
-      { startRow: 33, spanRow: 7, startColumn: 44, spanColumn: 20, content: <SpotifyLatestSong /> },
+      { startRow: 33, spanRow: 7, startColumn: 44, spanColumn: 20, content: <LatestSong /> },
       { startRow: 40, spanRow: 10, startColumn: 44, spanColumn: 10, content: <ExampleComponent /> },
       { startRow: 41, spanRow: 14, startColumn: 54, spanColumn: 10, content: <YoutubeVideo /> },
     ];

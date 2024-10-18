@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Sections } from '@/types/navbarTypes';
+import { Sections } from '@/app/layout/navbarTypes';
 
-interface ActiveHashState {
+export interface ActiveHashState {
   activeHash: string;
 }
 
@@ -22,3 +22,15 @@ export const selectActiveHash = (state: { hash: ActiveHashState }) => state.hash
 export const { setActiveHash } = activeHashSlice.actions;
 
 export default activeHashSlice.reducer;
+
+export interface HashAction {
+  type: string;
+  payload: string;
+}
+
+export interface RootState {
+  hash: {
+    activeHash: string;
+  };
+}
+

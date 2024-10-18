@@ -1,4 +1,4 @@
-import { Sections } from '@/types/navbarTypes';
+import { Sections } from '@/app/layout/navbarTypes';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 

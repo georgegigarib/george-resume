@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Jokes Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl bg-gray-200 dark:bg-blue-900"
+  >
+    <div
+      class="transition-opacity duration-500 opacity-100 h-full"
+    >
+      <p
+        class="text-gray-700 dark:text-gray-100 h-full"
+        data-testid="current-joke"
+      >
+        I decided to create this presentation because, let's face it, my jokes aren’t as good as my code... but here we are.
+      </p>
+    </div>
+    <button
+      aria-label="refresh joke"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1b6427a-MuiButtonBase-root-MuiIconButton-root"
+      data-testid="refresh-joke-button"
+      tabindex="0"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CachedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="m19 8-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4z"
+        />
+      </svg>
+    </button>
+  </div>
+</DocumentFragment>
+`;

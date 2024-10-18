@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NavBar component > renders correctly on desktop 1`] = `
+<DocumentFragment>
+  <nav
+    class="bg-transparent border-transparent fixed w-full z-20 top-0 start-0 border-b nav-bottom-oval h-12 md:h-20"
+  >
+    <div
+      class="absolute right-0"
+    >
+      <button
+        aria-label="menu"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-l4e842-MuiButtonBase-root-MuiIconButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+          data-testid="MenuIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-8"
+    >
+      <div
+        class="justify-between flex mt-0 md:mt-2 h-16 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform -translate-x-0 animated-transform"
+        id="navbar-sticky"
+      >
+        <a
+          class="block rounded md:p-0 text-gray-900 animated-transform rotate-[18deg] -translate-y-[20%] sm:rotate-12 md:translate-y-[0%] xl:rotate-3 opacity-40 font-bold 2xl:translate-y-[20%]"
+        >
+          dev
+        </a>
+        <a
+          class="block pt-8 rounded md:p-0 text-white font-bold animated-transform -translate-y-[50%] md:translate-y-[50%] scale-130 "
+        >
+          me
+        </a>
+        <a
+          class="block rounded md:p-0 text-gray-900 -rotate-[17deg] -translate-y-[20%] sm:-rotate-12 md:translate-y-[0%] xl:-rotate-3 animated-transform opacity-40 font-bold 2xl:translate-y-[20%]"
+        >
+          music
+        </a>
+      </div>
+    </div>
+  </nav>
+</DocumentFragment>
+`;

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Box from "@/components/organisms/Box";
 import { useTranslation } from 'react-i18next';
 import ExampleComponent from '@/components/organisms/ExampleComponente';
-import SpotifyLatestSong from '@/components/organisms/SpotfyLatestSong';
+import LatestSong from '@/components/organisms/LatestSong';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import Presentation from '@/components/organisms/Presentation';
 import Jokes from '@/components/organisms/Jokes';
@@ -20,7 +20,7 @@ const CenterSection = () => {
       { startRow: 13, spanRow: 14, startColumn: 1, spanColumn: 13, content: <Jokes /> },
       { startRow: 13, spanRow: 17, startColumn: 14, spanColumn: 6, content: <ExampleComponent /> },
       { startRow: 12, spanRow: 8, startColumn: 20, spanColumn: 8, content: <ExampleComponent /> },
-      { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <SpotifyLatestSong /> },
+      { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <LatestSong /> },
     ];
 
     const desktopBoxes = [

@@ -3,25 +3,20 @@ import { useState } from 'react';
 import ChangeLanguageIcon from '@mui/icons-material/Language';
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import { useLanguage } from '@/hooks/useLanguage';
-import i18n from '@/shared/i18n.config'
-
-interface LanguageOption {
-  code: string;
-  name: string;
-}
+import { languages, LanguageOption } from '@/locales/languages';
+import i18n from '@/locales/i18n.config';
 
 const LanguageSwitcher = () => {
   const { changeLanguage } = useLanguage();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const languageOptions: LanguageOption[] = [
-    { code: 'en', name: 'English' },
-    { code: 'es', name: 'Español' },
-  ];
+  const languageOptions: LanguageOption[] = Object.values(languages);
+
+  const currentLanguage = languages[i18n.language as keyof typeof languages];
 
   return (
     <>
-      <div className="flex items-center justify-between w-full gap-10">
+      <div className="flex items-center justify-between w-full gap-10" data-testid="language-switcher">
         <Button
           variant="contained"
           onClick={(event) => setAnchorEl(event.currentTarget)}
@@ -31,10 +26,17 @@ const LanguageSwitcher = () => {
             alignItems: 'center',
           }}
           size='small'
+          data-testid="language-switcher-button"
         >
           <ChangeLanguageIcon style={{ marginRight: '8px' }} />
-          {languageOptions.find((lang) => lang.code === i18n.language)?.name || 'English'}
-          <ArrowDropDown style={{ marginLeft: 'auto', transform: anchorEl ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
+          {currentLanguage?.name || 'English'}
+          <ArrowDropDown 
+            style={{ 
+              marginLeft: 'auto', 
+              transform: anchorEl ? 'rotate(180deg)' : 'rotate(0deg)', 
+              transition: 'transform 0.3s ease' 
+            }} 
+          />
         </Button>
 
         <Menu
@@ -48,14 +50,16 @@ const LanguageSwitcher = () => {
               borderRadius: '5px',
             },
           }}
+          data-testid="language-menu"
         >
           {languageOptions.map((lang) => (
             <MenuItem 
               key={lang.code} 
               onClick={() => {
                 changeLanguage(lang.code);
-                setAnchorEl(null); // Cierra el menú después de seleccionar
+                setAnchorEl(null);
               }}
+              data-testid={`language-option-${lang.code}`}
             >
               {lang.name}
             </MenuItem>

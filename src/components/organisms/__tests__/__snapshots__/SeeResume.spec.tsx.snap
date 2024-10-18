@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SeeResume Component > renders correctly for desktop 1`] = `
+<DocumentFragment>
+  <a
+    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+    href="/src/assets/documents/George%20Gil%20Garib%20CV.pdf"
+    style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+    target="_blank"
+  >
+    <img
+      alt="Resume Icon"
+      class=""
+      data-testid="resume-icon"
+      height="80"
+      src="/src/assets/icons/resume-icon.svg"
+      width="80"
+    />
+    <p
+      class="font-bold text-[1.0em]"
+      data-testid="resume-button-text"
+    >
+      See resume
+    </p>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`SeeResume Component > renders correctly for mobile 1`] = `
+<DocumentFragment>
+  <a
+    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+    href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
+    style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
+    target="_blank"
+  >
+    <img
+      alt="Resume Icon"
+      class=""
+      data-testid="resume-icon"
+      height="40"
+      src="/src/assets/icons/resume-icon.svg"
+      width="40"
+    />
+    <p
+      class="font-bold text-[0.7em]"
+      data-testid="resume-button-text"
+    >
+      See resume
+    </p>
+  </a>
+</DocumentFragment>
+`;

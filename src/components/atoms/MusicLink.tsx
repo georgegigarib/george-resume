@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Sections } from '@/types/navbarTypes';
+import { Sections } from '@/app/layout/navbarTypes';
 
 const MusicLink = ({
   scrollToSection,

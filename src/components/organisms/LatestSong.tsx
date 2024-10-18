@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useIsMobile } from '@/hooks/useIsMobile';
 
-export default function SpotifyLatestSong(): React.ReactElement {
+export default function LatestSong(): React.ReactElement {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [isMouseOver, setIsMouseOver] = useState<boolean>(false);
   const isMobile = useIsMobile();
@@ -33,6 +33,7 @@ export default function SpotifyLatestSong(): React.ReactElement {
       className="overflow-hidden relative"
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
+      data-testid="frame-container"
     >
       <div
         className="transition-transform duration-500"
@@ -45,6 +46,7 @@ export default function SpotifyLatestSong(): React.ReactElement {
           <div key={index} style={{ pointerEvents: 'none' }}>
             <iframe
               className="rounded-xl"
+              data-testid={`song-test-id-${index}`}
               src={src}
               width={iframeWidth}
               height="152"
