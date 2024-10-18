@@ -36,9 +36,10 @@ describe('LocalVideoWithTooltip Component', () => {
     ;(useIsMobile as Mock).mockReturnValue(false)
     const store = mockStore({ hash: { activeHash: Sections.Dev } })
 
-    renderComponent(store)
+    const { asFragment } = renderComponent(store)
 
     expect(screen.getByRole('progressbar')).toBeVisible()
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it('matches snapshot', () => {
@@ -52,8 +53,9 @@ describe('LocalVideoWithTooltip Component', () => {
   it('shows tooltip when activeHash matches and after timeout', async () => {
     ;(useIsMobile as Mock).mockReturnValue(false)
     const store = mockStore({ hash: { activeHash: Sections.Music } })
-    renderComponent(store)
+    const { asFragment } = renderComponent(store)
 
     await waitFor(() => expect(screen.getByText('Click me!')).toBeVisible())
+    expect(asFragment()).toMatchSnapshot()
   })
 })

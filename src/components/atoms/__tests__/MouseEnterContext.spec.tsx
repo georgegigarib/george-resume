@@ -28,14 +28,11 @@ describe('MouseEnterProvider', () => {
       </MouseEnterProvider>
     )
 
-    // mouse outside
     expect(screen.getByTestId('mouse-status').textContent).toContain('Mouse is outside')
 
-    // mouse enter
     fireEvent.mouseEnter(screen.getByTestId('mouse-area'))
     expect(screen.getByTestId('mouse-status').textContent).toContain('Mouse is inside')
 
-    // mouse leave
     fireEvent.mouseLeave(screen.getByTestId('mouse-area'))
     expect(screen.getByTestId('mouse-status').textContent).toContain('Mouse is outside')
   })

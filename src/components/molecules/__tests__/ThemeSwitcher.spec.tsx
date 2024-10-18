@@ -6,20 +6,27 @@ import * as themeUtils from '@/utils/setTheme'
 describe('ThemeSwitcher component', () => {
   const setThemeSpy = vi.spyOn(themeUtils, 'setTheme')
 
+  const renderComponent = () => render(<ThemeSwitcher />)
+
   beforeEach(() => {
     localStorage.clear()
     document.documentElement.classList.remove('dark')
   })
 
+  it('matches snapshot', () => {
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it('renders with dark mode based on localStorage', () => {
     localStorage.setItem('darkMode', 'true')
-    render(<ThemeSwitcher />)
+    renderComponent()
     expect(document.documentElement.classList.contains('dark')).toBe(true)
   })
 
   it('toggles to dark mode on switch', () => {
     localStorage.setItem('darkMode', 'false')
-    const { getByRole } = render(<ThemeSwitcher />)
+    const { getByRole } = renderComponent()
     const switchElement = getByRole('checkbox')
 
     fireEvent.click(switchElement)
@@ -31,7 +38,7 @@ describe('ThemeSwitcher component', () => {
 
   it('toggles to light mode on switch', () => {
     localStorage.setItem('darkMode', 'true')
-    const { getByRole } = render(<ThemeSwitcher />)
+    const { getByRole } = renderComponent()
     const switchElement = getByRole('checkbox')
 
     fireEvent.click(switchElement)
