@@ -1,0 +1,113 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-xl bg-slate-700 flex flex-col-reverse justify-end ml-1"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="text-center mb-4"
+      >
+        <h3
+          class="text-md md:text-xl font-bold dark:text-white text-black"
+        >
+          Proyecto Mobile 2
+        </h3>
+        <p
+          class="mt-2 text-gray-600 dark:text-gray-300 max-w-md mx-auto hidden md:flex h-16 overflow-auto description-scrollbar text-start px-4 mr-2"
+        >
+           Aplicación para explorar películas y series. aqui estoy dejando una descripcion un poco mas lagra para pobar que pasa sies muy largo el texto, Aplicación para explorar películas y series. aqui estoy dejando una descripcion un poco mas lagra para pobar que pasa sies muy largo el texto
+        </p>
+      </div>
+      <div
+        class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+      >
+        <div
+          class="swiper-wrapper"
+          style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+        >
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="0"
+          >
+            <img
+              alt="Movie App"
+              class="rounded-xl"
+              src="/src/assets/images/projects/movie-app.gif"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="1"
+          >
+            <img
+              alt="Proyecto Mobile 1"
+              class="rounded-xl"
+              src="/src/assets/images/projects/mobile-2.jpeg"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="2"
+          >
+            <img
+              alt="Proyecto Mobile 2"
+              class="rounded-xl"
+              src="/src/assets/images/projects/mobile-1.jpg"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="3"
+          >
+            <img
+              alt="Proyecto Mobile 2"
+              class="rounded-xl"
+              src="/src/assets/images/projects/movie-app.gif"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="4"
+          >
+            <img
+              alt="Proyecto Mobile 1"
+              class="rounded-xl"
+              src="/src/assets/images/projects/mobile-2.jpeg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="h-full w-full cursor-pointer"
+    >
+      <div>
+        <div
+          class="w-full p-3 flex justify-between rounded-xl text-start  cursor-pointer items-center hover:bg-gray-600"
+        >
+          <h1
+            class="font-bold"
+          >
+            Lista de proyectos
+          </h1>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+            data-testid="OpenInFullIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M21 11V3h-8l3.29 3.29-10 10L3 13v8h8l-3.29-3.29 10-10z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

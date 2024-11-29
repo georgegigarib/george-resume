@@ -6,6 +6,7 @@ interface BoxProps {
   spanColumn?: number
   spanRow?: number
   content: React.ReactNode
+  useCard?: boolean
 }
 
 const Box = ({
@@ -13,13 +14,14 @@ const Box = ({
   startRow = 1,
   spanColumn = 2,
   spanRow = 2,
-  content = 'Default Content'
+  content = 'Default Content',
+  useCard = true
 }: BoxProps) => {
   const gridArea = `${startRow} / ${startColumn} / span ${spanRow} / span ${spanColumn}`
 
   return (
     <div className="rounded-xl" style={{ gridArea }}>
-      <Card content={content} />
+      {useCard ? <Card content={content} /> : content}
     </div>
   )
 }

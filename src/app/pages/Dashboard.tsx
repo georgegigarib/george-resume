@@ -4,6 +4,7 @@ import LeftSection from '@/components/sections/LeftSection'
 import RightSection from '@/components/sections/RightSection'
 import devImage from '@/assets/images/dev.webp'
 import meImage from '@/assets/images/me.webp'
+// import pruebaLarga from '../../assets/images/prueba3200x600.jpg'
 import musicImage from '@/assets/images/music.webp'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useEffect } from 'react'
@@ -19,7 +20,7 @@ export default function Dashboard() {
   }, [])
 
   return (
-    <div className="w-[1300px] md:w-[3300px] bg-white dark:bg-black">
+    <div className="w-[1300px] md:w-[3200px] bg-app-light dark:bg-app-dark">
       <div className="flex justify-between w-full mt-0">
         <div className="flex-1 flex justify-center" id="dev">
           <ImageContainer imagePath={devImage} />
@@ -30,14 +31,18 @@ export default function Dashboard() {
         <div className="flex-1 flex justify-center" id="music">
           <ImageContainer imagePath={musicImage} />
         </div>
+
+        {/* change when image arrives 
+          <ImageContainer imagePath={pruebaLarga} />
+       */}
       </div>
 
-      <div className="w-full -top-32 md:-top-96 relative z-[5]">
+      <div className="w-full -top-32 md:-top-96 px-4 relative z-[5]">
         <div className="flex">
-          <div className="w-[33.33%]">
+          <div className="w-[33.33%]" id="dev">
             <LeftSection />
           </div>
-          <div className="w-[33.33%]">
+          <div className="w-[33.33%]" id="me">
             <CenterSection />
           </div>
           <div className="w-[33.33%]">

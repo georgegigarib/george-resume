@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@/index.css'
+import '@/styles/index.css'
 import '@/styles/themeswitch.css'
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom'
 import Dashboard from '@/app/pages/Dashboard'

@@ -22,7 +22,7 @@ export default function SeeResume(): React.ReactElement {
     <a
       href={currentPdf}
       target="_blank"
-      className={`flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full`}
+      className={`flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full`}
       style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)' }}
     >
       <img

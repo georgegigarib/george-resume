@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: scroll;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animated-transform {
+  transition: transform 0.5s ease; /* Ajusta la duración y el tipo de transición según sea necesario */
+}
+
+.nav-bottom-oval::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -35px; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%) scaleY(0.8); /* Ajusta el escalado para el efecto más circular */
+  width: 120%;
+  height: 190px; /* Ajusta la altura para un efecto más circular */
+  background: rgba(126, 126, 126, 0.496); /* Color del fondo del nav, asegúrate de que coincida */
+  border-radius: 50%; /* Asegura una forma más circular */
+  box-shadow: 0px 0px 25px 10px rgba(30, 30, 30, 0.372); /* Ajusta el sombreado según sea necesario */
+  z-index: -10; /* Asegúrate de que esté detrás del contenido del nav */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .description-scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  .description-scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #6c6c6c;
+  }
+
+  .description-scrollbar::-webkit-scrollbar-thumb {
+    background: #2d519f98;
+    border-radius: 100vh;
+  }
+
+  .description-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #0940b998;
+  }
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Box from '@/components/organisms/Box'
 import { useTranslation } from 'react-i18next'
-import ExampleComponent from '@/components/organisms/ExampleComponente'
+import ExampleComponent from '@/components/organisms/ExampleComponent'
 import SpotifyPlaylist from '@/components/organisms/SpotifyPlaylist'
 import LatestSong from '@/components/organisms/LatestSong'
 import { useIsMobile } from '@/hooks/useIsMobile'
@@ -24,7 +24,7 @@ const RightSection = () => {
     const mobileBoxes = [
       { startRow: 19, spanRow: 21, startColumn: 9, spanColumn: 17, content: <SpotifyPlaylist /> },
       { startRow: 19, spanRow: 13, startColumn: 1, spanColumn: 8, content: <YoutubeVideo /> },
-      { startRow: 11, spanRow: 8, startColumn: 11, spanColumn: 8, content: <ExampleComponent /> },
+      { startRow: 11, spanRow: 8, startColumn: 12, spanColumn: 7, content: <ExampleComponent /> },
       { startRow: 3, spanRow: 16, startColumn: 19, spanColumn: 7, content: <ExampleComponent /> }
     ]
 

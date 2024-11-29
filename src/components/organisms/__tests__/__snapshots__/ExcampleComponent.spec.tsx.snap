@@ -3,10 +3,10 @@
 exports[`ExampleComponent > matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="p-4 text-blue-900 rounded"
+    class="p-4 text-blue-900 rounded flex justify-center"
   >
     <h4>
-      yes
+      underConstruction
     </h4>
   </div>
 </DocumentFragment>

@@ -1,5 +1,6 @@
 export const es = {
   hello: 'Hola amigo, que tal?',
+  underConstruction: '🚧',
   welcomes: 'Plural',
   description: 'Esta es una descripción en español',
   navbar: {
@@ -7,7 +8,6 @@ export const es = {
     music: 'música',
     dev: 'dev'
   },
-  yes: 'si',
   music: {
     favoritePlaylist: {
       title: 'Mi Playlist Favorita',
@@ -39,6 +39,17 @@ export const es = {
   dev: {
     resume: {
       seeResume: 'Ver CV'
+    },
+    projects: {
+      title: 'Proyectos particulares'
+    },
+    templates: {
+      title: 'Usa mis plantillas de desarrollo!',
+      modal: {
+        title: 'Lista de plantillas',
+        tooltip:
+          "It's way easier when you have a starting point when developing new projects, and mostof the time we waste a lot of time setting and configuring the project... That's why I made this section, to save a LOT of time. All technologies are listed on each repository. Happy coding! 😄"
+      }
     }
   }
 }

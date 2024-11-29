@@ -7,7 +7,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
   >
     <div
       class="rounded-xl"
-      style="grid-area: 28 / 12 / span 28 / span 22;"
+      style="grid-area: 26 / 19 / span 30 / span 18;"
     >
       <div
         class="flex w-full h-full"
@@ -21,10 +21,10 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -33,7 +33,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
     </div>
     <div
       class="rounded-xl"
-      style="grid-area: 56 / 25 / span 9 / span 9;"
+      style="grid-area: 56 / 27 / span 9 / span 9;"
     >
       <div
         class="flex w-full h-full"
@@ -47,10 +47,10 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -59,7 +59,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
     </div>
     <div
       class="rounded-xl"
-      style="grid-area: 49 / 34 / span 10 / span 22;"
+      style="grid-area: 49 / 37 / span 10 / span 22;"
     >
       <div
         class="flex w-full h-full"
@@ -111,7 +111,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
     </div>
     <div
       class="rounded-xl"
-      style="grid-area: 31 / 34 / span 18 / span 57;"
+      style="grid-area: 30 / 37 / span 19 / span 51;"
     >
       <div
         class="flex w-full h-full"
@@ -125,10 +125,10 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -137,7 +137,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
     </div>
     <div
       class="rounded-xl"
-      style="grid-area: 22 / 43 / span 9 / span 22;"
+      style="grid-area: 21 / 43 / span 9 / span 22;"
     >
       <div
         class="flex w-full h-full"
@@ -151,13 +151,13 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="flex relative flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+              class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
             >
               <div
                 class="mb-4"
               >
                 <h2
-                  class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                  class="text-xl font-bold mb-6 text-gray-700 dark:text-gray-300"
                 >
                   Hi! I'm George Gil
                 </h2>

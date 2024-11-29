@@ -6,6 +6,19 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'white': '#ffffff',
+        'app': {
+          lightgreenblue: '#0F969C',
+          greenblue: '#0D747AFF',
+          box: '#072E33',
+          grey: '#294D61',
+          light: '#6DA5C0',
+          dark: '#05161A',
+        },
+      },
       scale: {
         '120': '1.2',
         '130': '1.3',

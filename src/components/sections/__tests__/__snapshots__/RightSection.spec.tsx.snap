@@ -21,10 +21,10 @@ exports[`RightSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -47,10 +47,10 @@ exports[`RightSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -123,10 +123,10 @@ exports[`RightSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>
@@ -208,10 +208,10 @@ exports[`RightSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="p-4 text-blue-900 rounded flex justify-center"
             >
               <h4>
-                yes
+                🚧
               </h4>
             </div>
           </div>

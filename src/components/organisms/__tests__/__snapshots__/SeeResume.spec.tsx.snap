@@ -3,7 +3,7 @@
 exports[`SeeResume Component > renders correctly for desktop 1`] = `
 <DocumentFragment>
   <a
-    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full"
     href="/src/assets/documents/George%20Gil%20Garib%20CV.pdf"
     style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
     target="_blank"
@@ -29,7 +29,7 @@ exports[`SeeResume Component > renders correctly for desktop 1`] = `
 exports[`SeeResume Component > renders correctly for mobile 1`] = `
 <DocumentFragment>
   <a
-    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
+    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full"
     href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
     style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
     target="_blank"
