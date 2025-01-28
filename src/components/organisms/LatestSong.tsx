@@ -8,7 +8,7 @@ export default function LatestSong(): React.ReactElement {
   const iframeWidth = isMobile ? 320 : 365
   const iframes: string[] = [
     'https://open.spotify.com/embed/album/6H73t0Wok8dsEEGqRhgOsV?utm_source=generator',
-    'https://embed.music.apple.com/do/album/un-a%C3%B1o-single/1760344218'
+    'https://embed.music.apple.com/do/album/un-a%C3%B1o-single/1760344218',
   ]
 
   const totalIframes: number = iframes.length
@@ -39,7 +39,7 @@ export default function LatestSong(): React.ReactElement {
         className="transition-transform duration-500"
         style={{
           transform: `translateY(-${currentIndex * 100}%)`,
-          height: `${totalIframes * 76}px`
+          height: `${totalIframes * 76}px`,
         }}
       >
         {iframes.map((src, index) => (

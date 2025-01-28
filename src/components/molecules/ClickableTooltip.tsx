@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { ClickAwayListener, IconButton, Tooltip } from '@mui/material'
-import { useIsMobile } from '@/hooks/useIsMobile'
 import clsx from 'clsx'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import { ClickAwayListener, IconButton, Tooltip } from '@mui/material'
 
 interface ClickableTooltipProps {
   text: React.ReactNode
@@ -14,7 +14,7 @@ export const ClickableTooltip: React.FC<ClickableTooltipProps> = ({
   text = '',
   children,
   bgColor = '',
-  textColor = ''
+  textColor = '',
 }) => {
   const isMobile = useIsMobile()
   const [open, setOpen] = useState(false)
@@ -31,7 +31,7 @@ export const ClickableTooltip: React.FC<ClickableTooltipProps> = ({
       <div className="ml-1">
         <Tooltip
           PopperProps={{
-            disablePortal: true
+            disablePortal: true,
           }}
           placement={isMobile ? 'bottom' : 'top'}
           onClose={handleTooltipClose}
@@ -43,14 +43,12 @@ export const ClickableTooltip: React.FC<ClickableTooltipProps> = ({
             tooltip: {
               sx: {
                 color: textColor,
-                backgroundColor: bgColor
-              }
-            }
+                backgroundColor: bgColor,
+              },
+            },
           }}
           title={
-            <div
-              className={clsx('overflow-auto max-h-[100px] rounded-lg p-2 w-full custom-scrollbar')}
-            >
+            <div className={clsx('overflow-auto max-h-[140px] rounded-lg p-2 w-full description-scrollbar')}>
               <h2>{text}</h2>
             </div>
           }

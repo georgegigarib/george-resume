@@ -1,20 +1,17 @@
-import react from '@vitejs/plugin-react';
-import { mergeConfig, defineConfig, configDefaults } from 'vitest/config';
-import viteConfig from './vite.config';
+import { mergeConfig, defineConfig, configDefaults } from 'vitest/config'
+import viteConfig from './vite.config'
+import {} from 'vitest'
+import { UserConfig } from 'vite'
 
 export default mergeConfig(
   viteConfig,
   defineConfig({
-    plugins: [react()],
     test: {
+      watch: false,
       globals: true,
       environment: 'jsdom',
       setupFiles: ['./setupTests.ts'],
-      exclude: [
-        ...configDefaults.exclude,
-        'e2e/**',
-        '__tests__/**',
-      ],
+      exclude: [...configDefaults.exclude, 'e2e/**', '__tests__/**'],
       include: ['./src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
       update: true,
       outputFile: {
@@ -46,5 +43,5 @@ export default mergeConfig(
         },
       },
     },
-  }),
-);
+  }) as UserConfig & Promise<UserConfig>
+)

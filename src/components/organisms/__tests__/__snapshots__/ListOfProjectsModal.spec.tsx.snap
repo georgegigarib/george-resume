@@ -3,24 +3,44 @@
 exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="rounded-xl bg-slate-700 flex flex-col-reverse justify-end ml-1"
+    class="rounded-xl 
+    bg-app-lightModeBoxes-box2 
+    dark:bg-app-darkModeBoxes-box2 
+    dark:border-app-lightModeBoxes-box2 
+    border-app-darkModeBoxes-box2
+    border-[2px]
+    flex flex-col-reverse justify-end"
   >
     <div
       class="relative"
     >
       <div
-        class="text-center mb-4"
+        class="text-center mb-4 "
       >
         <h3
-          class="text-md md:text-xl font-bold dark:text-white text-black"
+          class="text-md md:text-xl font-bold dark:text-white text-black "
         >
-          Proyecto Mobile 2
+          Mobile Project 2
         </h3>
-        <p
-          class="mt-2 text-gray-600 dark:text-gray-300 max-w-md mx-auto hidden md:flex h-16 overflow-auto description-scrollbar text-start px-4 mr-2"
+        <div
+          class="description-scrollbar overflow-auto rounded-lg 
+          border-[2px] 
+          transition-all 
+          duration-300 
+          bg-white 
+          dark:border-app-lightModeBoxes-box2 
+          border-app-darkModeBoxes-box2 
+          hover:bg-opacity-40
+          bg-opacity-25
+          mx-3 mt-2 hidden md:flex relative inner-box-shadow  
+                    "
         >
-           Aplicación para explorar películas y series. aqui estoy dejando una descripcion un poco mas lagra para pobar que pasa sies muy largo el texto, Aplicación para explorar películas y series. aqui estoy dejando una descripcion un poco mas lagra para pobar que pasa sies muy largo el texto
-        </p>
+          <p
+            class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
+          >
+            Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long.
+          </p>
+        </div>
       </div>
       <div
         class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
@@ -34,7 +54,7 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
             data-swiper-slide-index="0"
           >
             <img
-              alt="Movie App"
+              alt="dev.projects.projects.mobile.project1.title"
               class="rounded-xl"
               src="/src/assets/images/projects/movie-app.gif"
             />
@@ -44,9 +64,9 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
             data-swiper-slide-index="1"
           >
             <img
-              alt="Proyecto Mobile 1"
+              alt="dev.projects.projects.mobile.project2.title"
               class="rounded-xl"
-              src="/src/assets/images/projects/mobile-2.jpeg"
+              src="/src/assets/images/projects/movie-app.gif"
             />
           </div>
           <div
@@ -54,29 +74,9 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
             data-swiper-slide-index="2"
           >
             <img
-              alt="Proyecto Mobile 2"
-              class="rounded-xl"
-              src="/src/assets/images/projects/mobile-1.jpg"
-            />
-          </div>
-          <div
-            class="swiper-slide bg-transparent"
-            data-swiper-slide-index="3"
-          >
-            <img
-              alt="Proyecto Mobile 2"
+              alt="dev.projects.projects.mobile.project3.title"
               class="rounded-xl"
               src="/src/assets/images/projects/movie-app.gif"
-            />
-          </div>
-          <div
-            class="swiper-slide bg-transparent"
-            data-swiper-slide-index="4"
-          >
-            <img
-              alt="Proyecto Mobile 1"
-              class="rounded-xl"
-              src="/src/assets/images/projects/mobile-2.jpeg"
             />
           </div>
         </div>
@@ -87,24 +87,45 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
     >
       <div>
         <div
-          class="w-full p-3 flex justify-between rounded-xl text-start  cursor-pointer items-center hover:bg-gray-600"
+          class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
         >
           <h1
-            class="font-bold"
+            class="font-bold dark:text-white text-black "
           >
-            Lista de proyectos
+            Self taste projects 📱
           </h1>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-            data-testid="OpenInFullIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+          <div
+            aria-label="Show all projects"
+            class="rounded-full py-1 px-2 items-center 
+                    bg-white 
+                    dark:border-app-lightModeBoxes-box2 
+                    border-app-darkModeBoxes-box2 
+                    hover:bg-opacity-45 
+                    dark:text-white 
+                    text-black 
+                    bg-opacity-25 
+                    md:border-[2px]
+                    transition-all 
+                    duration-300 
+                    hover:scale-105 
+                    flex gap-2 
+                    text-xs 
+                    font-bold"
+            data-mui-internal-clone-element="true"
           >
-            <path
-              d="M21 11V3h-8l3.29 3.29-10 10L3 13v8h8l-3.29-3.29 10-10z"
-            />
-          </svg>
+            See more
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+              data-testid="ArrowForwardIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>

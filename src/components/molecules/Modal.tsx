@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { IconButton } from '@mui/material'
-import CloseIcon from '@mui/icons-material/Close'
+import clsx from 'clsx'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import { centerModalInViewport } from '@/utils/centerModalInViewPort'
-import clsx from 'clsx'
+import { StoreState } from '@/store'
+import { useSelector } from 'react-redux'
+import CloseIcon from '@mui/icons-material/Close'
+import { motion, AnimatePresence } from 'framer-motion'
+import { IconButton } from '@mui/material'
 
 interface ModalProps {
   trigger: React.ReactNode
@@ -23,11 +25,12 @@ const Modal: React.FC<ModalProps> = ({
   normalWidth = '450px',
   mobileHeight = '350px',
   normalHeight = '500px',
-  className
+  className,
 }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [modalPosition, setModalPosition] = useState({ top: 0, left: 0 })
   const isMobile = useIsMobile()
+  const isDakTHemeEnabled = useSelector((state: StoreState) => state.darkTheme.isDarkThemeEnabled)
 
   useEffect(() => {
     if (isOpen) {
@@ -48,11 +51,7 @@ const Modal: React.FC<ModalProps> = ({
 
   return (
     <>
-      <motion.div
-        className="h-full w-full cursor-pointer"
-        layoutId={layoutId}
-        onClick={() => setIsOpen(true)}
-      >
+      <motion.div className="h-full w-full cursor-pointer" layoutId={layoutId} onClick={() => setIsOpen(true)}>
         {trigger}
       </motion.div>
 
@@ -77,7 +76,7 @@ const Modal: React.FC<ModalProps> = ({
                 style={{
                   width: isMobile ? 'calc(100% - 80px)' : normalWidth,
                   height: isMobile ? mobileHeight : normalHeight,
-                  position: 'fixed'
+                  position: 'fixed',
                 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -87,8 +86,8 @@ const Modal: React.FC<ModalProps> = ({
                   <IconButton onClick={handleClose} aria-label="close">
                     <CloseIcon
                       fontSize="medium"
-                      style={{ fill: 'white' }}
-                      className="p-1 hover:bg-gray-700 rounded-full"
+                      style={{ fill: `${isDakTHemeEnabled ? 'white' : 'black'}` }}
+                      className="p-1 hover:bg-opacity-35 rounded-full dark:bg-white bg-black bg-opacity-15 dark:bg-opacity-15 hover:scale-105"
                     />
                   </IconButton>
                 </div>

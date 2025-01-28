@@ -17,10 +17,7 @@ const CustomTooltip = ({
   return (
     <Tooltip
       title={
-        <div
-          onClick={stopPropagation}
-          className={clsx('overflow-auto max-h-[100px] rounded-md', bgColor, textSize)}
-        >
+        <div onClick={stopPropagation} className={clsx('overflow-auto max-h-[100px] rounded-md', bgColor, textSize)}>
           {title}
         </div>
       }

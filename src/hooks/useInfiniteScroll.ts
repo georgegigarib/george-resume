@@ -11,15 +11,15 @@ const useInfiniteScroll = (containerId: string) => {
     let scrollPosition = 0
 
     try {
-      // Duplicamos el contenido para permitir un scroll infinito
+      // Duplicate the content to allow infinite scrolling
       const originalContent = container.innerHTML
       container.innerHTML += originalContent
 
-      // Calculamos el ancho total para ajustar el desplazamiento
+      // We calculate the total width to adjust the scrolling
       const scrollWidth = container.scrollWidth / 2
 
       const scrollStep = () => {
-        scrollPosition += 0.5 // Ajusta la velocidad del desplazamiento aquí
+        scrollPosition += 0.5 // Adjust the scrolling speed here
         if (scrollPosition >= scrollWidth) {
           scrollPosition = 0
         }
@@ -32,7 +32,7 @@ const useInfiniteScroll = (containerId: string) => {
       console.error('Error in useInfiniteScroll:', error)
     }
 
-    // Limpieza al desmontar
+    // Clean on unmount
     return () => {
       if (animationFrame) cancelAnimationFrame(animationFrame)
     }

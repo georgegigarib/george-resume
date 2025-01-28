@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Box from '@/components/organisms/Box'
+import { Box, BoxProps } from '@/components/organisms/Box'
 import { useTranslation } from 'react-i18next'
 import ExampleComponent from '@/components/organisms/ExampleComponent'
 import LatestSong from '@/components/organisms/LatestSong'
@@ -10,15 +10,7 @@ import Jokes from '@/components/organisms/Jokes'
 const CenterSection = () => {
   const { t, i18n } = useTranslation()
   const isMobile = useIsMobile()
-  const [activeBoxes, setActiveBoxes] = useState<
-    {
-      startRow: number
-      spanRow: number
-      startColumn: number
-      spanColumn: number
-      content: React.ReactNode
-    }[]
-  >([])
+  const [activeBoxes, setActiveBoxes] = useState<BoxProps[]>([])
 
   useEffect(() => {
     const mobileBoxes = [
@@ -26,7 +18,7 @@ const CenterSection = () => {
       { startRow: 16, spanRow: 14, startColumn: 1, spanColumn: 13, content: <Jokes /> },
       { startRow: 16, spanRow: 17, startColumn: 14, spanColumn: 6, content: <ExampleComponent /> },
       { startRow: 12, spanRow: 8, startColumn: 20, spanColumn: 8, content: <ExampleComponent /> },
-      { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <LatestSong /> }
+      { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <LatestSong /> },
     ]
 
     const desktopBoxes = [
@@ -34,7 +26,7 @@ const CenterSection = () => {
       { startRow: 56, spanRow: 9, startColumn: 27, spanColumn: 9, content: <ExampleComponent /> },
       { startRow: 49, spanRow: 10, startColumn: 37, spanColumn: 22, content: <Jokes /> },
       { startRow: 30, spanRow: 19, startColumn: 37, spanColumn: 51, content: <ExampleComponent /> },
-      { startRow: 21, spanRow: 9, startColumn: 43, spanColumn: 22, content: <Presentation /> }
+      { startRow: 21, spanRow: 9, startColumn: 43, spanColumn: 22, content: <Presentation /> },
     ]
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes)

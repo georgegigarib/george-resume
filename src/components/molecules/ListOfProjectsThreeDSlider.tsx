@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useIsMobile } from '@/hooks/useIsMobile'
-import initCarousel from '../../utils/carouselScript'
-import { motion } from 'framer-motion'
+import clsx from 'clsx'
+import initCarousel from '@/utils/carouselScript'
 import ProjectInfo from '@/components/atoms/ProjectInfo'
 import ToggleProjectsViewButton from '@/components/atoms/ToggleProjectsViewButton'
 import ThreeDImageSlider from '@/components/atoms/ThreeDImageSlider'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import { useTranslation } from 'react-i18next'
 import { desktopProjects, mobileProjects, ProjectInfoType } from '@/constants/projects'
-import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 const MOBILE_SIZE_ON_MOBILE = { width: 115, height: 230 }
 const MOBILE_SIZE_ON_DESKTOP = { width: 150, height: 280 }
@@ -14,9 +15,14 @@ const MOBILE_SIZE_ON_DESKTOP = { width: 150, height: 280 }
 const DESKTOP_SIZE_ON_MOBILE = { width: 190, height: 120 }
 const DESKTOP_SIZE_ON_DESKTOP = { width: 260, height: 140 }
 
-const CarouselComponent: React.FC = () => {
+interface CarouselComponentProps {
+  platform: 'desktop' | 'mobile'
+}
+
+export default function ThreeDSlider({ platform }: CarouselComponentProps): React.ReactElement {
   const isMobile = useIsMobile()
-  const [isDesktopMode, setIsDesktopMode] = useState(false)
+  const { t } = useTranslation()
+  const [isDesktopMode, setIsDesktopMode] = useState(platform === 'desktop')
   const projects = isDesktopMode ? desktopProjects : mobileProjects
   const [selectedProject, setSelectedProject] = useState<ProjectInfoType | null>(projects[0])
 
@@ -34,19 +40,11 @@ const CarouselComponent: React.FC = () => {
   const carouselRadious = isDesktopMode ? (isMobile ? 30 : 40) : isMobile ? 19 : 24
 
   useEffect(() => {
-    initCarousel(
-      -200,
-      carouselSize.width,
-      carouselSize.height,
-      true,
-      projects.length * carouselRadious
-    )
+    initCarousel(-200, carouselSize.width, carouselSize.height, true, projects.length * carouselRadious)
   }, [carouselSize, projects.length])
 
   return (
-    <div
-      className={clsx('mt-2 grid touch-none w-full', isMobile ? 'grid-rows-2' : 'grid-cols-2 p-4')}
-    >
+    <div className={clsx('mt-2 grid touch-none w-full', isMobile ? 'grid-rows-2' : 'grid-cols-2 p-4')}>
       <div className={isMobile ? '' : ''}>
         {selectedProject && (
           <ProjectInfo
@@ -62,7 +60,7 @@ const CarouselComponent: React.FC = () => {
         projects={projects.map((project) => ({
           src: project.src,
           title: project.title,
-          onClick: () => handleImageClick(project)
+          onClick: () => handleImageClick(project),
         }))}
         isDesktopMode={isDesktopMode}
       />
@@ -82,13 +80,11 @@ const CarouselComponent: React.FC = () => {
           duration: 6,
           ease: 'easeInOut',
           repeat: Infinity,
-          repeatDelay: 1
+          repeatDelay: 1,
         }}
       >
-        <p>Don't be shy... spin it!</p>
+        <p>{t('dev.projects.sliderHint')}</p>
       </motion.div>
     </div>
   )
 }
-
-export default CarouselComponent

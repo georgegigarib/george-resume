@@ -31,7 +31,7 @@ exports[`NavBar component > renders correctly on desktop 1`] = `
       class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-8"
     >
       <div
-        class="justify-between flex mt-0 md:mt-2 h-16 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform -translate-x-0 animated-transform"
+        class="justify-between flex mt-0 md:mt-2 h-12 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform -translate-x-0 animated-transform"
         id="navbar-sticky"
       >
         <a
@@ -40,7 +40,7 @@ exports[`NavBar component > renders correctly on desktop 1`] = `
           dev
         </a>
         <a
-          class="block pt-8 rounded md:p-0 text-white font-bold animated-transform -translate-y-[50%] md:translate-y-[50%] scale-130 "
+          class="block pt-6 rounded md:p-0 text-white font-bold animated-transform -translate-y-[50%] md:translate-y-[50%] scale-130 "
         >
           me
         </a>

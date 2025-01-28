@@ -1,0 +1,163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DevTemplatesModal component > matches the snapshot when modal is open 1`] = `
+<DocumentFragment>
+  <div
+    class="
+      rounded-xl     
+      border-[2px]
+      bg-app-lightModeBoxes-box13 
+      dark:bg-app-darkModeBoxes-box13 
+      dark:border-app-lightModeBoxes-box13 
+      border-app-darkModeBoxes-box13 
+      flex flex-col-reverse"
+  >
+    <div
+      class="col-span-1 self-center w-full rounded-xl md:flex flex-col row-span-2 hidden md:h-[420px]"
+    >
+      <div
+        class="grid grid-cols-1 gap-y-10 mt-4 px-2"
+      >
+        <div>
+          <div
+            class="_container_e676c2"
+          >
+            <div
+              class="_base_e676c2 right-14"
+            >
+              <div
+                aria-label="react"
+                class="_icon_e676c2"
+                data-mui-internal-clone-element="true"
+              >
+                <i
+                  class="ci ci-react ci-2x"
+                />
+              </div>
+              <div
+                aria-label="ts-circle"
+                class="_icon_e676c2"
+                data-mui-internal-clone-element="true"
+              >
+                <i
+                  class="ci ci-ts-circle ci-2x"
+                />
+              </div>
+              <div
+                aria-label="tailwind"
+                class="_icon_e676c2"
+                data-mui-internal-clone-element="true"
+              >
+                <i
+                  class="ci ci-tailwind ci-2x"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative -top-20 group left-32"
+          >
+            <a
+              href="https://example.com"
+            >
+              <div
+                class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+                style="background-color: rgb(255, 69, 0);"
+              >
+                <div
+                  aria-label="See template"
+                  class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                  data-mui-internal-clone-element="true"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                    data-testid="ArrowOutwardIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="font-bold capitalize text-sm text-black dark:text-white"
+                >
+                  Example template hint
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="h-full w-full cursor-pointer"
+    >
+      <div
+        class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+      >
+        <div
+          aria-label="Show all templates"
+          class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+          data-mui-internal-clone-element="true"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+            data-testid="AppsIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+            />
+          </svg>
+        </div>
+        <h2
+          class="text-black dark:text-white"
+        >
+          Use my dev templates!
+        </h2>
+        <div
+          class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
+          style="will-change: transform; transform: translateZ(180px);"
+        >
+          <div
+            class="w-10"
+          >
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+            >
+              <span
+                class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                role="progressbar"
+                style="width: 40px; height: 40px;"
+              >
+                <svg
+                  class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                  viewBox="22 22 44 44"
+                >
+                  <circle
+                    class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                    cx="44"
+                    cy="44"
+                    fill="none"
+                    r="20.2"
+                    stroke-width="3.6"
+                  />
+                </svg>
+              </span>
+            </div>
+            <img
+              class="undefined opacity-0"
+              src="/src/assets/icons/code-template.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

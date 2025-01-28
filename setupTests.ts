@@ -1,5 +1,5 @@
-import '@testing-library/jest-dom';
-import { vi } from 'vitest';
+import '@testing-library/jest-dom'
+import { vi } from 'vitest'
 
 globalThis.matchMedia = globalThis.matchMedia || vi.fn().mockImplementation(query => ({
   matches: false,
@@ -10,4 +10,4 @@ globalThis.matchMedia = globalThis.matchMedia || vi.fn().mockImplementation(quer
   addEventListener: vi.fn(),
   removeEventListener: vi.fn(),
   dispatchEvent: vi.fn(),
-}));
+}))

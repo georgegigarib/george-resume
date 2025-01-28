@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ToolIcon component > matches the snapshot for a custom size 1`] = `
+<DocumentFragment>
+  <i
+    class="ci ci-react ci-2x"
+  />
+</DocumentFragment>
+`;
+
+exports[`ToolIcon component > matches the snapshot for a default size 1`] = `
+<DocumentFragment>
+  <i
+    class="ci ci-react ci-lg"
+  />
+</DocumentFragment>
+`;

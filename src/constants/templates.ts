@@ -1,4 +1,4 @@
-import { IconName } from './ToolsIconsList'
+import { IconName } from '@/constants/ToolsIconsList'
 
 export interface Template {
   tools: IconName[]
@@ -12,95 +12,57 @@ export const devTemplates: Template[] = [
   {
     tools: [IconName.TypeScript, IconName.React, IconName.TailwindCSS, IconName.Bun, IconName.CSS],
     url: 'https://github.com/example/fast-render-template',
-    hint: 'fast rendering',
-    bgColor: '#919469FF',
-    description: 'A lightweight template designed for fast rendering with modern tools.'
+    hint: 'dev.templates.templates.template1.hint',
+    bgColor: '#FF4500',
+    description: 'dev.templates.templates.template1.description',
   },
   {
-    tools: [
-      IconName.TypeScript,
-      IconName.NextJS,
-      IconName.TailwindCSS,
-      IconName.Docker,
-      IconName.React
-    ],
+    tools: [IconName.TypeScript, IconName.NextJS, IconName.TailwindCSS, IconName.Docker, IconName.React],
     url: 'https://github.com/example/next-ssr-template',
-    hint: 'server rendering',
-    bgColor: '#B99E4CFF',
-    description: 'A server-side rendering starter template using Next.js and Docker.'
+    hint: 'dev.templates.templates.template2.hint',
+    bgColor: '#FF1493',
+    description: 'dev.templates.templates.template2.description',
   },
   {
-    tools: [
-      IconName.TypeScript,
-      IconName.VueJs,
-      IconName.TailwindCSS,
-      IconName.Pinia,
-      IconName.Docker
-    ],
+    tools: [IconName.TypeScript, IconName.VueJs, IconName.TailwindCSS, IconName.Pinia, IconName.Docker, IconName.HTML],
     url: 'https://github.com/example/vue-pinia-template',
-    hint: 'vue simplicity',
-    bgColor: '#6E8C9AFF',
-    description: 'A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.'
+    hint: 'dev.templates.templates.template3.hint',
+    bgColor: '#FFA500',
+    description: 'dev.templates.templates.template3.description',
   },
   {
     tools: [IconName.JavaScript, IconName.Angular, IconName.Sass, IconName.Docker, IconName.NodeJS],
     url: 'https://github.com/example/angular-enterprise-template',
-    hint: 'enterprise apps',
+    hint: 'dev.templates.templates.template4.hint',
     bgColor: '#A26B5AFF',
-    description: 'A robust template for building enterprise-grade Angular applications.'
+    description: 'dev.templates.templates.template4.description',
   },
   {
     tools: [IconName.TypeScript, IconName.React, IconName.Mui, IconName.Graphql, IconName.Django],
     url: 'https://github.com/example/react-graphql-template',
-    hint: 'full stack',
+    hint: 'dev.templates.templates.template5.hint',
     bgColor: '#877F95FF',
-    description: 'Full-stack development made easy with React, MUI, and GraphQL backend.'
+    description: 'dev.templates.templates.template5.description',
   },
   {
-    tools: [
-      IconName.TypeScript,
-      IconName.Svelte,
-      IconName.TailwindCSS,
-      IconName.Python,
-      IconName.Postgresql
-    ],
+    tools: [IconName.TypeScript, IconName.Svelte, IconName.TailwindCSS, IconName.Python, IconName.Postgresql],
     url: 'https://github.com/example/svelte-minimal-template',
-    hint: 'minimalist setup',
+    hint: 'dev.templates.templates.template6.hint',
     bgColor: '#687969FF',
-    description:
-      'A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.'
+    description: 'dev.templates.templates.template6.description',
   },
   {
     tools: [IconName.JavaScript, IconName.React, IconName.Redux, IconName.Bootstrap, IconName.Php],
     url: 'https://github.com/example/ecommerce-template',
-    hint: 'ecommerce base',
+    hint: 'dev.templates.templates.template7.hint',
     bgColor: '#908C63FF',
-    description: 'A ready-to-use base for building eCommerce solutions with React and PHP.'
+    description: 'dev.templates.templates.template7.description',
   },
   {
-    tools: [
-      IconName.TypeScript,
-      IconName.React,
-      IconName.Graphql,
-      IconName.MongoDb,
-      IconName.Docker
-    ],
+    tools: [IconName.TypeScript, IconName.React, IconName.Graphql, IconName.MongoDb, IconName.Docker],
     url: 'https://github.com/example/data-intensive-template',
-    hint: 'data intensive',
+    hint: 'dev.templates.templates.template8.hint',
     bgColor: '#96659FFF',
-    description: 'A powerful template for data-intensive applications using MongoDB and GraphQL.'
+    description: 'dev.templates.templates.template8.description',
   },
-  {
-    tools: [
-      IconName.TypeScript,
-      IconName.React,
-      IconName.TailwindCSS,
-      IconName.FramerMotion,
-      IconName.NodeJS
-    ],
-    url: 'https://github.com/example/firebase-react-template',
-    hint: 'real-time apps',
-    bgColor: '#3E848DFF',
-    description: 'A template for real-time apps with Firebase backend and React frontend.'
-  }
 ]

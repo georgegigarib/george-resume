@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react'
-import VolumeOffIcon from '@mui/icons-material/VolumeOff'
-import VolumeUpIcon from '@mui/icons-material/VolumeUp'
-import VideoSrc from '@/assets/videos/final.mp4'
+import VideoSrc from '@/assets/videos/guitar-video.mp4'
 import { Tooltip, CircularProgress } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { Sections } from '@/app/layout/navbarTypes'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import { RootState } from '@/store/hash/activeHashSlice'
+import { StoreState } from '@/store'
+import VolumeOffIcon from '@mui/icons-material/VolumeOff'
+import VolumeUpIcon from '@mui/icons-material/VolumeUp'
 
 export default function YoutubeVideo(): React.ReactElement {
   const videoUrl = 'https://www.youtube.com/watch?v=Mfxv1jmkWlk'
@@ -16,7 +16,7 @@ export default function YoutubeVideo(): React.ReactElement {
   const [isMuted, setIsMuted] = useState(true)
   const [showTooltip, setShowTooltip] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const activeHash = useSelector((state: RootState) => state.hash.activeHash)
+  const activeHash = useSelector((state: StoreState) => state.hash.activeHash)
   const { t } = useTranslation()
 
   const handleVideoClick = (): void => {
@@ -43,7 +43,7 @@ export default function YoutubeVideo(): React.ReactElement {
   }
 
   return (
-    <div className="relative flex flex-col justify-between rounded-xl h-full bg-gray-700">
+    <div className="relative flex flex-col justify-between rounded-xl h-full">
       {isLoading && (
         <div className="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10">
           <CircularProgress className="text-white" />
@@ -53,7 +53,7 @@ export default function YoutubeVideo(): React.ReactElement {
       <video
         ref={videoRef}
         className={`rounded-xl cursor-pointer ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-        width={isMobile ? '110px' : '200px'}
+        width={isMobile ? '110px' : '210px'}
         autoPlay
         loop
         muted={isMuted}
@@ -66,11 +66,7 @@ export default function YoutubeVideo(): React.ReactElement {
       </video>
 
       <div className="absolute bottom-3 left-2">
-        {isMuted ? (
-          <VolumeOffIcon className="text-white text-2xl" />
-        ) : (
-          <VolumeUpIcon className="text-white text-2xl" />
-        )}
+        {isMuted ? <VolumeOffIcon className="text-white text-2xl" /> : <VolumeUpIcon className="text-white text-2xl" />}
       </div>
 
       <div

@@ -1,8 +1,16 @@
-import Modal from '../molecules/Modal'
+import Modal from '@/components/molecules/Modal'
 
 const preModal = () => {
   return (
-    <div className="h-full w-full bg-slate-600 p-4 rounded-xl cursor-pointer z-[43]">
+    <div
+      className="h-full w-full p-4 rounded-xl cursor-pointer z-[43] 
+    border-2 
+    bg-app-lightModeBoxes-box1 
+    border-app-darkModeBoxes-box1 
+    dark:bg-app-darkModeBoxes-box1 
+    dark:border-app-lightModeBoxes-box1 
+    "
+    >
       List of websites
     </div>
   )

@@ -5,6 +5,11 @@ export interface ActiveHashState {
   activeHash: string
 }
 
+export interface HashAction {
+  type: string
+  payload: string
+}
+
 const initialState: ActiveHashState = { activeHash: Sections.Me }
 
 const activeHashSlice = createSlice({
@@ -13,8 +18,8 @@ const activeHashSlice = createSlice({
   reducers: {
     setActiveHash: (state, action: PayloadAction<string>) => {
       state.activeHash = action.payload
-    }
-  }
+    },
+  },
 })
 
 export const selectActiveHash = (state: { hash: ActiveHashState }) => state.hash.activeHash
@@ -22,14 +27,3 @@ export const selectActiveHash = (state: { hash: ActiveHashState }) => state.hash
 export const { setActiveHash } = activeHashSlice.actions
 
 export default activeHashSlice.reducer
-
-export interface HashAction {
-  type: string
-  payload: string
-}
-
-export interface RootState {
-  hash: {
-    activeHash: string
-  }
-}

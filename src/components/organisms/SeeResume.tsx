@@ -1,10 +1,11 @@
 import React from 'react'
 import ResumePDF from '@/assets/documents/George Gil Garib Resume.pdf'
-import CVPDF from '@/assets/documents/George Gil Garib CV.pdf'
-import resumeIcon from '@/assets/icons/resume-icon.svg'
+import CV from '@/assets/documents/George Gil Garib CV.pdf'
+import resumeIcon from '@/assets/images/resume.png'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useIsMobile } from '@/hooks/useIsMobile'
+import { motion } from 'framer-motion'
 
 export default function SeeResume(): React.ReactElement {
   const isMobile = useIsMobile()
@@ -13,33 +14,42 @@ export default function SeeResume(): React.ReactElement {
 
   const pdfMap: Record<string, string> = {
     en: ResumePDF,
-    es: CVPDF
+    es: CV,
   }
 
   const currentPdf = pdfMap[currentLanguage] || ResumePDF
 
   return (
-    <a
-      href={currentPdf}
-      target="_blank"
-      className={`flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full`}
-      style={{ boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)' }}
-    >
-      <img
-        src={resumeIcon}
-        alt="Resume Icon"
-        data-testid="resume-icon"
-        width={isMobile ? '40' : '80'}
-        height={isMobile ? '40' : '80'}
-        className=""
-      />
-
-      <p
-        className={`font-bold ${isMobile ? 'text-[0.7em]' : 'text-[1.0em]'}`}
-        data-testid="resume-button-text"
+    <motion.div className="w-full p-2 cursor-pointer bg-transparent" whileHover={{ scale: 1.15 }}>
+      <a
+        href={currentPdf}
+        target="_blank"
+        className="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
       >
-        {t('dev.resume.seeResume')}
-      </p>
-    </a>
+        <img
+          src={resumeIcon}
+          alt="Resume Icon"
+          data-testid="resume-icon"
+          width={isMobile ? '100' : '120'}
+          className="relative  shadow-xl"
+        />
+
+        <div className="absolute mt-5 ml-1 md:ml-2 md:mt-10">
+          <p
+            className={`font-bold ${isMobile ? 'text-[0.65em]' : 'text-[1.0em]'} text-blue-500`}
+            data-testid="resume-button-text-title"
+          >
+            {t('dev.resume.resume')}
+          </p>
+
+          <p
+            className={`font-bold ${isMobile ? 'text-[0.3em]' : 'text-[0.70em]'} text-blue-500 -mt-1`}
+            data-testid="resume-button-text-name"
+          >
+            {t('dev.resume.name')}
+          </p>
+        </div>
+      </a>
+    </motion.div>
   )
 }

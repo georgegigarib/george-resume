@@ -1,43 +1,61 @@
 import { render, fireEvent } from '@testing-library/react'
-import { describe, expect, it, vi, beforeEach } from 'vitest'
+import { describe, expect, it, vi, beforeEach, Mock } from 'vitest'
 import ThemeSwitcher from '@/components/molecules/ThemeSwitcher'
-import * as themeUtils from '@/utils/setTheme'
+import AppTestProvider from '@/AppTestProvider/AppTestProvider'
+import { useDispatch, useSelector } from 'react-redux'
+import { setDarkTheme } from '@/store/theme/themeStatus.ts'
+
+vi.mock('react-redux', async () => {
+  const actual = await vi.importActual('react-redux')
+  return {
+    ...actual,
+    useSelector: vi.fn(),
+    useDispatch: vi.fn(),
+  }
+})
 
 describe('ThemeSwitcher component', () => {
-  const setThemeSpy = vi.spyOn(themeUtils, 'setTheme')
+  const mockDispatch = vi.fn()
 
   beforeEach(() => {
-    localStorage.clear()
-    document.documentElement.classList.remove('dark')
+    vi.clearAllMocks()
+    ;(useDispatch as unknown as Mock).mockReturnValue(mockDispatch)
   })
 
-  it('renders with dark mode based on localStorage', () => {
-    localStorage.setItem('darkMode', 'true')
-    render(<ThemeSwitcher />)
-    expect(document.documentElement.classList.contains('dark')).toBe(true)
+  const renderComponent = (darkMode: boolean) => {
+    ;(useSelector as unknown as Mock).mockReturnValue(darkMode)
+    return render(
+      <AppTestProvider>
+        <ThemeSwitcher />
+      </AppTestProvider>
+    )
+  }
+
+  it('matches the snapshot when dark mode is enabled', () => {
+    const { asFragment } = renderComponent(true)
+
+    expect(asFragment()).toMatchSnapshot()
   })
 
-  it('toggles to dark mode on switch', () => {
-    localStorage.setItem('darkMode', 'false')
-    const { getByRole } = render(<ThemeSwitcher />)
+  it('matches the snapshot when dark mode is disabled', () => {
+    const { asFragment } = renderComponent(false)
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('dispatches the correct action when toggling the theme', () => {
+    const { getByRole } = renderComponent(false)
     const switchElement = getByRole('checkbox')
-
     fireEvent.click(switchElement)
 
-    expect(setThemeSpy).toHaveBeenCalledWith(true)
-    expect(localStorage.getItem('darkMode')).toBe('true')
-    expect(document.documentElement.classList.contains('dark')).toBe(true)
+    expect(mockDispatch).toHaveBeenCalledWith(setDarkTheme(true))
   })
 
-  it('toggles to light mode on switch', () => {
-    localStorage.setItem('darkMode', 'true')
-    const { getByRole } = render(<ThemeSwitcher />)
+  it('dispatches the correct action when toggling the theme off', () => {
+    const { getByRole } = renderComponent(true)
     const switchElement = getByRole('checkbox')
-
     fireEvent.click(switchElement)
 
-    expect(setThemeSpy).toHaveBeenCalledWith(false)
-    expect(localStorage.getItem('darkMode')).toBe('false')
-    expect(document.documentElement.classList.contains('dark')).toBe(false)
+    expect(mockDispatch).toHaveBeenCalledWith(setDarkTheme(false))
   })
 })

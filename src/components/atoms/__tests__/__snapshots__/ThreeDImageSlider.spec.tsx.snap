@@ -1,0 +1,147 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ThreeDImageSlider component > matches the snapshot for desktop mode 1`] = `
+<DocumentFragment>
+  <div
+    class=" top-[7vh]"
+    id="drag-container"
+  >
+    <div
+      id="spin-container"
+    >
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Project 1"
+        class="carousel-image opacity-0"
+        src="image1.jpg"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Project 2"
+        class="carousel-image opacity-0"
+        src="image2.jpg"
+      />
+    </div>
+    <div
+      id="ground"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ThreeDImageSlider component > matches the snapshot for mobile mode 1`] = `
+<DocumentFragment>
+  <div
+    class="-top-[10%]"
+    id="drag-container"
+  >
+    <div
+      id="spin-container"
+    >
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Project 1"
+        class="carousel-image opacity-0"
+        src="image1.jpg"
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center"
+      >
+        <span
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 40px; height: 40px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Project 2"
+        class="carousel-image opacity-0"
+        src="image2.jpg"
+      />
+    </div>
+    <div
+      id="ground"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -5,7 +5,7 @@ import { Sections } from '@/app/layout/navbarTypes'
 const MusicLink = ({
   scrollToSection,
   setAutomaticScroll,
-  activeHash
+  activeHash,
 }: {
   scrollToSection: (id: string, called?: boolean) => void
   setAutomaticScroll: React.Dispatch<React.SetStateAction<boolean>>

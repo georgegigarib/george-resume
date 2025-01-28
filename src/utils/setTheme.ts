@@ -5,3 +5,7 @@ export function setTheme(isDark: boolean): void {
     document.documentElement.classList.remove('dark')
   }
 }
+
+export function isDarkTheme(): boolean {
+  return document.documentElement.classList.contains('dark')
+}

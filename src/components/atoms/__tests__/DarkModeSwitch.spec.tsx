@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import DarkModeSwitch from '../DarkModeSwitch'
+import DarkModeSwitch from '@/components/atoms/DarkModeSwitch'
 
 describe('ThemeSwitch component', () => {
   it('matches snapshot', () => {
@@ -41,9 +41,7 @@ describe('ThemeSwitch component', () => {
 
   it('toggles the checked state correctly when clicked', () => {
     const handleChange = vi.fn()
-    const { getByTestId, rerender } = render(
-      <DarkModeSwitch checked={false} onChange={handleChange} />
-    )
+    const { getByTestId, rerender } = render(<DarkModeSwitch checked={false} onChange={handleChange} />)
     const checkbox = getByTestId('theme-switch-checkbox') as HTMLInputElement
 
     fireEvent.click(checkbox)

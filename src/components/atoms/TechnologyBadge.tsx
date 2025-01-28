@@ -1,29 +1,30 @@
-import React from 'react'
-import { Chip } from '@mui/material'
-import { ToolIconProps, toolsIconsList } from '@/constants/ToolsIconsList'
+import React, { useEffect } from 'react'
 import ToolIcon from '@/components/atoms/ToolIcon'
+import { ToolIconProps, toolsIconsList } from '@/constants/ToolsIconsList'
+import { useSelector } from 'react-redux'
+import { StoreState } from '@/store'
+import { Chip } from '@mui/material'
 
 export default function TechnologyBadge({ tool, size = 'lg' }: ToolIconProps): React.ReactElement {
+  const isDakTHemeEnabled = useSelector((state: StoreState) => state.darkTheme.isDarkThemeEnabled)
   const toolData = toolsIconsList.find((t) => t.icon === tool)
+
+  useEffect((): void => {}, [toolData, isDakTHemeEnabled])
 
   if (!toolData) return <></>
 
   return (
     <div>
       {/* icon library https://colored-icons.vercel.app */}
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.8/src/app/ci.min.css"
-      />
       <Chip
         icon={<ToolIcon tool={tool} size={size} />}
         label={toolData.name}
         variant="outlined"
         sx={{
           margin: '3px',
-          color: toolData.color,
-          backgroundColor: toolData.bgColor,
-          borderColor: toolData.borderColor,
+          color: isDakTHemeEnabled ? (toolData.darkColor ?? toolData.color) : toolData.color,
+          backgroundColor: isDakTHemeEnabled ? (toolData.darkBgColor ?? toolData.bgColor) : toolData.bgColor,
+          borderColor: isDakTHemeEnabled ? (toolData.darkBorderColor ?? toolData.borderColor) : toolData.borderColor,
           borderWidth: '2px',
           borderStyle: 'solid',
           borderRadius: '15px',
@@ -32,8 +33,8 @@ export default function TechnologyBadge({ tool, size = 'lg' }: ToolIconProps): R
           alignItems: 'center',
           padding: '2px 4px',
           '.MuiChip-label': {
-            paddingLeft: '4px'
-          }
+            paddingLeft: '4px',
+          },
         }}
       />
     </div>

@@ -4,16 +4,14 @@ import { useLocation } from 'react-router-dom'
 import { setActiveHash } from '@/store/hash/activeHashSlice'
 import LanguageSwitcher from '@/components/organisms/NavBarDropdownMenu'
 import { Sections } from '@/app/layout/navbarTypes'
-import { RootState } from '@/store/hash/activeHashSlice'
-
 import DevLink from '@/components/atoms/DevLink'
 import MeLink from '@/components/atoms/MeLink.tsx'
 import MusicLink from '@/components/atoms/MusicLink'
-
+import { StoreState } from '@/store'
 const Navbar = () => {
   const dispatch = useDispatch()
   const location = useLocation()
-  const activeHash = useSelector((state: RootState) => state.hash.activeHash)
+  const activeHash = useSelector((state: StoreState) => state.hash.activeHash)
   const [translateClass, setTranslateClass] = useState('')
   const [automaticScroll, setAutomaticScroll] = useState(true)
 
@@ -42,7 +40,7 @@ const Navbar = () => {
 
       window.scrollTo({
         left: offset,
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
 
       setTimeout(
@@ -102,19 +100,11 @@ const Navbar = () => {
 
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-8">
         <div
-          className={`justify-between flex mt-0 md:mt-2 h-16 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform ${translateClass} animated-transform`}
+          className={`justify-between flex mt-0 md:mt-2 h-12 gap-20 xs:gap-28 sm:gap-56 md:gap-80 lg:gap-[450px] xl:gap-[600px] transform ${translateClass} animated-transform`}
           id="navbar-sticky"
         >
-          <DevLink
-            scrollToSection={scrollToSection}
-            setAutomaticScroll={setAutomaticScroll}
-            activeHash={activeHash}
-          />
-          <MeLink
-            scrollToSection={scrollToSection}
-            setAutomaticScroll={setAutomaticScroll}
-            activeHash={activeHash}
-          />
+          <DevLink scrollToSection={scrollToSection} setAutomaticScroll={setAutomaticScroll} activeHash={activeHash} />
+          <MeLink scrollToSection={scrollToSection} setAutomaticScroll={setAutomaticScroll} activeHash={activeHash} />
           <MusicLink
             scrollToSection={scrollToSection}
             setAutomaticScroll={setAutomaticScroll}

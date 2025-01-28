@@ -2,52 +2,76 @@
 
 exports[`SeeResume Component > renders correctly for desktop 1`] = `
 <DocumentFragment>
-  <a
-    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full"
-    href="/src/assets/documents/George%20Gil%20Garib%20CV.pdf"
-    style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
-    target="_blank"
+  <div
+    class="w-full p-2 cursor-pointer bg-transparent"
   >
-    <img
-      alt="Resume Icon"
-      class=""
-      data-testid="resume-icon"
-      height="80"
-      src="/src/assets/icons/resume-icon.svg"
-      width="80"
-    />
-    <p
-      class="font-bold text-[1.0em]"
-      data-testid="resume-button-text"
+    <a
+      class="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
+      href="/src/assets/documents/George%20Gil%20Garib%20CV.pdf"
+      target="_blank"
     >
-      See resume
-    </p>
-  </a>
+      <img
+        alt="Resume Icon"
+        class="relative  shadow-xl"
+        data-testid="resume-icon"
+        src="/src/assets/images/resume.png"
+        width="120"
+      />
+      <div
+        class="absolute mt-5 ml-1 md:ml-2 md:mt-10"
+      >
+        <p
+          class="font-bold text-[1.0em] text-blue-500"
+          data-testid="resume-button-text-title"
+        >
+          Resume
+        </p>
+        <p
+          class="font-bold text-[0.70em] text-blue-500 -mt-1"
+          data-testid="resume-button-text-name"
+        >
+          George Gil
+        </p>
+      </div>
+    </a>
+  </div>
 </DocumentFragment>
 `;
 
 exports[`SeeResume Component > renders correctly for mobile 1`] = `
 <DocumentFragment>
-  <a
-    class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all h-full"
-    href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
-    style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
-    target="_blank"
+  <div
+    class="w-full p-2 cursor-pointer bg-transparent"
   >
-    <img
-      alt="Resume Icon"
-      class=""
-      data-testid="resume-icon"
-      height="40"
-      src="/src/assets/icons/resume-icon.svg"
-      width="40"
-    />
-    <p
-      class="font-bold text-[0.7em]"
-      data-testid="resume-button-text"
+    <a
+      class="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
+      href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
+      target="_blank"
     >
-      See resume
-    </p>
-  </a>
+      <img
+        alt="Resume Icon"
+        class="relative  shadow-xl"
+        data-testid="resume-icon"
+        src="/src/assets/images/resume.png"
+        width="100"
+      />
+      <div
+        class="absolute mt-5 ml-1 md:ml-2 md:mt-10"
+      >
+        <p
+          class="font-bold text-[0.65em] text-blue-500"
+          data-testid="resume-button-text-title"
+        >
+          Resume
+        </p>
+        <p
+          class="font-bold text-[0.3em] text-blue-500 -mt-1"
+          data-testid="resume-button-text-name"
+        >
+          George Gil
+        </p>
+      </div>
+    </a>
+  </div>
 </DocumentFragment>
 `;

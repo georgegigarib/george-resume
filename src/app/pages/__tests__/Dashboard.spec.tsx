@@ -6,7 +6,7 @@ import Dashboard from '@/app/pages/Dashboard'
 const isMobileMock = vi.fn()
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: () => isMobileMock()
+  useIsMobile: () => isMobileMock(),
 }))
 
 describe('Dashboard component', () => {

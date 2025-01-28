@@ -1,0 +1,364 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectInfo component > matches the snapshot for desktop view 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <span
+      class="flex items-center"
+    >
+      <h2
+        class="font-bold dark:text-white text-black"
+      >
+        Example desktop project
+      </h2>
+      <a
+        class="ml-1"
+        href="https://example.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
+          data-testid="LaunchIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+          />
+        </svg>
+      </a>
+    </span>
+    <div
+      class="overflow-auto mt-2 mb-2 md:mb-4 max-h-20 md:max-h-[12vh] description-scrollbar"
+    >
+      <p
+        class="dark:text-white text-black pr-8"
+      >
+        Example desktop project description
+      </p>
+    </div>
+    <div
+      class="mt-0"
+    >
+      <p
+        class="dark:text-white font-bold text-black mb-2"
+      />
+      <div
+        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]"
+      >
+        <div
+          class="rfm-marquee-container flex-wrap flex gap-2"
+          style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
+        >
+          <div
+            class="rfm-marquee"
+            style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+          >
+            <div
+              class="rfm-initial-child-container"
+            >
+              <div
+                class="rfm-child"
+                style="--transform: none;"
+              >
+                <div>
+                  <div
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                  >
+                    <i
+                      class="ci ci-react ci-md"
+                    />
+                    <span
+                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                    >
+                      React
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rfm-child"
+                style="--transform: none;"
+              >
+                <div>
+                  <div
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                  >
+                    <i
+                      class="ci ci-ts-circle ci-md"
+                    />
+                    <span
+                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                    >
+                      TypeScript
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rfm-marquee"
+            style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+          >
+            <div
+              class="rfm-child"
+              style="--transform: none;"
+            >
+              <div>
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                >
+                  <i
+                    class="ci ci-react ci-md"
+                  />
+                  <span
+                    class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                  >
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rfm-child"
+              style="--transform: none;"
+            >
+              <div>
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                >
+                  <i
+                    class="ci ci-ts-circle ci-md"
+                  />
+                  <span
+                    class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                  >
+                    TypeScript
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="overflow-auto md:flex mt-2 max-h-20 md:max-h-[12vh] gap-1 description-scrollbar hidden flex-wrap"
+      >
+        <div>
+          <div
+            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+          >
+            <i
+              class="ci ci-react ci-md"
+            />
+            <span
+              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+            >
+              React
+            </span>
+          </div>
+        </div>
+        <div>
+          <div
+            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+          >
+            <i
+              class="ci ci-ts-circle ci-md"
+            />
+            <span
+              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+            >
+              TypeScript
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProjectInfo component > matches the snapshot for mobile view 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col mb-8 w-full"
+  >
+    <span
+      class="flex items-center"
+    >
+      <h2
+        class="font-bold dark:text-white text-black"
+      >
+        Example mobile project
+      </h2>
+      <a
+        class="ml-1"
+        href="https://example.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
+          data-testid="LaunchIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+          />
+        </svg>
+      </a>
+    </span>
+    <div
+      class="overflow-auto mt-2 mb-2 md:mb-4 max-h-20 md:max-h-[12vh] description-scrollbar"
+    >
+      <p
+        class="dark:text-white text-black pr-8"
+      >
+        Example mobile project description
+      </p>
+    </div>
+    <div
+      class="mt-0"
+    >
+      <div
+        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]"
+      >
+        <div
+          class="rfm-marquee-container overflow-hidden"
+          style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
+        >
+          <div
+            class="rfm-marquee"
+            style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+          >
+            <div
+              class="rfm-initial-child-container"
+            >
+              <div
+                class="rfm-child"
+                style="--transform: none;"
+              >
+                <div>
+                  <div
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                  >
+                    <i
+                      class="ci ci-react ci-md"
+                    />
+                    <span
+                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                    >
+                      React
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rfm-child"
+                style="--transform: none;"
+              >
+                <div>
+                  <div
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                  >
+                    <i
+                      class="ci ci-ts-circle ci-md"
+                    />
+                    <span
+                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                    >
+                      TypeScript
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rfm-marquee"
+            style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+          >
+            <div
+              class="rfm-child"
+              style="--transform: none;"
+            >
+              <div>
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                >
+                  <i
+                    class="ci ci-react ci-md"
+                  />
+                  <span
+                    class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                  >
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rfm-child"
+              style="--transform: none;"
+            >
+              <div>
+                <div
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                >
+                  <i
+                    class="ci ci-ts-circle ci-md"
+                  />
+                  <span
+                    class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                  >
+                    TypeScript
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="overflow-auto md:flex mt-2 max-h-20 md:max-h-[12vh] gap-1 description-scrollbar hidden flex-wrap"
+      >
+        <div>
+          <div
+            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+          >
+            <i
+              class="ci ci-react ci-md"
+            />
+            <span
+              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+            >
+              React
+            </span>
+          </div>
+        </div>
+        <div>
+          <div
+            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+          >
+            <i
+              class="ci ci-ts-circle ci-md"
+            />
+            <span
+              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+            >
+              TypeScript
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

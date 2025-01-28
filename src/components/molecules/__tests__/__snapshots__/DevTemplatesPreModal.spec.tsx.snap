@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DevTemplatesPreModal component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+  >
+    <div
+      aria-label="Show all templates"
+      class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+      data-mui-internal-clone-element="true"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+        data-testid="AppsIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+        />
+      </svg>
+    </div>
+    <h2
+      class="text-black dark:text-white"
+    >
+      Use my dev templates!
+    </h2>
+    <div
+      class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
+      style="will-change: transform; transform: translateZ(180px);"
+    >
+      <div
+        class="w-10"
+      >
+        <div
+          class="absolute inset-0 flex items-center justify-center"
+        >
+          <span
+            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+            role="progressbar"
+            style="width: 40px; height: 40px;"
+          >
+            <svg
+              class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                cx="44"
+                cy="44"
+                fill="none"
+                r="20.2"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </div>
+        <img
+          class="undefined opacity-0"
+          src="/src/assets/icons/code-template.webp"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

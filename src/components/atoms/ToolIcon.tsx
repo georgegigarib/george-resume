@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToolIconProps, toolsIconsList } from '../../constants/ToolsIconsList'
+import { ToolIconProps, toolsIconsList } from '@/constants/ToolsIconsList'
 
 export default function ToolIcon({ tool, size = 'lg' }: ToolIconProps): React.ReactElement {
   const toolData = toolsIconsList.find((t) => t.icon === tool)
@@ -15,7 +15,7 @@ export default function ToolIcon({ tool, size = 'lg' }: ToolIconProps): React.Re
     '2x': 'h-8',
     '3x': 'h-14',
     '4x': 'h-16',
-    '5x': 'h-20'
+    '5x': 'h-20',
   }
 
   return toolData.custom ? (
