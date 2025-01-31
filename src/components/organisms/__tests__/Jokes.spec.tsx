@@ -33,7 +33,7 @@ describe('Jokes Component', () => {
     expect(firstJoke).toBeTruthy()
 
     act(() => {
-      vi.advanceTimersByTime(10000) // Simulate 10 seconds passing
+      vi.advanceTimersByTime(10000)
     })
 
     const updatedJokeElement = screen.getByTestId('current-joke')
@@ -53,7 +53,7 @@ describe('Jokes Component', () => {
     fireEvent.click(refreshButton)
 
     act(() => {
-      vi.advanceTimersByTime(2000) // Simulate time for transition
+      vi.advanceTimersByTime(2000)
     })
 
     const updatedJokeElement = screen.getByTestId('current-joke')

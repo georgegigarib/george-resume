@@ -16,10 +16,15 @@ describe('SpotifyPlaylist Component', () => {
       </AppTestProvider>
     )
 
+  it('matches the snapshot', () => {
+    const { asFragment } = renderComponent()
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   it('renders correctly in mobile view', () => {
     ;(useIsMobile as Mock).mockReturnValue(true)
 
-    renderComponent()
+    const { asFragment } = renderComponent()
 
     expect(screen.getByText('My Favorite Playlist')).toBeVisible()
     expect(
@@ -30,12 +35,13 @@ describe('SpotifyPlaylist Component', () => {
 
     const iframe = screen.getByTestId('spotify-playlist-iframe')
     expect(iframe).toHaveAttribute('height', '152px')
+    expect(asFragment()).toMatchSnapshot()
   })
 
   it('renders correctly in desktop view', () => {
     ;(useIsMobile as Mock).mockReturnValue(false)
 
-    renderComponent()
+    const { asFragment } = renderComponent()
 
     expect(screen.getByText('My Favorite Playlist')).toBeVisible()
     expect(
@@ -46,5 +52,6 @@ describe('SpotifyPlaylist Component', () => {
 
     const iframe = screen.getByTestId('spotify-playlist-iframe')
     expect(iframe).toHaveAttribute('height', '379px')
+    expect(asFragment()).toMatchSnapshot()
   })
 })
