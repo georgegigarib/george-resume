@@ -3,254 +3,199 @@
 exports[`Dashboard component > renders correctly on desktop 1`] = `
 <DocumentFragment>
   <div
-    class="w-[1300px] md:w-[3300px] bg-white dark:bg-black"
+    class="w-[1300px] md:w-[3200px] bg-app-light dark:bg-black"
   >
     <div
       class="flex justify-between w-full mt-0"
     >
       <div
-        class="flex-1 flex justify-center"
-        id="dev"
+        class="z-[4]"
       >
         <div
-          class="z-[4]"
+          style="height: 600px; box-shadow: inset 0px 0px 40px 40px white; position: relative;"
         >
           <div
-            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
+            class="absolute inset-0 flex items-center justify-center"
           >
-            <img
-              alt=""
-              data-testid="image-test-id"
-              src="/src/assets/images/dev.webp"
-              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
-            />
+            <span
+              class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+              role="progressbar"
+              style="width: 40px; height: 40px;"
+            >
+              <svg
+                class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                  cx="44"
+                  cy="44"
+                  fill="none"
+                  r="20.2"
+                  stroke-width="3.6"
+                />
+              </svg>
+            </span>
           </div>
-        </div>
-      </div>
-      <div
-        class="flex-1 flex justify-center"
-        id="me"
-      >
-        <div
-          class="z-[4]"
-        >
-          <div
-            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
-          >
-            <img
-              alt=""
-              data-testid="image-test-id"
-              src="/src/assets/images/me.webp"
-              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="flex-1 flex justify-center"
-        id="music"
-      >
-        <div
-          class="z-[4]"
-        >
-          <div
-            style="height: 600px; box-shadow: inset 0px 0px 30px 40px white; position: relative;"
-          >
-            <img
-              alt=""
-              data-testid="image-test-id"
-              src="/src/assets/images/music.webp"
-              style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
-            />
-          </div>
+          <img
+            alt=""
+            class="undefined opacity-0"
+            data-testid="image-test-id"
+            src="/src/assets/images/Background1.png"
+            style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
+          />
         </div>
       </div>
     </div>
     <div
-      class="w-full -top-32 md:-top-96 relative z-[5]"
+      class="w-full -top-32 md:-top-96 px-4 relative z-[5]"
     >
       <div
         class="flex"
       >
         <div
           class="w-[33.33%]"
+          id="dev"
         >
           <div
             class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
           >
             <div
-              class="rounded-xl"
-              style="grid-area: 40 / 1 / span 48 / span 28;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 42 / 1 / span 38 / span 28;"
             >
               <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
+                class="rounded-xl 
+    bg-app-lightModeBoxes-box2 
+    dark:bg-app-darkModeBoxes-box2 
+    dark:border-app-lightModeBoxes-box2 
+    border-app-darkModeBoxes-box2
+    border-[2px]
+    flex flex-col-reverse justify-end"
               >
                 <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
+                  class="relative"
                 >
                   <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                    class="text-center mb-4 "
                   >
+                    <h3
+                      class="text-md md:text-xl font-bold dark:text-white text-black "
+                    >
+                      Mobile Project 2
+                    </h3>
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="description-scrollbar overflow-auto rounded-lg 
+          border-[2px] 
+          transition-all 
+          duration-300 
+          bg-white 
+          dark:border-app-lightModeBoxes-box2 
+          border-app-darkModeBoxes-box2 
+          hover:bg-opacity-40
+          bg-opacity-25
+          mx-3 mt-2 hidden md:flex relative inner-box-shadow  
+                    "
                     >
-                      <h4>
-                        yes
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-xl"
-              style="grid-area: 27 / 20 / span 13 / span 25;"
-            >
-              <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
-              >
-                <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
-                >
-                  <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
-                  >
-                    <div
-                      class="p-4 text-blue-900 rounded"
-                    >
-                      <h4>
-                        yes
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-xl"
-              style="grid-area: 40 / 29 / span 18 / span 16;"
-            >
-              <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
-              >
-                <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
-                >
-                  <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
-                  >
-                    <div
-                      class="p-4 text-blue-900 rounded"
-                    >
-                      <h4>
-                        yes
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-xl"
-              style="grid-area: 45 / 45 / span 17 / span 13;"
-            >
-              <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
-              >
-                <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
-                >
-                  <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
-                  >
-                    <div
-                      class="p-4 text-blue-900 rounded"
-                    >
-                      <h4>
-                        yes
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-xl"
-              style="grid-area: 45 / 71 / span 10 / span 10;"
-            >
-              <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
-              >
-                <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
-                >
-                  <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
-                  >
-                    <a
-                      class="flex flex-col gap-1 items-center justify-center text-center flex-wrap bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all h-full"
-                      href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
-                      style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"
-                      target="_blank"
-                    >
-                      <img
-                        alt="Resume Icon"
-                        class=""
-                        data-testid="resume-icon"
-                        height="80"
-                        src="/src/assets/icons/resume-icon.svg"
-                        width="80"
-                      />
                       <p
-                        class="font-bold text-[1.0em]"
-                        data-testid="resume-button-text"
+                        class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
                       >
-                        See resume
+                        Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long.
                       </p>
-                    </a>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-xl"
-              style="grid-area: 21 / 45 / span 24 / span 36;"
-            >
-              <div
-                class="flex w-full h-full"
-                style="perspective: 1000px;"
-              >
-                <div
-                  class="w-full relative transition-all duration-200 ease-linear inter-var"
-                  style="transform-style: preserve-3d;"
-                >
                   <div
-                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                    class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="swiper-wrapper"
+                      style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="swiper-slide bg-transparent"
+                        data-swiper-slide-index="0"
+                      >
+                        <img
+                          alt="dev.projects.projects.mobile.project1.title"
+                          class="rounded-xl"
+                          src="/src/assets/images/projects/movie-app.gif"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide bg-transparent"
+                        data-swiper-slide-index="1"
+                      >
+                        <img
+                          alt="dev.projects.projects.mobile.project2.title"
+                          class="rounded-xl"
+                          src="/src/assets/images/projects/movie-app.gif"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide bg-transparent"
+                        data-swiper-slide-index="2"
+                      >
+                        <img
+                          alt="dev.projects.projects.mobile.project3.title"
+                          class="rounded-xl"
+                          src="/src/assets/images/projects/movie-app.gif"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="h-full w-full cursor-pointer"
+                >
+                  <div>
+                    <div
+                      class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+                    >
+                      <h1
+                        class="font-bold dark:text-white text-black "
+                      >
+                        Self taste projects 📱
+                      </h1>
+                      <div
+                        aria-label="Show all projects"
+                        class="rounded-full py-1 px-2 items-center 
+                    bg-white 
+                    dark:border-app-lightModeBoxes-box2 
+                    border-app-darkModeBoxes-box2 
+                    hover:bg-opacity-45 
+                    dark:text-white 
+                    text-black 
+                    bg-opacity-25 
+                    md:border-[2px]
+                    transition-all 
+                    duration-300 
+                    hover:scale-105 
+                    flex gap-2 
+                    text-xs 
+                    font-bold"
+                        data-mui-internal-clone-element="true"
+                      >
+                        See more
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+                          data-testid="ArrowForwardIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
-              style="grid-area: 10 / 55 / span 11 / span 20;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 24 / 1 / span 18 / span 44;"
             >
               <div
                 class="flex w-full h-full"
@@ -264,11 +209,763 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 42 / 29 / span 18 / span 16;"
+            >
+              <div
+                class="
+      rounded-xl     
+      border-[2px]
+      bg-app-lightModeBoxes-box13 
+      dark:bg-app-darkModeBoxes-box13 
+      dark:border-app-lightModeBoxes-box13 
+      border-app-darkModeBoxes-box13 
+      flex flex-col-reverse"
+              >
+                <div
+                  class="col-span-1 self-center w-full rounded-xl md:flex flex-col row-span-2 hidden md:h-[420px]"
+                >
+                  <div
+                    class="grid grid-cols-1 gap-y-10 mt-4 px-2"
+                  >
+                    <div>
+                      <div
+                        class="_container_e676c2"
+                      >
+                        <div
+                          class="_base_e676c2 right-14"
+                        >
+                          <div
+                            aria-label="ts-circle"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="react"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-react ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="tailwind"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="bun"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <img
+                              alt="Bun"
+                              class="custom-icon h-8 pr-0"
+                              src="/src/assets/icons/tools/Bun.svg"
+                            />
+                          </div>
+                          <div
+                            aria-label="css"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-css ci-2x"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="relative -top-20 group left-32"
+                      >
+                        <a
+                          href="https://github.com/example/fast-render-template"
+                        >
+                          <div
+                            class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+                            style="background-color: rgb(255, 69, 0);"
+                          >
+                            <div
+                              aria-label="See template"
+                              class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                              data-mui-internal-clone-element="true"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                                data-testid="ArrowOutwardIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                                />
+                              </svg>
+                            </div>
+                            <p
+                              class="font-bold capitalize text-sm text-black dark:text-white"
+                            >
+                              fast rendering
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="_container_e676c2"
+                      >
+                        <div
+                          class="_base_e676c2 _reverse_e676c2 left-14"
+                        >
+                          <div
+                            aria-label="ts-circle"
+                            class="_icon_e676c2 _reverse_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="nextjs"
+                            class="_icon_e676c2 _reverse_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-nextjs ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="tailwind"
+                            class="_icon_e676c2 _reverse_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="docker"
+                            class="_icon_e676c2 _reverse_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-docker ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="react"
+                            class="_icon_e676c2 _reverse_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-react ci-2x"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="relative -top-20 group  left-0"
+                      >
+                        <a
+                          href="https://github.com/example/next-ssr-template"
+                        >
+                          <div
+                            class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+                            style="background-color: rgb(255, 20, 147);"
+                          >
+                            <div
+                              aria-label="See template"
+                              class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                              data-mui-internal-clone-element="true"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                                data-testid="ArrowOutwardIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                                />
+                              </svg>
+                            </div>
+                            <p
+                              class="font-bold capitalize text-sm text-black dark:text-white"
+                            >
+                              server rendering
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="_container_e676c2"
+                      >
+                        <div
+                          class="_base_e676c2 right-14"
+                        >
+                          <div
+                            aria-label="ts-circle"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="vuejs"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-vuejs ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="tailwind"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="pinia"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-pinia ci-2x"
+                            />
+                          </div>
+                          <div
+                            aria-label="docker"
+                            class="_icon_e676c2"
+                            data-mui-internal-clone-element="true"
+                          >
+                            <i
+                              class="ci ci-docker ci-2x"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="relative -top-20 group left-32"
+                      >
+                        <a
+                          href="https://github.com/example/vue-pinia-template"
+                        >
+                          <div
+                            class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+                            style="background-color: rgb(255, 165, 0);"
+                          >
+                            <div
+                              aria-label="See template"
+                              class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                              data-mui-internal-clone-element="true"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                                data-testid="ArrowOutwardIcon"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                                />
+                              </svg>
+                            </div>
+                            <p
+                              class="font-bold capitalize text-sm text-black dark:text-white"
+                            >
+                              vue simplicity
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="h-full w-full cursor-pointer"
+                >
+                  <div
+                    class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+                  >
+                    <div
+                      aria-label="Show all templates"
+                      class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+                      data-mui-internal-clone-element="true"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="AppsIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="text-black dark:text-white"
+                    >
+                      Use my dev templates!
+                    </h2>
+                    <div
+                      class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
+                      style="will-change: transform; transform: none;"
+                    >
+                      <div
+                        class="w-10"
+                      >
+                        <div
+                          class="absolute inset-0 flex items-center justify-center"
+                        >
+                          <span
+                            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                            role="progressbar"
+                            style="width: 40px; height: 40px;"
+                          >
+                            <svg
+                              class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                              viewBox="22 22 44 44"
+                            >
+                              <circle
+                                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                                cx="44"
+                                cy="44"
+                                fill="none"
+                                r="20.2"
+                                stroke-width="3.6"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                        <img
+                          class="undefined opacity-0"
+                          src="/src/assets/icons/code-template.webp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 38 / 45 / span 17 / span 13;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
+                      data-testid="example-container"
+                    >
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl bg-transparent "
+              style="grid-area: 38 / 75 / span 10 / span 10;"
+            >
+              <div
+                class="w-full p-2 cursor-pointer bg-transparent"
+              >
+                <a
+                  class="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
+                  href="/src/assets/documents/George%20Gil%20Garib%20Resume.pdf"
+                  target="_blank"
+                >
+                  <img
+                    alt="Resume Icon"
+                    class="relative  shadow-xl"
+                    data-testid="resume-icon"
+                    src="/src/assets/images/resume.png"
+                    width="120"
+                  />
+                  <div
+                    class="absolute mt-5 ml-1 md:ml-2 md:mt-10"
+                  >
+                    <p
+                      class="font-bold text-[1.0em] text-blue-500"
+                      data-testid="resume-button-text-title"
+                    >
+                      Resume
+                    </p>
+                    <p
+                      class="font-bold text-[0.70em] text-blue-500 -mt-1"
+                      data-testid="resume-button-text-name"
+                    >
+                      George Gil
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 20 / 45 / span 18 / span 40;"
+            >
+              <div
+                class="rounded-xl     
+    bg-app-lightModeBoxes-box1 
+    dark:bg-app-darkModeBoxes-box1 
+    dark:border-app-lightModeBoxes-box1 
+    border-app-darkModeBoxes-box1 flex flex-col-reverse
+    border-[2px]"
+              >
+                <div
+                  class="grid ml-8 grid-rows-1 grid-cols-4 
+    bg-app-lightModeBoxes-box1 
+    dark:bg-app-darkModeBoxes-box1 
+     border-l-0 rounded-l-none
+    rounded-xl"
+                >
+                  <div
+                    class="text-center mb-4 col-span-1 self-center p-2 mr-4 
+        md:dark:bg-app-lightModeBoxes-box1 
+    md:bg-white
+    md:bg-opacity-20
+    border-[2px]
+    border-app-darkModeBoxes-box1
+    dark:border-white
+    dark:border-opacity-60
+    shadow-md
+    opacity-90 rounded-xl flex flex-col gap-4 mt-16"
+                  >
+                    <h3
+                      class="hidden md:flex text-lg font-bold dark:text-white text-black"
+                    >
+                      Desktop Project 3
+                    </h3>
+                    <div
+                      class="hidden md:flex flex-wrap justify-center gap-2"
+                    >
+                      <i
+                        aria-label="react"
+                        class="ci ci-react ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <i
+                        aria-label="tailwind"
+                        class="ci ci-tailwind ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <i
+                        aria-label="ts-circle"
+                        class="ci ci-ts-circle ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <i
+                        aria-label="redis"
+                        class="ci ci-redis ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <i
+                        aria-label="git"
+                        class="ci ci-git ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="col-span-3 self-center py-3 pr-3 ml-3 group"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-vertical h-[120px] md:h-[250px] w-full"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, NaNpx, 0px);"
+                      >
+                        <div
+                          class="swiper-slide bg-transparent"
+                          data-swiper-slide-index="0"
+                        >
+                          <img
+                            alt="dev.projects.projects.desktop.project1.title"
+                            class="rounded-2xl"
+                            src="/src/assets/images/projects/desktop-app-2.png"
+                          />
+                        </div>
+                        <div
+                          class="swiper-slide bg-transparent"
+                          data-swiper-slide-index="1"
+                        >
+                          <img
+                            alt="dev.projects.projects.desktop.project2.title"
+                            class="rounded-2xl"
+                            src="/src/assets/images/projects/desktop-app-1.png"
+                          />
+                        </div>
+                        <div
+                          class="swiper-slide bg-transparent"
+                          data-swiper-slide-index="2"
+                        >
+                          <img
+                            alt="dev.projects.projects.desktop.project3.title"
+                            class="rounded-2xl"
+                            src="/src/assets/images/projects/desktop-app-1.png"
+                          />
+                        </div>
+                        <div
+                          class="swiper-slide bg-transparent"
+                          data-swiper-slide-index="3"
+                        >
+                          <img
+                            alt="dev.projects.projects.desktop.project4.title"
+                            class="rounded-2xl"
+                            src="/src/assets/images/projects/desktop-app-2.png"
+                          />
+                        </div>
+                        <div
+                          class="swiper-slide bg-transparent"
+                          data-swiper-slide-index="4"
+                        >
+                          <img
+                            alt="dev.projects.projects.desktop.project5.title"
+                            class="rounded-2xl"
+                            src="/src/assets/images/projects/desktop-app-1.png"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical"
+                      >
+                        <span
+                          class="swiper-pagination-bullet"
+                        />
+                        <span
+                          class="swiper-pagination-bullet"
+                        />
+                        <span
+                          class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                        />
+                        <span
+                          class="swiper-pagination-bullet"
+                        />
+                        <span
+                          class="swiper-pagination-bullet"
+                        />
+                      </div>
+                      <div
+                        class="hidden md:block"
+                      >
+                        <div
+                          class="autoplay-progress"
+                          slot="container-end"
+                        >
+                          <svg
+                            style="--progress: 0.0003333333333332966;"
+                            viewBox="0 0 48 48"
+                          >
+                            <circle
+                              cx="24"
+                              cy="24"
+                              r="20"
+                            />
+                          </svg>
+                          <span>
+                            3s
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="h-full w-full cursor-pointer"
+                >
+                  <div
+                    class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
+            bg-app-lightModeBoxes-box1 m-1
+    dark:bg-app-darkModeBoxes-box1 md:mt-2 md:ml-2 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1
+    "
+                  >
+                    <div
+                      class="grid grid-cols-1 md:grid-cols-4 items-center px-2 pt-2 md:pb-2"
+                    >
+                      <div
+                        class="col-span-3 flex justify-between flex-col h-[7.5rem] md:h-auto"
+                      >
+                        <h1
+                          class="font-bold flex flex-wrap text-start dark:text-white text-black text-md"
+                        >
+                          Self taste projects 🖥️
+                        </h1>
+                        <div
+                          aria-label="Show all projects"
+                          class="flex p-1 rounded-lg md:hidden"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <p
+                            class="mx-auto text-xs font-bold"
+                          >
+                            See more
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="hidden md:flex justify-center ml-6"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          aria-label="See more"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge hover:bg-white hover:bg-opacity-25 rounded-full p-1 dark:text-white text-black css-19vn4a9-MuiSvgIcon-root"
+                          data-mui-internal-clone-element="true"
+                          data-testid="ArrowForwardIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 38 / 58 / span 11 / span 15;"
+            >
+              <div
+                class="flex w-full h-full"
+                style="perspective: 1000px;"
+              >
+                <div
+                  class="w-full relative transition-all duration-200 ease-linear inter-var"
+                  style="transform-style: preserve-3d;"
+                >
+                  <div
+                    class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
+                  >
+                    <div
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      data-testid="example-container"
+                    >
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
@@ -278,13 +975,14 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
         </div>
         <div
           class="w-[33.33%]"
+          id="me"
         >
           <div
             class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
           >
             <div
-              class="rounded-xl"
-              style="grid-area: 28 / 12 / span 28 / span 22;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 26 / 19 / span 30 / span 18;"
             >
               <div
                 class="flex w-full h-full"
@@ -298,19 +996,44 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
-              style="grid-area: 56 / 25 / span 9 / span 9;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 56 / 27 / span 9 / span 9;"
             >
               <div
                 class="flex w-full h-full"
@@ -324,19 +1047,44 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
-              style="grid-area: 49 / 34 / span 10 / span 22;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 49 / 37 / span 10 / span 22;"
             >
               <div
                 class="flex w-full h-full"
@@ -350,7 +1098,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl bg-gray-200 dark:bg-blue-900"
+                      class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
                     >
                       <div
                         class="transition-opacity duration-500 opacity-100 h-full"
@@ -387,8 +1135,8 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
               </div>
             </div>
             <div
-              class="rounded-xl"
-              style="grid-area: 31 / 34 / span 18 / span 57;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 30 / 37 / span 19 / span 51;"
             >
               <div
                 class="flex w-full h-full"
@@ -402,19 +1150,44 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
-              style="grid-area: 22 / 43 / span 9 / span 22;"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+              style="grid-area: 21 / 43 / span 9 / span 22;"
             >
               <div
                 class="flex w-full h-full"
@@ -428,18 +1201,18 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="flex relative flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+                      class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
                     >
                       <div
                         class="mb-4"
                       >
                         <h2
-                          class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                          class="text-xl font-bold mb-6 text-black dark:text-white"
                         >
                           Hi! I'm George Gil
                         </h2>
                         <p
-                          class="text-gray-700 dark:text-gray-300"
+                          class="text-black dark:text-white"
                         >
                           I'm a curious software engineer who also plays guitar, not always at the same time though.
                         </p>
@@ -453,12 +1226,13 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
         </div>
         <div
           class="w-[33.33%]"
+          id="music"
         >
           <div
             class="grid grid-cols-100 grid-rows-100 gap-4"
           >
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 13 / 1 / span 20 / span 13;"
             >
               <div
@@ -473,18 +1247,43 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 21 / 14 / span 12 / span 36;"
             >
               <div
@@ -499,18 +1298,43 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 33 / 22 / span 22 / span 22;"
             >
               <div
@@ -525,18 +1349,23 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="flex flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+                      class="flex flex-col justify-between h-full p-4  rounded-xl 
+    bg-app-lightModeBoxes-box16 
+    dark:bg-app-darkModeBoxes-box16 
+    dark:border-app-lightModeBoxes-box16 
+    border-app-darkModeBoxes-box16
+    border-[2px]"
                     >
                       <div
                         class="mb-4"
                       >
                         <h2
-                          class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                          class="text-xl font-bold mb-2 text-black dark:text-white"
                         >
                           My Favorite Playlist
                         </h2>
                         <p
-                          class="text-gray-700 dark:text-gray-300"
+                          class="text-black dark:text-white"
                         >
                           Enjoy my personal selection of songs in this playlist. Listen to it and let yourself be carried away by the rhythm!
                         </p>
@@ -560,7 +1389,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 48 / 14 / span 6 / span 8;"
             >
               <div
@@ -575,18 +1404,43 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 33 / 44 / span 7 / span 20;"
             >
               <div
@@ -645,7 +1499,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 40 / 44 / span 10 / span 10;"
             >
               <div
@@ -660,18 +1514,43 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="p-4 text-blue-900 rounded"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
+                      data-testid="example-container"
                     >
-                      <h4>
-                        yes
-                      </h4>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
+                        >
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
+                          >
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                      <img
+                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                        src="/src/assets/images/construction.png"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div
-              class="rounded-xl"
+              class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
               style="grid-area: 41 / 54 / span 14 / span 10;"
             >
               <div
@@ -686,7 +1565,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="relative flex flex-col justify-between rounded-xl h-full bg-gray-700"
+                      class="relative flex flex-col justify-between rounded-xl h-full"
                     >
                       <div
                         class="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10"
@@ -717,10 +1596,10 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         loop=""
                         playsinline=""
                         title="Click to mute/unmute"
-                        width="200px"
+                        width="210px"
                       >
                         <source
-                          src="/src/assets/videos/final.mp4"
+                          src="/src/assets/videos/guitar-video.mp4"
                           type="video/mp4"
                         />
                       </video>

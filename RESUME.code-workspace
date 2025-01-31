@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "terminals.terminals": [
+      {
+        "name": "Dev",
+        "commands": ["bun run dev"],
+        "execute": true,
+        "icon": "play",
+        "color": "terminal.ansiGreen",
+        "recycle": false
+      },
+      {
+        "name": "Tunnel",
+        "commands": [
+          "ssh -p 443 -o ServerAliveInterval=30 -t -R0:localhost:5173 qr@a.pinggy.io x:https"
+        ],
+        "execute": false,
+        "icon": "device-mobile",
+        "recycle": false
+      },
+      {
+        "name": "Test",
+        "icon": "beaker",
+        "color": "terminal.ansiYellow",
+        "recycle": false
+      },
+      {
+        "name": "Git",
+        "color": "terminal.ansiRed",
+        "icon": "git-branch",
+        "recycle": false
+      }
+    ]
+  }
+}

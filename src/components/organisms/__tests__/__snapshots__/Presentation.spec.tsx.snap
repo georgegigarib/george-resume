@@ -3,18 +3,18 @@
 exports[`Presentation component > matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex relative flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+    class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
   >
     <div
       class="mb-4"
     >
       <h2
-        class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+        class="text-xl font-bold mb-6 text-black dark:text-white"
       >
         Hi! I'm George Gil
       </h2>
       <p
-        class="text-gray-700 dark:text-gray-300"
+        class="text-black dark:text-white"
       >
         I'm a curious software engineer who also plays guitar, not always at the same time though.
       </p>

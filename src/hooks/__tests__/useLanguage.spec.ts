@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next'
 import { describe, it, expect, vi, beforeEach, Mock } from 'vitest'
 
 vi.mock('react-i18next', () => ({
-  useTranslation: vi.fn()
+  useTranslation: vi.fn(),
 }))
 
 describe('useLanguage', () => {
   const mockChangeLanguage = vi.fn()
   const mockI18n = {
-    changeLanguage: mockChangeLanguage
+    changeLanguage: mockChangeLanguage,
   }
 
   beforeEach(() => {

@@ -1,5 +1,5 @@
-import { en } from './en.local'
-import { es } from './es.local'
+import { en } from '@/locales/en.local'
+import { es } from '@/locales/es.local'
 
 export interface LanguageOption {
   translation: Record<string, string | object>
@@ -11,11 +11,11 @@ export const languages = {
   en: {
     translation: en,
     code: 'en',
-    name: 'English'
+    name: 'English',
   },
   es: {
     translation: es,
     code: 'es',
-    name: 'Español'
-  }
+    name: 'Español',
+  },
 }

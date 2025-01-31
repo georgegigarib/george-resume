@@ -1,0 +1,188 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TemplatesCarousels Component > renders correctly with provided templates 1`] = `
+<DocumentFragment>
+  <div
+    class="col-span-1 self-center w-full rounded-xl md:flex flex-col row-span-2 hidden md:h-[420px]"
+  >
+    <div
+      class="grid grid-cols-1 gap-y-10 mt-4 px-2"
+    >
+      <div>
+        <div
+          class="_container_e676c2"
+        >
+          <div
+            class="_base_e676c2 right-14"
+          >
+            <div
+              aria-label="React"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="TypeScript"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="Jest"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+          </div>
+        </div>
+        <div
+          class="relative -top-20 group left-32"
+        >
+          <a
+            href="http://example.com/template1"
+          >
+            <div
+              class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+              style="background-color: rgb(255, 255, 255);"
+            >
+              <div
+                aria-label="See template"
+                class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                data-mui-internal-clone-element="true"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                  data-testid="ArrowOutwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="font-bold capitalize text-sm text-black dark:text-white"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="_container_e676c2"
+        >
+          <div
+            class="_base_e676c2 _reverse_e676c2 left-14"
+          >
+            <div
+              aria-label="Node.js"
+              class="_icon_e676c2 _reverse_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="Express"
+              class="_icon_e676c2 _reverse_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="MongoDB"
+              class="_icon_e676c2 _reverse_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+          </div>
+        </div>
+        <div
+          class="relative -top-20 group  left-0"
+        >
+          <a
+            href="http://example.com/template2"
+          >
+            <div
+              class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+              style="background-color: rgb(240, 240, 240);"
+            >
+              <div
+                aria-label="See template"
+                class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                data-mui-internal-clone-element="true"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                  data-testid="ArrowOutwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="font-bold capitalize text-sm text-black dark:text-white"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div
+          class="_container_e676c2"
+        >
+          <div
+            class="_base_e676c2 right-14"
+          >
+            <div
+              aria-label="Python"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="Django"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+            <div
+              aria-label="PostgreSQL"
+              class="_icon_e676c2"
+              data-mui-internal-clone-element="true"
+            />
+          </div>
+        </div>
+        <div
+          class="relative -top-20 group left-32"
+        >
+          <a
+            href="http://example.com/template3"
+          >
+            <div
+              class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
+              style="background-color: rgb(224, 224, 224);"
+            >
+              <div
+                aria-label="See template"
+                class="absolute -top-1 right-0 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white/25 bg-tra px-1 mt-1 rounded-full"
+                data-mui-internal-clone-element="true"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit -top-[2px] relative css-1lzspe0-MuiSvgIcon-root"
+                  data-testid="ArrowOutwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="font-bold capitalize text-sm text-black dark:text-white"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

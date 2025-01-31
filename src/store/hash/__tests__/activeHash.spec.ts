@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import activeHashReducer, { setActiveHash, selectActiveHash } from '@/store/hash/activeHashSlice'
 import { Sections } from '@/app/layout/navbarTypes'
-import { RootState } from '../activeHashSlice'
+import { StoreState } from '@/store'
 
 describe('activeHashSlice', () => {
   it('should return the initial state', () => {
@@ -21,13 +21,13 @@ describe('activeHashSlice', () => {
   })
 
   it('should select activeHash from the state', () => {
-    const state: RootState = {
+    const state: Partial<StoreState> = {
       hash: {
-        activeHash: '#aboutMe'
-      }
+        activeHash: '#aboutMe',
+      },
     }
 
-    const selectedHash = selectActiveHash(state)
+    const selectedHash = selectActiveHash(state as StoreState)
 
     expect(selectedHash).toBe('#aboutMe')
   })

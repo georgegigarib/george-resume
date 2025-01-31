@@ -1,14 +1,12 @@
 import { useRef, useState, createContext } from 'react'
-import { cn } from '@/utils/classMerge'
+import { cm } from '@/utils/classMerge'
 
-const MouseEnterContext = createContext<
-  [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
->(undefined)
+const MouseEnterContext = createContext<[boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined>(undefined)
 
 export const CardContainer = ({
   children,
   className,
-  containerClassName
+  containerClassName,
 }: {
   children?: React.ReactNode
   className?: string
@@ -33,14 +31,14 @@ export const CardContainer = ({
   const handleMouseLeave = () => {
     if (!containerRef.current) return
     setIsMouseEntered(false)
-    containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`
+    containerRef.current.style.transform = 'rotateY(0deg) rotateX(0deg)'
   }
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={cn('flex w-full h-full', containerClassName)}
+        className={cm('flex w-full h-full', containerClassName)}
         style={{
-          perspective: '1000px'
+          perspective: '1000px',
         }}
       >
         <div
@@ -48,9 +46,9 @@ export const CardContainer = ({
           onMouseEnter={handleMouseEnter}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
-          className={cn('w-full relative transition-all duration-200 ease-linear', className)}
+          className={cm('w-full relative transition-all duration-200 ease-linear', className)}
           style={{
-            transformStyle: 'preserve-3d'
+            transformStyle: 'preserve-3d',
           }}
         >
           {children}

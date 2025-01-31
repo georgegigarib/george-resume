@@ -1,12 +1,12 @@
-import { Menu, MenuItem, Button } from '@mui/material'
 import { useState } from 'react'
+import i18n from '@/locales/i18n.config'
 import ChangeLanguageIcon from '@mui/icons-material/Language'
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown'
-import { useLanguage } from '@/hooks/useLanguage'
 import { languages, LanguageOption } from '@/locales/languages'
-import i18n from '@/locales/i18n.config'
+import { useLanguage } from '@/hooks/useLanguage'
+import { Menu, MenuItem, Button } from '@mui/material'
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = (): React.ReactElement => {
   const { changeLanguage } = useLanguage()
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
@@ -16,17 +16,14 @@ const LanguageSwitcher = () => {
 
   return (
     <>
-      <div
-        className="flex items-center justify-between w-full gap-10"
-        data-testid="language-switcher"
-      >
+      <div className="flex items-center justify-between w-full gap-10" data-testid="language-switcher">
         <Button
           variant="contained"
           onClick={(event) => setAnchorEl(event.currentTarget)}
           style={{
             borderRadius: '20px',
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
           size="small"
           data-testid="language-switcher-button"
@@ -37,7 +34,7 @@ const LanguageSwitcher = () => {
             style={{
               marginLeft: 'auto',
               transform: anchorEl ? 'rotate(180deg)' : 'rotate(0deg)',
-              transition: 'transform 0.3s ease'
+              transition: 'transform 0.3s ease',
             }}
           />
         </Button>
@@ -46,13 +43,6 @@ const LanguageSwitcher = () => {
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={() => setAnchorEl(null)}
-          PaperProps={{
-            style: {
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.4)',
-              border: '1px solid rgba(0, 0, 0, 0.1)',
-              borderRadius: '5px'
-            }
-          }}
           data-testid="language-menu"
         >
           {languageOptions.map((lang) => (

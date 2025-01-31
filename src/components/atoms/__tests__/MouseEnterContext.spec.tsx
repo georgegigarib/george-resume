@@ -45,9 +45,7 @@ describe('MouseEnterProvider', () => {
 
     const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
 
-    expect(() => render(<TestComponent />)).toThrowError(
-      'useMouseEnter must be used within a MouseEnterProvider'
-    )
+    expect(() => render(<TestComponent />)).toThrowError('useMouseEnter must be used within a MouseEnterProvider')
 
     consoleErrorSpy.mockRestore()
   })

@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect, vi, Mock } from 'vitest'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import SpotifyPlaylist from '../SpotifyPlaylist'
+import SpotifyPlaylist from '@/components/organisms/SpotifyPlaylist'
 import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: vi.fn()
+  useIsMobile: vi.fn(),
 }))
 
 describe('SpotifyPlaylist Component', () => {

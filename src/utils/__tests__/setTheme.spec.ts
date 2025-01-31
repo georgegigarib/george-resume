@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { setTheme } from '../setTheme'
+import { setTheme } from '@/utils/setTheme'
 
 describe('setTheme', () => {
   beforeEach(() => {

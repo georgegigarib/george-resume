@@ -1,4 +1,4 @@
-export interface boxType {
+export interface BoxType {
   startRow: number
   spanRow: number
   startColumn: number
@@ -9,5 +9,5 @@ export interface boxType {
 export enum Sections {
   Dev = '#dev',
   Me = '#me',
-  Music = '#music'
+  Music = '#music',
 }

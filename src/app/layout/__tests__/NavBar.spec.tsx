@@ -6,7 +6,7 @@ import Navbar from '@/app/layout/NavBar'
 const isMobileMock = vi.fn()
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: () => isMobileMock()
+  useIsMobile: () => isMobileMock(),
 }))
 
 describe('NavBar component', () => {

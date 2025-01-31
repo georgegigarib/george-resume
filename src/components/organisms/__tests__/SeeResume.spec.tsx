@@ -7,11 +7,11 @@ import { useLanguage } from '@/hooks/useLanguage'
 import '@testing-library/jest-dom'
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: vi.fn()
+  useIsMobile: vi.fn(),
 }))
 
 vi.mock('@/hooks/useLanguage', () => ({
-  useLanguage: vi.fn()
+  useLanguage: vi.fn(),
 }))
 
 describe('SeeResume Component', () => {
@@ -28,9 +28,11 @@ describe('SeeResume Component', () => {
 
     const { asFragment } = renderComponent()
 
-    const resumeText = screen.getByTestId('resume-button-text') as HTMLInputElement
+    const resumeText = screen.getByTestId('resume-button-text-title') as HTMLInputElement
+    const resumeName = screen.getByTestId('resume-button-text-name') as HTMLInputElement
 
-    expect(resumeText.textContent).toBe('See resume')
+    expect(resumeText.textContent).toBe('Resume')
+    expect(resumeName.textContent).toBe('George Gil')
     expect(screen.getByRole('link')).toHaveAttribute('href', expect.stringContaining('Resume.pdf'))
     expect(asFragment()).toMatchSnapshot()
   })
@@ -42,12 +44,13 @@ describe('SeeResume Component', () => {
     const { asFragment } = renderComponent()
 
     const resumeIcon = screen.getByAltText('Resume Icon')
-    const resumeText = screen.getByTestId('resume-button-text') as HTMLInputElement
 
-    expect(resumeIcon).toHaveAttribute('width', '80')
-    expect(resumeIcon).toHaveAttribute('height', '80')
+    const resumeText = screen.getByTestId('resume-button-text-title') as HTMLInputElement
+    const resumeName = screen.getByTestId('resume-button-text-name') as HTMLInputElement
 
-    expect(resumeText).toBeInTheDocument()
+    expect(resumeIcon).toHaveAttribute('width', '120')
+    expect(resumeText.textContent).toBe('Resume')
+    expect(resumeName.textContent).toBe('George Gil')
     expect(screen.getByRole('link')).toHaveAttribute('href', expect.stringContaining('CV.pdf'))
     expect(asFragment()).toMatchSnapshot()
   })

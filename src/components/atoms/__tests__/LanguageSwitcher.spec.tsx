@@ -7,8 +7,8 @@ const changeLanguageMock = vi.fn()
 
 vi.mock('@/hooks/useLanguage', () => ({
   useLanguage: () => ({
-    changeLanguage: changeLanguageMock
-  })
+    changeLanguage: changeLanguageMock,
+  }),
 }))
 
 describe('LanguageSwitcher component', () => {

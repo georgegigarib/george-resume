@@ -5,21 +5,21 @@ import { Provider } from 'react-redux'
 import { configureStore, Store } from '@reduxjs/toolkit'
 import activeHashReducer from '@/store/hash/activeHashSlice'
 import { Sections } from '@/app/layout/navbarTypes'
-import YoutubeVideo from '../YoutubeVideo'
+import YoutubeVideo from '@/components/organisms/YoutubeVideo'
 import i18n from '@/locales/i18n.config'
 import { I18nextProvider } from 'react-i18next'
 
 const mockStore = (initialState: { hash: { activeHash: Sections } }) => {
   return configureStore({
     reducer: {
-      hash: activeHashReducer
+      hash: activeHashReducer,
     },
-    preloadedState: initialState
+    preloadedState: initialState,
   })
 }
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: vi.fn()
+  useIsMobile: vi.fn(),
 }))
 
 describe('LocalVideoWithTooltip Component', () => {

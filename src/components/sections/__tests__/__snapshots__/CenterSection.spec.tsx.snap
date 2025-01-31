@@ -6,8 +6,8 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
     class="grid grid-cols-2 grid-rows-20 lg:grid-cols-100 lg:grid-rows-100 gap-4"
   >
     <div
-      class="rounded-xl"
-      style="grid-area: 28 / 12 / span 28 / span 22;"
+      class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+      style="grid-area: 26 / 19 / span 30 / span 18;"
     >
       <div
         class="flex w-full h-full"
@@ -21,19 +21,44 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+              data-testid="example-container"
             >
-              <h4>
-                yes
-              </h4>
+              <div
+                class="absolute inset-0 flex items-center justify-center"
+              >
+                <span
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                  role="progressbar"
+                  style="width: 40px; height: 40px;"
+                >
+                  <svg
+                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                      cx="44"
+                      cy="44"
+                      fill="none"
+                      r="20.2"
+                      stroke-width="3.6"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <img
+                class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                src="/src/assets/images/construction.png"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="rounded-xl"
-      style="grid-area: 56 / 25 / span 9 / span 9;"
+      class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+      style="grid-area: 56 / 27 / span 9 / span 9;"
     >
       <div
         class="flex w-full h-full"
@@ -47,19 +72,44 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
+              data-testid="example-container"
             >
-              <h4>
-                yes
-              </h4>
+              <div
+                class="absolute inset-0 flex items-center justify-center"
+              >
+                <span
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                  role="progressbar"
+                  style="width: 40px; height: 40px;"
+                >
+                  <svg
+                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                      cx="44"
+                      cy="44"
+                      fill="none"
+                      r="20.2"
+                      stroke-width="3.6"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <img
+                class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                src="/src/assets/images/construction.png"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="rounded-xl"
-      style="grid-area: 49 / 34 / span 10 / span 22;"
+      class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+      style="grid-area: 49 / 37 / span 10 / span 22;"
     >
       <div
         class="flex w-full h-full"
@@ -73,7 +123,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl bg-gray-200 dark:bg-blue-900"
+              class="flex relative flex-col justify-between w-full h-full p-4 overflow-hidden rounded-xl border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
             >
               <div
                 class="transition-opacity duration-500 opacity-100 h-full"
@@ -110,8 +160,8 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
       </div>
     </div>
     <div
-      class="rounded-xl"
-      style="grid-area: 31 / 34 / span 18 / span 57;"
+      class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+      style="grid-area: 30 / 37 / span 19 / span 51;"
     >
       <div
         class="flex w-full h-full"
@@ -125,19 +175,44 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="p-4 text-blue-900 rounded"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+              data-testid="example-container"
             >
-              <h4>
-                yes
-              </h4>
+              <div
+                class="absolute inset-0 flex items-center justify-center"
+              >
+                <span
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                  role="progressbar"
+                  style="width: 40px; height: 40px;"
+                >
+                  <svg
+                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                    viewBox="22 22 44 44"
+                  >
+                    <circle
+                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                      cx="44"
+                      cy="44"
+                      fill="none"
+                      r="20.2"
+                      stroke-width="3.6"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <img
+                class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
+                src="/src/assets/images/construction.png"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="rounded-xl"
-      style="grid-area: 22 / 43 / span 9 / span 22;"
+      class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
+      style="grid-area: 21 / 43 / span 9 / span 22;"
     >
       <div
         class="flex w-full h-full"
@@ -151,18 +226,18 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="flex relative flex-col justify-between h-full p-4  rounded-xl bg-gray-200 dark:bg-gray-800"
+              class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
             >
               <div
                 class="mb-4"
               >
                 <h2
-                  class="text-xl font-bold mb-2 text-gray-700 dark:text-gray-300"
+                  class="text-xl font-bold mb-6 text-black dark:text-white"
                 >
                   Hi! I'm George Gil
                 </h2>
                 <p
-                  class="text-gray-700 dark:text-gray-300"
+                  class="text-black dark:text-white"
                 >
                   I'm a curious software engineer who also plays guitar, not always at the same time though.
                 </p>

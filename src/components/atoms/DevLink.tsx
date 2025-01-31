@@ -1,11 +1,11 @@
-import { Sections } from '@/app/layout/navbarTypes'
 import React from 'react'
+import { Sections } from '@/app/layout/navbarTypes'
 import { useTranslation } from 'react-i18next'
 
 const DevLink = ({
   scrollToSection,
   setAutomaticScroll,
-  activeHash
+  activeHash,
 }: {
   scrollToSection: (id: string, called?: boolean) => void
   setAutomaticScroll: React.Dispatch<React.SetStateAction<boolean>>

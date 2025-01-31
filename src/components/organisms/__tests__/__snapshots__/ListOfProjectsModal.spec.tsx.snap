@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="rounded-xl 
+    bg-app-lightModeBoxes-box2 
+    dark:bg-app-darkModeBoxes-box2 
+    dark:border-app-lightModeBoxes-box2 
+    border-app-darkModeBoxes-box2
+    border-[2px]
+    flex flex-col-reverse justify-end"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="text-center mb-4 "
+      >
+        <h3
+          class="text-md md:text-xl font-bold dark:text-white text-black "
+        >
+          Mobile Project 2
+        </h3>
+        <div
+          class="description-scrollbar overflow-auto rounded-lg 
+          border-[2px] 
+          transition-all 
+          duration-300 
+          bg-white 
+          dark:border-app-lightModeBoxes-box2 
+          border-app-darkModeBoxes-box2 
+          hover:bg-opacity-40
+          bg-opacity-25
+          mx-3 mt-2 hidden md:flex relative inner-box-shadow  
+                    "
+        >
+          <p
+            class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
+          >
+            Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long.
+          </p>
+        </div>
+      </div>
+      <div
+        class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+      >
+        <div
+          class="swiper-wrapper"
+          style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+        >
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="0"
+          >
+            <img
+              alt="dev.projects.projects.mobile.project1.title"
+              class="rounded-xl"
+              src="/src/assets/images/projects/movie-app.gif"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="1"
+          >
+            <img
+              alt="dev.projects.projects.mobile.project2.title"
+              class="rounded-xl"
+              src="/src/assets/images/projects/movie-app.gif"
+            />
+          </div>
+          <div
+            class="swiper-slide bg-transparent"
+            data-swiper-slide-index="2"
+          >
+            <img
+              alt="dev.projects.projects.mobile.project3.title"
+              class="rounded-xl"
+              src="/src/assets/images/projects/movie-app.gif"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="h-full w-full cursor-pointer"
+    >
+      <div>
+        <div
+          class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+        >
+          <h1
+            class="font-bold dark:text-white text-black "
+          >
+            Self taste projects 📱
+          </h1>
+          <div
+            aria-label="Show all projects"
+            class="rounded-full py-1 px-2 items-center 
+                    bg-white 
+                    dark:border-app-lightModeBoxes-box2 
+                    border-app-darkModeBoxes-box2 
+                    hover:bg-opacity-45 
+                    dark:text-white 
+                    text-black 
+                    bg-opacity-25 
+                    md:border-[2px]
+                    transition-all 
+                    duration-300 
+                    hover:scale-105 
+                    flex gap-2 
+                    text-xs 
+                    font-bold"
+            data-mui-internal-clone-element="true"
+          >
+            See more
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+              data-testid="ArrowForwardIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,77 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListOfMobileProjectsPreModal Component > renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="relative"
+  >
+    <div
+      class="text-center mb-4 "
+    >
+      <h3
+        class="text-md md:text-xl font-bold dark:text-white text-black "
+      >
+        Example mobile project
+      </h3>
+      <div
+        class="description-scrollbar overflow-auto rounded-lg 
+          border-[2px] 
+          transition-all 
+          duration-300 
+          bg-white 
+          dark:border-app-lightModeBoxes-box2 
+          border-app-darkModeBoxes-box2 
+          hover:bg-opacity-40
+          bg-opacity-25
+          mx-3 mt-2 hidden md:flex relative inner-box-shadow  
+                    "
+      >
+        <p
+          class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
+        >
+          Example mobile project description
+        </p>
+      </div>
+    </div>
+    <div
+      class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+    >
+      <div
+        class="swiper-wrapper"
+        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+      >
+        <div
+          class="swiper-slide bg-transparent"
+          data-swiper-slide-index="0"
+        >
+          <img
+            alt="dev.projects.projects.mobile.exampleProject.title"
+            class="rounded-xl"
+            src="mobile1.png"
+          />
+        </div>
+        <div
+          class="swiper-slide bg-transparent"
+          data-swiper-slide-index="1"
+        >
+          <img
+            alt="dev.projects.projects.mobile.exampleProject.title"
+            class="rounded-xl"
+            src="mobile2.png"
+          />
+        </div>
+        <div
+          class="swiper-slide bg-transparent"
+          data-swiper-slide-index="2"
+        >
+          <img
+            alt="dev.projects.projects.mobile.exampleProject.title"
+            class="rounded-xl"
+            src="mobile3.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

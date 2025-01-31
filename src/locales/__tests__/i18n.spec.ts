@@ -5,8 +5,8 @@ import { languages } from '@/locales/languages'
 vi.mock('react-i18next', () => ({
   initReactI18next: {
     type: '3rdParty',
-    init: vi.fn()
-  }
+    init: vi.fn(),
+  },
 }))
 
 describe('i18n configuration', () => {

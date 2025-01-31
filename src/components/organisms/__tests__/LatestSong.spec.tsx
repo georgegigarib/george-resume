@@ -1,10 +1,10 @@
 import { render, screen, act } from '@testing-library/react'
 import { describe, it, expect, vi, Mock } from 'vitest'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import LatestSong from '../LatestSong'
+import LatestSong from '@/components/organisms/LatestSong'
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: vi.fn()
+  useIsMobile: vi.fn(),
 }))
 
 describe('LatestSong Component', () => {

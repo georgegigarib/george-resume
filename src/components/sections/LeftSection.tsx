@@ -1,41 +1,107 @@
 import { useEffect, useState } from 'react'
-import Box from '@/components/organisms/Box'
+import { Box, BoxProps } from '@/components/organisms/Box'
 import { useTranslation } from 'react-i18next'
-import ExampleComponent from '@/components/organisms/ExampleComponente'
+import ExampleComponent from '@/components/organisms/ExampleComponent'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import SeeResume from '@/components/organisms/SeeResume'
+import ListOfMobileProjectsModal from '@/components/organisms/ListOfMobileProjectsModal'
+import DevTemplatesModal from '@/components/organisms/DevTemplatesModal'
+import ListOfDesktopProjectsModal from '@/components/organisms/ListOfDesktopProjectsModal'
 
 const LeftSection = () => {
   const { t, i18n } = useTranslation()
   const isMobile = useIsMobile()
-  const [activeBoxes, setActiveBoxes] = useState<
-    {
-      startRow: number
-      spanRow: number
-      startColumn: number
-      spanColumn: number
-      content: React.ReactNode
-    }[]
-  >([])
+  const [activeBoxes, setActiveBoxes] = useState<BoxProps[]>([])
 
   useEffect(() => {
-    const mobileBoxes = [
-      { startRow: 14, spanRow: 20, startColumn: 1, spanColumn: 12, content: <ExampleComponent /> },
-      { startRow: 34, spanRow: 1, startColumn: 1, spanColumn: 10, content: <ExampleComponent /> },
+    const mobileBoxes: BoxProps[] = [
+      {
+        startRow: 14,
+        spanRow: 20,
+        startColumn: 1,
+        spanColumn: 12,
+        content: <ListOfMobileProjectsModal />,
+        useCard: false,
+      },
+      {
+        startRow: 34,
+        spanRow: 1,
+        startColumn: 1,
+        spanColumn: 10,
+        content: <DevTemplatesModal />,
+        useCard: false,
+      },
       { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 18, content: <ExampleComponent /> },
-      { startRow: 20, spanRow: 9, startColumn: 13, spanColumn: 9, content: <ExampleComponent /> },
-      { startRow: 20, spanRow: 6, startColumn: 22, spanColumn: 6, content: <SeeResume /> },
-      { startRow: 7, spanRow: 7, startColumn: 8, spanColumn: 17, content: <ExampleComponent /> }
+      {
+        startRow: 20,
+        spanRow: 9,
+        startColumn: 13,
+        spanColumn: 8,
+        content: <ExampleComponent />,
+        useCard: false,
+      },
+      {
+        startRow: 20,
+        spanRow: 6,
+        startColumn: 21,
+        spanColumn: 6,
+        content: <SeeResume />,
+        useCard: false,
+        addShadow: false,
+      },
+      {
+        startRow: 7,
+        spanRow: 7,
+        startColumn: 5,
+        spanColumn: 23,
+        content: <ListOfDesktopProjectsModal />,
+        useCard: false,
+      },
     ]
 
-    const desktopBoxes = [
-      { startRow: 40, spanRow: 48, startColumn: 1, spanColumn: 28, content: <ExampleComponent /> },
-      { startRow: 27, spanRow: 13, startColumn: 20, spanColumn: 25, content: <ExampleComponent /> },
-      { startRow: 40, spanRow: 18, startColumn: 29, spanColumn: 16, content: <ExampleComponent /> },
-      { startRow: 45, spanRow: 17, startColumn: 45, spanColumn: 13, content: <ExampleComponent /> },
-      { startRow: 45, spanRow: 10, startColumn: 71, spanColumn: 10, content: <SeeResume /> },
-      { startRow: 21, spanRow: 24, startColumn: 45, spanColumn: 36, content: <ExampleComponent /> },
-      { startRow: 10, spanRow: 11, startColumn: 55, spanColumn: 20, content: <ExampleComponent /> }
+    const desktopBoxes: BoxProps[] = [
+      {
+        startRow: 42,
+        spanRow: 38,
+        startColumn: 1,
+        spanColumn: 28,
+        content: <ListOfMobileProjectsModal />,
+        useCard: false,
+      },
+      { startRow: 24, spanRow: 18, startColumn: 1, spanColumn: 44, content: <ExampleComponent /> },
+      {
+        startRow: 42,
+        spanRow: 18,
+        startColumn: 29,
+        spanColumn: 16,
+        content: <DevTemplatesModal />,
+        useCard: false,
+      },
+      {
+        startRow: 38,
+        spanRow: 17,
+        startColumn: 45,
+        spanColumn: 13,
+        content: <ExampleComponent />,
+      },
+      {
+        startRow: 38,
+        spanRow: 10,
+        startColumn: 75,
+        spanColumn: 10,
+        content: <SeeResume />,
+        useCard: false,
+        addShadow: false,
+      },
+      {
+        startRow: 20,
+        spanRow: 18,
+        startColumn: 45,
+        spanColumn: 40,
+        content: <ListOfDesktopProjectsModal />,
+        useCard: false,
+      },
+      { startRow: 38, spanRow: 11, startColumn: 58, spanColumn: 15, content: <ExampleComponent /> },
     ]
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes)
@@ -51,6 +117,8 @@ const LeftSection = () => {
           spanRow={box.spanRow}
           spanColumn={box.spanColumn}
           content={box.content}
+          useCard={box.useCard}
+          addShadow={box.addShadow}
         />
       ))}
     </div>

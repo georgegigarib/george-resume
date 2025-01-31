@@ -20,5 +20,38 @@ export default tseslint.config({
     ...reactHooks.configs.recommended.rules,
     'react-refresh/only-export-components': 'off',
     'react-hooks/exhaustive-deps': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+      },
+    ],
+
+    'linebreak-style': ['error', 'unix'],
+    semi: ['error', 'never'],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        exports: 'always-multiline',
+      },
+    ],
+    '@typescript-eslint/no-unused-vars': ['warn'],
+    '@typescript-eslint/no-explicit-any': ['warn'],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'enumMember',
+        format: ['PascalCase'],
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+      },
+    ]
   },
 })

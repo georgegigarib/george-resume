@@ -6,7 +6,7 @@ import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 const isMobileMock = vi.fn()
 
 vi.mock('@/hooks/useIsMobile', () => ({
-  useIsMobile: () => isMobileMock()
+  useIsMobile: () => isMobileMock(),
 }))
 
 describe('RightSection component', () => {

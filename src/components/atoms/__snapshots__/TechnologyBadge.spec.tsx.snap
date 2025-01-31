@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TechnologyBadge component > matches the snapshot for a dark theme 1`] = `
+<DocumentFragment>
+  <div>
+    <link
+      href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.8/src/app/ci.min.css"
+      rel="stylesheet"
+    />
+    <div
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-mi38uv-MuiChip-root"
+    >
+      <i
+        class="ci ci-react ci-lg"
+      />
+      <span
+        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+      >
+        React
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TechnologyBadge component > matches the snapshot for a light theme 1`] = `
+<DocumentFragment>
+  <div>
+    <link
+      href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.8/src/app/ci.min.css"
+      rel="stylesheet"
+    />
+    <div
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+    >
+      <i
+        class="ci ci-react ci-lg"
+      />
+      <span
+        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+      >
+        React
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -13,7 +13,7 @@ describe('CardContainer component', () => {
   it('matches the snapshot', () => {
     const { asFragment } = renderComponent({
       className: 'custom-class',
-      containerClassName: 'container-class'
+      containerClassName: 'container-class',
     })
     expect(asFragment()).toMatchSnapshot()
   })
@@ -32,8 +32,8 @@ describe('CardContainer component', () => {
         left: 0,
         top: 0,
         width: 300,
-        height: 200
-      })
+        height: 200,
+      }),
     })
 
     fireEvent.mouseMove(container, { clientX: 150, clientY: 100 })
