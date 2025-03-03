@@ -111,7 +111,7 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
               slot="container-end"
             >
               <svg
-                style="--progress: 0.0006666666666667043;"
+                style="--progress: 0;"
                 viewBox="0 0 48 48"
               >
                 <circle

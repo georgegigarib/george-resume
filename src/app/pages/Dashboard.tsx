@@ -6,6 +6,7 @@ import dashboardImage from '@/assets/images/Background1.png'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useEffect } from 'react'
 import { setTheme } from '@/utils/setTheme'
+import TestingModal from '@/components/molecules/TestingModal'
 
 export default function Dashboard(): React.ReactElement {
   const { loadLanguageFromStorage } = useLanguage()
@@ -35,6 +36,7 @@ export default function Dashboard(): React.ReactElement {
           </div>
         </div>
       </div>
+      <TestingModal />
     </div>
   )
 }
