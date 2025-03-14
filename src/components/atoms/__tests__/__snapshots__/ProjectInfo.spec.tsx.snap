@@ -48,7 +48,7 @@ exports[`ProjectInfo component > matches the snapshot for desktop view 1`] = `
         class="dark:text-white font-bold text-black mb-2"
       />
       <div
-        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]"
+        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
       >
         <div
           class="rfm-marquee-container flex-wrap flex gap-2"
@@ -228,7 +228,7 @@ exports[`ProjectInfo component > matches the snapshot for mobile view 1`] = `
       class="mt-0"
     >
       <div
-        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]"
+        class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
       >
         <div
           class="rfm-marquee-container overflow-hidden"

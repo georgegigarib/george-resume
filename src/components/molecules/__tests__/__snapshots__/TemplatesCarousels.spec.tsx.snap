@@ -37,6 +37,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
         >
           <a
             href="http://example.com/template1"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -95,6 +96,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
         >
           <a
             href="http://example.com/template2"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -153,6 +155,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
         >
           <a
             href="http://example.com/template3"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"

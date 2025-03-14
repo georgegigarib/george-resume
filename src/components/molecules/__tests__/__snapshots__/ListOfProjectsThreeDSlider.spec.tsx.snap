@@ -3,65 +3,121 @@
 exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="mt-2 grid touch-none w-full grid-cols-2 p-4"
+    class="h-full w-full 
+        bg-gray-300 
+        dark:bg-black 
+        border-gray-700 
+        dark:border-gray-300 
+        border-[2px] 
+        p-4 rounded-xl overflow-hidden 
+        touch-none"
   >
     <div
-      class=""
+      class="flex items-center"
+    >
+      <h2
+        class="font-semibold dark:text-white text-black ml-2"
+      >
+        Self taste projects
+      </h2>
+      <div
+        class="ml-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+            data-testid="SmsIcon"
+            focusable="false"
+            style="fill: white;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="mt-2 grid touch-none w-full grid-cols-2 p-4"
     >
       <div
         class=""
       >
-        <span
-          class="flex items-center"
+        <div
+          class=""
         >
-          <h2
-            class="font-bold dark:text-white text-black"
-          />
-          <a
-            class="ml-1"
-            href="http://example.com/desktop1"
-            rel="noopener noreferrer"
-            target="_blank"
+          <span
+            class="flex items-center"
           >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
-              data-testid="LaunchIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
+            <h2
+              class="font-bold dark:text-white text-black"
+            />
+            <a
+              class="ml-1"
+              href="http://example.com/desktop1"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-              />
-            </svg>
-          </a>
-        </span>
-        <div
-          class="overflow-auto mt-2 mb-2 md:mb-4 max-h-20 md:max-h-[12vh] description-scrollbar"
-        >
-          <p
-            class="dark:text-white text-black pr-8"
-          />
-        </div>
-        <div
-          class="mt-0"
-        >
-          <p
-            class="dark:text-white font-bold text-black mb-2"
-          />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
+                data-testid="LaunchIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                />
+              </svg>
+            </a>
+          </span>
           <div
-            class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]"
+            class="overflow-auto mt-2 mb-2 md:mb-4 max-h-20 md:max-h-[12vh] description-scrollbar"
           >
+            <p
+              class="dark:text-white text-black pr-8"
+            />
+          </div>
+          <div
+            class="mt-0"
+          >
+            <p
+              class="dark:text-white font-bold text-black mb-2"
+            />
             <div
-              class="rfm-marquee-container flex-wrap flex gap-2"
-              style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
+              class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
             >
               <div
-                class="rfm-marquee"
-                style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                class="rfm-marquee-container flex-wrap flex gap-2"
+                style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
               >
                 <div
-                  class="rfm-initial-child-container"
+                  class="rfm-marquee"
+                  style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                >
+                  <div
+                    class="rfm-initial-child-container"
+                  >
+                    <div
+                      class="rfm-child"
+                      style="--transform: none;"
+                    />
+                    <div
+                      class="rfm-child"
+                      style="--transform: none;"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="rfm-marquee"
+                  style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
                 >
                   <div
                     class="rfm-child"
@@ -73,98 +129,85 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
                   />
                 </div>
               </div>
-              <div
-                class="rfm-marquee"
-                style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
-              >
-                <div
-                  class="rfm-child"
-                  style="--transform: none;"
-                />
-                <div
-                  class="rfm-child"
-                  style="--transform: none;"
-                />
-              </div>
             </div>
+            <div
+              class="overflow-auto md:flex mt-2 max-h-20 md:max-h-[12vh] gap-1 description-scrollbar hidden flex-wrap"
+            />
           </div>
-          <div
-            class="overflow-auto md:flex mt-2 max-h-20 md:max-h-[12vh] gap-1 description-scrollbar hidden flex-wrap"
-          />
         </div>
       </div>
-    </div>
-    <div
-      class=" top-[7vh]"
-      id="drag-container"
-    >
       <div
-        id="spin-container"
-        style="width: 260px; height: 140px; animation: spinRevert 200s infinite linear;"
+        class=" top-[7vh]"
+        id="drag-container"
       >
         <div
-          class="absolute inset-0 flex items-center justify-center"
+          id="spin-container"
+          style="width: 260px; height: 140px; animation: spinRevert 200s infinite linear;"
         >
-          <span
-            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-            role="progressbar"
-            style="width: 40px; height: 40px;"
+          <div
+            class="absolute inset-0 flex items-center justify-center"
           >
-            <svg
-              class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-              viewBox="22 22 44 44"
+            <span
+              class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+              role="progressbar"
+              style="width: 40px; height: 40px;"
             >
-              <circle
-                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+              <svg
+                class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                  cx="44"
+                  cy="44"
+                  fill="none"
+                  r="20.2"
+                  stroke-width="3.6"
+                />
+              </svg>
+            </span>
+          </div>
+          <img
+            alt="Desktop Project 1"
+            class="carousel-image opacity-0"
+            src="desktop1.png"
+            style="transform: rotateY(0deg) translateZ(40px); transition: transform 1s; transition-delay: 0.25s;"
+          />
         </div>
-        <img
-          alt="Desktop Project 1"
-          class="carousel-image opacity-0"
-          src="desktop1.png"
-          style="transform: rotateY(0deg) translateZ(40px); transition: transform 1s; transition-delay: 0.25s;"
+        <div
+          id="ground"
+          style="width: 120px; height: 120px;"
         />
       </div>
       <div
-        id="ground"
-        style="width: 120px; height: 120px;"
-      />
-    </div>
-    <div
-      class="absolute right-5 bottom-5"
-    >
-      <button
-        aria-label="Cambiar a vista Mobile"
-        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
-        data-mui-internal-clone-element="true"
-        tabindex="0"
-        type="button"
+        class="absolute right-5 bottom-5"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-rlj5h7-MuiSvgIcon-root"
-          data-testid="MobileScreenShareIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
+        <button
+          aria-label="Cambiar a vista Mobile"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          tabindex="0"
+          type="button"
         >
-          <path
-            d="M17 1.01 7 1c-1.1 0-1.99.9-1.99 2v18c0 1.1.89 2 1.99 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99M17 19H7V5h10zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18"
-          />
-        </svg>
-      </button>
-    </div>
-    <div
-      class="dark:text-white d text-black absolute left-8 bottom-7 bg-slate-700 rounded-lg px-2 text-center md:text-start"
-      style="opacity: 0; will-change: opacity;"
-    >
-      <p />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-rlj5h7-MuiSvgIcon-root"
+            data-testid="MobileScreenShareIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 1.01 7 1c-1.1 0-1.99.9-1.99 2v18c0 1.1.89 2 1.99 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99M17 19H7V5h10zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="dark:text-white d text-black absolute left-8 bottom-7 bg-slate-700 rounded-lg px-2 text-center md:text-start"
+        style="opacity: 0; will-change: opacity;"
+      >
+        <p />
+      </div>
     </div>
   </div>
 </DocumentFragment>

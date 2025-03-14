@@ -1,4 +1,4 @@
-import Modal from '@/components/molecules/Modal'
+import Modal from '@/components/molecules/depricated-Modal'
 
 const preModal = () => {
   return (

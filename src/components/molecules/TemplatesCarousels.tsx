@@ -49,7 +49,7 @@ export default function TemplatesCarousels() {
               className={clsx('relative -top-20 group', groupIndex % 2! === 0 ? 'left-32' : ' left-0')}
               whileHover={{ scale: 1.03 }}
             >
-              <a href={groupData.url}>
+              <a href={groupData.url} target="_blank">
                 <div
                   className="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
                   style={{ backgroundColor: groupData.bgColor }}

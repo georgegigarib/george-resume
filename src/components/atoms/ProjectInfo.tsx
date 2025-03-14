@@ -34,7 +34,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ title, description, url, tool
       <div className="mt-0">
         {!isMobile && <p className="dark:text-white font-bold text-black mb-2">{t('dev.projects.usedTechnologies')}</p>}
 
-        <div className="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[65vw]">
+        <div className="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[75vw]">
           <Marquee
             gradient={false}
             speed={30}

@@ -22,11 +22,11 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
       >
         <h3
@@ -128,9 +128,7 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
         </div>
       </div>
     </div>
-    <div
-      class="h-full w-full cursor-pointer"
-    >
+    <div>
       <div
         class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
             bg-app-lightModeBoxes-box1 m-1
@@ -206,11 +204,11 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for mobile 
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
       >
         <h3
@@ -312,9 +310,7 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for mobile 
         </div>
       </div>
     </div>
-    <div
-      class="h-full w-full cursor-pointer"
-    >
+    <div>
       <div
         class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
             bg-app-lightModeBoxes-box1 m-1

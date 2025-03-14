@@ -89,21 +89,18 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             </div>
           </div>
         </div>
-        <div
-          class="h-full w-full cursor-pointer"
-        >
-          <div>
-            <div
-              class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+        <div>
+          <div
+            class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+          >
+            <h1
+              class="font-bold dark:text-white text-black "
             >
-              <h1
-                class="font-bold dark:text-white text-black "
-              >
-                Self taste projects 📱
-              </h1>
-              <div
-                aria-label="Show all projects"
-                class="rounded-full py-1 px-2 items-center 
+              Self taste projects 📱
+            </h1>
+            <div
+              aria-label="Show all projects"
+              class="rounded-full py-1 px-2 items-center 
                     bg-white 
                     dark:border-app-lightModeBoxes-box2 
                     border-app-darkModeBoxes-box2 
@@ -118,21 +115,20 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     flex gap-2 
                     text-xs 
                     font-bold"
-                data-mui-internal-clone-element="true"
+              data-mui-internal-clone-element="true"
+            >
+              See more
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+                data-testid="ArrowForwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                See more
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
-                  data-testid="ArrowForwardIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -154,7 +150,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
               data-testid="example-container"
             >
               <div
@@ -270,6 +266,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
               >
                 <a
                   href="https://github.com/example/fast-render-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -360,6 +357,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
               >
                 <a
                   href="https://github.com/example/next-ssr-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -450,6 +448,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
               >
                 <a
                   href="https://github.com/example/vue-pinia-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -484,68 +483,63 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
           </div>
         </div>
         <div
-          class="h-full w-full cursor-pointer"
+          class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold"
         >
           <div
-            class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+            aria-label="Show all templates"
+            class="absolute top-2 right-2 block hover:bg-white hover:scale[1.07] hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+            data-mui-internal-clone-element="true"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+              data-testid="AppsIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+              />
+            </svg>
+          </div>
+          <h2
+            class="text-black dark:text-white"
+          >
+            Use my dev templates!
+          </h2>
+          <div
+            class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
           >
             <div
-              aria-label="Show all templates"
-              class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
-              data-mui-internal-clone-element="true"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                data-testid="AppsIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
-                />
-              </svg>
-            </div>
-            <h2
-              class="text-black dark:text-white"
-            >
-              Use my dev templates!
-            </h2>
-            <div
-              class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
-              style="will-change: transform; transform: translateZ(180px);"
+              class="w-10 swing-container"
             >
               <div
-                class="w-10"
+                class="absolute inset-0 flex items-center justify-center"
               >
-                <div
-                  class="absolute inset-0 flex items-center justify-center"
+                <span
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                  role="progressbar"
+                  style="width: 40px; height: 40px;"
                 >
-                  <span
-                    class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-                    role="progressbar"
-                    style="width: 40px; height: 40px;"
+                  <svg
+                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                    viewBox="22 22 44 44"
                   >
-                    <svg
-                      class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                      viewBox="22 22 44 44"
-                    >
-                      <circle
-                        class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                        cx="44"
-                        cy="44"
-                        fill="none"
-                        r="20.2"
-                        stroke-width="3.6"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <img
-                  class="undefined opacity-0"
-                  src="/src/assets/icons/code-template.webp"
-                />
+                    <circle
+                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                      cx="44"
+                      cy="44"
+                      fill="none"
+                      r="20.2"
+                      stroke-width="3.6"
+                    />
+                  </svg>
+                </span>
               </div>
+              <img
+                class="undefined opacity-0"
+                src="/src/assets/icons/code-template.webp"
+              />
             </div>
           </div>
         </div>
@@ -567,7 +561,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
               data-testid="example-container"
             >
               <div
@@ -664,11 +658,11 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
           >
             <h3
@@ -811,9 +805,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             </div>
           </div>
         </div>
-        <div
-          class="h-full w-full cursor-pointer"
-        >
+        <div>
           <div
             class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
             bg-app-lightModeBoxes-box1 m-1
@@ -881,7 +873,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
               data-testid="example-container"
             >
               <div

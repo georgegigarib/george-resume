@@ -82,21 +82,18 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="h-full w-full cursor-pointer"
-    >
-      <div>
-        <div
-          class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+    <div>
+      <div
+        class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+      >
+        <h1
+          class="font-bold dark:text-white text-black "
         >
-          <h1
-            class="font-bold dark:text-white text-black "
-          >
-            Self taste projects 📱
-          </h1>
-          <div
-            aria-label="Show all projects"
-            class="rounded-full py-1 px-2 items-center 
+          Self taste projects 📱
+        </h1>
+        <div
+          aria-label="Show all projects"
+          class="rounded-full py-1 px-2 items-center 
                     bg-white 
                     dark:border-app-lightModeBoxes-box2 
                     border-app-darkModeBoxes-box2 
@@ -111,21 +108,20 @@ exports[`ListOfProjectsModal component > matches the snapshot 1`] = `
                     flex gap-2 
                     text-xs 
                     font-bold"
-            data-mui-internal-clone-element="true"
+          data-mui-internal-clone-element="true"
+        >
+          See more
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+            data-testid="ArrowForwardIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            See more
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
-              data-testid="ArrowForwardIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-              />
-            </svg>
-          </div>
+            <path
+              d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+            />
+          </svg>
         </div>
       </div>
     </div>

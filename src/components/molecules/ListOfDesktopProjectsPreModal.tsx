@@ -34,11 +34,11 @@ const ListOfDesktopProjectsPreModal: React.FC = () => {
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
       >
         <h3 className="hidden md:flex text-lg font-bold dark:text-white text-black">

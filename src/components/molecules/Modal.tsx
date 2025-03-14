@@ -1,104 +1,98 @@
-import React, { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import clsx from 'clsx'
-import { useIsMobile } from '@/hooks/useIsMobile'
-import { centerModalInViewport } from '@/utils/centerModalInViewPort'
-import { StoreState } from '@/store'
-import { useSelector } from 'react-redux'
 import CloseIcon from '@mui/icons-material/Close'
-import { motion, AnimatePresence } from 'framer-motion'
-import { IconButton } from '@mui/material'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import { useSelector } from 'react-redux'
+import { StoreState } from '@/store'
 
 interface ModalProps {
-  trigger: React.ReactNode
   children: React.ReactNode
-  layoutId: string
+  isOpened: boolean
+  closeModal: () => void
   normalWidth?: string
   mobileHeight?: string
   normalHeight?: string
   className?: string
 }
 
-const Modal: React.FC<ModalProps> = ({
-  layoutId,
-  trigger,
+export default function Modal({
   children,
+  isOpened = false,
+  closeModal,
   normalWidth = '450px',
   mobileHeight = '350px',
   normalHeight = '500px',
   className,
-}) => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [modalPosition, setModalPosition] = useState({ top: 0, left: 0 })
-  const isMobile = useIsMobile()
+}: ModalProps) {
   const isDakTHemeEnabled = useSelector((state: StoreState) => state.darkTheme.isDarkThemeEnabled)
+  const [isVisible, setIsVisible] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
-    if (isOpen) {
-      setModalPosition(centerModalInViewport(isMobile))
+    if (isOpened) {
+      document.body.style.overflow = 'hidden'
+      document.body.style.paddingRight = 'var(--scrollbar-width, 0px)'
+    } else {
+      document.body.style.overflow = 'auto'
+      document.body.style.paddingRight = ''
     }
-    const handleResize = () => setModalPosition(centerModalInViewport(isMobile))
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [isOpen, isMobile])
 
-  const handleClose = () => setIsOpen(false)
-
-  const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      handleClose()
+    return () => {
+      document.body.style.overflow = 'auto'
+      document.body.style.paddingRight = ''
     }
+  }, [isOpened])
+
+  useEffect(() => {
+    if (isOpened) {
+      setIsVisible(true)
+    } else {
+      setTimeout(() => setIsVisible(false), 300)
+    }
+  }, [isOpened])
+
+  const close = () => {
+    closeModal()
   }
 
   return (
-    <>
-      <motion.div className="h-full w-full cursor-pointer" layoutId={layoutId} onClick={() => setIsOpen(true)}>
-        {trigger}
-      </motion.div>
-
-      <AnimatePresence mode="popLayout">
-        {isOpen && (
-          <>
-            <motion.div
-              transition={{ ease: 'circIn', duration: 0.5 }}
-              className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-[20]"
-              onClick={handleOutsideClick}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
-              <motion.div
-                layoutId={layoutId}
-                className={clsx(
-                  'relative rounded-xl p-4',
-                  `top-[${modalPosition.top}] left-[${modalPosition.left}]`,
-                  className
-                )}
-                style={{
-                  width: isMobile ? 'calc(100% - 80px)' : normalWidth,
-                  height: isMobile ? mobileHeight : normalHeight,
-                  position: 'fixed',
-                }}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                <div className="absolute top-4 right-4">
-                  <IconButton onClick={handleClose} aria-label="close">
-                    <CloseIcon
-                      fontSize="medium"
-                      style={{ fill: `${isDakTHemeEnabled ? 'white' : 'black'}` }}
-                      className="p-1 hover:bg-opacity-35 rounded-full dark:bg-white bg-black bg-opacity-15 dark:bg-opacity-15 hover:scale-105"
-                    />
-                  </IconButton>
-                </div>
-                {children}
-              </motion.div>
-            </motion.div>
-          </>
+    <div className={`fixed inset-0 z-[40] ${isVisible ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+      <div
+        className={clsx(
+          'absolute inset-0 bg-black transition-opacity duration-300',
+          isOpened ? 'opacity-70' : 'opacity-0'
         )}
-      </AnimatePresence>
-    </>
+        onClick={closeModal}
+        style={{ zIndex: 1 }}
+      />
+
+      <div className="absolute inset-0 flex items-center justify-center p-4" style={{ zIndex: 2 }}>
+        <div
+          className={clsx(
+            'bg-white dark:bg-black rounded-xl shadow-lg transform transition-all',
+            `${isOpened ? 'animate-zoomIn' : 'animate-zoomOut'}`,
+            `${!isOpened && !isVisible ? 'hidden' : ''}`,
+            className
+          )}
+          style={{
+            width: isMobile ? 'calc(100% - 80px)' : normalWidth,
+            height: isMobile ? mobileHeight : normalHeight,
+            margin: 'auto',
+          }}
+        >
+          <button
+            onClick={close}
+            className="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none"
+            style={{
+              background: isDakTHemeEnabled ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)',
+            }}
+            aria-label="Cerrar"
+          >
+            <CloseIcon fontSize="medium" style={{ color: isDakTHemeEnabled ? 'white' : 'black' }} />
+          </button>
+          {children}
+        </div>
+      </div>
+    </div>
   )
 }
-
-export default Modal
