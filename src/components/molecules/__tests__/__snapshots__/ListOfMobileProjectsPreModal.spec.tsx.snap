@@ -34,42 +34,34 @@ exports[`ListOfMobileProjectsPreModal Component > renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+      data-testid="swiper"
     >
       <div
-        class="swiper-wrapper"
-        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+        data-testid="swiper-slide"
       >
-        <div
-          class="swiper-slide bg-transparent"
-          data-swiper-slide-index="0"
-        >
-          <img
-            alt="dev.projects.projects.mobile.exampleProject.title"
-            class="rounded-xl"
-            src="mobile1.png"
-          />
-        </div>
-        <div
-          class="swiper-slide bg-transparent"
-          data-swiper-slide-index="1"
-        >
-          <img
-            alt="dev.projects.projects.mobile.exampleProject.title"
-            class="rounded-xl"
-            src="mobile2.png"
-          />
-        </div>
-        <div
-          class="swiper-slide bg-transparent"
-          data-swiper-slide-index="2"
-        >
-          <img
-            alt="dev.projects.projects.mobile.exampleProject.title"
-            class="rounded-xl"
-            src="mobile3.png"
-          />
-        </div>
+        <img
+          alt="dev.projects.projects.mobile.exampleProject.title"
+          class="rounded-xl"
+          src="mobile1.png"
+        />
+      </div>
+      <div
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="dev.projects.projects.mobile.exampleProject.title"
+          class="rounded-xl"
+          src="mobile2.png"
+        />
+      </div>
+      <div
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="dev.projects.projects.mobile.exampleProject.title"
+          class="rounded-xl"
+          src="mobile3.png"
+        />
       </div>
     </div>
   </div>

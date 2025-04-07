@@ -2478,7 +2478,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box10 dark:bg-app-darkModeBoxes-box10 border-app-darkModeBoxes-box10 dark:border-app-lightModeBoxes-box10"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box7 dark:bg-app-darkModeBoxes-box7 border-app-darkModeBoxes-box7 dark:border-app-lightModeBoxes-box7"
                       data-testid="example-container"
                     >
                       <div
@@ -2889,7 +2889,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
                       data-testid="example-container"
                     >
                       <div
@@ -3201,7 +3201,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box12 dark:bg-app-darkModeBoxes-box12 border-app-darkModeBoxes-box12 dark:border-app-lightModeBoxes-box12"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
                       data-testid="example-container"
                     >
                       <div
@@ -3261,7 +3261,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
                       data-testid="example-container"
                     >
                       <div
@@ -3312,7 +3312,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
                       data-testid="example-container"
                     >
                       <div
@@ -3415,7 +3415,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box7 dark:bg-app-darkModeBoxes-box7 border-app-darkModeBoxes-box7 dark:border-app-lightModeBoxes-box7"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
                       data-testid="example-container"
                     >
                       <div
@@ -3512,7 +3512,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
                       data-testid="example-container"
                     >
                       <div
@@ -3563,7 +3563,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
                       data-testid="example-container"
                     >
                       <div
@@ -3669,7 +3669,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box9 dark:bg-app-darkModeBoxes-box9 border-app-darkModeBoxes-box9 dark:border-app-lightModeBoxes-box9"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
                       data-testid="example-container"
                     >
                       <div
@@ -3779,7 +3779,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
                       data-testid="example-container"
                     >
                       <div
