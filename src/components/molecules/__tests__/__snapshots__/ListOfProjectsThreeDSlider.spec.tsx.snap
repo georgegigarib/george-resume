@@ -26,6 +26,7 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
         <button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
+          data-testid="tooltip"
           tabindex="0"
           type="button"
         >
@@ -45,7 +46,7 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="mt-2 grid touch-none w-full grid-cols-2 p-4"
+      class="mt-2 grid touch-none w-full grid-rows-2"
     >
       <div
         class=""
@@ -53,57 +54,78 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
         <div
           class=""
         >
-          <span
-            class="flex items-center"
+          <div
+            class="grid sm:grid-cols-1 md:grid-cols-2"
           >
-            <h2
-              class="font-bold dark:text-white text-black"
-            />
-            <a
-              class="ml-1"
-              href="http://example.com/desktop1"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
-                data-testid="LaunchIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
+            <div>
+              <span
+                class="flex items-center"
               >
-                <path
-                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                <h2
+                  class="font-bold dark:text-white text-black"
                 />
-              </svg>
-            </a>
-          </span>
-          <div
-            class="overflow-auto mt-2 mb-2 md:mb-4 max-h-20 md:max-h-[12vh] description-scrollbar"
-          >
-            <p
-              class="dark:text-white text-black pr-8"
-            />
-          </div>
-          <div
-            class="mt-0"
-          >
-            <p
-              class="dark:text-white font-bold text-black mb-2"
-            />
-            <div
-              class="overflow-auto  md:hidden mt-2 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
-            >
+                <a
+                  class="ml-1"
+                  href="http://example.com/desktop1"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
+                    data-testid="LaunchIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                    />
+                  </svg>
+                </a>
+              </span>
               <div
-                class="rfm-marquee-container flex-wrap flex gap-2"
-                style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
+                class="overflow-auto mt-2 max-h-20 md:max-h-28 description-scrollbar"
+              >
+                <p
+                  class="dark:text-white text-black pr-8"
+                />
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <p
+                class="dark:text-white font-bold text-black"
+              >
+                Used Tecnologies
+              </p>
+              <div
+                class="overflow-auto  md:hidden mt-4 md:mt-0 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
               >
                 <div
-                  class="rfm-marquee"
-                  style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                  class="rfm-marquee-container flex-wrap flex gap-2"
+                  style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
                 >
                   <div
-                    class="rfm-initial-child-container"
+                    class="rfm-marquee"
+                    style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                  >
+                    <div
+                      class="rfm-initial-child-container"
+                    >
+                      <div
+                        class="rfm-child"
+                        style="--transform: none;"
+                      />
+                      <div
+                        class="rfm-child"
+                        style="--transform: none;"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="rfm-marquee"
+                    style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
                   >
                     <div
                       class="rfm-child"
@@ -115,34 +137,21 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
                     />
                   </div>
                 </div>
-                <div
-                  class="rfm-marquee"
-                  style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
-                >
-                  <div
-                    class="rfm-child"
-                    style="--transform: none;"
-                  />
-                  <div
-                    class="rfm-child"
-                    style="--transform: none;"
-                  />
-                </div>
               </div>
+              <div
+                class="overflow-auto md:flex mt-2 md:mt-2 max-h-20 md:max-h-28 gap-1 description-scrollbar hidden flex-wrap"
+              />
             </div>
-            <div
-              class="overflow-auto md:flex mt-2 max-h-20 md:max-h-[12vh] gap-1 description-scrollbar hidden flex-wrap"
-            />
           </div>
         </div>
       </div>
       <div
-        class=" top-[7vh]"
+        class="top-[10vh] md:top-[8vh]"
         id="drag-container"
       >
         <div
           id="spin-container"
-          style="width: 260px; height: 140px; animation: spinRevert 200s infinite linear;"
+          style="width: 32vh; height: 14vh; animation: spinRevert 200s infinite linear;"
         >
           <div
             class="absolute inset-0 flex items-center justify-center"
@@ -171,16 +180,17 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
             alt="Desktop Project 1"
             class="carousel-image opacity-0"
             src="desktop1.png"
-            style="transform: rotateY(0deg) translateZ(40px); transition: transform 1s; transition-delay: 0.25s;"
+            style="transform: rotateY(0deg) translateZ(5vh); transition: transform 1s; transition-delay: 0.25s;"
           />
         </div>
         <div
           id="ground"
-          style="width: 120px; height: 120px;"
+          style="width: 100px; height: 100px;"
         />
       </div>
       <div
         class="absolute right-5 bottom-5"
+        data-testid="platform-toggle"
       >
         <button
           aria-label="Cambiar a vista Mobile"

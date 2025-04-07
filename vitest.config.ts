@@ -43,5 +43,16 @@ export default mergeConfig(
         },
       },
     },
+    plugins: [
+      {
+        name: 'stop-watcher',
+        async configureServer(server) {
+          await server.watcher.close()
+        },
+      },
+    ],
+    server: {
+      watch: null,
+    },
   }) as UserConfig & Promise<UserConfig>
 )

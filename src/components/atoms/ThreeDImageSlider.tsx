@@ -17,10 +17,7 @@ const ThreeDImageSlider: React.FC<ThreeDImageSliderProps> = ({ projects, isDeskt
   const isMobile = useIsMobile()
 
   return (
-    <div
-      id="drag-container"
-      className={clsx(isMobile ? '-top-[10%]' : ' top-[7vh]', isDesktopMode && isMobile ? 'top-[8%]' : '')}
-    >
+    <div id="drag-container" className={clsx(isDesktopMode ? 'top-[10vh] md:top-[8vh]' : 'lg:top-[5vh]')}>
       <div id="spin-container">
         {projects.map((project, index) => (
           <ImageWithLoader

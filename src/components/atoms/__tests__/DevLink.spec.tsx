@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import DevLink from '@/components/atoms/DevLink'
-import { Sections } from '@/app/layout/navbarTypes'
+import { Sections } from '@/app/layout/NavbarTypes'
 import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 
 describe('DevLink component', () => {

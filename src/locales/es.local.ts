@@ -41,6 +41,7 @@ export const es = {
       name: 'George Gil',
     },
     projects: {
+      usedTechnologies: 'Tecnologías utilizadas',
       title: 'Proyectos particulares',
       seeMore: 'Ver más',
       showAllProjects: 'Mostrar todos los proyectos',

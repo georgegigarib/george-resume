@@ -56,7 +56,10 @@ export default function Modal({
   }
 
   return (
-    <div className={`fixed inset-0 z-[40] ${isVisible ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+    <div
+      className={`fixed inset-0 z-[40] ${isVisible ? 'pointer-events-auto' : 'pointer-events-none'}`}
+      data-testid="modal-background"
+    >
       <div
         className={clsx(
           'absolute inset-0 bg-black transition-opacity duration-300',
@@ -86,7 +89,8 @@ export default function Modal({
             style={{
               background: isDakTHemeEnabled ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)',
             }}
-            aria-label="Cerrar"
+            aria-label="Close"
+            data-testid="close-button"
           >
             <CloseIcon fontSize="medium" style={{ color: isDakTHemeEnabled ? 'white' : 'black' }} />
           </button>

@@ -39,6 +39,7 @@ export const en = {
       name: 'George Gil',
     },
     projects: {
+      usedTechnologies: 'Used Tecnologies',
       title: 'Self taste projects',
       seeMore: 'See more',
       showAllProjects: 'Show all projects',

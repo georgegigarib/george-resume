@@ -5,7 +5,6 @@ import { Tooltip } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward'
 import { devTemplates } from '@/constants/templates'
-import { motion } from 'framer-motion'
 
 export default function TemplatesCarousels() {
   const { t } = useTranslation()
@@ -45,9 +44,11 @@ export default function TemplatesCarousels() {
                 ))}
               </div>
             </div>
-            <motion.div
-              className={clsx('relative -top-20 group', groupIndex % 2! === 0 ? 'left-32' : ' left-0')}
-              whileHover={{ scale: 1.03 }}
+            <div
+              className={clsx(
+                'relative -top-20 group hover:scale-105 transition-all duration-200',
+                groupIndex % 2! === 0 ? 'left-32' : ' left-0'
+              )}
             >
               <a href={groupData.url} target="_blank">
                 <div
@@ -62,7 +63,7 @@ export default function TemplatesCarousels() {
                   <p className="font-bold capitalize text-sm text-black dark:text-white">{t(groupData.hint)}</p>
                 </div>
               </a>
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>

@@ -11,11 +11,11 @@ import { desktopProjects, mobileProjects, ProjectInfoType } from '@/constants/pr
 import { motion } from 'framer-motion'
 import { ClickableTooltip } from './ClickableTooltip'
 
-const MOBILE_SIZE_ON_MOBILE = { width: 115, height: 230 }
-const MOBILE_SIZE_ON_DESKTOP = { width: 150, height: 280 }
+const MOBILE_SIZE_ON_MOBILE = { width: '115px', height: '230px' }
+const MOBILE_SIZE_ON_DESKTOP = { width: '17vh', height: '34vh' }
 
-const DESKTOP_SIZE_ON_MOBILE = { width: 190, height: 120 }
-const DESKTOP_SIZE_ON_DESKTOP = { width: 260, height: 140 }
+const DESKTOP_SIZE_ON_MOBILE = { width: '190px', height: '120px' }
+const DESKTOP_SIZE_ON_DESKTOP = { width: '32vh', height: '14vh' }
 
 interface CarouselComponentProps {
   platform?: 'desktop' | 'mobile'
@@ -39,7 +39,7 @@ export default function ThreeDSlider({ platform }: CarouselComponentProps): Reac
       ? MOBILE_SIZE_ON_MOBILE
       : MOBILE_SIZE_ON_DESKTOP
 
-  const carouselRadious = isDesktopMode ? (isMobile ? 30 : 40) : isMobile ? 19 : 24
+  const carouselRadious = isDesktopMode ? (isMobile ? 3.5 : 5) : isMobile ? 2 : 2.2
 
   useEffect(() => {
     initCarousel(-200, carouselSize.width, carouselSize.height, true, projects.length * carouselRadious)
@@ -65,7 +65,9 @@ export default function ThreeDSlider({ platform }: CarouselComponentProps): Reac
           textColor="black"
         />
       </div>
-      <div className={clsx('mt-2 grid touch-none w-full', isMobile ? 'grid-rows-2' : 'grid-cols-2 p-4')}>
+      <div
+        className={clsx('mt-2 grid touch-none w-full', isMobile || isDesktopMode ? 'grid-rows-2' : 'grid-cols-2 p-4')}
+      >
         <div className={isMobile ? '' : ''}>
           {selectedProject && (
             <ProjectInfo
@@ -73,6 +75,7 @@ export default function ThreeDSlider({ platform }: CarouselComponentProps): Reac
               description={selectedProject.description}
               url={selectedProject.url}
               tools={selectedProject.tools}
+              isDesktopMode={isDesktopMode}
             />
           )}
         </div>
@@ -86,7 +89,7 @@ export default function ThreeDSlider({ platform }: CarouselComponentProps): Reac
           isDesktopMode={isDesktopMode}
         />
 
-        <div className="absolute right-5 bottom-5">
+        <div className="absolute right-5 bottom-5" data-testid="platform-toggle">
           <ToggleProjectsViewButton isDesktopMode={isDesktopMode} onClick={toggleViewMode} />
         </div>
 

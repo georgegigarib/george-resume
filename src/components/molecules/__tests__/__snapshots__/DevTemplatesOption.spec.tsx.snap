@@ -4,6 +4,7 @@ exports[`DevTemplatesOption component > matches the snapshot for desktop view 1`
 <DocumentFragment>
   <div
     class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+    data-testid="template-option"
   >
     <div
       class="overflow-hidden max-w-[86%]"
@@ -105,6 +106,7 @@ exports[`DevTemplatesOption component > matches the snapshot for mobile view 1`]
 <DocumentFragment>
   <div
     class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+    data-testid="template-option"
   >
     <div
       class="overflow-hidden max-w-[86%]"

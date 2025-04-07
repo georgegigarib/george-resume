@@ -55,7 +55,7 @@ exports[`DevTemplatesModal component > matches the snapshot when modal is open 1
             </div>
           </div>
           <div
-            class="relative -top-20 group left-32"
+            class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
           >
             <a
               href="https://example.com"

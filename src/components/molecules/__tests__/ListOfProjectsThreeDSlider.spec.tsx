@@ -10,9 +10,7 @@ vi.mock('@/hooks/useIsMobile', () => ({
 
 class ResizeObserver {
   observe() {}
-
   unobserve() {}
-
   disconnect() {}
 }
 
@@ -40,7 +38,7 @@ vi.mock('@/constants/projects', () => ({
 }))
 
 // TODO: Fix this
-describe.skip('ListOfProjectsThreeDSlider Component', () => {
+describe('ListOfProjectsThreeDSlider Component', () => {
   const renderComponent = (platform: 'desktop' | 'mobile') =>
     render(
       <AppTestProvider>
@@ -73,8 +71,8 @@ describe.skip('ListOfProjectsThreeDSlider Component', () => {
   it('toggles between desktop and mobile view', () => {
     renderComponent('desktop')
 
-    const toggleButton = screen.getByRole('button')
-    fireEvent.click(toggleButton)
+    const toggleButton2 = screen.getByTestId('platform-toggle')
+    fireEvent.click(toggleButton2)
 
     mobileProjects.forEach((project) => {
       expect(screen.findByAltText(project.title)).toBeTruthy()

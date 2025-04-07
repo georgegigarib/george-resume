@@ -18,7 +18,7 @@ const BlurredImage: React.FC<BlurredImageProps> = ({ imagePath }) => {
   })
 
   useEffect(() => {
-    const blurColor = isDarkMode ? '#000' : 'white'
+    const blurColor = isDarkMode ? '#000' : '#fff'
 
     setDimensions({
       height: isMobile ? '260px' : '600px',
@@ -33,6 +33,7 @@ const BlurredImage: React.FC<BlurredImageProps> = ({ imagePath }) => {
   return (
     <div className="z-[4]">
       <div
+        data-testid="image-container-testid"
         style={{
           height: dimensions.height,
           boxShadow: dimensions.boxShadow,
@@ -41,7 +42,7 @@ const BlurredImage: React.FC<BlurredImageProps> = ({ imagePath }) => {
       >
         <ImageWithLoader
           imagePath={imagePath}
-          dataTestId="image-test-id"
+          dataTestId="image-testid"
           alt=""
           style={{
             height: dimensions.height,

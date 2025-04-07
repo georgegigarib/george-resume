@@ -1,0 +1,1449 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TemplatesModal > renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed inset-0 z-[40] pointer-events-none"
+    data-testid="modal-background"
+  >
+    <div
+      class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0"
+      style="z-index: 1;"
+    />
+    <div
+      class="absolute inset-0 flex items-center justify-center p-4"
+      style="z-index: 2;"
+    >
+      <div
+        class="bg-white dark:bg-black rounded-xl shadow-lg transform transition-all animate-zoomOut hidden"
+        style="width: 450px; height: 600px; margin: auto;"
+      >
+        <button
+          aria-label="Close"
+          class="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none"
+          data-testid="close-button"
+          style="background: rgba(0, 0, 0, 0.15);"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+            data-testid="CloseIcon"
+            focusable="false"
+            style="color: black;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </button>
+        <div
+          class="h-full w-full bg-app-lightModeBoxes-box13 
+    dark:bg-app-darkModeBoxes-box13 
+    dark:border-app-lightModeBoxes-box13 
+    border-app-darkModeBoxes-box13 border-[2px]
+    p-4 rounded-xl overflow-hidden"
+        >
+          <div
+            class="flex items-center"
+          >
+            <h2
+              class="font-semibold text-black dark:text-white"
+            >
+              Templates list
+            </h2>
+            <div
+              class="ml-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
+                data-mui-internal-clone-element="true"
+                data-testid="tooltip"
+                tabindex="0"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                  data-testid="SmsIcon"
+                  focusable="false"
+                  style="fill: white;"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <hr
+            class="w-100 mr-5 rounded-xl border"
+          />
+          <div
+            class="overflow-auto  max-h-[95%] mt-2 scroll-smooth text-white description-scrollbar"
+          >
+            <div
+              class="flex flex-col flex-wrap mr-3 py-2"
+            >
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-react ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              React
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Tailwind CSS
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-g7vfji-MuiChip-root"
+                          >
+                            <img
+                              alt="Bun"
+                              class="custom-icon h-6 pr-0"
+                              src="/src/assets/icons/tools/Bun.svg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Bun
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3vnbv9-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-css ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              CSS
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A lightweight template designed for fast rendering with modern tools.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bran8p-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-nextjs ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Next.js
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Tailwind CSS
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-docker ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Docker
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-react ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              React
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A server-side rendering starter template using Next.js and Docker.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-vuejs ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Vue Js
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Tailwind CSS
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1pqsp9g-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-pinia ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Pinia
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-docker ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Docker
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1jfcy4n-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-html ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              HTML
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                          >
+                            <img
+                              alt="JavaScript"
+                              class="custom-icon h-6 pr-0"
+                              src="/src/assets/icons/tools/Javascript.svg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              JavaScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1psoib9-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-angular ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Angular
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3wr7td-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-sass ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Sass
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-docker ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Docker
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-11471hz-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-nodejs ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Node.js
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A robust template for building enterprise-grade Angular applications.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-react ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              React
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bayvrs-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-mui ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Material UI
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-x6zgrj-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-graphql ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              GraphQL
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-36e4sd-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-django ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Django
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      Full-stack development made easy with React, MUI, and GraphQL backend.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-5zgwac-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-svelte ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Svelte
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-tailwind ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Tailwind CSS
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-pibv4v-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-python ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Python
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1o9b6i3-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-postgresql ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              PostgreSQL
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                          >
+                            <img
+                              alt="JavaScript"
+                              class="custom-icon h-6 pr-0"
+                              src="/src/assets/icons/tools/Javascript.svg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              JavaScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-react ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              React
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-qfctqq-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-redux ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Redux
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1krd9q1-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-bootstrap ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Bootstrap
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1wlz7po-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-php ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              PHP
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A ready-to-use base for building eCommerce solutions with React and PHP.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                data-testid="template-option"
+              >
+                <div
+                  class="overflow-hidden max-w-[86%]"
+                >
+                  <div
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+                    style="height: auto;"
+                  >
+                    <div
+                      class="flex flex-wrap"
+                    >
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-ts-circle ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              TypeScript
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-react ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              React
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-x6zgrj-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-graphql ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              GraphQL
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-mongodb2 ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              MongoDB
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="my-1 mb-2"
+                        data-testid="tec-badge"
+                      >
+                        <div>
+                          <div
+                            class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                          >
+                            <i
+                              class="ci ci-docker ci-lg"
+                            />
+                            <span
+                              class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                            >
+                              Docker
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                    >
+                      A powerful template for data-intensive applications using MongoDB and GraphQL.
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-3 right-2 cursor-pointer"
+                  >
+                    <div
+                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                        data-testid="LinkIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                >
+                  <span
+                    aria-label="Show all tools"
+                    class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <div
+                      class="flex items-center justify-center rounded-full text-sm "
+                    >
+                      <span
+                        class="text-white rounded-full flex flex-nowrap"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                          data-testid="ExpandMoreIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

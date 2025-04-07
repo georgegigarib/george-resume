@@ -1,7 +1,7 @@
 import { render, fireEvent } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import MusicLink from '@/components/atoms/MusicLink'
-import { Sections } from '@/app/layout/navbarTypes'
+import { Sections } from '@/app/layout/NavbarTypes'
 import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 
 describe('MusicLink component', () => {

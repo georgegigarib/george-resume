@@ -33,7 +33,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group left-32"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
         >
           <a
             href="http://example.com/template1"
@@ -92,7 +92,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group  left-0"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200  left-0"
         >
           <a
             href="http://example.com/template2"
@@ -151,7 +151,7 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group left-32"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
         >
           <a
             href="http://example.com/template3"

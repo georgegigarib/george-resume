@@ -30,6 +30,7 @@ export const ClickableTooltip: React.FC<ClickableTooltipProps> = ({
     <ClickAwayListener onClickAway={handleTooltipClose}>
       <div className="ml-1">
         <Tooltip
+          data-testid="tooltip"
           PopperProps={{
             disablePortal: true,
           }}

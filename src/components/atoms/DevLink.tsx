@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sections } from '@/app/layout/navbarTypes'
+import { Sections } from '@/app/layout/NavbarTypes'
 import { useTranslation } from 'react-i18next'
 
 const DevLink = ({

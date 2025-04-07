@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Sections } from '@/app/layout/navbarTypes'
+import { Sections } from '@/app/layout/NavbarTypes'
 
 export interface ActiveHashState {
   activeHash: string

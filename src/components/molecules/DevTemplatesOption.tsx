@@ -37,7 +37,10 @@ const DevTemplatesOption: React.FC<DevTemplatesOptionProps> = ({ option }) => {
   }
 
   return (
-    <div className={clsx('flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative')}>
+    <div
+      className={clsx('flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative')}
+      data-testid="template-option"
+    >
       <div className="overflow-hidden max-w-[86%]">
         <motion.div
           initial={{ height: 'auto' }}

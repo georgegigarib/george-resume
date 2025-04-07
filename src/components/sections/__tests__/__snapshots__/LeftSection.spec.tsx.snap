@@ -150,7 +150,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
               data-testid="example-container"
             >
               <div
@@ -262,7 +262,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group left-32"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
               >
                 <a
                   href="https://github.com/example/fast-render-template"
@@ -353,7 +353,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group  left-0"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200  left-0"
               >
                 <a
                   href="https://github.com/example/next-ssr-template"
@@ -444,7 +444,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group left-32"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
               >
                 <a
                   href="https://github.com/example/vue-pinia-template"
@@ -561,7 +561,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box9 dark:bg-app-darkModeBoxes-box9 border-app-darkModeBoxes-box9 dark:border-app-lightModeBoxes-box9"
               data-testid="example-container"
             >
               <div
@@ -873,7 +873,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
               data-testid="example-container"
             >
               <div
