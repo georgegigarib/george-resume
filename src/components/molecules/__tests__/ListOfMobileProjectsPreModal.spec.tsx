@@ -4,14 +4,6 @@ import ListOfMobileProjectsPreModal from '@/components/molecules/ListOfMobilePro
 import AppTestProvider from '@/AppTestProvider/AppTestProvider'
 import { mobileProjects } from '@/constants/projects'
 
-vi.mock('swiper/react', () => ({
-  Swiper: ({ children, onSlideChange }: any) => {
-    onSlideChange?.({ realIndex: 0 })
-    return <div data-testid="swiper">{children}</div>
-  },
-  SwiperSlide: ({ children }: any) => <div data-testid="swiper-slide">{children}</div>,
-}))
-
 vi.mock('swiper/modules', () => ({
   EffectCards: vi.fn(),
 }))

@@ -8,7 +8,6 @@ import { useIsMobile } from '@/hooks/useIsMobile'
 import Sms from '@mui/icons-material/Sms'
 import { useTranslation } from 'react-i18next'
 import { desktopProjects, mobileProjects, ProjectInfoType } from '@/constants/projects'
-import { motion } from 'framer-motion'
 import { ClickableTooltip } from './ClickableTooltip'
 
 const MOBILE_SIZE_ON_MOBILE = { width: '115px', height: '230px' }
@@ -92,23 +91,6 @@ export default function ThreeDSlider({ platform }: CarouselComponentProps): Reac
         <div className="absolute right-5 bottom-5" data-testid="platform-toggle">
           <ToggleProjectsViewButton isDesktopMode={isDesktopMode} onClick={toggleViewMode} />
         </div>
-
-        <motion.div
-          className={clsx(
-            'dark:text-white d text-black absolute left-8 bottom-7 bg-slate-700 rounded-lg px-2 text-center md:text-start'
-          )}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 1, 1, 1, 1, 1, 1, 0] }}
-          transition={{
-            times: [0, 0.5, 0.8, 1],
-            duration: 6,
-            ease: 'easeInOut',
-            repeat: Infinity,
-            repeatDelay: 1,
-          }}
-        >
-          <p>{t('dev.projects.sliderHint')}</p>
-        </motion.div>
       </div>
     </div>
   )

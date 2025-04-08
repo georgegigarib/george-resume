@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import clsx from 'clsx'
 import CloseIcon from '@mui/icons-material/Close'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import { useSelector } from 'react-redux'
-import { StoreState } from '@/store'
+import { Tooltip } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
 interface ModalProps {
   children: React.ReactNode
@@ -24,9 +24,9 @@ export default function Modal({
   normalHeight = '500px',
   className,
 }: ModalProps) {
-  const isDakTHemeEnabled = useSelector((state: StoreState) => state.darkTheme.isDarkThemeEnabled)
   const [isVisible, setIsVisible] = useState(false)
   const isMobile = useIsMobile()
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (isOpened) {
@@ -85,14 +85,13 @@ export default function Modal({
         >
           <button
             onClick={close}
-            className="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none"
-            style={{
-              background: isDakTHemeEnabled ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)',
-            }}
+            className="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none dark:bg-white bg-opacity-10 bg-black dark:bg-opacity-10 dark:hover:bg-opacity-20"
             aria-label="Close"
             data-testid="close-button"
           >
-            <CloseIcon fontSize="medium" style={{ color: isDakTHemeEnabled ? 'white' : 'black' }} />
+            <Tooltip title={t('close')} arrow>
+              <CloseIcon fontSize="medium" className="text-black dark:text-white" />
+            </Tooltip>
           </button>
           {children}
         </div>

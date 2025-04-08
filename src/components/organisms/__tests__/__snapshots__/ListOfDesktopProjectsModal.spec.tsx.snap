@@ -53,54 +53,33 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
         class="col-span-3 self-center py-3 pr-3 ml-3 group"
       >
         <div
-          class="swiper swiper-initialized swiper-vertical h-[120px] md:h-[250px] w-full"
+          data-testid="swiper"
         >
           <div
-            class="swiper-wrapper"
-            style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, NaNpx, 0px);"
+            data-testid="swiper-slide"
           >
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="0"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop1.png"
-              />
-            </div>
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="1"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop2.png"
-              />
-            </div>
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="2"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop3.png"
-              />
-            </div>
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop1.png"
+            />
           </div>
           <div
-            class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical"
+            data-testid="swiper-slide"
           >
-            <span
-              class="swiper-pagination-bullet"
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop2.png"
             />
-            <span
-              class="swiper-pagination-bullet"
-            />
-            <span
-              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+          </div>
+          <div
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop3.png"
             />
           </div>
           <div
@@ -111,7 +90,6 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
               slot="container-end"
             >
               <svg
-                style="--progress: 0.0003333333333332966;"
                 viewBox="0 0 48 48"
               >
                 <circle
@@ -120,9 +98,7 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for desktop
                   r="20"
                 />
               </svg>
-              <span>
-                3s
-              </span>
+              <span />
             </div>
           </div>
         </div>
@@ -235,54 +211,33 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for mobile 
         class="col-span-3 self-center py-3 pr-3 ml-3 group"
       >
         <div
-          class="swiper swiper-initialized swiper-vertical h-[120px] md:h-[250px] w-full"
+          data-testid="swiper"
         >
           <div
-            class="swiper-wrapper"
-            style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, NaNpx, 0px);"
+            data-testid="swiper-slide"
           >
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="0"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop1.png"
-              />
-            </div>
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="1"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop2.png"
-              />
-            </div>
-            <div
-              class="swiper-slide bg-transparent"
-              data-swiper-slide-index="2"
-            >
-              <img
-                alt="dev.projects.projects.desktop.exampleProject.title"
-                class="rounded-2xl"
-                src="desktop3.png"
-              />
-            </div>
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop1.png"
+            />
           </div>
           <div
-            class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical"
+            data-testid="swiper-slide"
           >
-            <span
-              class="swiper-pagination-bullet"
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop2.png"
             />
-            <span
-              class="swiper-pagination-bullet"
-            />
-            <span
-              class="swiper-pagination-bullet swiper-pagination-bullet-active"
+          </div>
+          <div
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="dev.projects.projects.desktop.exampleProject.title"
+              class="rounded-2xl"
+              src="desktop3.png"
             />
           </div>
           <div
@@ -293,7 +248,6 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for mobile 
               slot="container-end"
             >
               <svg
-                style="--progress: 0;"
                 viewBox="0 0 48 48"
               >
                 <circle
@@ -302,9 +256,7 @@ exports[`ListOfDesktopProjectsModal component > matches the snapshot for mobile 
                   r="20"
                 />
               </svg>
-              <span>
-                3s
-              </span>
+              <span />
             </div>
           </div>
         </div>

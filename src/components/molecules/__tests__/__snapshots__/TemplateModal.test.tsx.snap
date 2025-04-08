@@ -20,16 +20,16 @@ exports[`TemplatesModal > renders correctly 1`] = `
       >
         <button
           aria-label="Close"
-          class="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none"
+          class="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none dark:bg-white bg-opacity-10 bg-black dark:bg-opacity-10 dark:hover:bg-opacity-20"
           data-testid="close-button"
-          style="background: rgba(0, 0, 0, 0.15);"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+            aria-label="Close"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-black dark:text-white css-20bmp1-MuiSvgIcon-root"
+            data-mui-internal-clone-element="true"
             data-testid="CloseIcon"
             focusable="false"
-            style="color: black;"
             viewBox="0 0 24 24"
           >
             <path
@@ -94,14 +94,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -120,7 +119,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -139,7 +138,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -158,7 +157,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -179,7 +178,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -199,33 +198,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A lightweight template designed for fast rendering with modern tools.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -262,14 +263,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -288,7 +288,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -307,7 +307,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -326,7 +326,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -345,7 +345,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -365,33 +365,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A server-side rendering starter template using Next.js and Docker.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -428,14 +430,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -454,7 +455,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -473,7 +474,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -492,7 +493,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -511,7 +512,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -530,7 +531,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -550,33 +551,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -613,14 +616,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -641,7 +643,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -660,7 +662,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -679,7 +681,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -698,7 +700,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -718,33 +720,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A robust template for building enterprise-grade Angular applications.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -781,14 +785,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -807,7 +810,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -826,7 +829,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -845,7 +848,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -864,7 +867,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -884,33 +887,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       Full-stack development made easy with React, MUI, and GraphQL backend.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -947,14 +952,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -973,7 +977,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -992,7 +996,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1011,7 +1015,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1030,7 +1034,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1050,33 +1054,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -1113,14 +1119,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1141,7 +1146,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1160,7 +1165,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1179,7 +1184,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1198,7 +1203,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1218,33 +1223,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A ready-to-use base for building eCommerce solutions with React and PHP.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"
@@ -1281,14 +1288,13 @@ exports[`TemplatesModal > renders correctly 1`] = `
                   class="overflow-hidden max-w-[86%]"
                 >
                   <div
-                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
-                    style="height: auto;"
+                    class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
                   >
                     <div
-                      class="flex flex-wrap"
+                      class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
                     >
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1307,7 +1313,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1326,7 +1332,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1345,7 +1351,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1364,7 +1370,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                         </div>
                       </div>
                       <div
-                        class="my-1 mb-2"
+                        class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
                         data-testid="tec-badge"
                       >
                         <div>
@@ -1384,33 +1390,35 @@ exports[`TemplatesModal > renders correctly 1`] = `
                       </div>
                     </div>
                     <div
-                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar"
+                      class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
                     >
                       A powerful template for data-intensive applications using MongoDB and GraphQL.
                     </div>
                   </div>
                   <div
-                    class="absolute top-3 right-2 cursor-pointer"
+                    class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
                   >
                     <div
-                      class="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center"
+                      aria-label="See template"
+                      class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                      data-mui-internal-clone-element="true"
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="LinkIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                        data-testid="RemoveRedEyeOutlinedIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                          d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
                         />
                       </svg>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
+                  class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
                 >
                   <span
                     aria-label="Show all tools"

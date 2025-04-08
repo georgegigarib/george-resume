@@ -3,6 +3,7 @@ export const es = {
   underConstruction: '🚧',
   welcomes: 'Plural',
   description: 'Esta es una descripción en español',
+  close: 'Cerrar',
   navbar: {
     me: 'yo',
     music: 'música',
@@ -45,12 +46,15 @@ export const es = {
       title: 'Proyectos particulares',
       seeMore: 'Ver más',
       showAllProjects: 'Mostrar todos los proyectos',
+      modalToggle: {
+        desktopView: 'Ver proyectos desktop',
+        mobileView: 'Ver proyectos mobile',
+      },
       moreTools: {
         toolsRemaining_one: '{{count}} tecnología más',
         toolsRemaining_other: '{{count}} tecnologías más',
       },
       modal: {
-        sliderHint: 'Adelante... gíralo!',
         usedTechnologies: 'Tecnologias utilizadas',
         tooltip:
           'Acá podran ver algunos de los proyectos en los que he trabajado, utilizando diferentes tecnologías y manteniendo las buenas practicas en cada proyecto. Al hacer click en cada imagen se mostrarán los detalles del proyecto.',

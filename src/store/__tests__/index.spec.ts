@@ -1,6 +1,6 @@
 import { setActiveHash } from '@/store/hash/activeHashSlice'
 import { setDarkTheme } from '@/store/theme/themeStatus'
-import { Sections } from '@/app/layout/NavbarTypes'
+import { Sections } from '@/app/layout/types/NavBarTypes'
 import { describe, beforeEach, it, expect } from 'vitest'
 import store from '@/store/index'
 import { ActiveHashState } from '@/store/hash/activeHashSlice'

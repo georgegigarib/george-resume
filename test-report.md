@@ -2,25 +2,25 @@
 
 | 🕙 Start time | ⌛ Duration |
 | --- | ---: |
-| 4/7/2025, 10:12:27 PM | 98.031 s |
+| 4/9/2025, 2:13:28 AM | 96.785 s |
 
 | | ✅ Passed | ❌ Failed | ⏩ Skipped | 🚧 Todo | ⚪ Total |
 | --- | ---: | ---: | ---: | ---: | ---: |
 |Test Suites|110|0|2|0|112|
 |Tests|173|0|6|0|179|
 
-## ✅ <a id="file0" href="#file0">src/app/layout/__tests__/NavBar.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/app/layout/__tests__/NavBar.spec.tsx)]
+## ✅ <a id="file0" href="#file0">src/app/layout/__tests__/NavBar.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/app/layout/__tests__/NavBar.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 842.6787800000002 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 459.8808090000002 s
 
 ```
 ✅ NavBar component
    ✅ renders correctly on desktop
 ```
 
-## ✅ <a id="file1" href="#file1">src/app/layout/__tests__/NavBarTypes.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/app/layout/__tests__/NavBarTypes.spec.tsx)]
+## ✅ <a id="file1" href="#file1">src/app/layout/__tests__/NavBarTypes.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/app/layout/__tests__/NavBarTypes.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 7.815458000000035 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 6.287140999999792 s
 
 ```
 ✅ NavBarTypes
@@ -28,18 +28,18 @@
    ✅ should have the correct section names
 ```
 
-## ✅ <a id="file2" href="#file2">src/app/pages/__tests__/Dashboard.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/app/pages/__tests__/Dashboard.spec.tsx)]
+## ✅ <a id="file2" href="#file2">src/app/pages/__tests__/Dashboard.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/app/pages/__tests__/Dashboard.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 8996.113001999998 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 5559.597894999999 s
 
 ```
 ✅ Dashboard component
    ✅ renders correctly on desktop
 ```
 
-## ✅ <a id="file3" href="#file3">src/components/atoms/__tests__/CardBody.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/CardBody.spec.tsx)]
+## ✅ <a id="file3" href="#file3">src/components/atoms/__tests__/CardBody.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/CardBody.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 689.6819269999996 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 741.7512779999997 s
 
 ```
 ✅ CardBody component
@@ -49,9 +49,9 @@
    ✅ has the default styles applied
 ```
 
-## ✅ <a id="file4" href="#file4">src/components/atoms/__tests__/CardContainer.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/CardContainer.spec.tsx)]
+## ✅ <a id="file4" href="#file4">src/components/atoms/__tests__/CardContainer.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/CardContainer.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 1108.2364499999985 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 864.514459 s
 
 ```
 ✅ CardContainer component
@@ -59,9 +59,9 @@
    ✅ handles mouse movement
 ```
 
-## ✅ <a id="file5" href="#file5">src/components/atoms/__tests__/DarkModeSwitch.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/DarkModeSwitch.spec.tsx)]
+## ✅ <a id="file5" href="#file5">src/components/atoms/__tests__/DarkModeSwitch.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/DarkModeSwitch.spec.tsx)]
 
-8 passed, 0 failed, 0 skipped, 0 todo, done in 640.0668449999998 s
+8 passed, 0 failed, 0 skipped, 0 todo, done in 595.2578800000001 s
 
 ```
 ✅ ThemeSwitch component
@@ -75,9 +75,9 @@
    ✅ applies the correct styles based on the checked state
 ```
 
-## ✅ <a id="file6" href="#file6">src/components/atoms/__tests__/DevLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/DevLink.spec.tsx)]
+## ✅ <a id="file6" href="#file6">src/components/atoms/__tests__/DevLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/DevLink.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 500.07806400000027 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 929.3847390000001 s
 
 ```
 ✅ DevLink component
@@ -87,9 +87,9 @@
    ✅ calls scrollToSection and setAutomaticScroll on click
 ```
 
-## ✅ <a id="file7" href="#file7">src/components/atoms/__tests__/ImageLoader.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/ImageLoader.spec.tsx)]
+## ✅ <a id="file7" href="#file7">src/components/atoms/__tests__/ImageLoader.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/ImageLoader.spec.tsx)]
 
-5 passed, 0 failed, 0 skipped, 0 todo, done in 850.9595730000001 s
+5 passed, 0 failed, 0 skipped, 0 todo, done in 926.009790000001 s
 
 ```
 ✅ ImageWithLoader component
@@ -100,9 +100,9 @@
    ✅ sets the alt attribute correctly
 ```
 
-## ✅ <a id="file8" href="#file8">src/components/atoms/__tests__/LanguageSwitcher.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/LanguageSwitcher.spec.tsx)]
+## ✅ <a id="file8" href="#file8">src/components/atoms/__tests__/LanguageSwitcher.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/LanguageSwitcher.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 1828.576357 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 1683.690516999999 s
 
 ```
 ✅ LanguageSwitcher component
@@ -111,9 +111,9 @@
    ✅ changes language when an option is selected
 ```
 
-## ✅ <a id="file9" href="#file9">src/components/atoms/__tests__/MeLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/MeLink.spec.tsx)]
+## ✅ <a id="file9" href="#file9">src/components/atoms/__tests__/MeLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/MeLink.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 304.3734079999995 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 1125.8011569999999 s
 
 ```
 ✅ MeLink component
@@ -123,9 +123,9 @@
    ✅ calls scrollToSection and setAutomaticScroll on click
 ```
 
-## ✅ <a id="file10" href="#file10">src/components/atoms/__tests__/MouseEnterContext.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/MouseEnterContext.spec.tsx)]
+## ✅ <a id="file10" href="#file10">src/components/atoms/__tests__/MouseEnterContext.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/MouseEnterContext.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 485.02831200000037 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 373.69993499999964 s
 
 ```
 ✅ MouseEnterProvider
@@ -133,9 +133,9 @@
    ✅ should throw error if useMouseEnter is used outside of MouseEnterProvider
 ```
 
-## ✅ <a id="file11" href="#file11">src/components/atoms/__tests__/MusicLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/MusicLink.spec.tsx)]
+## ✅ <a id="file11" href="#file11">src/components/atoms/__tests__/MusicLink.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/MusicLink.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 671.4092909999999 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 712.5681210000002 s
 
 ```
 ✅ MusicLink component
@@ -145,9 +145,9 @@
    ✅ calls scrollToSection and setAutomaticScroll on click
 ```
 
-## ✅ <a id="file12" href="#file12">src/components/atoms/__tests__/ProjectInfo.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/ProjectInfo.spec.tsx)]
+## ✅ <a id="file12" href="#file12">src/components/atoms/__tests__/ProjectInfo.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/ProjectInfo.spec.tsx)]
 
-6 passed, 0 failed, 0 skipped, 0 todo, done in 2186.683143 s
+6 passed, 0 failed, 0 skipped, 0 todo, done in 2432.813618 s
 
 ```
 ✅ ProjectInfo component
@@ -159,9 +159,9 @@
    ✅ renders the technology badges
 ```
 
-## ✅ <a id="file13" href="#file13">src/components/atoms/__tests__/TechnologyBadge.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/TechnologyBadge.spec.tsx)]
+## ✅ <a id="file13" href="#file13">src/components/atoms/__tests__/TechnologyBadge.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/TechnologyBadge.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 745.9105689999997 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 929.2650839999988 s
 
 ```
 ✅ TechnologyBadge component
@@ -171,9 +171,9 @@
    ✅ does not render if tool data is not found
 ```
 
-## ✅ <a id="file14" href="#file14">src/components/atoms/__tests__/ThreeDImageSlider.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/ThreeDImageSlider.spec.tsx)]
+## ✅ <a id="file14" href="#file14">src/components/atoms/__tests__/ThreeDImageSlider.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/ThreeDImageSlider.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1333.8315589999984 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 627.1739969999999 s
 
 ```
 ✅ ThreeDImageSlider component
@@ -183,9 +183,9 @@
    ✅ calls onClick when an image is clicked
 ```
 
-## ✅ <a id="file15" href="#file15">src/components/atoms/__tests__/ToggleProjectsViewButton.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/ToggleProjectsViewButton.spec.tsx)]
+## ✅ <a id="file15" href="#file15">src/components/atoms/__tests__/ToggleProjectsViewButton.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/ToggleProjectsViewButton.spec.tsx)]
 
-5 passed, 0 failed, 0 skipped, 0 todo, done in 746.6971359999989 s
+5 passed, 0 failed, 0 skipped, 0 todo, done in 1108.5093620000007 s
 
 ```
 ✅ ToggleProjectsViewButton component
@@ -196,9 +196,9 @@
    ✅ calls onClick when the button is clicked
 ```
 
-## ✅ <a id="file16" href="#file16">src/components/atoms/__tests__/ToolIcon.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/atoms/__tests__/ToolIcon.spec.tsx)]
+## ✅ <a id="file16" href="#file16">src/components/atoms/__tests__/ToolIcon.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/atoms/__tests__/ToolIcon.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 809.872034 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 376.6030209999999 s
 
 ```
 ✅ ToolIcon component
@@ -208,9 +208,9 @@
    ✅ renders nothing for an unknown tool
 ```
 
-## ✅ <a id="file17" href="#file17">src/components/molecules/__tests__/Card.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/Card.spec.tsx)]
+## ✅ <a id="file17" href="#file17">src/components/molecules/__tests__/Card.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/Card.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 349.5587690000002 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 227.21525299999985 s
 
 ```
 ✅ Card component
@@ -218,9 +218,9 @@
    ✅ renders with the correct classes
 ```
 
-## ✅ <a id="file18" href="#file18">src/components/molecules/__tests__/ClickableTooltip.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/ClickableTooltip.spec.tsx)]
+## ✅ <a id="file18" href="#file18">src/components/molecules/__tests__/ClickableTooltip.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/ClickableTooltip.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1713.8374820000008 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 1869.017769 s
 
 ```
 ✅ ClickableTooltip component
@@ -230,9 +230,9 @@
    ✅ renders the tooltip text on click for mobile view
 ```
 
-## ✅ <a id="file19" href="#file19">src/components/molecules/__tests__/CustomTooltip.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/CustomTooltip.spec.tsx)]
+## ✅ <a id="file19" href="#file19">src/components/molecules/__tests__/CustomTooltip.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/CustomTooltip.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 1228.3867580000006 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 1110.9566989999985 s
 
 ```
 ✅ CustomTooltip component
@@ -241,9 +241,9 @@
    ✅ removes tooltip message when mouse leave
 ```
 
-## ✅ <a id="file20" href="#file20">src/components/molecules/__tests__/DevTemplatesOption.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/DevTemplatesOption.spec.tsx)]
+## ✅ <a id="file20" href="#file20">src/components/molecules/__tests__/DevTemplatesOption.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/DevTemplatesOption.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1090.9924569999985 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 1491.1556309999996 s
 
 ```
 ✅ DevTemplatesOption component
@@ -253,16 +253,16 @@
    ✅ renders the correct number of technology badges for mobile view
 ```
 
-## ✅ <a id="file21" href="#file21">src/components/molecules/__tests__/DevTemplatesPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/DevTemplatesPreModal.spec.tsx)]
+## ✅ <a id="file21" href="#file21">src/components/molecules/__tests__/DevTemplatesPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/DevTemplatesPreModal.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 933.3809170000004 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 165.59756199999902 s
 
 ```
 ✅ DevTemplatesPreModal component
    ✅ matches the snapshot
 ```
 
-## ⏩ <a id="file22" href="#file22">src/components/molecules/__tests__/ListOfDesktopProjectsPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/ListOfDesktopProjectsPreModal.spec.tsx)]
+## ⏩ <a id="file22" href="#file22">src/components/molecules/__tests__/ListOfDesktopProjectsPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/ListOfDesktopProjectsPreModal.spec.tsx)]
 
 0 passed, 0 failed, 4 skipped, 0 todo, done in 0 s
 
@@ -274,9 +274,9 @@
    ⏩ displays the project image
 ```
 
-## ✅ <a id="file23" href="#file23">src/components/molecules/__tests__/ListOfMobileProjectsPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/ListOfMobileProjectsPreModal.spec.tsx)]
+## ✅ <a id="file23" href="#file23">src/components/molecules/__tests__/ListOfMobileProjectsPreModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/ListOfMobileProjectsPreModal.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 875.9347510000002 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 1284.7729790000003 s
 
 ```
 ✅ ListOfMobileProjectsPreModal Component
@@ -286,9 +286,9 @@
    ✅ displays the project image
 ```
 
-## ✅ <a id="file24" href="#file24">src/components/molecules/__tests__/ListOfProjectsThreeDSlider.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/ListOfProjectsThreeDSlider.spec.tsx)]
+## ✅ <a id="file24" href="#file24">src/components/molecules/__tests__/ListOfProjectsThreeDSlider.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/ListOfProjectsThreeDSlider.spec.tsx)]
 
-3 passed, 0 failed, 1 skipped, 0 todo, done in 1788.4821489999995 s
+3 passed, 0 failed, 1 skipped, 0 todo, done in 729.7237430000005 s
 
 ```
 ✅ ListOfProjectsThreeDSlider Component
@@ -298,9 +298,9 @@
    ⏩ toggles between desktop and mobile view
 ```
 
-## ✅ <a id="file25" href="#file25">src/components/molecules/__tests__/TemplateModal.test.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/TemplateModal.test.tsx)]
+## ✅ <a id="file25" href="#file25">src/components/molecules/__tests__/TemplateModal.test.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/TemplateModal.test.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 9248.764372 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 6833.853406999999 s
 
 ```
 ✅ TemplatesModal
@@ -309,18 +309,18 @@
    ✅ shows tooltip when hovering over info icon
 ```
 
-## ✅ <a id="file26" href="#file26">src/components/molecules/__tests__/TemplatesCarousels.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/TemplatesCarousels.spec.tsx)]
+## ✅ <a id="file26" href="#file26">src/components/molecules/__tests__/TemplatesCarousels.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/TemplatesCarousels.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 680.23632 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 819.8764770000016 s
 
 ```
 ✅ TemplatesCarousels Component
    ✅ renders correctly with provided templates
 ```
 
-## ✅ <a id="file27" href="#file27">src/components/molecules/__tests__/ThemeSwitcher.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/molecules/__tests__/ThemeSwitcher.spec.tsx)]
+## ✅ <a id="file27" href="#file27">src/components/molecules/__tests__/ThemeSwitcher.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/molecules/__tests__/ThemeSwitcher.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1168.2813800000004 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 952.3740359999993 s
 
 ```
 ✅ ThemeSwitcher component
@@ -330,9 +330,9 @@
    ✅ dispatches the correct action when toggling the theme off
 ```
 
-## ✅ <a id="file28" href="#file28">src/components/organisms/__tests__/Box.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/Box.spec.tsx)]
+## ✅ <a id="file28" href="#file28">src/components/organisms/__tests__/Box.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/Box.spec.tsx)]
 
-5 passed, 0 failed, 0 skipped, 0 todo, done in 714.4793849999996 s
+5 passed, 0 failed, 0 skipped, 0 todo, done in 439.21085700000003 s
 
 ```
 ✅ Box component
@@ -343,9 +343,9 @@
    ✅ applies correct gridArea style based on props
 ```
 
-## ✅ <a id="file29" href="#file29">src/components/organisms/__tests__/DashboardImageContainer.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/DashboardImageContainer.spec.tsx)]
+## ✅ <a id="file29" href="#file29">src/components/organisms/__tests__/DashboardImageContainer.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/DashboardImageContainer.spec.tsx)]
 
-7 passed, 0 failed, 0 skipped, 0 todo, done in 1090.011724 s
+7 passed, 0 failed, 0 skipped, 0 todo, done in 818.1035689999999 s
 
 ```
 ✅ DashboardImageContainer component
@@ -358,9 +358,9 @@
    ✅ applies the correct styles based on desktop and light mode
 ```
 
-## ✅ <a id="file30" href="#file30">src/components/organisms/__tests__/DevTemplatesModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/DevTemplatesModal.spec.tsx)]
+## ✅ <a id="file30" href="#file30">src/components/organisms/__tests__/DevTemplatesModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/DevTemplatesModal.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 1039.9841190000006 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 533.3642569999975 s
 
 ```
 ✅ DevTemplatesModal component
@@ -368,9 +368,9 @@
    ✅ renders the correct templates hint
 ```
 
-## ✅ <a id="file31" href="#file31">src/components/organisms/__tests__/ExcampleComponent.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/ExcampleComponent.spec.tsx)]
+## ✅ <a id="file31" href="#file31">src/components/organisms/__tests__/ExcampleComponent.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/ExcampleComponent.spec.tsx)]
 
-3 passed, 0 failed, 1 skipped, 0 todo, done in 635.3305950000004 s
+3 passed, 0 failed, 1 skipped, 0 todo, done in 715.5929749999996 s
 
 ```
 ✅ ExampleComponent
@@ -380,9 +380,9 @@
    ⏩ generates a different random class on re-render
 ```
 
-## ✅ <a id="file32" href="#file32">src/components/organisms/__tests__/Jokes.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/Jokes.spec.tsx)]
+## ✅ <a id="file32" href="#file32">src/components/organisms/__tests__/Jokes.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/Jokes.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 665.6299140000001 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 427.628882 s
 
 ```
 ✅ Jokes Component
@@ -391,9 +391,9 @@
    ✅ changes the joke when refresh button is clicked
 ```
 
-## ✅ <a id="file33" href="#file33">src/components/organisms/__tests__/LatestSong.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/LatestSong.spec.tsx)]
+## ✅ <a id="file33" href="#file33">src/components/organisms/__tests__/LatestSong.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/LatestSong.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 1820.5644410000004 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 926.1935170000006 s
 
 ```
 ✅ LatestSong Component
@@ -402,9 +402,9 @@
    ✅ matches snapshot after another 5 seconds
 ```
 
-## ✅ <a id="file34" href="#file34">src/components/organisms/__tests__/ListOfDesktopProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/ListOfDesktopProjectsModal.spec.tsx)]
+## ✅ <a id="file34" href="#file34">src/components/organisms/__tests__/ListOfDesktopProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/ListOfDesktopProjectsModal.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1936.629621 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 1005.9865439999994 s
 
 ```
 ✅ ListOfDesktopProjectsModal component
@@ -414,9 +414,9 @@
    ✅ renders the correct content for mobile view
 ```
 
-## ✅ <a id="file35" href="#file35">src/components/organisms/__tests__/ListOfMobileProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/ListOfMobileProjectsModal.spec.tsx)]
+## ✅ <a id="file35" href="#file35">src/components/organisms/__tests__/ListOfMobileProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/ListOfMobileProjectsModal.spec.tsx)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 1570.588334 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 774.8757519999999 s
 
 ```
 ✅ ListOfMobileProjectsModal component
@@ -426,18 +426,18 @@
    ✅ renders the correct content for mobile view
 ```
 
-## ✅ <a id="file36" href="#file36">src/components/organisms/__tests__/ListOfProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/ListOfProjectsModal.spec.tsx)]
+## ✅ <a id="file36" href="#file36">src/components/organisms/__tests__/ListOfProjectsModal.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/ListOfProjectsModal.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 236.56830600000012 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 693.5585380000011 s
 
 ```
 ✅ ListOfProjectsModal component
    ✅ matches the snapshot
 ```
 
-## ✅ <a id="file37" href="#file37">src/components/organisms/__tests__/NavBarDropDownMenu.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/NavBarDropDownMenu.spec.tsx)]
+## ✅ <a id="file37" href="#file37">src/components/organisms/__tests__/NavBarDropDownMenu.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/NavBarDropDownMenu.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 1723.8316379999997 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 1788.0987650000025 s
 
 ```
 ✅ DropdownMenu Component
@@ -446,18 +446,18 @@
    ✅ closes the menu when clicked outside
 ```
 
-## ✅ <a id="file38" href="#file38">src/components/organisms/__tests__/Presentation.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/Presentation.spec.tsx)]
+## ✅ <a id="file38" href="#file38">src/components/organisms/__tests__/Presentation.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/Presentation.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 578.181689 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 93.88831500000015 s
 
 ```
 ✅ Presentation component
    ✅ matches the snapshot
 ```
 
-## ✅ <a id="file39" href="#file39">src/components/organisms/__tests__/SeeResume.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/SeeResume.spec.tsx)]
+## ✅ <a id="file39" href="#file39">src/components/organisms/__tests__/SeeResume.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/SeeResume.spec.tsx)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 808.454154 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 714.2168670000001 s
 
 ```
 ✅ SeeResume Component
@@ -465,9 +465,9 @@
    ✅ renders correctly for desktop
 ```
 
-## ✅ <a id="file40" href="#file40">src/components/organisms/__tests__/SpotifyPlaylist.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/SpotifyPlaylist.spec.tsx)]
+## ✅ <a id="file40" href="#file40">src/components/organisms/__tests__/SpotifyPlaylist.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/SpotifyPlaylist.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 773.7962870000001 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 1227.4963150000003 s
 
 ```
 ✅ SpotifyPlaylist Component
@@ -476,9 +476,9 @@
    ✅ renders correctly in desktop view
 ```
 
-## ✅ <a id="file41" href="#file41">src/components/organisms/__tests__/YoutubeVideo.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/organisms/__tests__/YoutubeVideo.spec.tsx)]
+## ✅ <a id="file41" href="#file41">src/components/organisms/__tests__/YoutubeVideo.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/organisms/__tests__/YoutubeVideo.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 881.4828930000003 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 1434.8345370000006 s
 
 ```
 ✅ LocalVideoWithTooltip Component
@@ -487,36 +487,36 @@
    ✅ shows tooltip when activeHash matches and after timeout
 ```
 
-## ✅ <a id="file42" href="#file42">src/components/sections/__tests__/CenterSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/sections/__tests__/CenterSection.spec.tsx)]
+## ✅ <a id="file42" href="#file42">src/components/sections/__tests__/CenterSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/sections/__tests__/CenterSection.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 983.4823579999993 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 1064.410440999999 s
 
 ```
 ✅ CenterSection component
    ✅ renders correctly on desktop
 ```
 
-## ✅ <a id="file43" href="#file43">src/components/sections/__tests__/LeftSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/sections/__tests__/LeftSection.spec.tsx)]
+## ✅ <a id="file43" href="#file43">src/components/sections/__tests__/LeftSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/sections/__tests__/LeftSection.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 2390.2731080000012 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 1793.081812999997 s
 
 ```
 ✅ LeftSection component
    ✅ renders correctly on desktop
 ```
 
-## ✅ <a id="file44" href="#file44">src/components/sections/__tests__/RightSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/components/sections/__tests__/RightSection.spec.tsx)]
+## ✅ <a id="file44" href="#file44">src/components/sections/__tests__/RightSection.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/components/sections/__tests__/RightSection.spec.tsx)]
 
-1 passed, 0 failed, 0 skipped, 0 todo, done in 851.4143929999991 s
+1 passed, 0 failed, 0 skipped, 0 todo, done in 833.1634280000017 s
 
 ```
 ✅ RightSection component
    ✅ renders correctly on desktop
 ```
 
-## ✅ <a id="file45" href="#file45">src/hooks/__tests__/useIsMobile.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/hooks/__tests__/useIsMobile.spec.tsx)]
+## ✅ <a id="file45" href="#file45">src/hooks/__tests__/useIsMobile.spec.tsx</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/hooks/__tests__/useIsMobile.spec.tsx)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 331.71753499999977 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 336.4079270000002 s
 
 ```
 ✅ useIsMobile
@@ -525,9 +525,9 @@
    ✅ should update the view when the window is resized
 ```
 
-## ✅ <a id="file46" href="#file46">src/hooks/__tests__/useLanguage.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/hooks/__tests__/useLanguage.spec.ts)]
+## ✅ <a id="file46" href="#file46">src/hooks/__tests__/useLanguage.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/hooks/__tests__/useLanguage.spec.ts)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 229.54406199999994 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 87.61516700000084 s
 
 ```
 ✅ useLanguage
@@ -537,9 +537,9 @@
    ✅ should return "en" if no language is in localStorage
 ```
 
-## ✅ <a id="file47" href="#file47">src/locales/__tests__/i18n.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/locales/__tests__/i18n.spec.ts)]
+## ✅ <a id="file47" href="#file47">src/locales/__tests__/i18n.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/locales/__tests__/i18n.spec.ts)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 6.554888000000574 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 7.50841599999967 s
 
 ```
 ✅ i18n configuration
@@ -547,19 +547,19 @@
    ✅ should have parseMissingKeyHandler that returns an empty string
 ```
 
-## ✅ <a id="file48" href="#file48">src/locales/__tests__/language.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/locales/__tests__/language.spec.ts)]
+## ✅ <a id="file48" href="#file48">src/locales/__tests__/language.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/locales/__tests__/language.spec.ts)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 86.45467300000018 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 6.100465999999869 s
 
 ```
 ✅ languages
-   ✅ should have correct configuration for language { lang: 'en', name: 'English', translation: { hello: 'Hey buddy, whats upp?', welcome: 'Hello friend', description: 'This is a description in English', navbar: { me: 'me', music: 'music', dev: 'dev' }, music: { favoritePlaylist: { title: 'My Favorite Playlist', description: 'Enjoy my personal selection of songs in this playlist. Listen to it and let yourself be carried away by the rhythm!' }, video: { clickMe: 'Click me!', seeFullVideo: 'See full video' } }, me: { presentation: { title: 'Hi! I\'m George Gil', description: 'I\'m a curious software engineer who also plays guitar, not always at the same time though.' }, jokes: { joke1: 'I decided to create this presentation because, let\'s face it, my jokes aren’t as good as my code... but here we are.', joke2: 'Honestly, putting together a page about myself is way less awkward than trying to have a conversation with myself.', joke3: 'In theory, I’m an expert... but since I’m better at doing than explaining, I figured it’s best to just show you.', joke4: 'Some people make presentations to impress, I made mine to avoid talking... (didn\'t work anyway).' } }, dev: { resume: { resume: 'Resume', name: 'George Gil' }, projects: { usedTechnologies: 'Used Tecnologies', title: 'Self taste projects', seeMore: 'See more', showAllProjects: 'Show all projects', moreTools: { toolsRemaining_one: '{{count}} more tool', toolsRemaining_other: '{{count}} more tools' }, modal: { sliderHint: 'Don\'t be shy... spin it!', usedTechnologies: 'Used Tecnologies', tooltip: 'Here you can see some of the projects I have worked on, using different technologies and maintaining good practices in each project. Clicking on each image will show the details of the project.' }, projects: { mobile: { title: 'Self taste projects 📱', project1: { title: 'Movie App', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long and I have to keep extending it more and more and more.' }, project2: { title: 'Mobile Project 1', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project3: { title: 'Mobile Project 2', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project4: { title: 'Mobile Project 2', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project5: { title: 'Mobile Project 1', description: 'Project with custom animations.' }, exampleProject: { title: 'Example mobile project', description: 'Example mobile project description' } }, desktop: { title: 'Self taste projects 🖥️', project1: { title: 'Desktop Project 1', description: 'Advanced dashboard.' }, project2: { title: 'Desktop Project 2', description: 'Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application.' }, project3: { title: 'Desktop Project 3', description: 'Custom desktop application.' }, project4: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, project5: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, project6: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, exampleProject: { title: 'Example desktop project', description: 'Example desktop project description' } } } }, templates: { tooltip: { showAllTemplates: 'Show all templates', seeTemplate: 'See template' }, title: 'Use my dev templates!', modal: { title: 'Templates list', showAllTools: 'Show all tools', tooltip: 'It\'s way easier when you have a starting point when developing new projects, and mostof the time we waste a lot of time setting and configuring the project... That\'s why I made this section, to save a LOT of time. All technologies are listed on each repository. Happy coding! 😄' }, templates: { template1: { description: 'A lightweight template designed for fast rendering with modern tools.', hint: 'fast rendering' }, template2: { description: 'A server-side rendering starter template using Next.js and Docker.', hint: 'server rendering' }, template3: { description: 'A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.', hint: 'vue simplicity' }, template4: { description: 'A robust template for building enterprise-grade Angular applications.', hint: 'enterprise apps' }, template5: { description: 'Full-stack development made easy with React, MUI, and GraphQL backend.', hint: 'full stack' }, template6: { description: 'A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.', hint: 'minimalist setup' }, template7: { description: 'A ready-to-use base for building eCommerce solutions with React and PHP.', hint: 'ecommerce base' }, template8: { description: 'A powerful template for data-intensive applications using MongoDB and GraphQL.', hint: 'data intensive' }, template9: { description: 'A template for real-time apps with Firebase backend and React frontend.', hint: 'real-time apps' }, exampleTemplate: { description: 'Example template description', hint: 'Example template hint' } } } } } }
-   ✅ should have correct configuration for language { lang: 'es', name: 'Español', translation: { hello: 'Hola amigo, que tal?', underConstruction: '🚧', welcomes: 'Plural', description: 'Esta es una descripción en español', navbar: { me: 'yo', music: 'música', dev: 'dev' }, music: { favoritePlaylist: { title: 'Mi Playlist Favorita', description: 'Disfruta de mi selección personal de canciones en esta playlist. ¡Escúchala y déjate llevar por el ritmo!' }, video: { clickMe: 'Clickeame!', seeFullVideo: 'Ver video completo' } }, me: { presentation: { title: '¡Hola! Soy George Gil', description: 'Soy un curioso ingeniero de software que también toca la guitarra, aunque no siempre al mismo tiempo.' }, jokes: { joke1: 'Decidí hacer esta presentación porque, siendo sinceros, mis chistes no son tan buenos como mi código... pero aquí estamos.', joke2: 'A decir verdad, crear una página sobre mí mismo es mucho menos incómodo que tener una conversación conmigo mismo.', joke3: 'En teoría, soy un experto... en la práctica, como soy mejor haciendo que explicando, mejor les muestro.', joke4: 'Algunos hacen presentaciones para impresionar, yo la hice para evitar hablar... aunque tampoco lo conseguí del todo.' } }, dev: { resume: { resume: 'Curriculum', name: 'George Gil' }, projects: { usedTechnologies: 'Tecnologías utilizadas', title: 'Proyectos particulares', seeMore: 'Ver más', showAllProjects: 'Mostrar todos los proyectos', moreTools: { toolsRemaining_one: '{{count}} tecnología más', toolsRemaining_other: '{{count}} tecnologías más' }, modal: { sliderHint: 'Adelante... gíralo!', usedTechnologies: 'Tecnologias utilizadas', tooltip: 'Acá podran ver algunos de los proyectos en los que he trabajado, utilizando diferentes tecnologías y manteniendo las buenas practicas en cada proyecto. Al hacer click en cada imagen se mostrarán los detalles del proyecto.' }, projects: { mobile: { title: '📱 Proyectos particulares', project1: { title: 'Movie App', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto y debo alargarlo más y más y más.' }, project2: { title: 'Proyecto Mobile 1', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project3: { title: 'Proyecto Mobile 2', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto. Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project4: { title: 'Proyecto Mobile 2', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto. Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project5: { title: 'Proyecto Mobile 1', description: 'Proyecto con animaciones personalizadas.' } }, desktop: { title: '🖥️  Proyectos particulares', project1: { title: 'Proyecto Desktop 1', description: 'Dashboard avanzado.' }, project2: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada.' }, project3: { title: 'Proyecto Desktop 3', description: 'Aplicación de escritorio personalizada.' }, project4: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' }, project5: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' }, project6: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' } } } }, templates: { title: '¡Usa mis plantillas de desarrollo!', tooltip: { showAllTemplates: 'Mostrar todas las plantillas', seeTemplate: 'Ver plantilla' }, modal: { title: 'Lista de plantillas', showAllTools: 'Mostrar Todas las tecnologías', tooltip: 'Es mucho más fácil cuando tienes un punto de partida al desarrollar nuevos proyectos, y la mayoría de las veces perdemos mucho tiempo configurando el mismo... Por eso hice esta sección, para ahorrar MUCHO tiempo. Todas las tecnologías están listadas en cada repositorio. ¡Feliz codificación! 😄' }, templates: { template1: { description: 'Una plantilla ligera diseñada para renderizado rápido con herramientas modernas.', hint: 'renderizado rápido' }, template2: { description: 'Una plantilla inicial de renderizado en el lado del servidor usando Next.js y Docker.', hint: 'renderizado en servidor' }, template3: { description: 'Un inicio limpio en Vue.js con Pinia y TailwindCSS para simplicidad y escalabilidad.', hint: 'simplicidad en vue' }, template4: { description: 'Una plantilla robusta para construir aplicaciones empresariales con Angular.', hint: 'aplicaciones empresariales' }, template5: { description: 'Desarrollo full-stack simplificado con React, MUI y un backend GraphQL.', hint: 'full stack' }, template6: { description: 'Una plantilla minimalista pero poderosa usando Svelte y Python con una base de datos PostgreSQL.', hint: 'configuración minimalista' }, template7: { description: 'Una base lista para usar en la creación de soluciones de comercio electrónico con React y PHP.', hint: 'base para ecommerce' }, template8: { description: 'Una plantilla poderosa para aplicaciones intensivas en datos usando MongoDB y GraphQL.', hint: 'aplicaciones intensivas en datos' }, template9: { description: 'Una plantilla para aplicaciones en tiempo real con backend en Firebase y frontend en React.', hint: 'aplicaciones en tiempo real' } } } } } }
+   ✅ should have correct configuration for language { lang: 'en', name: 'English', translation: { hello: 'Hey buddy, whats upp?', welcome: 'Hello friend', description: 'This is a description in English', close: 'Close', navbar: { me: 'me', music: 'music', dev: 'dev' }, music: { favoritePlaylist: { title: 'My Favorite Playlist', description: 'Enjoy my personal selection of songs in this playlist. Listen to it and let yourself be carried away by the rhythm!' }, video: { clickMe: 'Click me!', seeFullVideo: 'See full video' } }, me: { presentation: { title: 'Hi! I\'m George Gil', description: 'I\'m a curious software engineer who also plays guitar, not always at the same time though.' }, jokes: { joke1: 'I decided to create this presentation because, let\'s face it, my jokes aren’t as good as my code... but here we are.', joke2: 'Honestly, putting together a page about myself is way less awkward than trying to have a conversation with myself.', joke3: 'In theory, I’m an expert... but since I’m better at doing than explaining, I figured it’s best to just show you.', joke4: 'Some people make presentations to impress, I made mine to avoid talking... (didn\'t work anyway).' } }, dev: { resume: { resume: 'Resume', name: 'George Gil' }, projects: { usedTechnologies: 'Used Tecnologies', title: 'Self taste projects', seeMore: 'See more', showAllProjects: 'Show all projects', modalToggle: { desktopView: 'See desktop projects', mobileView: 'See mobile projects' }, moreTools: { toolsRemaining_one: '{{count}} more tool', toolsRemaining_other: '{{count}} more tools' }, modal: { usedTechnologies: 'Used Tecnologies', tooltip: 'Here you can see some of the projects I have worked on, using different technologies and maintaining good practices in each project. Clicking on each image will show the details of the project.' }, projects: { mobile: { title: 'Self taste projects 📱', project1: { title: 'Movie App', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long and I have to keep extending it more and more and more.' }, project2: { title: 'Mobile Project 1', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project3: { title: 'Mobile Project 2', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project4: { title: 'Mobile Project 2', description: 'Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I\'m adding a slightly longer description to test what happens if the text is very long.' }, project5: { title: 'Mobile Project 1', description: 'Project with custom animations.' }, exampleProject: { title: 'Example mobile project', description: 'Example mobile project description' } }, desktop: { title: 'Self taste projects 🖥️', project1: { title: 'Desktop Project 1', description: 'Advanced dashboard.' }, project2: { title: 'Desktop Project 2', description: 'Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application. Custom desktop application.' }, project3: { title: 'Desktop Project 3', description: 'Custom desktop application.' }, project4: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, project5: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, project6: { title: 'Desktop Project 2', description: 'Custom desktop application.' }, exampleProject: { title: 'Example desktop project', description: 'Example desktop project description' } } } }, templates: { tooltip: { showAllTemplates: 'Show all templates', seeTemplate: 'See template' }, title: 'Use my dev templates!', modal: { title: 'Templates list', showAllTools: 'Show all tools', tooltip: 'It\'s way easier when you have a starting point when developing new projects, and mostof the time we waste a lot of time setting and configuring the project... That\'s why I made this section, to save a LOT of time. All technologies are listed on each repository. Happy coding! 😄' }, templates: { template1: { description: 'A lightweight template designed for fast rendering with modern tools.', hint: 'fast rendering' }, template2: { description: 'A server-side rendering starter template using Next.js and Docker.', hint: 'server rendering' }, template3: { description: 'A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.', hint: 'vue simplicity' }, template4: { description: 'A robust template for building enterprise-grade Angular applications.', hint: 'enterprise apps' }, template5: { description: 'Full-stack development made easy with React, MUI, and GraphQL backend.', hint: 'full stack' }, template6: { description: 'A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.', hint: 'minimalist setup' }, template7: { description: 'A ready-to-use base for building eCommerce solutions with React and PHP.', hint: 'ecommerce base' }, template8: { description: 'A powerful template for data-intensive applications using MongoDB and GraphQL.', hint: 'data intensive' }, template9: { description: 'A template for real-time apps with Firebase backend and React frontend.', hint: 'real-time apps' }, exampleTemplate: { description: 'Example template description', hint: 'Example template hint' } } } } } }
+   ✅ should have correct configuration for language { lang: 'es', name: 'Español', translation: { hello: 'Hola amigo, que tal?', underConstruction: '🚧', welcomes: 'Plural', description: 'Esta es una descripción en español', close: 'Cerrar', navbar: { me: 'yo', music: 'música', dev: 'dev' }, music: { favoritePlaylist: { title: 'Mi Playlist Favorita', description: 'Disfruta de mi selección personal de canciones en esta playlist. ¡Escúchala y déjate llevar por el ritmo!' }, video: { clickMe: 'Clickeame!', seeFullVideo: 'Ver video completo' } }, me: { presentation: { title: '¡Hola! Soy George Gil', description: 'Soy un curioso ingeniero de software que también toca la guitarra, aunque no siempre al mismo tiempo.' }, jokes: { joke1: 'Decidí hacer esta presentación porque, siendo sinceros, mis chistes no son tan buenos como mi código... pero aquí estamos.', joke2: 'A decir verdad, crear una página sobre mí mismo es mucho menos incómodo que tener una conversación conmigo mismo.', joke3: 'En teoría, soy un experto... en la práctica, como soy mejor haciendo que explicando, mejor les muestro.', joke4: 'Algunos hacen presentaciones para impresionar, yo la hice para evitar hablar... aunque tampoco lo conseguí del todo.' } }, dev: { resume: { resume: 'Curriculum', name: 'George Gil' }, projects: { usedTechnologies: 'Tecnologías utilizadas', title: 'Proyectos particulares', seeMore: 'Ver más', showAllProjects: 'Mostrar todos los proyectos', modalToggle: { desktopView: 'Ver proyectos desktop', mobileView: 'Ver proyectos mobile' }, moreTools: { toolsRemaining_one: '{{count}} tecnología más', toolsRemaining_other: '{{count}} tecnologías más' }, modal: { usedTechnologies: 'Tecnologias utilizadas', tooltip: 'Acá podran ver algunos de los proyectos en los que he trabajado, utilizando diferentes tecnologías y manteniendo las buenas practicas en cada proyecto. Al hacer click en cada imagen se mostrarán los detalles del proyecto.' }, projects: { mobile: { title: '📱 Proyectos particulares', project1: { title: 'Movie App', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto y debo alargarlo más y más y más.' }, project2: { title: 'Proyecto Mobile 1', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project3: { title: 'Proyecto Mobile 2', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto. Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project4: { title: 'Proyecto Mobile 2', description: 'Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto. Aplicación para explorar películas y series. Aquí estoy dejando una descripción un poco más larga para probar qué pasa si es muy largo el texto.' }, project5: { title: 'Proyecto Mobile 1', description: 'Proyecto con animaciones personalizadas.' } }, desktop: { title: '🖥️  Proyectos particulares', project1: { title: 'Proyecto Desktop 1', description: 'Dashboard avanzado.' }, project2: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada. Aplicación de escritorio personalizada.' }, project3: { title: 'Proyecto Desktop 3', description: 'Aplicación de escritorio personalizada.' }, project4: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' }, project5: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' }, project6: { title: 'Proyecto Desktop 2', description: 'Aplicación de escritorio personalizada.' } } } }, templates: { title: '¡Usa mis plantillas de desarrollo!', tooltip: { showAllTemplates: 'Mostrar todas las plantillas', seeTemplate: 'Ver plantilla' }, modal: { title: 'Lista de plantillas', showAllTools: 'Mostrar Todas las tecnologías', tooltip: 'Es mucho más fácil cuando tienes un punto de partida al desarrollar nuevos proyectos, y la mayoría de las veces perdemos mucho tiempo configurando el mismo... Por eso hice esta sección, para ahorrar MUCHO tiempo. Todas las tecnologías están listadas en cada repositorio. ¡Feliz codificación! 😄' }, templates: { template1: { description: 'Una plantilla ligera diseñada para renderizado rápido con herramientas modernas.', hint: 'renderizado rápido' }, template2: { description: 'Una plantilla inicial de renderizado en el lado del servidor usando Next.js y Docker.', hint: 'renderizado en servidor' }, template3: { description: 'Un inicio limpio en Vue.js con Pinia y TailwindCSS para simplicidad y escalabilidad.', hint: 'simplicidad en vue' }, template4: { description: 'Una plantilla robusta para construir aplicaciones empresariales con Angular.', hint: 'aplicaciones empresariales' }, template5: { description: 'Desarrollo full-stack simplificado con React, MUI y un backend GraphQL.', hint: 'full stack' }, template6: { description: 'Una plantilla minimalista pero poderosa usando Svelte y Python con una base de datos PostgreSQL.', hint: 'configuración minimalista' }, template7: { description: 'Una base lista para usar en la creación de soluciones de comercio electrónico con React y PHP.', hint: 'base para ecommerce' }, template8: { description: 'Una plantilla poderosa para aplicaciones intensivas en datos usando MongoDB y GraphQL.', hint: 'aplicaciones intensivas en datos' }, template9: { description: 'Una plantilla para aplicaciones en tiempo real con backend en Firebase y frontend en React.', hint: 'aplicaciones en tiempo real' } } } } } }
 ```
 
-## ✅ <a id="file49" href="#file49">src/store/__tests__/index.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/store/__tests__/index.spec.ts)]
+## ✅ <a id="file49" href="#file49">src/store/__tests__/index.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/store/__tests__/index.spec.ts)]
 
-6 passed, 0 failed, 0 skipped, 0 todo, done in 17.656130000000303 s
+6 passed, 0 failed, 0 skipped, 0 todo, done in 12.304960000000392 s
 
 ```
 ✅ index store
@@ -571,9 +571,9 @@
    ✅ should maintain the darkTheme state after an invalid action type
 ```
 
-## ✅ <a id="file50" href="#file50">src/store/hash/__tests__/activeHash.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/store/hash/__tests__/activeHash.spec.ts)]
+## ✅ <a id="file50" href="#file50">src/store/hash/__tests__/activeHash.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/store/hash/__tests__/activeHash.spec.ts)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 84.98666699999922 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 105.89594099999977 s
 
 ```
 ✅ activeHashSlice
@@ -582,9 +582,9 @@
    ✅ should select activeHash from the state
 ```
 
-## ✅ <a id="file51" href="#file51">src/store/modal/__tests__/modalStatus.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/store/modal/__tests__/modalStatus.spec.ts)]
+## ✅ <a id="file51" href="#file51">src/store/modal/__tests__/modalStatus.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/store/modal/__tests__/modalStatus.spec.ts)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 14.607158999999228 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 22.48699299999953 s
 
 ```
 ✅ modalStatus slice
@@ -593,9 +593,9 @@
    ✅ should handle setTemplateModalState
 ```
 
-## ✅ <a id="file52" href="#file52">src/store/theme/__tests__/themeStatus.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/store/theme/__tests__/themeStatus.spec.ts)]
+## ✅ <a id="file52" href="#file52">src/store/theme/__tests__/themeStatus.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/store/theme/__tests__/themeStatus.spec.ts)]
 
-3 passed, 0 failed, 0 skipped, 0 todo, done in 80.08750899999995 s
+3 passed, 0 failed, 0 skipped, 0 todo, done in 36.04021499999999 s
 
 ```
 ✅ themeStatus slice
@@ -604,9 +604,9 @@
    ✅ should set light theme
 ```
 
-## ✅ <a id="file53" href="#file53">src/utils/__tests__/centerModalInViewPort.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/utils/__tests__/centerModalInViewPort.spec.ts)]
+## ✅ <a id="file53" href="#file53">src/utils/__tests__/centerModalInViewPort.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/utils/__tests__/centerModalInViewPort.spec.ts)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 11.532343000000765 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 5.747523000000001 s
 
 ```
 ✅ centerModalInViewport
@@ -614,9 +614,9 @@
    ✅ calculates correct position for mobile
 ```
 
-## ✅ <a id="file54" href="#file54">src/utils/__tests__/classMerge.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/utils/__tests__/classMerge.spec.ts)]
+## ✅ <a id="file54" href="#file54">src/utils/__tests__/classMerge.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/utils/__tests__/classMerge.spec.ts)]
 
-4 passed, 0 failed, 0 skipped, 0 todo, done in 57.27217800000017 s
+4 passed, 0 failed, 0 skipped, 0 todo, done in 37.18313000000035 s
 
 ```
 ✅ cn function
@@ -626,9 +626,9 @@
    ✅ should handle an empty input
 ```
 
-## ✅ <a id="file55" href="#file55">src/utils/__tests__/setTheme.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/217e7e494f6e09a4ee1dff4f1a7ae377c8e1e1fe/src/utils/__tests__/setTheme.spec.ts)]
+## ✅ <a id="file55" href="#file55">src/utils/__tests__/setTheme.spec.ts</a> [[link](https://github.com/georgegigarib/george-resume/blob/1ba66b5ef6d6612ffcf64dd8c21151cb9d67e046/src/utils/__tests__/setTheme.spec.ts)]
 
-2 passed, 0 failed, 0 skipped, 0 todo, done in 12.564032999999654 s
+2 passed, 0 failed, 0 skipped, 0 todo, done in 8.724383000000216 s
 
 ```
 ✅ setTheme

@@ -21,13 +21,6 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ title, description, url, tool
 
   return (
     <div className={clsx(isMobile ? 'flex flex-col w-full' : '')}>
-      {/* <span className="flex items-center">
-        <h2 className="font-bold dark:text-white text-black">{t(title)}</h2>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="ml-1">
-          <LaunchIcon color="primary" fontSize="small" />
-        </a>
-      </span> */}
-
       <div className={clsx('grid', isDesktopMode ? 'sm:grid-cols-1 md:grid-cols-2' : 'grid-cols-1')}>
         <div>
           <span className="flex items-center">
@@ -48,7 +41,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ title, description, url, tool
           <div className="overflow-auto  md:hidden mt-4 md:mt-0 max-h-10 h-14 flex flex-nowrap max-w-[75vw]">
             <Marquee
               gradient={false}
-              speed={30}
+              speed={20}
               direction="left"
               loop={0}
               className={clsx(isMobile ? 'overflow-hidden' : 'flex-wrap flex gap-2')}

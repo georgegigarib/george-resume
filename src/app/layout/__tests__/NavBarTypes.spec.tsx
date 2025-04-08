@@ -1,5 +1,5 @@
 import { expect } from 'vitest'
-import { Sections } from '@/app/layout/NavbarTypes'
+import { Sections } from '@/app/layout/types/NavBarTypes'
 import { describe, it } from 'vitest'
 
 describe('NavBarTypes', () => {

@@ -2,6 +2,7 @@ export const en = {
   hello: 'Hey buddy, whats upp?',
   welcome: 'Hello friend',
   description: 'This is a description in English',
+  close: 'Close',
   navbar: {
     me: 'me',
     music: 'music',
@@ -43,12 +44,15 @@ export const en = {
       title: 'Self taste projects',
       seeMore: 'See more',
       showAllProjects: 'Show all projects',
+      modalToggle: {
+        desktopView: 'See desktop projects',
+        mobileView: 'See mobile projects',
+      },
       moreTools: {
         toolsRemaining_one: '{{count}} more tool',
         toolsRemaining_other: '{{count}} more tools',
       },
       modal: {
-        sliderHint: "Don't be shy... spin it!",
         usedTechnologies: 'Used Tecnologies',
         tooltip:
           'Here you can see some of the projects I have worked on, using different technologies and maintaining good practices in each project. Clicking on each image will show the details of the project.',

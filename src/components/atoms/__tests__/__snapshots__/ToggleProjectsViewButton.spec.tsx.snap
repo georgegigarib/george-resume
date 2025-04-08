@@ -3,7 +3,7 @@
 exports[`ToggleProjectsViewButton component > matches the snapshot for desktop mode 1`] = `
 <DocumentFragment>
   <button
-    aria-label="Cambiar a vista Mobile"
+    aria-label="See desktop projects"
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
     data-mui-internal-clone-element="true"
     tabindex="0"
@@ -27,7 +27,7 @@ exports[`ToggleProjectsViewButton component > matches the snapshot for desktop m
 exports[`ToggleProjectsViewButton component > matches the snapshot for mobile mode 1`] = `
 <DocumentFragment>
   <button
-    aria-label="Cambiar a vista Desktop"
+    aria-label="See mobile projects"
     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
     data-mui-internal-clone-element="true"
     tabindex="0"

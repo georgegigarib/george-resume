@@ -32,6 +32,7 @@ export default mergeConfig(
           './src/vite-env.d.ts',
           './src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
           '__tests__/**',
+          './build/**',
         ],
         reportOnFailure: true,
         reportsDirectory: './coverage',

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import activeHashReducer, { setActiveHash, selectActiveHash } from '@/store/hash/activeHashSlice'
-import { Sections } from '@/app/layout/NavbarTypes'
+import { Sections } from '@/app/layout/types/NavBarTypes'
 import { StoreState } from '@/store'
 
 describe('activeHashSlice', () => {

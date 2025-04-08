@@ -5,10 +5,9 @@ import Tooltip from '@mui/material/Tooltip'
 import type { Template } from '@/constants/templates'
 import { useIsMobile } from '@/hooks/useIsMobile'
 import { useTranslation } from 'react-i18next'
-import LinkIcon from '@mui/icons-material/Link'
+import RemoveRedEyeOutlined from '@mui/icons-material/RemoveRedEyeOutlined'
 import ExpandMore from '@mui/icons-material/ExpandMore'
 import ExpandLess from '@mui/icons-material/ExpandLess'
-import { motion } from 'framer-motion'
 
 interface DevTemplatesOptionProps {
   option: Template
@@ -42,39 +41,42 @@ const DevTemplatesOption: React.FC<DevTemplatesOptionProps> = ({ option }) => {
       data-testid="template-option"
     >
       <div className="overflow-hidden max-w-[86%]">
-        <motion.div
-          initial={{ height: 'auto' }}
-          animate={{ height: isExpanded ? 'auto' : '50px' }}
-          transition={{ duration: 0.3 }}
-          className="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col"
+        <div
+          className={`whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden ${isExpanded ? 'max-h-[500px] opacity-100 scale-100' : 'max-h-[50px] opacity-90 scale-95'}`}
           onClick={handleContainerClick}
         >
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu">
             {option.tools.map((tool, index) => (
-              <div className="my-1 mb-2" data-testid="tec-badge" key={index}>
+              <div
+                className="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                data-testid="tec-badge"
+                key={index}
+              >
                 <TechnologyBadge tool={tool} size={isMobile ? 'sm' : 'lg'} />
               </div>
             ))}
           </div>
 
-          <div className="overflow-auto text-wrap my-2 max-h-20 description-scrollbar">{t(option.description)}</div>
-        </motion.div>
+          <div className="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu">
+            {t(option.description)}
+          </div>
+        </div>
 
-        <motion.div
-          className={clsx('absolute top-3 right-2 cursor-pointer')}
-          whileHover={{ scale: 1.05 }}
+        <div
+          className={clsx('absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105')}
           onClick={() => window.open(option.url, '_blank')}
         >
-          <div className="hover:bg-gray-700 rounded-full p-1  flex items-center justify-center">
-            <LinkIcon fontSize="medium" />
-          </div>
-        </motion.div>
+          <Tooltip title={t('dev.templates.tooltip.seeTemplate')} arrow placement="top-end">
+            <div className="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center">
+              <RemoveRedEyeOutlined fontSize="small" />
+            </div>
+          </Tooltip>
+        </div>
       </div>
 
       {remainingTools > 0 && !isExpanded && (
-        <motion.div
-          className="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full"
-          whileHover={{ scale: 1.05 }}
+        <div
+          className="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
           onClick={handleExpand}
         >
           <Tooltip title={t('dev.templates.modal.showAllTools')} arrow>
@@ -86,14 +88,13 @@ const DevTemplatesOption: React.FC<DevTemplatesOptionProps> = ({ option }) => {
               </div>
             </span>
           </Tooltip>
-        </motion.div>
+        </div>
       )}
 
       {isExpanded && (
         <>
-          <motion.div
-            className="absolute -bottom-3 right-3 cursor-pointer bg-blue-950 rounded-full"
-            whileHover={{ scale: 1.05 }}
+          <div
+            className="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
             onClick={handleCollapse}
           >
             <Tooltip title="See less" arrow>
@@ -101,7 +102,7 @@ const DevTemplatesOption: React.FC<DevTemplatesOptionProps> = ({ option }) => {
                 <ExpandLess fontSize="medium" />
               </div>
             </Tooltip>
-          </motion.div>
+          </div>
         </>
       )}
     </div>

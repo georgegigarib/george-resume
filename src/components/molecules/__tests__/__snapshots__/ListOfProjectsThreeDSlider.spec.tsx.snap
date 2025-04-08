@@ -193,7 +193,7 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
         data-testid="platform-toggle"
       >
         <button
-          aria-label="Cambiar a vista Mobile"
+          aria-label="See desktop projects"
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           tabindex="0"
@@ -211,12 +211,6 @@ exports[`ListOfProjectsThreeDSlider Component > renders correctly 1`] = `
             />
           </svg>
         </button>
-      </div>
-      <div
-        class="dark:text-white d text-black absolute left-8 bottom-7 bg-slate-700 rounded-lg px-2 text-center md:text-start"
-        style="opacity: 0; will-change: opacity;"
-      >
-        <p />
       </div>
     </div>
   </div>
