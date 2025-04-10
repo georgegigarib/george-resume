@@ -47,11 +47,7 @@ exports[`DevTemplatesModal component > matches the snapshot when modal is open 1
                 aria-label="tailwind"
                 class="_icon_e676c2"
                 data-mui-internal-clone-element="true"
-              >
-                <i
-                  class="ci ci-tailwind ci-2x"
-                />
-              </div>
+              />
             </div>
           </div>
           <div

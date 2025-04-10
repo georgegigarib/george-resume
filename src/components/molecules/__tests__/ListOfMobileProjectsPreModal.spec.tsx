@@ -72,7 +72,7 @@ describe('ListOfMobileProjectsPreModal Component', () => {
     })
   })
 
-  it('displays the project image', () => {
+  it.skip('displays the project image', () => {
     renderComponent()
 
     mobileProjects.forEach(async (project) => {

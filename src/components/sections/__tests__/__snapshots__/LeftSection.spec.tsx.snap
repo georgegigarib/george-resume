@@ -142,7 +142,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
               data-testid="example-container"
             >
               <div
@@ -223,12 +223,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -236,10 +236,8 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
-                    <img
-                      alt="Bun"
-                      class="custom-icon h-8 pr-0"
-                      src="/src/assets/icons/tools/Bun.svg"
+                    <i
+                      class="ci ci-bun ci-2x"
                     />
                   </div>
                   <div
@@ -316,12 +314,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2 _reverse_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -407,12 +405,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -553,7 +551,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
               data-testid="example-container"
             >
               <div
@@ -671,8 +669,8 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 data-mui-internal-clone-element="true"
               />
               <i
-                aria-label="tailwind"
-                class="ci ci-tailwind ci-lg"
+                aria-label="tailwindcss"
+                class="ci ci-tailwindcss ci-lg"
                 data-mui-internal-clone-element="true"
               />
               <i
@@ -852,7 +850,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box9 dark:bg-app-darkModeBoxes-box9 border-app-darkModeBoxes-box9 dark:border-app-lightModeBoxes-box9"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
               data-testid="example-container"
             >
               <div

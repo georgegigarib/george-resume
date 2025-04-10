@@ -1,4 +1,3 @@
-import BunIcon from '@/assets/icons/tools/Bun.svg'
 import JsIcon from '@/assets/icons/tools/Javascript.svg'
 
 export type ToolInfo = {
@@ -21,7 +20,8 @@ export type ToolIconProps = {
 
 export enum IconName {
   React = 'react',
-  TailwindCSS = 'tailwind',
+  ReactNative = 'reactnative',
+  TailwindCSS = 'tailwindcss',
   JavaScript = 'js',
   TypeScript = 'ts-circle',
   VueJs = 'vuejs',
@@ -60,6 +60,14 @@ export const toolsIconsList: ToolInfo[] = [
   {
     name: 'React',
     icon: IconName.React,
+    color: '#30CDF9FF',
+    bgColor: '#FAFAFAFF',
+    borderColor: '#61DAFB',
+    darkBgColor: '#2C2C2C',
+  },
+  {
+    name: 'React',
+    icon: IconName.ReactNative,
     color: '#30CDF9FF',
     bgColor: '#FAFAFAFF',
     borderColor: '#61DAFB',
@@ -157,8 +165,6 @@ export const toolsIconsList: ToolInfo[] = [
     darkBorderColor: '#bababa',
     borderColor: '#686767FF',
     darkBgColor: '#2C2C2C',
-    custom: true,
-    svg: BunIcon,
   },
   {
     name: 'Docker',

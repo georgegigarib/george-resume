@@ -3,7 +3,7 @@
 exports[`ExampleComponent > matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
+    class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
     data-testid="example-container"
   >
     <div

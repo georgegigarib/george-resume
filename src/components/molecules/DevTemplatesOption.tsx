@@ -42,7 +42,7 @@ const DevTemplatesOption: React.FC<DevTemplatesOptionProps> = ({ option }) => {
     >
       <div className="overflow-hidden max-w-[86%]">
         <div
-          className={`whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden ${isExpanded ? 'max-h-[500px] opacity-100 scale-100' : 'max-h-[50px] opacity-90 scale-95'}`}
+          className={`whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden ${isExpanded ? 'max-h-[500px] opacity-100 scale-100' : 'max-h-[50px] opacity-90 scale-95'}`}
           onClick={handleContainerClick}
         >
           <div className="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu">

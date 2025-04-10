@@ -10,7 +10,7 @@ exports[`DevTemplatesOption component > matches the snapshot for desktop view 1`
       class="overflow-hidden max-w-[86%]"
     >
       <div
-        class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
       >
         <div
           class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
@@ -62,7 +62,7 @@ exports[`DevTemplatesOption component > matches the snapshot for desktop view 1`
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
               >
                 <i
-                  class="ci ci-tailwind ci-lg"
+                  class="ci ci-tailwindcss ci-lg"
                 />
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
@@ -113,7 +113,7 @@ exports[`DevTemplatesOption component > matches the snapshot for mobile view 1`]
       class="overflow-hidden max-w-[86%]"
     >
       <div
-        class="whitespace-nowrap shadow-inner flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
       >
         <div
           class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
@@ -165,7 +165,7 @@ exports[`DevTemplatesOption component > matches the snapshot for mobile view 1`]
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
               >
                 <i
-                  class="ci ci-tailwind ci-sm"
+                  class="ci ci-tailwindcss ci-sm"
                 />
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"

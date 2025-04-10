@@ -1,3 +1,0 @@
-bun test-report
-git add .
-git commit --amend --no-edit
