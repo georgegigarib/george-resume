@@ -1,9 +1,9 @@
 export default function initCarousel(
   speed: number = -200,
-  width: number = 100,
-  height: number = 180,
+  width: string = '100px',
+  height: string = '180px',
   rotate: boolean = true,
-  circleRadius: number = 120
+  circleRadius: number = 2
 ): void {
   const odrag = document.getElementById('drag-container') as HTMLElement
   const ospin = document.getElementById('spin-container') as HTMLElement
@@ -26,18 +26,18 @@ export default function initCarousel(
   const radius = circleRadius
 
   // Tamaño de imágenes y contenedor
-  ospin.style.width = `${imgWidth}px`
-  ospin.style.height = `${imgHeight}px`
+  ospin.style.width = `${imgWidth}`
+  ospin.style.height = `${imgHeight}`
 
   const ground = document.getElementById('ground') as HTMLElement
   if (ground) {
-    ground.style.width = `${radius * 3}px`
-    ground.style.height = `${radius * 3}px`
+    ground.style.width = `${radius * 20}px`
+    ground.style.height = `${radius * 20}px`
   }
 
   // Inicializar elementos en círculo
   for (let i = 0; i < aEle.length; i++) {
-    aEle[i].style.transform = `rotateY(${i * (360 / aEle.length)}deg) translateZ(${radius}px)`
+    aEle[i].style.transform = `rotateY(${i * (360 / aEle.length)}deg) translateZ(${radius}vh)`
     aEle[i].style.transition = 'transform 1s'
     aEle[i].style.transitionDelay = `${(aEle.length - i) / 4}s`
   }

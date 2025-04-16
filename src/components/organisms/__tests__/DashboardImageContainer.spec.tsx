@@ -59,26 +59,27 @@ describe('DashboardImageContainer component', () => {
 
   it('renders the image with correct src', async () => {
     renderComponent(false, false, 'path/to/image.jpg')
-    const imgElement = screen.getByTestId('image-test-id')
+    const imgElement = screen.getByTestId('image-testid')
     expect(imgElement).toHaveAttribute('src', 'path/to/image.jpg')
   })
 
-  it.skip('applies the correct styles based on mobile and dark mode', async () => {
+  it('applies the correct styles based on mobile and dark mode', async () => {
     renderComponent(true, true, 'path/to/image.jpg')
 
-    expect(await screen.getByTestId('image-test-id')).toHaveStyle({
+    expect(await screen.getByTestId('image-container-testid')).toHaveStyle({
       height: '260px',
       boxShadow: 'inset 0px 0px 18px 20px #000',
     })
   })
 
-  it.skip('applies the correct styles based on desktop and light mode', async () => {
+  it('applies the correct styles based on desktop and light mode', async () => {
     renderComponent(false, false, 'path/to/image.jpg')
-    const imgElement = await screen.getByTestId('image-test-id')
+
+    const imgElement = await screen.getByTestId('image-container-testid')
 
     expect(imgElement).toHaveStyle({
       height: '600px',
-      boxShadow: 'inset 0px 0px 40px 40px white',
+      boxShadow: 'inset 0px 0px 40px 40px #fff',
     })
   })
 })

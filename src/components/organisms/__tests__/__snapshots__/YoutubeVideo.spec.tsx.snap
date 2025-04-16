@@ -80,7 +80,7 @@ exports[`LocalVideoWithTooltip Component > matches snapshot 1`] = `
 exports[`LocalVideoWithTooltip Component > renders correctly and displays loading indicator initially 1`] = `
 <DocumentFragment>
   <div
-    class="relative flex flex-col justify-between rounded-xl h-full bg-gray-700"
+    class="relative flex flex-col justify-between rounded-xl h-full"
   >
     <div
       class="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10"
@@ -111,10 +111,10 @@ exports[`LocalVideoWithTooltip Component > renders correctly and displays loadin
       loop=""
       playsinline=""
       title="Click to mute/unmute"
-      width="200px"
+      width="210px"
     >
       <source
-        src="/src/assets/videos/final.mp4"
+        src="/src/assets/videos/guitar-video.mp4"
         type="video/mp4"
       />
     </video>
@@ -157,7 +157,7 @@ exports[`LocalVideoWithTooltip Component > renders correctly and displays loadin
 exports[`LocalVideoWithTooltip Component > shows tooltip when activeHash matches and after timeout 1`] = `
 <DocumentFragment>
   <div
-    class="relative flex flex-col justify-between rounded-xl h-full bg-gray-700"
+    class="relative flex flex-col justify-between rounded-xl h-full"
   >
     <div
       class="absolute inset-0 flex justify-center items-center bg-gray-700 rounded-xl z-10"
@@ -188,10 +188,10 @@ exports[`LocalVideoWithTooltip Component > shows tooltip when activeHash matches
       loop=""
       playsinline=""
       title="Click to mute/unmute"
-      width="200px"
+      width="210px"
     >
       <source
-        src="/src/assets/videos/final.mp4"
+        src="/src/assets/videos/guitar-video.mp4"
         type="video/mp4"
       />
     </video>

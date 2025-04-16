@@ -27,7 +27,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             <h3
               class="text-md md:text-xl font-bold dark:text-white text-black "
             >
-              Mobile Project 2
+              Movie App
             </h3>
             <div
               class="description-scrollbar overflow-auto rounded-lg 
@@ -45,65 +45,54 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
               <p
                 class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
               >
-                Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long.
+                Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long and I have to keep extending it more and more and more.
               </p>
             </div>
           </div>
           <div
-            class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+            data-testid="swiper"
           >
             <div
-              class="swiper-wrapper"
-              style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+              data-testid="swiper-slide"
             >
-              <div
-                class="swiper-slide bg-transparent"
-                data-swiper-slide-index="0"
-              >
-                <img
-                  alt="dev.projects.projects.mobile.project1.title"
-                  class="rounded-xl"
-                  src="/src/assets/images/projects/movie-app.gif"
-                />
-              </div>
-              <div
-                class="swiper-slide bg-transparent"
-                data-swiper-slide-index="1"
-              >
-                <img
-                  alt="dev.projects.projects.mobile.project2.title"
-                  class="rounded-xl"
-                  src="/src/assets/images/projects/movie-app.gif"
-                />
-              </div>
-              <div
-                class="swiper-slide bg-transparent"
-                data-swiper-slide-index="2"
-              >
-                <img
-                  alt="dev.projects.projects.mobile.project3.title"
-                  class="rounded-xl"
-                  src="/src/assets/images/projects/movie-app.gif"
-                />
-              </div>
+              <img
+                alt="dev.projects.projects.mobile.project1.title"
+                class="rounded-xl"
+                src="/src/assets/images/projects/movie-app.gif"
+              />
+            </div>
+            <div
+              data-testid="swiper-slide"
+            >
+              <img
+                alt="dev.projects.projects.mobile.project2.title"
+                class="rounded-xl"
+                src="/src/assets/images/projects/movie-app.gif"
+              />
+            </div>
+            <div
+              data-testid="swiper-slide"
+            >
+              <img
+                alt="dev.projects.projects.mobile.project3.title"
+                class="rounded-xl"
+                src="/src/assets/images/projects/movie-app.gif"
+              />
             </div>
           </div>
         </div>
-        <div
-          class="h-full w-full cursor-pointer"
-        >
-          <div>
-            <div
-              class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+        <div>
+          <div
+            class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+          >
+            <h1
+              class="font-bold dark:text-white text-black "
             >
-              <h1
-                class="font-bold dark:text-white text-black "
-              >
-                Self taste projects 📱
-              </h1>
-              <div
-                aria-label="Show all projects"
-                class="rounded-full py-1 px-2 items-center 
+              Self taste projects 📱
+            </h1>
+            <div
+              aria-label="Show all projects"
+              class="rounded-full py-1 px-2 items-center 
                     bg-white 
                     dark:border-app-lightModeBoxes-box2 
                     border-app-darkModeBoxes-box2 
@@ -118,21 +107,20 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     flex gap-2 
                     text-xs 
                     font-bold"
-                data-mui-internal-clone-element="true"
+              data-mui-internal-clone-element="true"
+            >
+              See more
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+                data-testid="ArrowForwardIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                See more
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
-                  data-testid="ArrowForwardIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -154,7 +142,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
               data-testid="example-container"
             >
               <div
@@ -235,12 +223,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -248,10 +236,8 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
-                    <img
-                      alt="Bun"
-                      class="custom-icon h-8 pr-0"
-                      src="/src/assets/icons/tools/Bun.svg"
+                    <i
+                      class="ci ci-bun ci-2x"
                     />
                   </div>
                   <div
@@ -266,10 +252,11 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group left-32"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
               >
                 <a
                   href="https://github.com/example/fast-render-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -327,12 +314,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2 _reverse_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -356,10 +343,11 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group  left-0"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200  left-0"
               >
                 <a
                   href="https://github.com/example/next-ssr-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -417,12 +405,12 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                     />
                   </div>
                   <div
-                    aria-label="tailwind"
+                    aria-label="tailwindcss"
                     class="_icon_e676c2"
                     data-mui-internal-clone-element="true"
                   >
                     <i
-                      class="ci ci-tailwind ci-2x"
+                      class="ci ci-tailwindcss ci-2x"
                     />
                   </div>
                   <div
@@ -446,10 +434,11 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 </div>
               </div>
               <div
-                class="relative -top-20 group left-32"
+                class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
               >
                 <a
                   href="https://github.com/example/vue-pinia-template"
+                  target="_blank"
                 >
                   <div
                     class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -484,68 +473,63 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
           </div>
         </div>
         <div
-          class="h-full w-full cursor-pointer"
+          class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold"
         >
           <div
-            class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+            aria-label="Show all templates"
+            class="absolute top-2 right-2 block hover:bg-white hover:scale[1.07] hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+            data-mui-internal-clone-element="true"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+              data-testid="AppsIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+              />
+            </svg>
+          </div>
+          <h2
+            class="text-black dark:text-white"
+          >
+            Use my dev templates!
+          </h2>
+          <div
+            class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
           >
             <div
-              aria-label="Show all templates"
-              class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
-              data-mui-internal-clone-element="true"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                data-testid="AppsIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
-                />
-              </svg>
-            </div>
-            <h2
-              class="text-black dark:text-white"
-            >
-              Use my dev templates!
-            </h2>
-            <div
-              class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
-              style="will-change: transform; transform: translateZ(180px);"
+              class="w-10 swing-container"
             >
               <div
-                class="w-10"
+                class="absolute inset-0 flex items-center justify-center"
               >
-                <div
-                  class="absolute inset-0 flex items-center justify-center"
+                <span
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                  role="progressbar"
+                  style="width: 40px; height: 40px;"
                 >
-                  <span
-                    class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-                    role="progressbar"
-                    style="width: 40px; height: 40px;"
+                  <svg
+                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                    viewBox="22 22 44 44"
                   >
-                    <svg
-                      class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                      viewBox="22 22 44 44"
-                    >
-                      <circle
-                        class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                        cx="44"
-                        cy="44"
-                        fill="none"
-                        r="20.2"
-                        stroke-width="3.6"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <img
-                  class="undefined opacity-0"
-                  src="/src/assets/icons/code-template.webp"
-                />
+                    <circle
+                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                      cx="44"
+                      cy="44"
+                      fill="none"
+                      r="20.2"
+                      stroke-width="3.6"
+                    />
+                  </svg>
+                </span>
               </div>
+              <img
+                class="undefined opacity-0"
+                src="/src/assets/icons/code-template.webp"
+              />
             </div>
           </div>
         </div>
@@ -567,7 +551,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box7 dark:bg-app-darkModeBoxes-box7 border-app-darkModeBoxes-box7 dark:border-app-lightModeBoxes-box7"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
               data-testid="example-container"
             >
               <div
@@ -607,7 +591,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
       style="grid-area: 38 / 75 / span 10 / span 10;"
     >
       <div
-        class="w-full p-2 cursor-pointer bg-transparent"
+        class="w-full p-2 cursor-pointer bg-transparent hover:scale-110 transition-all"
       >
         <a
           class="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
@@ -664,17 +648,17 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
           >
             <h3
               class="hidden md:flex text-lg font-bold dark:text-white text-black"
             >
-              Desktop Project 3
+              Desktop Project 1
             </h3>
             <div
               class="hidden md:flex flex-wrap justify-center gap-2"
@@ -685,8 +669,8 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 data-mui-internal-clone-element="true"
               />
               <i
-                aria-label="tailwind"
-                class="ci ci-tailwind ci-lg"
+                aria-label="tailwindcss"
+                class="ci ci-tailwindcss ci-lg"
                 data-mui-internal-clone-element="true"
               />
               <i
@@ -695,95 +679,85 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                 data-mui-internal-clone-element="true"
               />
               <i
-                aria-label="redis"
-                class="ci ci-redis ci-lg"
+                aria-label="js"
+                class="ci ci-js ci-lg"
                 data-mui-internal-clone-element="true"
               />
               <i
-                aria-label="git"
-                class="ci ci-git ci-lg"
+                aria-label="css"
+                class="ci ci-css ci-lg"
                 data-mui-internal-clone-element="true"
               />
+              <i
+                aria-label="nextjs"
+                class="ci ci-nextjs ci-lg"
+                data-mui-internal-clone-element="true"
+              />
+              <i
+                aria-label="nodejs"
+                class="ci ci-nodejs ci-lg"
+                data-mui-internal-clone-element="true"
+              />
+              <p
+                aria-label=""
+                class="-mt-1 dark:text-white text-black"
+                data-mui-internal-clone-element="true"
+              >
+                +3
+              </p>
+              <span />
+              <span />
             </div>
           </div>
           <div
             class="col-span-3 self-center py-3 pr-3 ml-3 group"
           >
             <div
-              class="swiper swiper-initialized swiper-vertical h-[120px] md:h-[250px] w-full"
+              data-testid="swiper"
             >
               <div
-                class="swiper-wrapper"
-                style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, NaNpx, 0px);"
+                data-testid="swiper-slide"
               >
-                <div
-                  class="swiper-slide bg-transparent"
-                  data-swiper-slide-index="0"
-                >
-                  <img
-                    alt="dev.projects.projects.desktop.project1.title"
-                    class="rounded-2xl"
-                    src="/src/assets/images/projects/desktop-app-2.png"
-                  />
-                </div>
-                <div
-                  class="swiper-slide bg-transparent"
-                  data-swiper-slide-index="1"
-                >
-                  <img
-                    alt="dev.projects.projects.desktop.project2.title"
-                    class="rounded-2xl"
-                    src="/src/assets/images/projects/desktop-app-1.png"
-                  />
-                </div>
-                <div
-                  class="swiper-slide bg-transparent"
-                  data-swiper-slide-index="2"
-                >
-                  <img
-                    alt="dev.projects.projects.desktop.project3.title"
-                    class="rounded-2xl"
-                    src="/src/assets/images/projects/desktop-app-1.png"
-                  />
-                </div>
-                <div
-                  class="swiper-slide bg-transparent"
-                  data-swiper-slide-index="3"
-                >
-                  <img
-                    alt="dev.projects.projects.desktop.project4.title"
-                    class="rounded-2xl"
-                    src="/src/assets/images/projects/desktop-app-2.png"
-                  />
-                </div>
-                <div
-                  class="swiper-slide bg-transparent"
-                  data-swiper-slide-index="4"
-                >
-                  <img
-                    alt="dev.projects.projects.desktop.project5.title"
-                    class="rounded-2xl"
-                    src="/src/assets/images/projects/desktop-app-1.png"
-                  />
-                </div>
+                <img
+                  alt="dev.projects.projects.desktop.project1.title"
+                  class="rounded-2xl"
+                  src="/src/assets/images/projects/desktop-app-2.png"
+                />
               </div>
               <div
-                class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical"
+                data-testid="swiper-slide"
               >
-                <span
-                  class="swiper-pagination-bullet"
+                <img
+                  alt="dev.projects.projects.desktop.project2.title"
+                  class="rounded-2xl"
+                  src="/src/assets/images/projects/desktop-app-1.png"
                 />
-                <span
-                  class="swiper-pagination-bullet"
+              </div>
+              <div
+                data-testid="swiper-slide"
+              >
+                <img
+                  alt="dev.projects.projects.desktop.project3.title"
+                  class="rounded-2xl"
+                  src="/src/assets/images/projects/desktop-app-1.png"
                 />
-                <span
-                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+              </div>
+              <div
+                data-testid="swiper-slide"
+              >
+                <img
+                  alt="dev.projects.projects.desktop.project4.title"
+                  class="rounded-2xl"
+                  src="/src/assets/images/projects/desktop-app-2.png"
                 />
-                <span
-                  class="swiper-pagination-bullet"
-                />
-                <span
-                  class="swiper-pagination-bullet"
+              </div>
+              <div
+                data-testid="swiper-slide"
+              >
+                <img
+                  alt="dev.projects.projects.desktop.project5.title"
+                  class="rounded-2xl"
+                  src="/src/assets/images/projects/desktop-app-1.png"
                 />
               </div>
               <div
@@ -794,7 +768,6 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                   slot="container-end"
                 >
                   <svg
-                    style="--progress: 0;"
                     viewBox="0 0 48 48"
                   >
                     <circle
@@ -803,17 +776,13 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
                       r="20"
                     />
                   </svg>
-                  <span>
-                    3s
-                  </span>
+                  <span />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="h-full w-full cursor-pointer"
-        >
+        <div>
           <div
             class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
             bg-app-lightModeBoxes-box1 m-1
@@ -881,7 +850,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
               data-testid="example-container"
             >
               <div

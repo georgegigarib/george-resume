@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`DarkModeSwitch component > matches snapshot 1`] = `
+exports[`ThemeSwitch component > matches snapshot 1`] = `
 <DocumentFragment>
   <label
     class="theme-switch"

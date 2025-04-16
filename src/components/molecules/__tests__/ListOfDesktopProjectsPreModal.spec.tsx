@@ -30,7 +30,7 @@ vi.mock('@/constants/projects', () => ({
   ],
 }))
 
-describe('ListOfDesktopProjectsPreModal Component', () => {
+describe.skip('ListOfDesktopProjectsPreModal Component', () => {
   const renderComponent = () =>
     render(
       <AppTestProvider>

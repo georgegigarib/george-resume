@@ -5,7 +5,6 @@ import resumeIcon from '@/assets/images/resume.png'
 import { useTranslation } from 'react-i18next'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useIsMobile } from '@/hooks/useIsMobile'
-import { motion } from 'framer-motion'
 
 export default function SeeResume(): React.ReactElement {
   const isMobile = useIsMobile()
@@ -20,7 +19,7 @@ export default function SeeResume(): React.ReactElement {
   const currentPdf = pdfMap[currentLanguage] || ResumePDF
 
   return (
-    <motion.div className="w-full p-2 cursor-pointer bg-transparent" whileHover={{ scale: 1.15 }}>
+    <div className="w-full p-2 cursor-pointer bg-transparent hover:scale-110 transition-all">
       <a
         href={currentPdf}
         target="_blank"
@@ -50,6 +49,6 @@ export default function SeeResume(): React.ReactElement {
           </p>
         </div>
       </a>
-    </motion.div>
+    </div>
   )
 }

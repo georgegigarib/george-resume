@@ -6,6 +6,7 @@ exports[`DashboardImageContainer component > matches the snapshot for desktop vi
     class="z-[4]"
   >
     <div
+      data-testid="image-container-testid"
       style="height: 600px; box-shadow: inset 0px 0px 40px 40px #000; position: relative;"
     >
       <div
@@ -34,7 +35,7 @@ exports[`DashboardImageContainer component > matches the snapshot for desktop vi
       <img
         alt=""
         class="undefined opacity-0"
-        data-testid="image-test-id"
+        data-testid="image-testid"
         src="path/to/image.jpg"
         style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
       />
@@ -49,7 +50,8 @@ exports[`DashboardImageContainer component > matches the snapshot for desktop vi
     class="z-[4]"
   >
     <div
-      style="height: 600px; box-shadow: inset 0px 0px 40px 40px white; position: relative;"
+      data-testid="image-container-testid"
+      style="height: 600px; box-shadow: inset 0px 0px 40px 40px #fff; position: relative;"
     >
       <div
         class="absolute inset-0 flex items-center justify-center"
@@ -77,7 +79,7 @@ exports[`DashboardImageContainer component > matches the snapshot for desktop vi
       <img
         alt=""
         class="undefined opacity-0"
-        data-testid="image-test-id"
+        data-testid="image-testid"
         src="path/to/image.jpg"
         style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
       />
@@ -92,6 +94,7 @@ exports[`DashboardImageContainer component > matches the snapshot for mobile vie
     class="z-[4]"
   >
     <div
+      data-testid="image-container-testid"
       style="height: 260px; box-shadow: inset 0px 0px 18px 20px #000; position: relative;"
     >
       <div
@@ -120,7 +123,7 @@ exports[`DashboardImageContainer component > matches the snapshot for mobile vie
       <img
         alt=""
         class="undefined opacity-0"
-        data-testid="image-test-id"
+        data-testid="image-testid"
         src="path/to/image.jpg"
         style="height: 260px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
       />
@@ -135,7 +138,8 @@ exports[`DashboardImageContainer component > matches the snapshot for mobile vie
     class="z-[4]"
   >
     <div
-      style="height: 260px; box-shadow: inset 0px 0px 18px 20px white; position: relative;"
+      data-testid="image-container-testid"
+      style="height: 260px; box-shadow: inset 0px 0px 18px 20px #fff; position: relative;"
     >
       <div
         class="absolute inset-0 flex items-center justify-center"
@@ -163,7 +167,7 @@ exports[`DashboardImageContainer component > matches the snapshot for mobile vie
       <img
         alt=""
         class="undefined opacity-0"
-        data-testid="image-test-id"
+        data-testid="image-testid"
         src="path/to/image.jpg"
         style="height: 260px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
       />

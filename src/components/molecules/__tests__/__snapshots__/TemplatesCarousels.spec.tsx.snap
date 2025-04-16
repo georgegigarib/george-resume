@@ -33,10 +33,11 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group left-32"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
         >
           <a
             href="http://example.com/template1"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -91,10 +92,11 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group  left-0"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200  left-0"
         >
           <a
             href="http://example.com/template2"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -149,10 +151,11 @@ exports[`TemplatesCarousels Component > renders correctly with provided template
           </div>
         </div>
         <div
-          class="relative -top-20 group left-32"
+          class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
         >
           <a
             href="http://example.com/template3"
+            target="_blank"
           >
             <div
               class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"

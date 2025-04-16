@@ -8,6 +8,7 @@ exports[`ClickableTooltip component > matches the snapshot for desktop view 1`] 
     <button
       class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
       data-mui-internal-clone-element="true"
+      data-testid="tooltip"
       tabindex="0"
       type="button"
     >
@@ -27,6 +28,7 @@ exports[`ClickableTooltip component > matches the snapshot for mobile view 1`] =
     <button
       class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
       data-mui-internal-clone-element="true"
+      data-testid="tooltip"
       tabindex="0"
       type="button"
     >

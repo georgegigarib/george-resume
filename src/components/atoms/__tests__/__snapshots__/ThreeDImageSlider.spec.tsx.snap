@@ -3,7 +3,7 @@
 exports[`ThreeDImageSlider component > matches the snapshot for desktop mode 1`] = `
 <DocumentFragment>
   <div
-    class=" top-[7vh]"
+    class="top-[10vh] md:top-[8vh]"
     id="drag-container"
   >
     <div
@@ -76,7 +76,7 @@ exports[`ThreeDImageSlider component > matches the snapshot for desktop mode 1`]
 exports[`ThreeDImageSlider component > matches the snapshot for mobile mode 1`] = `
 <DocumentFragment>
   <div
-    class="-top-[10%]"
+    class="lg:top-[5vh]"
     id="drag-container"
   >
     <div

@@ -32,6 +32,7 @@ export default mergeConfig(
           './src/vite-env.d.ts',
           './src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
           '__tests__/**',
+          './build/**',
         ],
         reportOnFailure: true,
         reportsDirectory: './coverage',
@@ -42,6 +43,17 @@ export default mergeConfig(
           branches: 70,
         },
       },
+    },
+    plugins: [
+      {
+        name: 'stop-watcher',
+        async configureServer(server) {
+          await server.watcher.close()
+        },
+      },
+    ],
+    server: {
+      watch: null,
     },
   }) as UserConfig & Promise<UserConfig>
 )

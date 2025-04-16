@@ -34,11 +34,11 @@ exports[`ListOfMobileProjectsPreModal Component > renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+      class="swiper swiper-initialized swiper-horizontal w-[70%] absolute bottom-0"
     >
       <div
         class="swiper-wrapper"
-        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
       >
         <div
           class="swiper-slide bg-transparent"

@@ -6,6 +6,8 @@ import dashboardImage from '@/assets/images/Background1.png'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useEffect } from 'react'
 import { setTheme } from '@/utils/setTheme'
+import ProjectsModal from '@/components/molecules/ProjectsModal'
+import TemplatesModal from '@/components/molecules/TemplateModal'
 
 export default function Dashboard(): React.ReactElement {
   const { loadLanguageFromStorage } = useLanguage()
@@ -23,6 +25,10 @@ export default function Dashboard(): React.ReactElement {
       </div>
 
       <div className="w-full -top-32 md:-top-96 px-4 relative z-[5]">
+        {/* modals */}
+        <ProjectsModal />
+        <TemplatesModal />
+
         <div className="flex">
           <div className="w-[33.33%]" id="dev">
             <LeftSection />

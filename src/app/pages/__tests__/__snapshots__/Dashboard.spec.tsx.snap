@@ -12,7 +12,8 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
         class="z-[4]"
       >
         <div
-          style="height: 600px; box-shadow: inset 0px 0px 40px 40px white; position: relative;"
+          data-testid="image-container-testid"
+          style="height: 600px; box-shadow: inset 0px 0px 40px 40px #fff; position: relative;"
         >
           <div
             class="absolute inset-0 flex items-center justify-center"
@@ -40,7 +41,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
           <img
             alt=""
             class="undefined opacity-0"
-            data-testid="image-test-id"
+            data-testid="image-testid"
             src="/src/assets/images/Background1.png"
             style="height: 600px; aspect-ratio: 16:9; position: relative; z-index: -1; opacity: 1; transition: opacity 1s ease-in;"
           />
@@ -50,6 +51,2278 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
     <div
       class="w-full -top-32 md:-top-96 px-4 relative z-[5]"
     >
+      <div
+        class="fixed inset-0 z-[40] pointer-events-none"
+        data-testid="modal-background"
+      >
+        <div
+          class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0"
+          style="z-index: 1;"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center p-4"
+          style="z-index: 2;"
+        >
+          <div
+            class="bg-white dark:bg-black rounded-xl shadow-lg transform transition-all animate-zoomOut hidden max-w-[1100px]"
+            style="width: 70%; height: 60%; margin: auto;"
+          >
+            <button
+              aria-label="Close"
+              class="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none dark:bg-white bg-opacity-10 bg-black dark:bg-opacity-10 dark:hover:bg-opacity-20"
+              data-testid="close-button"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="Close"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-black dark:text-white css-20bmp1-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <div
+              class="h-full w-full 
+        bg-gray-300 
+        dark:bg-black 
+        border-gray-700 
+        dark:border-gray-300 
+        border-[2px] 
+        p-4 rounded-xl overflow-hidden 
+        touch-none"
+            >
+              <div
+                class="flex items-center"
+              >
+                <h2
+                  class="font-semibold dark:text-white text-black ml-2"
+                >
+                  Self taste projects
+                </h2>
+                <div
+                  class="ml-1"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    data-testid="tooltip"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                      data-testid="SmsIcon"
+                      focusable="false"
+                      style="fill: white;"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="mt-2 grid touch-none w-full grid-cols-2 p-4"
+              >
+                <div
+                  class=""
+                >
+                  <div
+                    class=""
+                  >
+                    <div
+                      class="grid grid-cols-1"
+                    >
+                      <div>
+                        <span
+                          class="flex items-center"
+                        >
+                          <h2
+                            class="font-bold dark:text-white text-black"
+                          >
+                            Movie App
+                          </h2>
+                          <a
+                            class="ml-1"
+                            href="https://movie-app.example.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1m2z4e8-MuiSvgIcon-root"
+                              data-testid="LaunchIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                              />
+                            </svg>
+                          </a>
+                        </span>
+                        <div
+                          class="overflow-auto mt-2 max-h-20 md:max-h-28 description-scrollbar"
+                        >
+                          <p
+                            class="dark:text-white text-black pr-8"
+                          >
+                            Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long and I have to keep extending it more and more and more.
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="mt-4 xl:mt-10"
+                      >
+                        <p
+                          class="dark:text-white font-bold text-black"
+                        >
+                          Used Tecnologies
+                        </p>
+                        <div
+                          class="overflow-auto  md:hidden mt-4 md:mt-0 max-h-10 h-14 flex flex-nowrap max-w-[75vw]"
+                        >
+                          <div
+                            class="rfm-marquee-container flex-wrap flex gap-2"
+                            style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"
+                          >
+                            <div
+                              class="rfm-marquee"
+                              style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                            >
+                              <div
+                                class="rfm-initial-child-container"
+                              >
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-react ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        React
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-tailwindcss ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Tailwind CSS
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-ts-circle ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        TypeScript
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                                    >
+                                      <img
+                                        alt="JavaScript"
+                                        class="custom-icon h-5 pr-0"
+                                        src="/src/assets/icons/tools/Javascript.svg"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        JavaScript
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3vnbv9-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-css ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        CSS
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bran8p-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-nextjs ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Next.js
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-11471hz-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-nodejs ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Node.js
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-tailwindcss ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Tailwind CSS
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1xjqxjp-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-redis ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Redis
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="rfm-child"
+                                  style="--transform: none;"
+                                >
+                                  <div>
+                                    <div
+                                      class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1yrjip7-MuiChip-root"
+                                    >
+                                      <i
+                                        class="ci ci-git ci-md"
+                                      />
+                                      <span
+                                        class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                      >
+                                        Git
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="rfm-marquee"
+                              style="--play: running; --direction: normal; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"
+                            >
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-react ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      React
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-tailwindcss ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Tailwind CSS
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-ts-circle ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      TypeScript
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                                  >
+                                    <img
+                                      alt="JavaScript"
+                                      class="custom-icon h-5 pr-0"
+                                      src="/src/assets/icons/tools/Javascript.svg"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      JavaScript
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3vnbv9-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-css ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      CSS
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bran8p-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-nextjs ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Next.js
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-11471hz-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-nodejs ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Node.js
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-tailwindcss ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Tailwind CSS
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1xjqxjp-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-redis ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Redis
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="rfm-child"
+                                style="--transform: none;"
+                              >
+                                <div>
+                                  <div
+                                    class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1yrjip7-MuiChip-root"
+                                  >
+                                    <i
+                                      class="ci ci-git ci-md"
+                                    />
+                                    <span
+                                      class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                    >
+                                      Git
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto md:flex mt-2 md:mt-2 max-h-20 md:max-h-28 gap-1 description-scrollbar hidden flex-wrap"
+                        >
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-react ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                React
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-tailwindcss ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Tailwind CSS
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-ts-circle ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                TypeScript
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                            >
+                              <img
+                                alt="JavaScript"
+                                class="custom-icon h-5 pr-0"
+                                src="/src/assets/icons/tools/Javascript.svg"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                JavaScript
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3vnbv9-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-css ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                CSS
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bran8p-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-nextjs ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Next.js
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-11471hz-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-nodejs ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Node.js
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-tailwindcss ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Tailwind CSS
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1xjqxjp-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-redis ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Redis
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1yrjip7-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-git ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Git
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="lg:top-[5vh]"
+                  id="drag-container"
+                >
+                  <div
+                    id="spin-container"
+                    style="width: 17vh; height: 34vh; animation: spinRevert 200s infinite linear;"
+                  >
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span
+                        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                        role="progressbar"
+                        style="width: 40px; height: 40px;"
+                      >
+                        <svg
+                          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                          viewBox="22 22 44 44"
+                        >
+                          <circle
+                            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                            cx="44"
+                            cy="44"
+                            fill="none"
+                            r="20.2"
+                            stroke-width="3.6"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <img
+                      alt="dev.projects.projects.mobile.project1.title"
+                      class="carousel-image opacity-0"
+                      src="/src/assets/images/projects/movie-app.gif"
+                      style="transform: rotateY(0deg) translateZ(6.6000000000000005vh); transition: transform 1s; transition-delay: 0.75s;"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span
+                        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                        role="progressbar"
+                        style="width: 40px; height: 40px;"
+                      >
+                        <svg
+                          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                          viewBox="22 22 44 44"
+                        >
+                          <circle
+                            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                            cx="44"
+                            cy="44"
+                            fill="none"
+                            r="20.2"
+                            stroke-width="3.6"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <img
+                      alt="dev.projects.projects.mobile.project2.title"
+                      class="carousel-image opacity-0"
+                      src="/src/assets/images/projects/movie-app.gif"
+                      style="transform: rotateY(120deg) translateZ(6.6000000000000005vh); transition: transform 1s; transition-delay: 0.5s;"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span
+                        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                        role="progressbar"
+                        style="width: 40px; height: 40px;"
+                      >
+                        <svg
+                          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                          viewBox="22 22 44 44"
+                        >
+                          <circle
+                            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                            cx="44"
+                            cy="44"
+                            fill="none"
+                            r="20.2"
+                            stroke-width="3.6"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <img
+                      alt="dev.projects.projects.mobile.project3.title"
+                      class="carousel-image opacity-0"
+                      src="/src/assets/images/projects/movie-app.gif"
+                      style="transform: rotateY(240deg) translateZ(6.6000000000000005vh); transition: transform 1s; transition-delay: 0.25s;"
+                    />
+                  </div>
+                  <div
+                    id="ground"
+                    style="width: 132px; height: 132px;"
+                  />
+                </div>
+                <div
+                  class="absolute right-5 bottom-5"
+                  data-testid="platform-toggle"
+                >
+                  <button
+                    aria-label="See mobile projects"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1wjzr1s-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeLarge css-rlj5h7-MuiSvgIcon-root"
+                      data-testid="DesktopWindowsIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 3H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6v2H8v2h8v-2h-2v-2h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fixed inset-0 z-[40] pointer-events-none"
+        data-testid="modal-background"
+      >
+        <div
+          class="absolute inset-0 bg-black transition-opacity duration-300 opacity-0"
+          style="z-index: 1;"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center p-4"
+          style="z-index: 2;"
+        >
+          <div
+            class="bg-white dark:bg-black rounded-xl shadow-lg transform transition-all animate-zoomOut hidden"
+            style="width: 450px; height: 600px; margin: auto;"
+          >
+            <button
+              aria-label="Close"
+              class="absolute top-4 right-4 p-1 rounded-full hover:bg-opacity-35 focus:outline-none dark:bg-white bg-opacity-10 bg-black dark:bg-opacity-10 dark:hover:bg-opacity-20"
+              data-testid="close-button"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="Close"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium text-black dark:text-white css-20bmp1-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <div
+              class="h-full w-full bg-app-lightModeBoxes-box13 
+    dark:bg-app-darkModeBoxes-box13 
+    dark:border-app-lightModeBoxes-box13 
+    border-app-darkModeBoxes-box13 border-[2px]
+    p-4 rounded-xl overflow-hidden"
+            >
+              <div
+                class="flex items-center"
+              >
+                <h2
+                  class="font-semibold text-black dark:text-white"
+                >
+                  Templates list
+                </h2>
+                <div
+                  class="ml-1"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    data-testid="tooltip"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                      data-testid="SmsIcon"
+                      focusable="false"
+                      style="fill: white;"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <hr
+                class="w-100 mr-5 rounded-xl border"
+              />
+              <div
+                class="overflow-auto  max-h-[95%] mt-2 scroll-smooth text-white description-scrollbar"
+              >
+                <div
+                  class="flex flex-col flex-wrap mr-3 py-2"
+                >
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-react ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  React
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-tailwindcss ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Tailwind CSS
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-g7vfji-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-bun ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Bun
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3vnbv9-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-css ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  CSS
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A lightweight template designed for fast rendering with modern tools.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bran8p-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-nextjs ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Next.js
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-tailwindcss ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Tailwind CSS
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-docker ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Docker
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-react ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  React
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A server-side rendering starter template using Next.js and Docker.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-vuejs ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Vue Js
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-tailwindcss ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Tailwind CSS
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1pqsp9g-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-pinia ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Pinia
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-docker ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Docker
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1jfcy4n-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-html ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  HTML
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A clean Vue.js starter with Pinia and TailwindCSS for simplicity and scalability.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                              >
+                                <img
+                                  alt="JavaScript"
+                                  class="custom-icon h-6 pr-0"
+                                  src="/src/assets/icons/tools/Javascript.svg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  JavaScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1psoib9-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-angular ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Angular
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-3wr7td-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-sass ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Sass
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-docker ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Docker
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-11471hz-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-nodejs ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Node.js
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A robust template for building enterprise-grade Angular applications.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-react ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  React
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1bayvrs-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-mui ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Material UI
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-x6zgrj-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-graphql ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  GraphQL
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-36e4sd-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-django ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Django
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          Full-stack development made easy with React, MUI, and GraphQL backend.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-5zgwac-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-svelte ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Svelte
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-tailwindcss ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Tailwind CSS
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-pibv4v-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-python ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Python
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1o9b6i3-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-postgresql ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  PostgreSQL
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A minimalist yet powerful template using Svelte and Python with a PostgreSQL database.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                              >
+                                <img
+                                  alt="JavaScript"
+                                  class="custom-icon h-6 pr-0"
+                                  src="/src/assets/icons/tools/Javascript.svg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  JavaScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-react ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  React
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-qfctqq-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-redux ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Redux
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1krd9q1-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-bootstrap ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Bootstrap
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1wlz7po-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-php ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  PHP
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A ready-to-use base for building eCommerce solutions with React and PHP.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full rounded-lg border border-gray-300 flex-nowrap mt-4 relative"
+                    data-testid="template-option"
+                  >
+                    <div
+                      class="overflow-hidden max-w-[86%]"
+                    >
+                      <div
+                        class="whitespace-nowrap flex mt-1 ml-2 flex-col transition-all ease-in-out duration-500 overflow-hidden max-h-[50px] opacity-90 scale-95"
+                      >
+                        <div
+                          class="flex flex-wrap transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-ts-circle ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  TypeScript
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-react ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  React
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-x6zgrj-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-graphql ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  GraphQL
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-mongodb2 ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  MongoDB
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="my-1 mb-2 transition-all duration-500 ease-in-out transform-gpu"
+                            data-testid="tec-badge"
+                          >
+                            <div>
+                              <div
+                                class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1k3s58j-MuiChip-root"
+                              >
+                                <i
+                                  class="ci ci-docker ci-lg"
+                                />
+                                <span
+                                  class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                                >
+                                  Docker
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="overflow-auto text-wrap my-2 max-h-20 description-scrollbar transition-all duration-500 ease-in-out transform-gpu"
+                        >
+                          A powerful template for data-intensive applications using MongoDB and GraphQL.
+                        </div>
+                      </div>
+                      <div
+                        class="absolute top-3 right-2 cursor-pointer transition-transform hover:scale-105"
+                      >
+                        <div
+                          aria-label="See template"
+                          class="hover:bg-gray-700 rounded-full p-1 relative right-[2px] flex items-center justify-center"
+                          data-mui-internal-clone-element="true"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                            data-testid="RemoveRedEyeOutlinedIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5m0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute -bottom-3 right-3 cursor-pointer bg-app-grey rounded-full transition-transform hover:scale-105"
+                    >
+                      <span
+                        aria-label="Show all tools"
+                        class="ml-auto cursor-pointer hover:opacity-70 flex items-center"
+                        data-mui-internal-clone-element="true"
+                      >
+                        <div
+                          class="flex items-center justify-center rounded-full text-sm "
+                        >
+                          <span
+                            class="text-white rounded-full flex flex-nowrap"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="ExpandMoreIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         class="flex"
       >
@@ -82,7 +2355,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     <h3
                       class="text-md md:text-xl font-bold dark:text-white text-black "
                     >
-                      Mobile Project 2
+                      Movie App
                     </h3>
                     <div
                       class="description-scrollbar overflow-auto rounded-lg 
@@ -100,65 +2373,54 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                       <p
                         class="mt-2 text-black dark:text-white mx-2 h-16 text-start px-4 relative z-20 "
                       >
-                        Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long. Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long.
+                        Application to explore movies and series. Here I'm adding a slightly longer description to test what happens if the text is very long and I have to keep extending it more and more and more.
                       </p>
                     </div>
                   </div>
                   <div
-                    class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress w-[70%] absolute bottom-0"
+                    data-testid="swiper"
                   >
                     <div
-                      class="swiper-wrapper"
-                      style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms;"
+                      data-testid="swiper-slide"
                     >
-                      <div
-                        class="swiper-slide bg-transparent"
-                        data-swiper-slide-index="0"
-                      >
-                        <img
-                          alt="dev.projects.projects.mobile.project1.title"
-                          class="rounded-xl"
-                          src="/src/assets/images/projects/movie-app.gif"
-                        />
-                      </div>
-                      <div
-                        class="swiper-slide bg-transparent"
-                        data-swiper-slide-index="1"
-                      >
-                        <img
-                          alt="dev.projects.projects.mobile.project2.title"
-                          class="rounded-xl"
-                          src="/src/assets/images/projects/movie-app.gif"
-                        />
-                      </div>
-                      <div
-                        class="swiper-slide bg-transparent"
-                        data-swiper-slide-index="2"
-                      >
-                        <img
-                          alt="dev.projects.projects.mobile.project3.title"
-                          class="rounded-xl"
-                          src="/src/assets/images/projects/movie-app.gif"
-                        />
-                      </div>
+                      <img
+                        alt="dev.projects.projects.mobile.project1.title"
+                        class="rounded-xl"
+                        src="/src/assets/images/projects/movie-app.gif"
+                      />
+                    </div>
+                    <div
+                      data-testid="swiper-slide"
+                    >
+                      <img
+                        alt="dev.projects.projects.mobile.project2.title"
+                        class="rounded-xl"
+                        src="/src/assets/images/projects/movie-app.gif"
+                      />
+                    </div>
+                    <div
+                      data-testid="swiper-slide"
+                    >
+                      <img
+                        alt="dev.projects.projects.mobile.project3.title"
+                        class="rounded-xl"
+                        src="/src/assets/images/projects/movie-app.gif"
+                      />
                     </div>
                   </div>
                 </div>
-                <div
-                  class="h-full w-full cursor-pointer"
-                >
-                  <div>
-                    <div
-                      class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+                <div>
+                  <div
+                    class="w-full p-3 flex justify-between rounded-xl text-start cursor-pointer items-center"
+                  >
+                    <h1
+                      class="font-bold dark:text-white text-black "
                     >
-                      <h1
-                        class="font-bold dark:text-white text-black "
-                      >
-                        Self taste projects 📱
-                      </h1>
-                      <div
-                        aria-label="Show all projects"
-                        class="rounded-full py-1 px-2 items-center 
+                      Self taste projects 📱
+                    </h1>
+                    <div
+                      aria-label="Show all projects"
+                      class="rounded-full py-1 px-2 items-center 
                     bg-white 
                     dark:border-app-lightModeBoxes-box2 
                     border-app-darkModeBoxes-box2 
@@ -173,21 +2435,20 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     flex gap-2 
                     text-xs 
                     font-bold"
-                        data-mui-internal-clone-element="true"
+                      data-mui-internal-clone-element="true"
+                    >
+                      See more
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
+                        data-testid="ArrowForwardIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
                       >
-                        See more
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit dark:text-white text-black css-1lzspe0-MuiSvgIcon-root"
-                          data-testid="ArrowForwardIcon"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                          />
-                        </svg>
-                      </div>
+                        <path
+                          d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -209,7 +2470,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
                       data-testid="example-container"
                     >
                       <div
@@ -290,12 +2551,12 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                             />
                           </div>
                           <div
-                            aria-label="tailwind"
+                            aria-label="tailwindcss"
                             class="_icon_e676c2"
                             data-mui-internal-clone-element="true"
                           >
                             <i
-                              class="ci ci-tailwind ci-2x"
+                              class="ci ci-tailwindcss ci-2x"
                             />
                           </div>
                           <div
@@ -303,10 +2564,8 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                             class="_icon_e676c2"
                             data-mui-internal-clone-element="true"
                           >
-                            <img
-                              alt="Bun"
-                              class="custom-icon h-8 pr-0"
-                              src="/src/assets/icons/tools/Bun.svg"
+                            <i
+                              class="ci ci-bun ci-2x"
                             />
                           </div>
                           <div
@@ -321,10 +2580,11 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         </div>
                       </div>
                       <div
-                        class="relative -top-20 group left-32"
+                        class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
                       >
                         <a
                           href="https://github.com/example/fast-render-template"
+                          target="_blank"
                         >
                           <div
                             class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -382,12 +2642,12 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                             />
                           </div>
                           <div
-                            aria-label="tailwind"
+                            aria-label="tailwindcss"
                             class="_icon_e676c2 _reverse_e676c2"
                             data-mui-internal-clone-element="true"
                           >
                             <i
-                              class="ci ci-tailwind ci-2x"
+                              class="ci ci-tailwindcss ci-2x"
                             />
                           </div>
                           <div
@@ -411,10 +2671,11 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         </div>
                       </div>
                       <div
-                        class="relative -top-20 group  left-0"
+                        class="relative -top-20 group hover:scale-105 transition-all duration-200  left-0"
                       >
                         <a
                           href="https://github.com/example/next-ssr-template"
+                          target="_blank"
                         >
                           <div
                             class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -472,12 +2733,12 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                             />
                           </div>
                           <div
-                            aria-label="tailwind"
+                            aria-label="tailwindcss"
                             class="_icon_e676c2"
                             data-mui-internal-clone-element="true"
                           >
                             <i
-                              class="ci ci-tailwind ci-2x"
+                              class="ci ci-tailwindcss ci-2x"
                             />
                           </div>
                           <div
@@ -501,10 +2762,11 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         </div>
                       </div>
                       <div
-                        class="relative -top-20 group left-32"
+                        class="relative -top-20 group hover:scale-105 transition-all duration-200 left-32"
                       >
                         <a
                           href="https://github.com/example/vue-pinia-template"
+                          target="_blank"
                         >
                           <div
                             class="absolute flex items-center text-center flex-wrap max-w-24 h-20 p-1 rounded-xl"
@@ -539,68 +2801,63 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                   </div>
                 </div>
                 <div
-                  class="h-full w-full cursor-pointer"
+                  class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold"
                 >
                   <div
-                    class="relative h-full w-full py-3 px-2 rounded-xl cursor-pointer font-semibold "
+                    aria-label="Show all templates"
+                    class="absolute top-2 right-2 block hover:bg-white hover:scale[1.07] hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
+                    data-mui-internal-clone-element="true"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                      data-testid="AppsIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-black dark:text-white"
+                  >
+                    Use my dev templates!
+                  </h2>
+                  <div
+                    class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
                   >
                     <div
-                      aria-label="Show all templates"
-                      class="absolute top-2 right-2 block hover:bg-white hover:bg-opacity-25 px-1 py-1 rounded-full text-black dark:text-white"
-                      data-mui-internal-clone-element="true"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
-                        data-testid="AppsIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z"
-                        />
-                      </svg>
-                    </div>
-                    <h2
-                      class="text-black dark:text-white"
-                    >
-                      Use my dev templates!
-                    </h2>
-                    <div
-                      class="absolute -bottom-[25.7rem] right-2 text-xs hidden md:block"
-                      style="will-change: transform; transform: none;"
+                      class="w-10 swing-container"
                     >
                       <div
-                        class="w-10"
+                        class="absolute inset-0 flex items-center justify-center"
                       >
-                        <div
-                          class="absolute inset-0 flex items-center justify-center"
+                        <span
+                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+                          role="progressbar"
+                          style="width: 40px; height: 40px;"
                         >
-                          <span
-                            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-                            role="progressbar"
-                            style="width: 40px; height: 40px;"
+                          <svg
+                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                            viewBox="22 22 44 44"
                           >
-                            <svg
-                              class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                              viewBox="22 22 44 44"
-                            >
-                              <circle
-                                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                                cx="44"
-                                cy="44"
-                                fill="none"
-                                r="20.2"
-                                stroke-width="3.6"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        <img
-                          class="undefined opacity-0"
-                          src="/src/assets/icons/code-template.webp"
-                        />
+                            <circle
+                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                              cx="44"
+                              cy="44"
+                              fill="none"
+                              r="20.2"
+                              stroke-width="3.6"
+                            />
+                          </svg>
+                        </span>
                       </div>
+                      <img
+                        class="undefined opacity-0"
+                        src="/src/assets/icons/code-template.webp"
+                      />
                     </div>
                   </div>
                 </div>
@@ -622,7 +2879,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
                       data-testid="example-container"
                     >
                       <div
@@ -662,7 +2919,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
               style="grid-area: 38 / 75 / span 10 / span 10;"
             >
               <div
-                class="w-full p-2 cursor-pointer bg-transparent"
+                class="w-full p-2 cursor-pointer bg-transparent hover:scale-110 transition-all"
               >
                 <a
                   class="flex flex-col gap-1 flex-wrap text-white rounded-xl  transition-all h-full bg-transparent"
@@ -719,17 +2976,17 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
         md:dark:bg-app-lightModeBoxes-box1 
     md:bg-white
     md:bg-opacity-20
-    border-[2px]
+    md:border-[2px]
     border-app-darkModeBoxes-box1
     dark:border-white
     dark:border-opacity-60
-    shadow-md
+    md:shadow-md
     opacity-90 rounded-xl flex flex-col gap-4 mt-16"
                   >
                     <h3
                       class="hidden md:flex text-lg font-bold dark:text-white text-black"
                     >
-                      Desktop Project 3
+                      Desktop Project 1
                     </h3>
                     <div
                       class="hidden md:flex flex-wrap justify-center gap-2"
@@ -740,8 +2997,8 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         data-mui-internal-clone-element="true"
                       />
                       <i
-                        aria-label="tailwind"
-                        class="ci ci-tailwind ci-lg"
+                        aria-label="tailwindcss"
+                        class="ci ci-tailwindcss ci-lg"
                         data-mui-internal-clone-element="true"
                       />
                       <i
@@ -750,95 +3007,85 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                         data-mui-internal-clone-element="true"
                       />
                       <i
-                        aria-label="redis"
-                        class="ci ci-redis ci-lg"
+                        aria-label="js"
+                        class="ci ci-js ci-lg"
                         data-mui-internal-clone-element="true"
                       />
                       <i
-                        aria-label="git"
-                        class="ci ci-git ci-lg"
+                        aria-label="css"
+                        class="ci ci-css ci-lg"
                         data-mui-internal-clone-element="true"
                       />
+                      <i
+                        aria-label="nextjs"
+                        class="ci ci-nextjs ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <i
+                        aria-label="nodejs"
+                        class="ci ci-nodejs ci-lg"
+                        data-mui-internal-clone-element="true"
+                      />
+                      <p
+                        aria-label=""
+                        class="-mt-1 dark:text-white text-black"
+                        data-mui-internal-clone-element="true"
+                      >
+                        +3
+                      </p>
+                      <span />
+                      <span />
                     </div>
                   </div>
                   <div
                     class="col-span-3 self-center py-3 pr-3 ml-3 group"
                   >
                     <div
-                      class="swiper swiper-initialized swiper-vertical h-[120px] md:h-[250px] w-full"
+                      data-testid="swiper"
                     >
                       <div
-                        class="swiper-wrapper"
-                        style="cursor: grab; transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, NaNpx, 0px);"
+                        data-testid="swiper-slide"
                       >
-                        <div
-                          class="swiper-slide bg-transparent"
-                          data-swiper-slide-index="0"
-                        >
-                          <img
-                            alt="dev.projects.projects.desktop.project1.title"
-                            class="rounded-2xl"
-                            src="/src/assets/images/projects/desktop-app-2.png"
-                          />
-                        </div>
-                        <div
-                          class="swiper-slide bg-transparent"
-                          data-swiper-slide-index="1"
-                        >
-                          <img
-                            alt="dev.projects.projects.desktop.project2.title"
-                            class="rounded-2xl"
-                            src="/src/assets/images/projects/desktop-app-1.png"
-                          />
-                        </div>
-                        <div
-                          class="swiper-slide bg-transparent"
-                          data-swiper-slide-index="2"
-                        >
-                          <img
-                            alt="dev.projects.projects.desktop.project3.title"
-                            class="rounded-2xl"
-                            src="/src/assets/images/projects/desktop-app-1.png"
-                          />
-                        </div>
-                        <div
-                          class="swiper-slide bg-transparent"
-                          data-swiper-slide-index="3"
-                        >
-                          <img
-                            alt="dev.projects.projects.desktop.project4.title"
-                            class="rounded-2xl"
-                            src="/src/assets/images/projects/desktop-app-2.png"
-                          />
-                        </div>
-                        <div
-                          class="swiper-slide bg-transparent"
-                          data-swiper-slide-index="4"
-                        >
-                          <img
-                            alt="dev.projects.projects.desktop.project5.title"
-                            class="rounded-2xl"
-                            src="/src/assets/images/projects/desktop-app-1.png"
-                          />
-                        </div>
+                        <img
+                          alt="dev.projects.projects.desktop.project1.title"
+                          class="rounded-2xl"
+                          src="/src/assets/images/projects/desktop-app-2.png"
+                        />
                       </div>
                       <div
-                        class="swiper-pagination swiper-pagination-bullets swiper-pagination-vertical"
+                        data-testid="swiper-slide"
                       >
-                        <span
-                          class="swiper-pagination-bullet"
+                        <img
+                          alt="dev.projects.projects.desktop.project2.title"
+                          class="rounded-2xl"
+                          src="/src/assets/images/projects/desktop-app-1.png"
                         />
-                        <span
-                          class="swiper-pagination-bullet"
+                      </div>
+                      <div
+                        data-testid="swiper-slide"
+                      >
+                        <img
+                          alt="dev.projects.projects.desktop.project3.title"
+                          class="rounded-2xl"
+                          src="/src/assets/images/projects/desktop-app-1.png"
                         />
-                        <span
-                          class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                      </div>
+                      <div
+                        data-testid="swiper-slide"
+                      >
+                        <img
+                          alt="dev.projects.projects.desktop.project4.title"
+                          class="rounded-2xl"
+                          src="/src/assets/images/projects/desktop-app-2.png"
                         />
-                        <span
-                          class="swiper-pagination-bullet"
-                        />
-                        <span
-                          class="swiper-pagination-bullet"
+                      </div>
+                      <div
+                        data-testid="swiper-slide"
+                      >
+                        <img
+                          alt="dev.projects.projects.desktop.project5.title"
+                          class="rounded-2xl"
+                          src="/src/assets/images/projects/desktop-app-1.png"
                         />
                       </div>
                       <div
@@ -849,7 +3096,6 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                           slot="container-end"
                         >
                           <svg
-                            style="--progress: 0.0003333333333332966;"
                             viewBox="0 0 48 48"
                           >
                             <circle
@@ -858,17 +3104,13 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                               r="20"
                             />
                           </svg>
-                          <span>
-                            3s
-                          </span>
+                          <span />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="h-full w-full cursor-pointer"
-                >
+                <div>
                   <div
                     class="absolute p-1 rounded-lg cursor-pointer items-center w-[7.2rem] md:w-44 dark:hover:bg-white hover:bg-opacity-25 hover:bg-white dark:hover:bg-opacity-25
             bg-app-lightModeBoxes-box1 m-1
@@ -936,7 +3178,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box12 dark:bg-app-darkModeBoxes-box12 border-app-darkModeBoxes-box12 dark:border-app-lightModeBoxes-box12"
                       data-testid="example-container"
                     >
                       <div
@@ -996,7 +3238,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box13 dark:bg-app-darkModeBoxes-box13 border-app-darkModeBoxes-box13 dark:border-app-lightModeBoxes-box13"
                       data-testid="example-container"
                     >
                       <div
@@ -1047,7 +3289,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box7 dark:bg-app-darkModeBoxes-box7 border-app-darkModeBoxes-box7 dark:border-app-lightModeBoxes-box7"
                       data-testid="example-container"
                     >
                       <div
@@ -1150,7 +3392,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box3 dark:bg-app-darkModeBoxes-box3 border-app-darkModeBoxes-box3 dark:border-app-lightModeBoxes-box3"
                       data-testid="example-container"
                     >
                       <div
@@ -1247,7 +3489,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box9 dark:bg-app-darkModeBoxes-box9 border-app-darkModeBoxes-box9 dark:border-app-lightModeBoxes-box9"
                       data-testid="example-container"
                     >
                       <div
@@ -1298,7 +3540,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box12 dark:bg-app-darkModeBoxes-box12 border-app-darkModeBoxes-box12 dark:border-app-lightModeBoxes-box12"
                       data-testid="example-container"
                     >
                       <div
@@ -1404,7 +3646,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
                       data-testid="example-container"
                     >
                       <div
@@ -1514,7 +3756,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box16 dark:bg-app-darkModeBoxes-box16 border-app-darkModeBoxes-box16 dark:border-app-lightModeBoxes-box16"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box13 dark:bg-app-darkModeBoxes-box13 border-app-darkModeBoxes-box13 dark:border-app-lightModeBoxes-box13"
                       data-testid="example-container"
                     >
                       <div

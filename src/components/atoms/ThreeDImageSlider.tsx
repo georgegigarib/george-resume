@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import React from 'react'
-import { useIsMobile } from '@/hooks/useIsMobile'
 import '@/styles/slider-carousel.css'
 import ImageWithLoader from '@/components/atoms/ImageLoader.tsx'
 
@@ -14,13 +13,8 @@ type ThreeDImageSliderProps = {
 }
 
 const ThreeDImageSlider: React.FC<ThreeDImageSliderProps> = ({ projects, isDesktopMode }) => {
-  const isMobile = useIsMobile()
-
   return (
-    <div
-      id="drag-container"
-      className={clsx(isMobile ? '-top-[10%]' : ' top-[7vh]', isDesktopMode && isMobile ? 'top-[8%]' : '')}
-    >
+    <div id="drag-container" className={clsx(isDesktopMode ? 'top-[10vh] md:top-[8vh]' : 'lg:top-[5vh]')}>
       <div id="spin-container">
         {projects.map((project, index) => (
           <ImageWithLoader

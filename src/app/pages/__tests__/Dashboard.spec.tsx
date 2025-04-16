@@ -5,10 +5,19 @@ import Dashboard from '@/app/pages/Dashboard'
 
 const isMobileMock = vi.fn()
 
+class ResizeObserver {
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+}
+
+global.ResizeObserver = ResizeObserver
+
 vi.mock('@/hooks/useIsMobile', () => ({
   useIsMobile: () => isMobileMock(),
 }))
 
+// TODO: Fix this
 describe('Dashboard component', () => {
   const renderComponent = () =>
     render(
