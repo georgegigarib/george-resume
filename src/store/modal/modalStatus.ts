@@ -3,11 +3,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 export interface ModalState {
   isProjectModalOpen: boolean
   isTemplatesModalOpen: boolean
+  isContactModalOpen: boolean
 }
 
 const initialState: ModalState = {
   isProjectModalOpen: false,
   isTemplatesModalOpen: false,
+  isContactModalOpen: false,
 }
 
 const modalSlice = createSlice({
@@ -20,9 +22,12 @@ const modalSlice = createSlice({
     setTemplateModalState(state, action: PayloadAction<boolean>) {
       state.isTemplatesModalOpen = action.payload
     },
+    setContactModalState(state, action: PayloadAction<boolean>) {
+      state.isContactModalOpen = action.payload
+    },
   },
 })
 
-export const { setProjectModalState, setTemplateModalState } = modalSlice.actions
+export const { setProjectModalState, setTemplateModalState, setContactModalState } = modalSlice.actions
 
 export default modalSlice.reducer
