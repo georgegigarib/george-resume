@@ -1,9 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import modalReducer, { setProjectModalState, setTemplateModalState, ModalState } from '../modalStatus'
+import modalReducer, { setProjectModalState, setTemplateModalState, ModalState } from '@/store/modal/modalStatus'
 
 describe('modalStatus slice', () => {
   it('should handle initial state', () => {
     const initialState: ModalState = {
+      isContactModalOpen: false,
       isProjectModalOpen: false,
       isTemplatesModalOpen: false,
     }
@@ -13,6 +14,7 @@ describe('modalStatus slice', () => {
 
   it('should handle setProjectModalState', () => {
     const initialState: ModalState = {
+      isContactModalOpen: false,
       isProjectModalOpen: false,
       isTemplatesModalOpen: false,
     }
@@ -29,6 +31,7 @@ describe('modalStatus slice', () => {
 
   it('should handle setTemplateModalState', () => {
     const initialState: ModalState = {
+      isContactModalOpen: false,
       isProjectModalOpen: false,
       isTemplatesModalOpen: false,
     }
@@ -41,5 +44,17 @@ describe('modalStatus slice', () => {
     const stateFalse = modalReducer(state, actionFalse)
     expect(stateFalse.isTemplatesModalOpen).toBe(false)
     expect(stateFalse.isProjectModalOpen).toBe(false)
+  })
+
+  it('should handle setContactModalState', () => {
+    const initialState: ModalState = {
+      isContactModalOpen: false,
+      isProjectModalOpen: false,
+      isTemplatesModalOpen: false,
+    }
+    const action = setProjectModalState(true)
+    const state = modalReducer(initialState, action)
+    expect(state.isProjectModalOpen).toBe(true)
+    expect(state.isTemplatesModalOpen).toBe(false)
   })
 })

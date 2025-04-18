@@ -7,6 +7,7 @@ import SeeResume from '@/components/organisms/SeeResume'
 import ListOfMobileProjectsModal from '@/components/organisms/ListOfMobileProjectsModal'
 import DevTemplatesModal from '@/components/organisms/DevTemplatesModal'
 import ListOfDesktopProjectsModal from '@/components/organisms/ListOfDesktopProjectsModal'
+import ContactPreModal from '../molecules/ContactPreModal'
 
 const LeftSection = () => {
   const { t, i18n } = useTranslation()
@@ -34,25 +35,25 @@ const LeftSection = () => {
       { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 18, content: <ExampleComponent /> },
       {
         startRow: 20,
-        spanRow: 9,
+        spanRow: 7,
         startColumn: 13,
-        spanColumn: 8,
-        content: <ExampleComponent />,
+        spanColumn: 10,
+        content: <ContactPreModal />,
         useCard: false,
       },
       {
         startRow: 20,
         spanRow: 6,
-        startColumn: 21,
+        startColumn: 22,
         spanColumn: 6,
         content: <SeeResume />,
         useCard: false,
         addShadow: false,
       },
       {
-        startRow: 7,
-        spanRow: 7,
-        startColumn: 5,
+        startRow: 6,
+        spanRow: 8,
+        startColumn: 8,
         spanColumn: 23,
         content: <ListOfDesktopProjectsModal />,
         useCard: false,
@@ -79,10 +80,10 @@ const LeftSection = () => {
       },
       {
         startRow: 38,
-        spanRow: 17,
+        spanRow: 7,
         startColumn: 45,
         spanColumn: 13,
-        content: <ExampleComponent />,
+        content: <ContactPreModal />,
       },
       {
         startRow: 38,

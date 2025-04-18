@@ -142,7 +142,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
               data-testid="example-container"
             >
               <div
@@ -537,7 +537,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
     </div>
     <div
       class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
-      style="grid-area: 38 / 45 / span 17 / span 13;"
+      style="grid-area: 38 / 45 / span 7 / span 13;"
     >
       <div
         class="flex w-full h-full"
@@ -551,36 +551,61 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
-              data-testid="example-container"
+              class="cursor-pointer transform hover:scale-105 transition-all duration-300"
             >
               <div
-                class="absolute inset-0 flex items-center justify-center"
+                class="
+        bg-gradient-to-r from-blue-500 to-purple-500
+        hover:from-purple-500 hover:to-blue-500
+        rounded-xl p-4 shadow-lg
+        flex flex-col  justify-between
+        border-2 border-transparent hover:border-white
+        text-white
+        transition-all duration-100
+      "
               >
-                <span
-                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-                  role="progressbar"
-                  style="width: 40px; height: 40px;"
+                <h2
+                  class="text-lg font-bold"
                 >
-                  <svg
-                    class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                    viewBox="22 22 44 44"
+                  Contact Me!
+                </h2>
+                <div
+                  class="flex items-center justify-start md:justify-between"
+                >
+                  <p
+                    class="text-sm opacity-90 md:w-24"
                   >
-                    <circle
-                      class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                      cx="44"
-                      cy="44"
-                      fill="none"
-                      r="20.2"
-                      stroke-width="3.6"
-                    />
-                  </svg>
-                </span>
+                    Lets work together!
+                  </p>
+                  <span
+                    aria-label="Send me a message!"
+                    class="
+            bg-white bg-opacity-20
+            hover:bg-opacity-30
+            rounded-full
+            p-1
+            md:p-2
+            h-auto
+            flex justify-center items-center
+            transition-all duration-300
+            md:text-xl
+            "
+                    data-mui-internal-clone-element="true"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
+                      data-testid="EmailIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+                      />
+                    </svg>
+                  </span>
+                </div>
               </div>
-              <img
-                class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
-                src="/src/assets/images/construction.png"
-              />
             </div>
           </div>
         </div>
@@ -850,7 +875,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
               data-testid="example-container"
             >
               <div

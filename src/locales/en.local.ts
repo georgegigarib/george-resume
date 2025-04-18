@@ -1,4 +1,18 @@
 export const en = {
+  contact: {
+    title: 'Contact Me!',
+    messagePlaceholder: 'Write your message here...',
+    sendVia: 'Send message via...',
+    letsWork: 'Lets work together!',
+    sendMeAMessage: 'Send me a message!',
+    buttons: {
+      gmailTooltip: 'Send via Gmail',
+      outlookTooltip: 'Send via Outlook',
+      copyEmailTooltip: 'Copy email address',
+      copyMessageTooltip: 'Copy message',
+      copied: 'Copied!',
+    },
+  },
   hello: 'Hey buddy, whats upp?',
   welcome: 'Hello friend',
   description: 'This is a description in English',

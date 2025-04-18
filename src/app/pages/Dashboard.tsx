@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { setTheme } from '@/utils/setTheme'
 import ProjectsModal from '@/components/molecules/ProjectsModal'
 import TemplatesModal from '@/components/molecules/TemplateModal'
+import ContactModal from '@/components/organisms/ContactModal'
 
 export default function Dashboard(): React.ReactElement {
   const { loadLanguageFromStorage } = useLanguage()
@@ -28,6 +29,7 @@ export default function Dashboard(): React.ReactElement {
         {/* modals */}
         <ProjectsModal />
         <TemplatesModal />
+        <ContactModal />
 
         <div className="flex">
           <div className="w-[33.33%]" id="dev">
