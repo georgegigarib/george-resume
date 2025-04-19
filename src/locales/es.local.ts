@@ -4,6 +4,8 @@ export const es = {
     messagePlaceholder: 'Escribe tu mensaje aquí...',
     sendVia: 'Enviar mensaje por...',
     letsWork: 'Trabajemos juntos!',
+    sendMeAMessage: 'Envíame un mensaje!',
+    subjectDefault: 'Vi tu portafolio!',
     buttons: {
       gmailTooltip: 'Enviar por Gmail',
       outlookTooltip: 'Enviar por Outlook',

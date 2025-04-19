@@ -5,6 +5,7 @@ export const en = {
     sendVia: 'Send message via...',
     letsWork: 'Lets work together!',
     sendMeAMessage: 'Send me a message!',
+    subjectDefault: 'Just saw yout portfolio!',
     buttons: {
       gmailTooltip: 'Send via Gmail',
       outlookTooltip: 'Send via Outlook',

@@ -142,7 +142,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
               data-testid="example-container"
             >
               <div
@@ -875,7 +875,7 @@ exports[`LeftSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
               data-testid="example-container"
             >
               <div
