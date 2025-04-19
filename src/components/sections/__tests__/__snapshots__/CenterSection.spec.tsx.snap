@@ -21,7 +21,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box10 dark:bg-app-darkModeBoxes-box10 border-app-darkModeBoxes-box10 dark:border-app-lightModeBoxes-box10"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box15 dark:bg-app-darkModeBoxes-box15 border-app-darkModeBoxes-box15 dark:border-app-lightModeBoxes-box15"
               data-testid="example-container"
             >
               <div
@@ -72,7 +72,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box4 dark:bg-app-darkModeBoxes-box4 border-app-darkModeBoxes-box4 dark:border-app-lightModeBoxes-box4"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box14 dark:bg-app-darkModeBoxes-box14 border-app-darkModeBoxes-box14 dark:border-app-lightModeBoxes-box14"
               data-testid="example-container"
             >
               <div
@@ -175,7 +175,7 @@ exports[`CenterSection component > renders correctly on desktop 1`] = `
             class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
           >
             <div
-              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
+              class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box10 dark:bg-app-darkModeBoxes-box10 border-app-darkModeBoxes-box10 dark:border-app-lightModeBoxes-box10"
               data-testid="example-container"
             >
               <div

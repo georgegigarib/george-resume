@@ -6,14 +6,20 @@ import Modal from '@/components/molecules/Modal'
 import { useTranslation } from 'react-i18next'
 import EmailButton from '@/components/molecules/EmailButton'
 import CopyButton from '@/components/molecules/CopyButton'
+import { WORK_EMAIL } from '@/constants/info'
 
 export default function ContactModal() {
-  const defaultSubject = 'Vi tu portafolio!'
-  const dispatch = useDispatch()
-  const isContactModalOpen = useSelector((state: StoreState) => state.modalStatus.isContactModalOpen)
   const { t } = useTranslation()
+  const dispatch = useDispatch()
+
+  const isContactModalOpen = useSelector((state: StoreState) => state.modalStatus.isContactModalOpen)
+
+  const email = WORK_EMAIL
+  const defaultSubject = t('contact.subjectDefault')
+
   const [message, setMessage] = useState('')
   const [subject, setSubject] = useState(defaultSubject)
+
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   const subjectRef = useRef<HTMLInputElement>(null)
 
@@ -34,7 +40,6 @@ export default function ContactModal() {
       ref.focus()
     }
   }
-  const email = 'georgegil.work@gmail.com'
 
   const handleGmail = () => {
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
