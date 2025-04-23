@@ -2229,7 +2229,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                                 class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
                               >
                                 <i
-                                  class="ci ci-mongodb2 ci-lg"
+                                  class="ci ci-mongodb ci-lg"
                                 />
                                 <span
                                   class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
@@ -2417,7 +2417,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
               "
                     id="subject"
                     type="text"
-                    value="Just saw yout portfolio!"
+                    value="Just saw your portfolio!"
                   />
                 </div>
                 <div
@@ -2692,36 +2692,216 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
-                      data-testid="example-container"
+                      class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 md:py-7  w-full transition-all duration-300"
                     >
                       <div
-                        class="absolute inset-0 flex items-center justify-center"
+                        class="flex justify-between items-center mb-4"
                       >
-                        <span
-                          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
-                          role="progressbar"
-                          style="width: 40px; height: 40px;"
+                        <h2
+                          class="text-lg md:text-2xl text-center md:text-start font-bold text-gray-800 dark:text-white"
+                        >
+                          This is my dev side 👨🏻‍💻
+                        </h2>
+                        <div
+                          class="hidden md:flex space-x-2"
+                        >
+                          <a
+                            aria-label="LinkedIn"
+                            class="p-1 md:p-2 flex justify-center items-center rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
+                            data-mui-internal-clone-element="true"
+                            href="https://www.linkedin.com/in/georgegg/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="LinkedInIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                              />
+                            </svg>
+                          </a>
+                          <a
+                            aria-label="GitHub"
+                            class="p-1 md:p-2 flex justify-center items-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                            data-mui-internal-clone-element="true"
+                            href="https://github.com/georgegigarib"
+                            target="_blank"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                              data-testid="GitHubIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="mb-6 space-y-2 "
+                      >
+                        <p
+                          class="text-sm md:text-base text-gray-700 dark:text-gray-300"
+                        >
+                          I’m a Software Engineer with 
+                          <strong
+                            class="text-blue-600 dark:text-blue-400"
+                          >
+                            over 3 years of work experience
+                          </strong>
+                          , passionate about building digital solutions that truly work. I specialize in front-end development but also enjoy exploring quality assurance 🫶🏻
+                        </p>
+                      </div>
+                      <div
+                        class="hidden md:block"
+                      >
+                        <div
+                          class="flex items-center mb-2"
                         >
                           <svg
-                            class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
-                            viewBox="22 22 44 44"
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mr-2 text-blue-600 dark:text-blue-400 css-20bmp1-MuiSvgIcon-root"
+                            data-testid="CodeIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
                           >
-                            <circle
-                              class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
-                              cx="44"
-                              cy="44"
-                              fill="none"
-                              r="20.2"
-                              stroke-width="3.6"
+                            <path
+                              d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6z"
                             />
                           </svg>
-                        </span>
+                          <h3
+                            class="text-lg font-semibold text-gray-800 dark:text-white"
+                          >
+                            Here are some tools I’m proficient with (and used a few of them here):
+                          </h3>
+                        </div>
+                        <div
+                          class="flex flex-wrap gap-2 ml-2"
+                        >
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1izr7bw-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-ts-circle ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                TypeScript
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-7lm3m0-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-react ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                React
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-vuejs ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Vue Js
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1w1q3jt-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-tailwindcss ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Tailwind CSS
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-17grw33-MuiChip-root"
+                            >
+                              <i
+                                class="ci ci-vitest ci-md"
+                              />
+                              <span
+                                class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"
+                              >
+                                Vitest
+                              </span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <img
-                        class="rounded-lg min-h-full min-w-full flex-shrink object-cover opacity-0"
-                        src="/src/assets/images/construction.png"
-                      />
+                      <div
+                        class="flex items-center flex-row-reverse md:hidden gap-2 -mt-9"
+                      >
+                        <a
+                          aria-label="GitHub"
+                          class="p-1 md:p-2 flex justify-center items-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                          data-mui-internal-clone-element="true"
+                          href="https://github.com/georgegigarib"
+                          target="_blank"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                            data-testid="GitHubIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                            />
+                          </svg>
+                        </a>
+                        <a
+                          aria-label="LinkedIn"
+                          class="p-1 md:p-2 flex justify-center items-center rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
+                          data-mui-internal-clone-element="true"
+                          href="https://www.linkedin.com/in/georgegg/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
+                            data-testid="LinkedInIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3425,7 +3605,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box10 dark:bg-app-darkModeBoxes-box10 border-app-darkModeBoxes-box10 dark:border-app-lightModeBoxes-box10"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
                       data-testid="example-container"
                     >
                       <div
@@ -3485,7 +3665,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box12 dark:bg-app-darkModeBoxes-box12 border-app-darkModeBoxes-box12 dark:border-app-lightModeBoxes-box12"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
                       data-testid="example-container"
                     >
                       <div
@@ -3536,7 +3716,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
                       data-testid="example-container"
                     >
                       <div
@@ -3573,7 +3753,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
             </div>
             <div
               class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
-              style="grid-area: 49 / 37 / span 10 / span 22;"
+              style="grid-area: 50 / 37 / span 10 / span 22;"
             >
               <div
                 class="flex w-full h-full"
@@ -3625,7 +3805,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
             </div>
             <div
               class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
-              style="grid-area: 30 / 37 / span 19 / span 51;"
+              style="grid-area: 31 / 37 / span 19 / span 51;"
             >
               <div
                 class="flex w-full h-full"
@@ -3639,7 +3819,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box7 dark:bg-app-darkModeBoxes-box7 border-app-darkModeBoxes-box7 dark:border-app-lightModeBoxes-box7"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box9 dark:bg-app-darkModeBoxes-box9 border-app-darkModeBoxes-box9 dark:border-app-lightModeBoxes-box9"
                       data-testid="example-container"
                     >
                       <div
@@ -3676,7 +3856,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
             </div>
             <div
               class="rounded-xl bg-transparent  shadow-3d-light dark:shadow-3d-dark transition-all hover:shadow-hover-light dark:hover:shadow-hover-dark "
-              style="grid-area: 21 / 43 / span 9 / span 22;"
+              style="grid-area: 22 / 43 / span 9 / span 22;"
             >
               <div
                 class="flex w-full h-full"
@@ -3690,10 +3870,10 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
+                      class="flex relative flex-col justify-between h-full p-4 pb-4 rounded-xl bg-gray-200 dark:bg-gray-800"
                     >
                       <div
-                        class="mb-4"
+                        class=""
                       >
                         <h2
                           class="text-xl font-bold mb-6 text-black dark:text-white"
@@ -3736,7 +3916,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box2 dark:bg-app-darkModeBoxes-box2 border-app-darkModeBoxes-box2 dark:border-app-lightModeBoxes-box2"
                       data-testid="example-container"
                     >
                       <div
@@ -3787,7 +3967,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box1 dark:bg-app-darkModeBoxes-box1 border-app-darkModeBoxes-box1 dark:border-app-lightModeBoxes-box1"
                       data-testid="example-container"
                     >
                       <div
@@ -3893,7 +4073,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box11 dark:bg-app-darkModeBoxes-box11 border-app-darkModeBoxes-box11 dark:border-app-lightModeBoxes-box11"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box8 dark:bg-app-darkModeBoxes-box8 border-app-darkModeBoxes-box8 dark:border-app-lightModeBoxes-box8"
                       data-testid="example-container"
                     >
                       <div
@@ -4003,7 +4183,7 @@ exports[`Dashboard component > renders correctly on desktop 1`] = `
                     class="[transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d] bg-gray-50 group/card dark:hover:shadow-2xl dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl border"
                   >
                     <div
-                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box6 dark:bg-app-darkModeBoxes-box6 border-app-darkModeBoxes-box6 dark:border-app-lightModeBoxes-box6"
+                      class="text-blue-900 rounded-xl flex justify-center flex-wrap items-center contain-size overflow-hidden h-full border-[2px] bg-app-lightModeBoxes-box5 dark:bg-app-darkModeBoxes-box5 border-app-darkModeBoxes-box5 dark:border-app-lightModeBoxes-box5"
                       data-testid="example-container"
                     >
                       <div

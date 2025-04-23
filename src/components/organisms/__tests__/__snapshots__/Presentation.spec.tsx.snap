@@ -3,10 +3,10 @@
 exports[`Presentation component > matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="flex relative flex-col justify-between h-full p-4 rounded-xl bg-gray-200 dark:bg-gray-800"
+    class="flex relative flex-col justify-between h-full p-4 pb-4 rounded-xl bg-gray-200 dark:bg-gray-800"
   >
     <div
-      class="mb-4"
+      class=""
     >
       <h2
         class="text-xl font-bold mb-6 text-black dark:text-white"

@@ -9,6 +9,7 @@ export const en = {
     buttons: {
       gmailTooltip: 'Send via Gmail',
       outlookTooltip: 'Send via Outlook',
+      defaultTooltip: 'Send email',
       copyEmailTooltip: 'Copy email address',
       copyMessageTooltip: 'Copy message',
       copied: 'Copied!',
@@ -53,6 +54,14 @@ export const en = {
     resume: {
       resume: 'Resume',
       name: 'George Gil',
+    },
+    profile: {
+      title: 'This is my dev side 👨🏻‍💻',
+      summaryMobile:
+        'I’m a Software Engineer with <strong class="text-blue-600 dark:text-blue-400">over 3 years of work experience</strong>, I specialize in front-end development but also enjoy exploring quality assurance 🫶🏻',
+      summary:
+        'I’m a Software Engineer with <strong class="text-blue-600 dark:text-blue-400">over 3 years of work experience</strong>, passionate about building digital solutions that truly work. I specialize in front-end development but also enjoy exploring quality assurance 🫶🏻',
+      skills: 'Here are some tools I’m proficient with (and used a few of them here):',
     },
     projects: {
       usedTechnologies: 'Used Tecnologies',
@@ -194,4 +203,13 @@ export const en = {
       },
     },
   },
+  friendlyTitle: "Hi! I'm George 👋",
+  friendlyIntro:
+    "I'm a Software Engineer who loves both building and breaking things (in a good way, of course!). I switch hats between front-end development and quality assurance (QA).",
+  friendlyExperience:
+    'With <strong class="text-blue-600 dark:text-blue-400">over 2 years of experience</strong>, I\'ve navigated through E-Commerce, CRM, and process management projects. My superpower is turning complex requirements into <strong class="text-green-600 dark:text-green-400">intuitive</strong> and user-friendly solutions.',
+  friendlyGoal:
+    'I always aim for technical excellence and delivering real value... and if we have some fun along the way, even better!',
+  friendlySkillsIntro: 'Some tools I get along with (and used here):',
+  // Make sure existing translations for LinkedIn, GitHub, etc., are still there.
 }
