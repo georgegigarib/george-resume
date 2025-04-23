@@ -9,6 +9,7 @@ export const es = {
     buttons: {
       gmailTooltip: 'Enviar por Gmail',
       outlookTooltip: 'Enviar por Outlook',
+      defaultTooltip: 'Enviar correo',
       copyEmailTooltip: 'Copiar dirección de correo',
       copyMessageTooltip: 'Copiar Mensaje',
       copied: 'Copiado!',
@@ -37,7 +38,7 @@ export const es = {
   },
   me: {
     presentation: {
-      title: '¡Hola! Soy George Gil',
+      title: '¡Hola! Soy George Gil 👋',
       description:
         'Soy un curioso ingeniero de software que también toca la guitarra, aunque no siempre al mismo tiempo.',
     },
@@ -55,6 +56,14 @@ export const es = {
     resume: {
       resume: 'Curriculum',
       name: 'George Gil',
+    },
+    profile: {
+      title: 'Este es mi lado de desarrollo 👨🏻‍💻',
+      summaryMobile:
+        'Soy Ingeniero de Software con <strong class="text-blue-600 dark:text-blue-400">+3 años de experiencia</strong>, Me especializo en desarrollo front-end, aunque también disfruto explorar el lado del aseguramiento de calidad 🫶🏻',
+      summary:
+        'Soy Ingeniero de Software con <strong class="text-blue-600 dark:text-blue-400">+3 años de experiencia</strong> y pasión por crear soluciones digitales que realmente funcionan. Me especializo en desarrollo front-end, aunque también disfruto explorar el lado del aseguramiento de calidad 🫶🏻',
+      skills: 'Algunas herramientas que manejo bien (y usado algunas aquí) son:',
     },
     projects: {
       usedTechnologies: 'Tecnologías utilizadas',

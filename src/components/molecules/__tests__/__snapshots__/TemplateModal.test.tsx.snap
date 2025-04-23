@@ -1357,7 +1357,7 @@ exports[`TemplatesModal > renders correctly 1`] = `
                             class="MuiChip-root MuiChip-outlined MuiChip-sizeMedium MuiChip-colorDefault MuiChip-outlinedDefault css-1dsoerh-MuiChip-root"
                           >
                             <i
-                              class="ci ci-mongodb2 ci-lg"
+                              class="ci ci-mongodb ci-lg"
                             />
                             <span
                               class="MuiChip-label MuiChip-labelMedium css-3uu4gz-MuiChip-label"

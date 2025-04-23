@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 interface EmailButtonProps {
   onClick: () => void
   icon: ReactNode
-  provider: 'gmail' | 'outlook'
+  provider: 'gmail' | 'outlook' | 'default'
   className?: string
 }
 
@@ -32,6 +32,7 @@ export default function EmailButton({ onClick, icon, provider, className = '' }:
   const providerClasses = {
     gmail: 'border-red-500 hover:bg-red-100',
     outlook: 'border-blue-500 hover:bg-blue-100',
+    default: 'border-green-500 hover:bg-green-100',
   }
 
   return (

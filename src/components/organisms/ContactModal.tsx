@@ -7,18 +7,20 @@ import { useTranslation } from 'react-i18next'
 import EmailButton from '@/components/molecules/EmailButton'
 import CopyButton from '@/components/molecules/CopyButton'
 import { WORK_EMAIL } from '@/constants/info'
+import { useIsMobile } from '@/hooks/useIsMobile'
+import EmailIcon from '@mui/icons-material/Email'
 
 export default function ContactModal() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const dispatch = useDispatch()
+  const isMobile = useIsMobile()
 
   const isContactModalOpen = useSelector((state: StoreState) => state.modalStatus.isContactModalOpen)
 
   const email = WORK_EMAIL
-  const defaultSubject = t('contact.subjectDefault')
 
   const [message, setMessage] = useState('')
-  const [subject, setSubject] = useState(defaultSubject)
+  const [subject, setSubject] = useState(t('contact.subjectDefault'))
 
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   const subjectRef = useRef<HTMLInputElement>(null)
@@ -32,7 +34,7 @@ export default function ContactModal() {
   const closeModal = () => {
     dispatch(setContactModalState(false))
     setMessage('')
-    setSubject(defaultSubject)
+    setSubject(t('contact.subjectDefault'))
   }
 
   const handleOnInputClick = (ref: HTMLTextAreaElement | HTMLInputElement) => {
@@ -44,14 +46,21 @@ export default function ContactModal() {
   const handleGmail = () => {
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
     window.open(gmailUrl, '_blank')
-    closeModal()
   }
 
   const handleOutlook = () => {
     const outlookUrl = `https://outlook.live.com/owa/?path=/mail/action/compose&to=${email}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
     window.open(outlookUrl, '_blank')
-    closeModal()
   }
+
+  const handleMailto = () => {
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`
+    window.location.href = mailtoUrl
+  }
+
+  useEffect(() => {
+    setSubject(t('contact.subjectDefault'))
+  }, [i18n.language])
 
   return (
     <Modal mobileHeight="550px" normalHeight="600px" isOpened={isContactModalOpen} closeModal={closeModal}>
@@ -127,11 +136,31 @@ export default function ContactModal() {
 
           <div>
             <h3 className="text-center text-lg font-semibold mt-2 text-black dark:text-white">
-              {t('contact.sendVia')}
+              {isMobile ? '' : t('contact.sendVia')}
             </h3>
             <div className="flex gap-3 justify-center mt-1">
-              <EmailButton onClick={handleGmail} icon={<i className="ci ci-gmail ci-lg"></i>} provider="gmail" />
-              <EmailButton onClick={handleOutlook} icon={<i className="ci ci-outlook ci-lg"></i>} provider="outlook" />
+              {isMobile ? (
+                <EmailButton
+                  onClick={handleMailto}
+                  icon={
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-600 font-medium">Enviar</span>
+                      <EmailIcon className="text-green-600" />
+                    </div>
+                  }
+                  provider="default"
+                  className="px-2 rounded-full hover:shadow-md"
+                />
+              ) : (
+                <>
+                  <EmailButton onClick={handleGmail} icon={<i className="ci ci-gmail ci-lg"></i>} provider="gmail" />
+                  <EmailButton
+                    onClick={handleOutlook}
+                    icon={<i className="ci ci-outlook ci-lg"></i>}
+                    provider="outlook"
+                  />
+                </>
+              )}
             </div>
           </div>
         </div>

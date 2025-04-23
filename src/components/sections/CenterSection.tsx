@@ -14,9 +14,8 @@ const CenterSection = () => {
 
   useEffect(() => {
     const mobileBoxes = [
-      { startRow: 8, spanRow: 8, startColumn: 4, spanColumn: 16, content: <Presentation /> },
-      { startRow: 16, spanRow: 14, startColumn: 1, spanColumn: 13, content: <Jokes /> },
-      { startRow: 16, spanRow: 17, startColumn: 14, spanColumn: 6, content: <ExampleComponent /> },
+      { startRow: 8, spanRow: 7, startColumn: 4, spanColumn: 16, content: <Presentation /> },
+      { startRow: 15, spanRow: 14, startColumn: 9, spanColumn: 11, content: <Jokes /> },
       { startRow: 12, spanRow: 8, startColumn: 20, spanColumn: 8, content: <ExampleComponent /> },
       { startRow: 8, spanRow: 4, startColumn: 20, spanColumn: 21, content: <LatestSong /> },
     ]
@@ -24,9 +23,9 @@ const CenterSection = () => {
     const desktopBoxes = [
       { startRow: 26, spanRow: 30, startColumn: 19, spanColumn: 18, content: <ExampleComponent /> },
       { startRow: 56, spanRow: 9, startColumn: 27, spanColumn: 9, content: <ExampleComponent /> },
-      { startRow: 49, spanRow: 10, startColumn: 37, spanColumn: 22, content: <Jokes /> },
-      { startRow: 30, spanRow: 19, startColumn: 37, spanColumn: 51, content: <ExampleComponent /> },
-      { startRow: 21, spanRow: 9, startColumn: 43, spanColumn: 22, content: <Presentation /> },
+      { startRow: 50, spanRow: 10, startColumn: 37, spanColumn: 22, content: <Jokes /> },
+      { startRow: 31, spanRow: 19, startColumn: 37, spanColumn: 51, content: <ExampleComponent /> },
+      { startRow: 22, spanRow: 9, startColumn: 43, spanColumn: 22, content: <Presentation /> },
     ]
 
     setActiveBoxes(isMobile ? mobileBoxes : desktopBoxes)

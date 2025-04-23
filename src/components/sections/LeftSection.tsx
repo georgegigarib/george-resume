@@ -8,6 +8,7 @@ import ListOfMobileProjectsModal from '@/components/organisms/ListOfMobileProjec
 import DevTemplatesModal from '@/components/organisms/DevTemplatesModal'
 import ListOfDesktopProjectsModal from '@/components/organisms/ListOfDesktopProjectsModal'
 import ContactPreModal from '../molecules/ContactPreModal'
+import DevPresentation from '../organisms/DevPresentation'
 
 const LeftSection = () => {
   const { t, i18n } = useTranslation()
@@ -18,33 +19,41 @@ const LeftSection = () => {
     const mobileBoxes: BoxProps[] = [
       {
         startRow: 14,
-        spanRow: 20,
+        spanRow: 12,
         startColumn: 1,
         spanColumn: 12,
         content: <ListOfMobileProjectsModal />,
         useCard: false,
       },
       {
-        startRow: 34,
+        startRow: 26,
         spanRow: 1,
         startColumn: 1,
         spanColumn: 10,
         content: <DevTemplatesModal />,
         useCard: false,
       },
-      { startRow: 14, spanRow: 6, startColumn: 13, spanColumn: 18, content: <ExampleComponent /> },
       {
-        startRow: 20,
-        spanRow: 7,
+        startRow: 14,
+        spanRow: 9,
         startColumn: 13,
+        spanColumn: 13,
+        content: <DevPresentation />,
+        addShadow: false,
+        useCard: false,
+      },
+      {
+        startRow: 15,
+        spanRow: 2,
+        startColumn: 26,
         spanColumn: 10,
         content: <ContactPreModal />,
         useCard: false,
       },
       {
-        startRow: 20,
-        spanRow: 6,
-        startColumn: 22,
+        startRow: 14,
+        spanRow: 1,
+        startColumn: 25,
         spanColumn: 6,
         content: <SeeResume />,
         useCard: false,
@@ -69,7 +78,7 @@ const LeftSection = () => {
         content: <ListOfMobileProjectsModal />,
         useCard: false,
       },
-      { startRow: 24, spanRow: 18, startColumn: 1, spanColumn: 44, content: <ExampleComponent /> },
+      { startRow: 24, spanRow: 18, startColumn: 1, spanColumn: 44, content: <DevPresentation /> },
       {
         startRow: 42,
         spanRow: 18,
